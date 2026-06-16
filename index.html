@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RSHP World Cup 2026 Sweepstake</title>
+<style>
+@font-face{font-family:'Roboto';src:url('fonts/Roboto-Regular.woff2') format('woff2'),url('fonts/Roboto-Regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Roboto';src:url('fonts/Roboto-Bold.woff2') format('woff2'),url('fonts/Roboto-Bold.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap}
+:root{
+  /* RSHP brand palette */
+  --blue:#1C49B4; --cyan:#00B5E2; --grass:#96D200; --green:#00B96E;
+  --lime:#D0D81A; --orange:#FF8A40; --pink:#FF5AA0; --red:#FF5442;
+  --yellow:#FFCD00; --slate:#898B8E; --ink:#1a1a1a;
+  --card:#ffffff; --soft:#f3f5f8; --line:#e4e8ee; --mut:#6c7681;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Roboto',system-ui,Arial,sans-serif;color:var(--ink);background:#eef1f5;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.cond{font-family:'Roboto',sans-serif;text-transform:uppercase;letter-spacing:.01em}
+img{display:block}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;overflow:hidden;color:#fff;padding:34px 20px 60px;background:var(--blue)}
+#confetti{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;opacity:.9}
+.hero-inner{position:relative;z-index:2;max-width:1080px;margin:0 auto;text-align:center}
+.hero .logo{height:42px;margin:0 auto 22px;display:block}
+.hero h1{font-size:clamp(28px,5vw,52px);font-weight:700;line-height:.98}
+.hero h1 .em{color:var(--yellow)}
+.hero p.sub{margin-top:12px;font-size:clamp(14px,2vw,18px);opacity:.92;text-transform:none;font-family:'Roboto'}
+.chips{margin-top:20px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.chip{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.4);padding:8px 16px;border-radius:4px;font-weight:500;font-size:14px}
+.chip b{color:var(--yellow)}
+
+/* ---------- NAV ---------- */
+nav{position:sticky;top:0;z-index:30;background:#fff;border-bottom:2px solid var(--blue)}
+.nav-in{max-width:1180px;margin:0 auto;display:flex;gap:4px;padding:7px 12px;overflow-x:auto}
+.nav-in button{flex:0 0 auto;border:0;background:transparent;font-family:'Roboto';text-transform:uppercase;font-size:15px;font-weight:700;
+  color:var(--slate);padding:9px 16px;border-radius:4px;cursor:pointer;transition:.15s;white-space:nowrap;letter-spacing:.03em}
+.nav-in button:hover{color:var(--ink);background:var(--soft)}
+.nav-in button.on{background:var(--blue);color:#fff}
+
+/* ---------- LAYOUT ---------- */
+.wrap{max-width:1180px;margin:0 auto;padding:30px 16px 60px}
+section{scroll-margin-top:64px;margin-bottom:46px}
+.sec-head{display:flex;align-items:center;gap:12px;margin:0 4px 18px}
+.sec-head .ic{font-size:28px}
+.sec-head h2{font-size:clamp(21px,3vw,30px);font-weight:700}
+.sec-head .hint{margin-left:auto;color:var(--mut);font-size:13.5px;max-width:42ch;text-align:right;text-transform:none;font-family:'Roboto'}
+
+/* ---------- PRIZE BOARD ---------- */
+.prizes{display:grid;grid-template-columns:repeat(auto-fill,minmax(265px,1fr));gap:16px}
+.prize{background:var(--card);border-radius:8px;padding:18px;border:1px solid var(--line);
+  box-shadow:0 6px 18px rgba(20,40,80,.06);position:relative;overflow:hidden;transition:.18s}
+.prize:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(20,40,80,.12)}
+.prize::before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:var(--blue)}
+.prize.big::before{background:var(--yellow)}
+.prize:nth-child(3n+1)::before{background:var(--green)}
+.prize:nth-child(3n+2)::before{background:var(--cyan)}
+.prize.big::before{background:var(--yellow)}
+.prize .ph{display:flex;align-items:center;gap:10px}
+.prize .pe{font-size:28px}
+.prize .pt{font-weight:700;font-size:16px;font-family:'Roboto';text-transform:uppercase;line-height:1}
+.prize .amt{margin-left:auto;background:var(--blue);color:#fff;font-weight:700;padding:4px 11px;border-radius:4px;font-size:15px;font-family:'Roboto'}
+.prize.big .amt{background:var(--yellow);color:var(--ink)}
+.prize .pd{color:var(--mut);font-size:12.5px;margin:9px 0 12px;line-height:1.35;min-height:34px}
+.tbd{display:flex;align-items:center;gap:9px;background:var(--soft);border-radius:6px;padding:13px 12px;color:var(--mut);font-size:13px;font-weight:500}
+.dual{display:flex;flex-direction:column;gap:7px}
+.miniown{display:flex;align-items:center;gap:8px}
+.miniown img{width:30px;height:30px;border-radius:50%;object-fit:cover;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.15)}
+.miniown .lg{font-size:10px;font-weight:700;color:#fff;padding:2px 6px;border-radius:3px;flex:0 0 auto;font-family:'Roboto'}
+.lg.l1{background:var(--blue)} .lg.l2{background:var(--green)}
+.miniown .nm{font-size:12.5px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* ---------- GOLDEN BOOT ---------- */
+.boot{background:var(--card);border-radius:8px;border:1px solid var(--line);box-shadow:0 6px 18px rgba(20,40,80,.06);padding:8px 6px}
+.row{display:grid;grid-template-columns:34px 1fr auto;align-items:center;gap:12px;padding:11px 14px;border-radius:6px}
+.row:nth-child(odd){background:var(--soft)}
+.rk{font-family:'Roboto';font-weight:700;font-size:18px;color:var(--slate);text-align:center}
+.rk.g1{color:#d9a200} .rk.g2{color:#9aa7b6} .rk.g3{color:#c98a3a}
+.pl{display:flex;align-items:center;gap:11px;min-width:0}
+.pl .nm{font-weight:700;font-size:15px}
+.pl .ct{font-size:12px;color:var(--mut)}
+.bar{height:8px;border-radius:4px;background:var(--green);margin-top:5px}
+.owners{display:flex;gap:6px;align-items:center;flex:0 0 auto}
+.owners img{width:34px;height:34px;border-radius:50%;object-fit:cover;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.18)}
+.owners .gtag{font-size:9px;font-weight:700;color:#fff;width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-left:-14px;border:1.5px solid #fff}
+.gtag.l1{background:var(--blue)} .gtag.l2{background:var(--green)}
+.goals{font-family:'Roboto';font-weight:700;font-size:22px;color:var(--blue);min-width:30px;text-align:center}
+.goals small{font-size:11px;color:var(--mut);font-weight:500;display:block;margin-top:-3px;font-family:'Roboto'}
+.muted-note{text-align:center;color:var(--mut);font-size:13px;padding:14px}
+
+/* ---------- TEAMS ---------- */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:0 4px 16px}
+.filters button{border:1px solid var(--line);background:#fff;color:var(--slate);font-family:'Roboto';text-transform:uppercase;font-size:13.5px;font-weight:700;
+  padding:7px 14px;border-radius:4px;cursor:pointer;transition:.15s}
+.filters button.on{background:var(--blue);color:#fff;border-color:var(--blue)}
+.teams{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:13px}
+.team{background:var(--card);border-radius:8px;border:1px solid var(--line);padding:13px;display:flex;
+  align-items:center;gap:11px;box-shadow:0 5px 14px rgba(20,40,80,.05);transition:.15s;position:relative}
+.team:hover{transform:translateY(-3px)}
+.team.out{opacity:.5;filter:grayscale(.6)}
+.team .fl{font-size:30px;line-height:1;flex:0 0 auto}
+.team .ti{min-width:0;flex:1}
+.team .tn{font-weight:700;font-size:14.5px;display:flex;align-items:center;gap:6px;font-family:'Roboto';text-transform:uppercase}
+.team .grp{font-size:10px;font-weight:700;background:var(--soft);color:var(--mut);padding:1px 6px;border-radius:3px}
+.team .ow{display:flex;align-items:center;gap:6px;margin-top:5px}
+.team .ow img{width:24px;height:24px;border-radius:50%;object-fit:cover;border:1.5px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.2)}
+.team .ow span{font-size:12px;color:var(--mut);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.team .gd{position:absolute;top:10px;right:11px;font-size:11px;font-weight:700;color:var(--mut);font-family:'Roboto'}
+.team .gd b{color:var(--green)}
+
+/* ---------- FINDER ---------- */
+.finder{background:var(--card);border-radius:8px;border:1px solid var(--line);box-shadow:0 6px 18px rgba(20,40,80,.06);padding:20px}
+.finder input{width:100%;border:2px solid var(--line);border-radius:6px;padding:14px 16px;font-size:16px;font-family:'Roboto';outline:none}
+.finder input:focus{border-color:var(--blue)}
+#finderOut{margin-top:16px;display:grid;gap:12px}
+.pcard{border:1px solid var(--line);border-radius:8px;padding:14px;background:var(--soft)}
+.pcard .top{display:flex;align-items:center;gap:12px}
+.pcard .top img{width:54px;height:54px;border-radius:50%;object-fit:cover;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.18)}
+.pcard .top .nm{font-family:'Roboto';text-transform:uppercase;font-weight:700;font-size:19px}
+.pcard .ents{margin-top:11px;display:grid;gap:8px}
+.ent{display:flex;align-items:center;gap:9px;background:#fff;border-radius:6px;padding:9px 11px;font-size:14px}
+.ent .tag{font-size:10px;font-weight:700;color:#fff;padding:3px 8px;border-radius:3px;flex:0 0 auto;font-family:'Roboto'}
+.ent .tag.l1{background:var(--blue)} .ent .tag.l2{background:var(--green)} .ent .tag.tm{background:var(--slate)}
+.ent .v{font-weight:500}
+.ent .g{margin-left:auto;font-weight:700;color:var(--green);font-size:13px}
+.unpaid{display:inline-block;background:#ffe3e0;color:var(--red);font-size:10px;font-weight:700;padding:2px 7px;border-radius:3px;margin-left:6px;font-family:'Roboto'}
+
+/* ---------- RESULTS ---------- */
+.results{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.match{background:var(--card);border-radius:8px;border:1px solid var(--line);padding:13px 15px;box-shadow:0 5px 14px rgba(20,40,80,.05)}
+.match .mdate{font-size:11px;color:var(--mut);font-weight:700;margin-bottom:7px;font-family:'Roboto'}
+.match .sc{display:flex;align-items:center;gap:8px;font-weight:700;font-size:15px}
+.match .sc .t{display:flex;align-items:center;gap:6px;flex:1}
+.match .sc .t.away{justify-content:flex-end;text-align:right}
+.match .sc .fl{font-size:22px}
+.match .sc .res{background:var(--blue);color:#fff;font-family:'Roboto';padding:3px 10px;border-radius:4px;font-size:15px}
+.match .note{font-size:11.5px;color:var(--mut);margin-top:8px;font-style:italic}
+
+footer{text-align:center;color:var(--mut);font-size:12.5px;padding:26px 16px 50px;line-height:1.7}
+footer img{height:26px;margin:0 auto 12px;opacity:.85}
+footer b{color:var(--ink)}
+@media(max-width:560px){.sec-head .hint{display:none}.row{grid-template-columns:28px 1fr auto;gap:8px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <canvas id="confetti"></canvas>
+  <div class="hero-inner">
+    <img class="logo" src="assets/rshp-white.svg" alt="RSHP">
+    <h1>World Cup 2026 <span class="em">Sweepstake</span></h1>
+    <p class="sub">96 entries · 2 leagues · 9 prizes · the only office tournament that matters</p>
+    <div class="chips" id="heroChips"></div>
+  </div>
+</header>
+
+<nav><div class="nav-in" id="nav"></div></nav>
+
+<div class="wrap">
+
+  <section id="prizes">
+    <div class="sec-head"><span class="ic">🏆</span><h2>The Prize Board</h2>
+      <span class="hint">£240 up for grabs. Leaders update daily.</span></div>
+    <div class="prizes" id="prizeGrid"></div>
+  </section>
+
+  <section id="boot">
+    <div class="sec-head"><span class="ic">👟</span><h2>Golden Boot Race</h2>
+      <span class="hint">Your drafted players, ranked by goals. Each footballer is held by one person in each league.</span></div>
+    <div class="boot" id="bootList"></div>
+  </section>
+
+  <section id="teams">
+    <div class="sec-head"><span class="ic">🌍</span><h2>Who's Still In</h2>
+      <span class="hint">All 48 nations and who drew them (one owner per league). Greyed-out = knocked out.</span></div>
+    <div class="filters" id="teamFilters"></div>
+    <div class="teams" id="teamGrid"></div>
+  </section>
+
+  <section id="finder">
+    <div class="sec-head"><span class="ic">🔎</span><h2>Find Your Picks</h2>
+      <span class="hint">Type a name to see everything they're holding.</span></div>
+    <div class="finder">
+      <input id="finderInput" placeholder="Start typing a name… e.g. Sam, Erica, Luca">
+      <div id="finderOut"></div>
+    </div>
+  </section>
+
+  <section id="results">
+    <div class="sec-head"><span class="ic">📋</span><h2>Latest Results</h2>
+      <span class="hint">Group-stage scores so far.</span></div>
+    <div class="results" id="resultGrid"></div>
+  </section>
+
+</div>
+
+<footer>
+  <img src="assets/rshp-blue.svg" alt="RSHP">
+  <div><b>World Cup 2026 Sweepstake</b> · auto-updated after each day's games</div>
+  <div id="footMeta"></div>
+  <div style="margin-top:6px;opacity:.8">Live scores &amp; Golden Boot data sourced daily from BBC Sport / FIFA.</div>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
