@@ -1,4 +1,4 @@
-/* Office World Cup 2026 Sweepstake — app logic. Reads window.WCDATA from data.js. */
+/* RSHP World Cup 2026 Sweepstake — app logic. Reads window.WCDATA from data.js. */
 const D = window.WCDATA;
 const $ = s => document.querySelector(s);
 const el = (t,c,h)=>{const e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e;};
@@ -226,30 +226,36 @@ secs.forEach(([id,lbl])=>{ const b=el('button',null,lbl); b.onclick=()=>document
 const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){nav.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.id===e.target.id));}});},{rootMargin:'-45% 0px -50% 0px'});
 secs.forEach(([id])=>obs.observe(document.getElementById(id)));
 
-/* CONFETTI */
+/* DIRECTOR BUBBLES — floating director faces drift up the banner (replaces confetti) */
 (function(){
   const cv=$('#confetti'); if(!cv) return;
   const ctx=cv.getContext('2d');
-  let W=0,H=0; const parts=[];
-  const cols=['#FFCD00','#00B96E','#00B5E2','#FF5442','#FF8A40','#FF5AA0','#96D200','#ffffff'];
+  let W=0,H=0;
+  const srcs=['assets/directors/d1.jpg','assets/directors/d2.jpg','assets/directors/d3.jpg','assets/directors/d4.jpg','assets/directors/d5.jpg'];
+  const imgs=srcs.map(s=>{const i=new Image(); i.src=s; return i;});
+  const bubbles=[];
   function rs(){ W=cv.width=cv.offsetWidth; H=cv.height=cv.offsetHeight; }
   rs(); window.addEventListener('resize', rs);
-  for(let i=0;i<90;i++){
-    parts.push({ x:Math.random()*W, y:Math.random()*H, r:4+Math.random()*5,
-      c:cols[i%cols.length], s:0.5+Math.random()*1.4, a:Math.random()*6.28, sw:0.5+Math.random() });
+  for(let i=0;i<16;i++){
+    bubbles.push({ x:Math.random()*W, y:Math.random()*(H+200), r:13+Math.random()*15,
+      vy:-(0.22+Math.random()*0.5), a:Math.random()*6.28, sw:0.25+Math.random()*0.55, img:imgs[i%imgs.length] });
   }
-  function loop(){
-    ctx.clearRect(0,0,W,H);
-    ctx.globalAlpha=0.85;
-    for(const p of parts){
-      p.y+=p.s; p.a+=0.03; p.x+=Math.sin(p.a)*p.sw;
-      if(p.y>H+10){ p.y=-10; p.x=Math.random()*W; }
-      ctx.fillStyle=p.c; ctx.beginPath();
-      ctx.ellipse(p.x,p.y,p.r,p.r*0.5,p.a,0,6.28); ctx.fill();
-    }
-    ctx.globalAlpha=1;
-    requestAnimationFrame(loop);
+  function bubble(b){
+    b.y+=b.vy; b.a+=0.01; b.x+=Math.sin(b.a)*b.sw;
+    if(b.y < -b.r-6){ b.y=H+b.r+6; b.x=Math.random()*W; }
+    ctx.save();
+    ctx.beginPath(); ctx.arc(b.x,b.y,b.r,0,6.28); ctx.closePath();
+    ctx.shadowColor='rgba(0,0,0,.25)'; ctx.shadowBlur=6; ctx.shadowOffsetY=2;
+    ctx.fillStyle='#ffffff'; ctx.fill();
+    ctx.restore();
+    ctx.save();
+    ctx.beginPath(); ctx.arc(b.x,b.y,b.r-2,0,6.28); ctx.closePath(); ctx.clip();
+    const im=b.img, d=(b.r-2)*2;
+    if(im.complete && im.naturalWidth) ctx.drawImage(im, b.x-(b.r-2), b.y-(b.r-2), d, d);
+    else { ctx.fillStyle='#0d3a8f'; ctx.fillRect(b.x-b.r,b.y-b.r,b.r*2,b.r*2); }
+    ctx.restore();
   }
+  function loop(){ ctx.clearRect(0,0,W,H); for(const b of bubbles) bubble(b); requestAnimationFrame(loop); }
   loop();
 })();
 
