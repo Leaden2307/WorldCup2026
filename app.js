@@ -10,7 +10,7 @@ function first(n){return (n||'').split(' ')[0];}
 $('#heroChips').append(
   el('span','chip','📅 Updated <b>'+D.meta.updated+'</b>'),
   el('span','chip','🎬 '+D.meta.stage),
-  el('span','chip','💷 <b>£240</b> in prizes')
+  el('span','chip','💷 <b>£480</b> in prizes')
 );
 $('#footMeta').textContent = D.meta.stage+' — '+D.meta.note;
 
@@ -247,6 +247,12 @@ secs.forEach(([id])=>obs.observe(document.getElementById(id)));
       return { x:r+Math.random()*Math.max(1,W-2*r), y:Math.random()*Math.max(1,H*0.5),
                vx:(Math.random()*2-1)*1.7, vy:Math.random()*2, r, img:cache[p.av], big:p.big };
     });
+    // toss in a few classic footballs for good measure
+    for(let i=0;i<3;i++){
+      const r=15+Math.random()*7;
+      balls.push({ x:r+Math.random()*Math.max(1,W-2*r), y:Math.random()*Math.max(1,H*0.5),
+        vx:(Math.random()*2-1)*2.2, vy:Math.random()*2, r, ball:true });
+    }
   }
   function rs(){ W=cv.width=cv.offsetWidth; H=cv.height=cv.offsetHeight; build(); }
   rs(); window.addEventListener('resize', rs);
@@ -262,6 +268,15 @@ secs.forEach(([id])=>obs.observe(document.getElementById(id)));
       if(Math.abs(b.vx)>3.2) b.vx*=0.6;
     }
     if(b.y<b.r && b.vy<0){ b.y=b.r; b.vy=Math.abs(b.vy)*REST; }
+    if(b.ball){
+      // a proper football
+      ctx.save();
+      ctx.shadowColor='rgba(0,0,0,.28)'; ctx.shadowBlur=5; ctx.shadowOffsetY=2;
+      ctx.font=(b.r*2.2)+'px serif'; ctx.textAlign='center'; ctx.textBaseline='middle';
+      ctx.fillText('⚽', b.x, b.y);
+      ctx.restore();
+      return;
+    }
     // shadow + white ring
     ctx.save();
     ctx.beginPath(); ctx.arc(b.x,b.y,b.r,0,6.28); ctx.closePath();
