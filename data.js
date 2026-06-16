@@ -96,8 +96,8 @@ window.WCDATA = {
    "ag": 0,
    "date": "Jun 11",
    "note": "Quinones & Lira; South Africa down to 9 men (2 reds)",
-   "homeFlag": "🇲🇽",
-   "awayFlag": "🇿🇦"
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/mx.svg\" alt=\"Mexico\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/za.svg\" alt=\"South Africa\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
   },
   {
    "home": "South Korea",
@@ -106,8 +106,8 @@ window.WCDATA = {
    "ag": 1,
    "date": "Jun 11",
    "note": "",
-   "homeFlag": "🇰🇷",
-   "awayFlag": "🇨🇿"
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/kr.svg\" alt=\"South Korea\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/cz.svg\" alt=\"Czech Republic\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
   },
   {
    "home": "USA",
@@ -116,8 +116,8 @@ window.WCDATA = {
    "ag": 1,
    "date": "Jun 12",
    "note": "Balogun brace for the hosts",
-   "homeFlag": "🇺🇸",
-   "awayFlag": "🇵🇾"
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/us.svg\" alt=\"USA\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/py.svg\" alt=\"Paraguay\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
   },
   {
    "home": "Germany",
@@ -126,8 +126,8 @@ window.WCDATA = {
    "ag": 1,
    "date": "Jun 14",
    "note": "Havertz, Musiala, Nmecha, Schlotterbeck +",
-   "homeFlag": "🇩🇪",
-   "awayFlag": "🇨🇼"
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/de.svg\" alt=\"Germany\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/cw.svg\" alt=\"Curacao\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
   },
   {
    "home": "Netherlands",
@@ -136,8 +136,8 @@ window.WCDATA = {
    "ag": 2,
    "date": "Jun 14",
    "note": "",
-   "homeFlag": "🇳🇱",
-   "awayFlag": "🇯🇵"
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/nl.svg\" alt=\"Netherlands\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/jp.svg\" alt=\"Japan\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
   },
   {
    "home": "Ivory Coast",
@@ -146,8 +146,8 @@ window.WCDATA = {
    "ag": 0,
    "date": "Jun 14",
    "note": "",
-   "homeFlag": "🇨🇮",
-   "awayFlag": "🇪🇨"
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ci.svg\" alt=\"Ivory Coast\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ec.svg\" alt=\"Ecuador\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
   },
   {
    "home": "Sweden",
@@ -156,8 +156,8 @@ window.WCDATA = {
    "ag": 1,
    "date": "Jun 14",
    "note": "Ayari brace, Isak, Gyokeres, Svanberg",
-   "homeFlag": "🇸🇪",
-   "awayFlag": "🇹🇳"
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/se.svg\" alt=\"Sweden\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/tn.svg\" alt=\"Tunisia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
   },
   {
    "home": "New Zealand",
@@ -166,8 +166,8 @@ window.WCDATA = {
    "ag": 2,
    "date": "Jun 15",
    "note": "Elijah Just brace for the Kiwis",
-   "homeFlag": "🇳🇿",
-   "awayFlag": "🇮🇷"
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/nz.svg\" alt=\"New Zealand\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ir.svg\" alt=\"Iran\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
   },
   {
    "home": "Spain",
@@ -176,8 +176,8 @@ window.WCDATA = {
    "ag": 0,
    "date": "Jun 15",
    "note": "Cape Verde grab a historic first WC point",
-   "homeFlag": "🇪🇸",
-   "awayFlag": "🇨🇻"
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/es.svg\" alt=\"Spain\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/cv.svg\" alt=\"Cape Verde\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
   },
   {
    "home": "Belgium",
@@ -186,8 +186,8 @@ window.WCDATA = {
    "ag": 1,
    "date": "Jun 15",
    "note": "Salah turns provider; honours even",
-   "homeFlag": "🇧🇪",
-   "awayFlag": "🇪🇬"
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/be.svg\" alt=\"Belgium\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/eg.svg\" alt=\"Egypt\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
   },
   {
    "home": "Saudi Arabia",
@@ -196,58 +196,8 @@ window.WCDATA = {
    "ag": 1,
    "date": "Jun 15",
    "note": "Maxi Araujo rescues a point for Uruguay",
-   "homeFlag": "🇸🇦",
-   "awayFlag": "🇺🇾"
-  },
-  {
-   "home": "Canada",
-   "hg": 1,
-   "away": "Bosnia and Herzegovina",
-   "ag": 1,
-   "date": "Jun 12",
-   "note": "Cyle Larin earns Canada a historic first WC point",
-   "homeFlag": "🇨🇦",
-   "awayFlag": "🇧🇦"
-  },
-  {
-   "home": "Brazil",
-   "hg": 1,
-   "away": "Morocco",
-   "ag": 1,
-   "date": "Jun 13",
-   "note": "Vinicius Jr stunner; Saibari levels for Morocco",
-   "homeFlag": "🇧🇷",
-   "awayFlag": "🇲🇦"
-  },
-  {
-   "home": "Qatar",
-   "hg": 1,
-   "away": "Switzerland",
-   "ag": 1,
-   "date": "Jun 13",
-   "note": "Embolo penalty cancelled out by Khoukhi in stoppage time",
-   "homeFlag": "🇶🇦",
-   "awayFlag": "🇨🇭"
-  },
-  {
-   "home": "Haiti",
-   "hg": 0,
-   "away": "Scotland",
-   "ag": 1,
-   "date": "Jun 13",
-   "note": "McGinn deflected winner ends Scotland's 28-year drought",
-   "homeFlag": "🇭🇹",
-   "awayFlag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿"
-  },
-  {
-   "home": "Australia",
-   "hg": 2,
-   "away": "Turkey",
-   "ag": 0,
-   "date": "Jun 13",
-   "note": "Irankunda & Metcalfe sink Turkey",
-   "homeFlag": "🇦🇺",
-   "awayFlag": "🇹🇷"
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/sa.svg\" alt=\"Saudi Arabia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/uy.svg\" alt=\"Uruguay\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
   }
  ],
  "otherScorers": [],
@@ -255,7 +205,7 @@ window.WCDATA = {
   {
    "player": "Nicholas Jackson",
    "country": "Senegal",
-   "flag": "🇸🇳",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/sn.svg\" alt=\"Senegal\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -273,7 +223,7 @@ window.WCDATA = {
   {
    "player": "Alexander Isak",
    "country": "Sweden",
-   "flag": "🇸🇪",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/se.svg\" alt=\"Sweden\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 1,
    "owners": {
     "league1": {
@@ -291,7 +241,7 @@ window.WCDATA = {
   {
    "player": "Raphinha",
    "country": "Brazil",
-   "flag": "🇧🇷",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/br.svg\" alt=\"Brazil\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -309,7 +259,7 @@ window.WCDATA = {
   {
    "player": "Mikel Oyarzabal",
    "country": "Spain",
-   "flag": "🇪🇸",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/es.svg\" alt=\"Spain\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -327,7 +277,7 @@ window.WCDATA = {
   {
    "player": "Enner Valencia",
    "country": "Ecuador",
-   "flag": "🇪🇨",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/ec.svg\" alt=\"Ecuador\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -345,7 +295,7 @@ window.WCDATA = {
   {
    "player": "Julian Alvarez",
    "country": "Argentina",
-   "flag": "🇦🇷",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/ar.svg\" alt=\"Argentina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -363,7 +313,7 @@ window.WCDATA = {
   {
    "player": "Desire Doue",
    "country": "France",
-   "flag": "🇫🇷",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -381,7 +331,7 @@ window.WCDATA = {
   {
    "player": "Antoine Semenyo",
    "country": "Ghana",
-   "flag": "🇬🇭",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/gh.svg\" alt=\"Ghana\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -399,7 +349,7 @@ window.WCDATA = {
   {
    "player": "Kenan Yildiz",
    "country": "Turkey",
-   "flag": "🇹🇷",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/tr.svg\" alt=\"Turkey\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -417,8 +367,8 @@ window.WCDATA = {
   {
    "player": "Vinicius Junior",
    "country": "Brazil",
-   "flag": "🇧🇷",
-   "goals": 1,
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/br.svg\" alt=\"Brazil\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "goals": 0,
    "owners": {
     "league1": {
      "name": "Kit Lee Smith",
@@ -435,7 +385,7 @@ window.WCDATA = {
   {
    "player": "Michael Olise",
    "country": "France",
-   "flag": "🇫🇷",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -453,7 +403,7 @@ window.WCDATA = {
   {
    "player": "Ferran Torres",
    "country": "Spain",
-   "flag": "🇪🇸",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/es.svg\" alt=\"Spain\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -471,7 +421,7 @@ window.WCDATA = {
   {
    "player": "Jonathan David",
    "country": "Canada",
-   "flag": "🇨🇦",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/ca.svg\" alt=\"Canada\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -489,7 +439,7 @@ window.WCDATA = {
   {
    "player": "Ousmane Dembele",
    "country": "France",
-   "flag": "🇫🇷",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -507,7 +457,7 @@ window.WCDATA = {
   {
    "player": "Romelu Lukaku",
    "country": "Belgium",
-   "flag": "🇧🇪",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/be.svg\" alt=\"Belgium\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -525,7 +475,7 @@ window.WCDATA = {
   {
    "player": "Cristiano Ronaldo",
    "country": "Portugal",
-   "flag": "🇵🇹",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/pt.svg\" alt=\"Portugal\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -543,7 +493,7 @@ window.WCDATA = {
   {
    "player": "Memphis Depay",
    "country": "Netherlands",
-   "flag": "🇳🇱",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/nl.svg\" alt=\"Netherlands\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -561,7 +511,7 @@ window.WCDATA = {
   {
    "player": "Viktor Gyokeres",
    "country": "Sweden",
-   "flag": "🇸🇪",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/se.svg\" alt=\"Sweden\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 1,
    "owners": {
     "league1": {
@@ -579,7 +529,7 @@ window.WCDATA = {
   {
    "player": "Erling Haaland",
    "country": "Norway",
-   "flag": "🇳🇴",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/no.svg\" alt=\"Norway\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -597,7 +547,7 @@ window.WCDATA = {
   {
    "player": "Cody Gakpo",
    "country": "Netherlands",
-   "flag": "🇳🇱",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/nl.svg\" alt=\"Netherlands\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -615,7 +565,7 @@ window.WCDATA = {
   {
    "player": "Matheus Cunha",
    "country": "Brazil",
-   "flag": "🇧🇷",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/br.svg\" alt=\"Brazil\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -633,7 +583,7 @@ window.WCDATA = {
   {
    "player": "Christian Pulisic",
    "country": "USA",
-   "flag": "🇺🇸",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/us.svg\" alt=\"USA\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -651,7 +601,7 @@ window.WCDATA = {
   {
    "player": "Marcus Rashford",
    "country": "England",
-   "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -669,7 +619,7 @@ window.WCDATA = {
   {
    "player": "Kai Havertz",
    "country": "Germany",
-   "flag": "🇩🇪",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/de.svg\" alt=\"Germany\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 2,
    "owners": {
     "league1": {
@@ -687,7 +637,7 @@ window.WCDATA = {
   {
    "player": "Lautaro Martinez",
    "country": "Argentina",
-   "flag": "🇦🇷",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/ar.svg\" alt=\"Argentina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -705,7 +655,7 @@ window.WCDATA = {
   {
    "player": "Jude Bellingham",
    "country": "England",
-   "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -723,7 +673,7 @@ window.WCDATA = {
   {
    "player": "Folarin Balogun",
    "country": "USA",
-   "flag": "🇺🇸",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/us.svg\" alt=\"USA\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 2,
    "owners": {
     "league1": {
@@ -741,8 +691,8 @@ window.WCDATA = {
   {
    "player": "John McGinn",
    "country": "Scotland",
-   "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
-   "goals": 1,
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-sct.svg\" alt=\"Scotland\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "goals": 0,
    "owners": {
     "league1": {
      "name": "Jay Lee",
@@ -759,7 +709,7 @@ window.WCDATA = {
   {
    "player": "Keito Nakamura",
    "country": "Japan",
-   "flag": "🇯🇵",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/jp.svg\" alt=\"Japan\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -777,7 +727,7 @@ window.WCDATA = {
   {
    "player": "Darwin Nunez",
    "country": "Uruguay",
-   "flag": "🇺🇾",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/uy.svg\" alt=\"Uruguay\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -795,7 +745,7 @@ window.WCDATA = {
   {
    "player": "Harry Kane",
    "country": "England",
-   "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -813,7 +763,7 @@ window.WCDATA = {
   {
    "player": "Scott McTominay",
    "country": "Scotland",
-   "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-sct.svg\" alt=\"Scotland\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -831,7 +781,7 @@ window.WCDATA = {
   {
    "player": "Mohamed Salah",
    "country": "Egypt",
-   "flag": "🇪🇬",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/eg.svg\" alt=\"Egypt\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -849,7 +799,7 @@ window.WCDATA = {
   {
    "player": "Kevin De Bruyne",
    "country": "Belgium",
-   "flag": "🇧🇪",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/be.svg\" alt=\"Belgium\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -867,7 +817,7 @@ window.WCDATA = {
   {
    "player": "Jamal Musiala",
    "country": "Germany",
-   "flag": "🇩🇪",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/de.svg\" alt=\"Germany\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 1,
    "owners": {
     "league1": {
@@ -885,8 +835,8 @@ window.WCDATA = {
   {
    "player": "Breel Embolo",
    "country": "Switzerland",
-   "flag": "🇨🇭",
-   "goals": 1,
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/ch.svg\" alt=\"Switzerland\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "goals": 0,
    "owners": {
     "league1": {
      "name": "Ian Birtles",
@@ -903,7 +853,7 @@ window.WCDATA = {
   {
    "player": "Raul Jimenez",
    "country": "Mexico",
-   "flag": "🇲🇽",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/mx.svg\" alt=\"Mexico\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -921,7 +871,7 @@ window.WCDATA = {
   {
    "player": "Bruno Fernandes",
    "country": "Portugal",
-   "flag": "🇵🇹",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/pt.svg\" alt=\"Portugal\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -939,7 +889,7 @@ window.WCDATA = {
   {
    "player": "Lamine Yamal",
    "country": "Spain",
-   "flag": "🇪🇸",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/es.svg\" alt=\"Spain\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -957,7 +907,7 @@ window.WCDATA = {
   {
    "player": "Kylian Mbappe",
    "country": "France",
-   "flag": "🇫🇷",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -975,7 +925,7 @@ window.WCDATA = {
   {
    "player": "Brenden Aaronson",
    "country": "USA",
-   "flag": "🇺🇸",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/us.svg\" alt=\"USA\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -993,7 +943,7 @@ window.WCDATA = {
   {
    "player": "Lionel Messi",
    "country": "Argentina",
-   "flag": "🇦🇷",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/ar.svg\" alt=\"Argentina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -1011,7 +961,7 @@ window.WCDATA = {
   {
    "player": "Florian Wirtz",
    "country": "Germany",
-   "flag": "🇩🇪",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/de.svg\" alt=\"Germany\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -1029,7 +979,7 @@ window.WCDATA = {
   {
    "player": "Luis Diaz",
    "country": "Colombia",
-   "flag": "🇨🇴",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/co.svg\" alt=\"Colombia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -1047,7 +997,7 @@ window.WCDATA = {
   {
    "player": "Jeremy Doku",
    "country": "Belgium",
-   "flag": "🇧🇪",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/be.svg\" alt=\"Belgium\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -1065,7 +1015,7 @@ window.WCDATA = {
   {
    "player": "Bukayo Saka",
    "country": "England",
-   "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -1083,7 +1033,7 @@ window.WCDATA = {
   {
    "player": "Youssef El Kaabi",
    "country": "Morocco",
-   "flag": "🇲🇦",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/ma.svg\" alt=\"Morocco\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -1101,7 +1051,7 @@ window.WCDATA = {
   {
    "player": "Neymar",
    "country": "Brazil",
-   "flag": "🇧🇷",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/br.svg\" alt=\"Brazil\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "goals": 0,
    "owners": {
     "league1": {
@@ -1120,7 +1070,7 @@ window.WCDATA = {
  "teams": [
   {
    "team": "Panama",
-   "flag": "🇵🇦",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/pa.svg\" alt=\"Panama\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "L",
    "owners": [
     {
@@ -1144,7 +1094,7 @@ window.WCDATA = {
   },
   {
    "team": "Cape Verde",
-   "flag": "🇨🇻",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/cv.svg\" alt=\"Cape Verde\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "H",
    "owners": [
     {
@@ -1168,7 +1118,7 @@ window.WCDATA = {
   },
   {
    "team": "Belgium",
-   "flag": "🇧🇪",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/be.svg\" alt=\"Belgium\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "G",
    "owners": [
     {
@@ -1192,7 +1142,7 @@ window.WCDATA = {
   },
   {
    "team": "Algeria",
-   "flag": "🇩🇿",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/dz.svg\" alt=\"Algeria\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "J",
    "owners": [
     {
@@ -1216,7 +1166,7 @@ window.WCDATA = {
   },
   {
    "team": "Netherlands",
-   "flag": "🇳🇱",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/nl.svg\" alt=\"Netherlands\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "F",
    "owners": [
     {
@@ -1240,7 +1190,7 @@ window.WCDATA = {
   },
   {
    "team": "Senegal",
-   "flag": "🇸🇳",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/sn.svg\" alt=\"Senegal\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "I",
    "owners": [
     {
@@ -1264,7 +1214,7 @@ window.WCDATA = {
   },
   {
    "team": "Uruguay",
-   "flag": "🇺🇾",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/uy.svg\" alt=\"Uruguay\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "H",
    "owners": [
     {
@@ -1288,7 +1238,7 @@ window.WCDATA = {
   },
   {
    "team": "Ghana",
-   "flag": "🇬🇭",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/gh.svg\" alt=\"Ghana\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "L",
    "owners": [
     {
@@ -1312,7 +1262,7 @@ window.WCDATA = {
   },
   {
    "team": "DR Congo",
-   "flag": "🇨🇩",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/cd.svg\" alt=\"DR Congo\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "K",
    "owners": [
     {
@@ -1336,7 +1286,7 @@ window.WCDATA = {
   },
   {
    "team": "Norway",
-   "flag": "🇳🇴",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/no.svg\" alt=\"Norway\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "I",
    "owners": [
     {
@@ -1360,7 +1310,7 @@ window.WCDATA = {
   },
   {
    "team": "Scotland",
-   "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-sct.svg\" alt=\"Scotland\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "C",
    "owners": [
     {
@@ -1376,15 +1326,15 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 1,
+   "gf": 0,
    "ga": 0,
    "reds": 0,
-   "played": 1,
+   "played": 0,
    "status": "alive"
   },
   {
    "team": "Uzbekistan",
-   "flag": "🇺🇿",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/uz.svg\" alt=\"Uzbekistan\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "K",
    "owners": [
     {
@@ -1408,7 +1358,7 @@ window.WCDATA = {
   },
   {
    "team": "Tunisia",
-   "flag": "🇹🇳",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/tn.svg\" alt=\"Tunisia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "F",
    "owners": [
     {
@@ -1432,7 +1382,7 @@ window.WCDATA = {
   },
   {
    "team": "Paraguay",
-   "flag": "🇵🇾",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/py.svg\" alt=\"Paraguay\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "D",
    "owners": [
     {
@@ -1456,7 +1406,7 @@ window.WCDATA = {
   },
   {
    "team": "Colombia",
-   "flag": "🇨🇴",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/co.svg\" alt=\"Colombia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "K",
    "owners": [
     {
@@ -1480,7 +1430,7 @@ window.WCDATA = {
   },
   {
    "team": "Spain",
-   "flag": "🇪🇸",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/es.svg\" alt=\"Spain\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "H",
    "owners": [
     {
@@ -1504,7 +1454,7 @@ window.WCDATA = {
   },
   {
    "team": "Curacao",
-   "flag": "🇨🇼",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/cw.svg\" alt=\"Curacao\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "E",
    "owners": [
     {
@@ -1528,7 +1478,7 @@ window.WCDATA = {
   },
   {
    "team": "Austria",
-   "flag": "🇦🇹",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/at.svg\" alt=\"Austria\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "J",
    "owners": [
     {
@@ -1552,7 +1502,7 @@ window.WCDATA = {
   },
   {
    "team": "Brazil",
-   "flag": "🇧🇷",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/br.svg\" alt=\"Brazil\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "C",
    "owners": [
     {
@@ -1568,15 +1518,15 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 1,
-   "ga": 1,
+   "gf": 0,
+   "ga": 0,
    "reds": 0,
-   "played": 1,
+   "played": 0,
    "status": "alive"
   },
   {
    "team": "Japan",
-   "flag": "🇯🇵",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/jp.svg\" alt=\"Japan\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "F",
    "owners": [
     {
@@ -1600,7 +1550,7 @@ window.WCDATA = {
   },
   {
    "team": "Ivory Coast",
-   "flag": "🇨🇮",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/ci.svg\" alt=\"Ivory Coast\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "E",
    "owners": [
     {
@@ -1624,7 +1574,7 @@ window.WCDATA = {
   },
   {
    "team": "New Zealand",
-   "flag": "🇳🇿",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/nz.svg\" alt=\"New Zealand\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "G",
    "owners": [
     {
@@ -1648,7 +1598,7 @@ window.WCDATA = {
   },
   {
    "team": "Ecuador",
-   "flag": "🇪🇨",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/ec.svg\" alt=\"Ecuador\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "E",
    "owners": [
     {
@@ -1672,7 +1622,7 @@ window.WCDATA = {
   },
   {
    "team": "Portugal",
-   "flag": "🇵🇹",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/pt.svg\" alt=\"Portugal\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "K",
    "owners": [
     {
@@ -1696,7 +1646,7 @@ window.WCDATA = {
   },
   {
    "team": "Saudi Arabia",
-   "flag": "🇸🇦",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/sa.svg\" alt=\"Saudi Arabia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "H",
    "owners": [
     {
@@ -1720,7 +1670,7 @@ window.WCDATA = {
   },
   {
    "team": "Croatia",
-   "flag": "🇭🇷",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/hr.svg\" alt=\"Croatia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "L",
    "owners": [
     {
@@ -1744,7 +1694,7 @@ window.WCDATA = {
   },
   {
    "team": "Iraq",
-   "flag": "🇮🇶",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/iq.svg\" alt=\"Iraq\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "I",
    "owners": [
     {
@@ -1768,7 +1718,7 @@ window.WCDATA = {
   },
   {
    "team": "Argentina",
-   "flag": "🇦🇷",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/ar.svg\" alt=\"Argentina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "J",
    "owners": [
     {
@@ -1792,7 +1742,7 @@ window.WCDATA = {
   },
   {
    "team": "South Africa",
-   "flag": "🇿🇦",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/za.svg\" alt=\"South Africa\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "A",
    "owners": [
     {
@@ -1816,7 +1766,7 @@ window.WCDATA = {
   },
   {
    "team": "Iran",
-   "flag": "🇮🇷",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/ir.svg\" alt=\"Iran\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "G",
    "owners": [
     {
@@ -1840,7 +1790,7 @@ window.WCDATA = {
   },
   {
    "team": "Czech Republic",
-   "flag": "🇨🇿",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/cz.svg\" alt=\"Czech Republic\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "A",
    "owners": [
     {
@@ -1864,7 +1814,7 @@ window.WCDATA = {
   },
   {
    "team": "Canada",
-   "flag": "🇨🇦",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/ca.svg\" alt=\"Canada\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "B",
    "owners": [
     {
@@ -1880,15 +1830,15 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 1,
-   "ga": 1,
+   "gf": 0,
+   "ga": 0,
    "reds": 0,
-   "played": 1,
+   "played": 0,
    "status": "alive"
   },
   {
    "team": "England",
-   "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "L",
    "owners": [
     {
@@ -1912,7 +1862,7 @@ window.WCDATA = {
   },
   {
    "team": "Jordan",
-   "flag": "🇯🇴",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/jo.svg\" alt=\"Jordan\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "J",
    "owners": [
     {
@@ -1936,7 +1886,7 @@ window.WCDATA = {
   },
   {
    "team": "Australia",
-   "flag": "🇦🇺",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/au.svg\" alt=\"Australia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "D",
    "owners": [
     {
@@ -1952,15 +1902,15 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 2,
+   "gf": 0,
    "ga": 0,
    "reds": 0,
-   "played": 1,
+   "played": 0,
    "status": "alive"
   },
   {
    "team": "South Korea",
-   "flag": "🇰🇷",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/kr.svg\" alt=\"South Korea\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "A",
    "owners": [
     {
@@ -1984,7 +1934,7 @@ window.WCDATA = {
   },
   {
    "team": "Morocco",
-   "flag": "🇲🇦",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/ma.svg\" alt=\"Morocco\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "C",
    "owners": [
     {
@@ -2000,15 +1950,15 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 1,
-   "ga": 1,
+   "gf": 0,
+   "ga": 0,
    "reds": 0,
-   "played": 1,
+   "played": 0,
    "status": "alive"
   },
   {
    "team": "Sweden",
-   "flag": "🇸🇪",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/se.svg\" alt=\"Sweden\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "F",
    "owners": [
     {
@@ -2032,7 +1982,7 @@ window.WCDATA = {
   },
   {
    "team": "Egypt",
-   "flag": "🇪🇬",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/eg.svg\" alt=\"Egypt\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "G",
    "owners": [
     {
@@ -2056,7 +2006,7 @@ window.WCDATA = {
   },
   {
    "team": "Germany",
-   "flag": "🇩🇪",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/de.svg\" alt=\"Germany\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "E",
    "owners": [
     {
@@ -2080,7 +2030,7 @@ window.WCDATA = {
   },
   {
    "team": "USA",
-   "flag": "🇺🇸",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/us.svg\" alt=\"USA\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "D",
    "owners": [
     {
@@ -2104,7 +2054,7 @@ window.WCDATA = {
   },
   {
    "team": "Switzerland",
-   "flag": "🇨🇭",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/ch.svg\" alt=\"Switzerland\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "B",
    "owners": [
     {
@@ -2120,15 +2070,15 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 1,
-   "ga": 1,
+   "gf": 0,
+   "ga": 0,
    "reds": 0,
-   "played": 1,
+   "played": 0,
    "status": "alive"
   },
   {
    "team": "Qatar",
-   "flag": "🇶🇦",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/qa.svg\" alt=\"Qatar\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "B",
    "owners": [
     {
@@ -2144,15 +2094,15 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 1,
-   "ga": 1,
+   "gf": 0,
+   "ga": 0,
    "reds": 0,
-   "played": 1,
+   "played": 0,
    "status": "alive"
   },
   {
    "team": "Turkey",
-   "flag": "🇹🇷",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/tr.svg\" alt=\"Turkey\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "D",
    "owners": [
     {
@@ -2169,14 +2119,14 @@ window.WCDATA = {
     }
    ],
    "gf": 0,
-   "ga": 2,
+   "ga": 0,
    "reds": 0,
-   "played": 1,
+   "played": 0,
    "status": "alive"
   },
   {
    "team": "Haiti",
-   "flag": "🇭🇹",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/ht.svg\" alt=\"Haiti\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "C",
    "owners": [
     {
@@ -2193,14 +2143,14 @@ window.WCDATA = {
     }
    ],
    "gf": 0,
-   "ga": 1,
+   "ga": 0,
    "reds": 0,
-   "played": 1,
+   "played": 0,
    "status": "alive"
   },
   {
    "team": "Bosnia and Herzegovina",
-   "flag": "🇧🇦",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/ba.svg\" alt=\"Bosnia and Herzegovina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "B",
    "owners": [
     {
@@ -2216,15 +2166,15 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 1,
-   "ga": 1,
+   "gf": 0,
+   "ga": 0,
    "reds": 0,
-   "played": 1,
+   "played": 0,
    "status": "alive"
   },
   {
    "team": "France",
-   "flag": "🇫🇷",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "I",
    "owners": [
     {
@@ -2248,7 +2198,7 @@ window.WCDATA = {
   },
   {
    "team": "Mexico",
-   "flag": "🇲🇽",
+   "flag": "<img class=\"flag\" src=\"https://flagcdn.com/mx.svg\" alt=\"Mexico\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "A",
    "owners": [
     {

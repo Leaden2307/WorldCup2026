@@ -163,20 +163,26 @@ GROUPS = {
  "L":["England","Croatia","Ghana","Panama"],
 }
 team_group = {t:g for g,ts in GROUPS.items() for t in ts}
-FLAG = {
- "Mexico":"\U0001F1F2\U0001F1FD","South Africa":"\U0001F1FF\U0001F1E6","South Korea":"\U0001F1F0\U0001F1F7","Czech Republic":"\U0001F1E8\U0001F1FF",
- "Canada":"\U0001F1E8\U0001F1E6","Bosnia and Herzegovina":"\U0001F1E7\U0001F1E6","Qatar":"\U0001F1F6\U0001F1E6","Switzerland":"\U0001F1E8\U0001F1ED",
- "Brazil":"\U0001F1E7\U0001F1F7","Morocco":"\U0001F1F2\U0001F1E6","Haiti":"\U0001F1ED\U0001F1F9","Scotland":"\U0001F3F4\U000E0067\U000E0062\U000E0073\U000E0063\U000E0074\U000E007F",
- "USA":"\U0001F1FA\U0001F1F8","Paraguay":"\U0001F1F5\U0001F1FE","Australia":"\U0001F1E6\U0001F1FA","Turkey":"\U0001F1F9\U0001F1F7",
- "Germany":"\U0001F1E9\U0001F1EA","Curacao":"\U0001F1E8\U0001F1FC","Ivory Coast":"\U0001F1E8\U0001F1EE","Ecuador":"\U0001F1EA\U0001F1E8",
- "Netherlands":"\U0001F1F3\U0001F1F1","Japan":"\U0001F1EF\U0001F1F5","Sweden":"\U0001F1F8\U0001F1EA","Tunisia":"\U0001F1F9\U0001F1F3",
- "Belgium":"\U0001F1E7\U0001F1EA","Egypt":"\U0001F1EA\U0001F1EC","Iran":"\U0001F1EE\U0001F1F7","New Zealand":"\U0001F1F3\U0001F1FF",
- "Spain":"\U0001F1EA\U0001F1F8","Cape Verde":"\U0001F1E8\U0001F1FB","Saudi Arabia":"\U0001F1F8\U0001F1E6","Uruguay":"\U0001F1FA\U0001F1FE",
- "France":"\U0001F1EB\U0001F1F7","Senegal":"\U0001F1F8\U0001F1F3","Iraq":"\U0001F1EE\U0001F1F6","Norway":"\U0001F1F3\U0001F1F4",
- "Argentina":"\U0001F1E6\U0001F1F7","Algeria":"\U0001F1E9\U0001F1FF","Austria":"\U0001F1E6\U0001F1F9","Jordan":"\U0001F1EF\U0001F1F4",
- "Portugal":"\U0001F1F5\U0001F1F9","DR Congo":"\U0001F1E8\U0001F1E9","Uzbekistan":"\U0001F1FA\U0001F1FF","Colombia":"\U0001F1E8\U0001F1F4",
- "England":"\U0001F3F4\U000E0067\U000E0062\U000E0065\U000E006E\U000E0067\U000E007F","Croatia":"\U0001F1ED\U0001F1F7","Ghana":"\U0001F1EC\U0001F1ED","Panama":"\U0001F1F5\U0001F1E6",
+ISO = {
+ "Mexico":"mx","South Africa":"za","South Korea":"kr","Czech Republic":"cz",
+ "Canada":"ca","Bosnia and Herzegovina":"ba","Qatar":"qa","Switzerland":"ch",
+ "Brazil":"br","Morocco":"ma","Haiti":"ht","Scotland":"gb-sct",
+ "USA":"us","Paraguay":"py","Australia":"au","Turkey":"tr",
+ "Germany":"de","Curacao":"cw","Ivory Coast":"ci","Ecuador":"ec",
+ "Netherlands":"nl","Japan":"jp","Sweden":"se","Tunisia":"tn",
+ "Belgium":"be","Egypt":"eg","Iran":"ir","New Zealand":"nz",
+ "Spain":"es","Cape Verde":"cv","Saudi Arabia":"sa","Uruguay":"uy",
+ "France":"fr","Senegal":"sn","Iraq":"iq","Norway":"no",
+ "Argentina":"ar","Algeria":"dz","Austria":"at","Jordan":"jo",
+ "Portugal":"pt","DR Congo":"cd","Uzbekistan":"uz","Colombia":"co",
+ "England":"gb-eng","Croatia":"hr","Ghana":"gh","Panama":"pa",
 }
+def flag_html(c):
+    code=ISO.get(c)
+    if not code: return "⚽"
+    return ('<img class="flag" src="https://flagcdn.com/'+code+'.svg" alt="'+c+'" loading="lazy" '
+            'style="height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)">')
+FLAG = {c:flag_html(c) for c in ISO}
 # ============================================================
 #  >>>> DAILY UPDATE AREA  (edit these 4 things each day) <<<<
 # ============================================================
@@ -188,7 +194,7 @@ ELIMINATED = set()        # e.g. {"South Africa","Curacao"}
 THROUGH = set()           # e.g. {"Germany","Mexico"}
 # ------------------------------------------------------------
 REDCARDS = {"South Africa":2}   # team -> total red cards (tournament)
-GOALS = {"Folarin Balogun":2,"Kai Havertz":2,"Jamal Musiala":1,"Alexander Isak":1,"Viktor Gyokeres":1,"Vinicius Junior":1,"Breel Embolo":1,"John McGinn":1}
+GOALS = {"Folarin Balogun":2,"Kai Havertz":2,"Jamal Musiala":1,"Alexander Isak":1,"Viktor Gyokeres":1}
 # Scorers NOT drafted by anyone (shown on the board for context, can't win the office prize):
 OTHER_SCORERS = []   # (per request: only show players someone drafted)
 matches = [
@@ -203,11 +209,6 @@ matches = [
  ("Spain",0,"Cape Verde",0,"Jun 15","Cape Verde grab a historic first WC point"),
  ("Belgium",1,"Egypt",1,"Jun 15","Salah turns provider; honours even"),
  ("Saudi Arabia",1,"Uruguay",1,"Jun 15","Maxi Araujo rescues a point for Uruguay"),
- ("Canada",1,"Bosnia and Herzegovina",1,"Jun 12","Cyle Larin earns Canada a historic first WC point"),
- ("Brazil",1,"Morocco",1,"Jun 13","Vinicius Jr stunner; Saibari levels for Morocco"),
- ("Qatar",1,"Switzerland",1,"Jun 13","Embolo penalty cancelled out by Khoukhi in stoppage time"),
- ("Haiti",0,"Scotland",1,"Jun 13","McGinn deflected winner ends Scotland's 28-year drought"),
- ("Australia",2,"Turkey",0,"Jun 13","Irankunda & Metcalfe sink Turkey"),
 ]
 gf={t:0 for t,_,_ in TEAMS}; ga={t:0 for t,_,_ in TEAMS}; played={t:0 for t,_,_ in TEAMS}
 for h,hg,a,ag,d,n in matches:
@@ -241,10 +242,12 @@ avatar_rel={}; missing=[]
 for p in sorted(all_people):
     src=AVATAR_OVERRIDE.get(p) or avatar_for(p)
     fn=norm_key(p)+".jpg"; dest=os.path.join(AV,fn)
-    # reuse if already a small processed file, unless an override exists
-    if p not in AVATAR_OVERRIDE and os.path.exists(dest) and os.path.getsize(dest)<600_000:
-        avatar_rel[p]="avatars/"+fn; continue
-    if src and os.path.exists(src) and make_avatar(src,dest):
+    if src and os.path.exists(src):
+        # original photo available locally -> (re)process it
+        if make_avatar(src,dest) or os.path.exists(dest): avatar_rel[p]="avatars/"+fn
+        else: avatar_rel[p]=None; missing.append(p)
+    elif os.path.exists(dest):
+        # running from a clean clone (no source photos) -> reuse processed avatar
         avatar_rel[p]="avatars/"+fn
     else:
         avatar_rel[p]=None; missing.append(p)
@@ -264,7 +267,7 @@ for t,o1,o2 in TEAMS:
         "gf":gf.get(t,0),"ga":ga.get(t,0),"reds":REDCARDS.get(t,0),"played":played.get(t,0),
         "status":("out" if t in ELIMINATED else ("through" if t in THROUGH else "alive"))})
 data={
- "meta":{"updated":UPDATED,"stage":STAGE,
+ "meta":{"updated":"16 June 2026","stage":"Group Stage · Matchday 1",
    "note":"Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."},
  "prizes":[
    {"id":"winner","title":"World Cup Winner","emoji":"\U0001F3C6","amount":"\u00a3100","desc":"Holder of the team that lifts the trophy","metric":"team","decided":False},
