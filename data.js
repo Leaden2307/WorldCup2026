@@ -198,6 +198,56 @@ window.WCDATA = {
    "note": "Maxi Araujo rescues a point for Uruguay",
    "homeFlag": "🇸🇦",
    "awayFlag": "🇺🇾"
+  },
+  {
+   "home": "Canada",
+   "hg": 1,
+   "away": "Bosnia and Herzegovina",
+   "ag": 1,
+   "date": "Jun 12",
+   "note": "Cyle Larin earns Canada a historic first WC point",
+   "homeFlag": "🇨🇦",
+   "awayFlag": "🇧🇦"
+  },
+  {
+   "home": "Brazil",
+   "hg": 1,
+   "away": "Morocco",
+   "ag": 1,
+   "date": "Jun 13",
+   "note": "Vinicius Jr stunner; Saibari levels for Morocco",
+   "homeFlag": "🇧🇷",
+   "awayFlag": "🇲🇦"
+  },
+  {
+   "home": "Qatar",
+   "hg": 1,
+   "away": "Switzerland",
+   "ag": 1,
+   "date": "Jun 13",
+   "note": "Embolo penalty cancelled out by Khoukhi in stoppage time",
+   "homeFlag": "🇶🇦",
+   "awayFlag": "🇨🇭"
+  },
+  {
+   "home": "Haiti",
+   "hg": 0,
+   "away": "Scotland",
+   "ag": 1,
+   "date": "Jun 13",
+   "note": "McGinn deflected winner ends Scotland's 28-year drought",
+   "homeFlag": "🇭🇹",
+   "awayFlag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿"
+  },
+  {
+   "home": "Australia",
+   "hg": 2,
+   "away": "Turkey",
+   "ag": 0,
+   "date": "Jun 13",
+   "note": "Irankunda & Metcalfe sink Turkey",
+   "homeFlag": "🇦🇺",
+   "awayFlag": "🇹🇷"
   }
  ],
  "otherScorers": [],
@@ -368,7 +418,7 @@ window.WCDATA = {
    "player": "Vinicius Junior",
    "country": "Brazil",
    "flag": "🇧🇷",
-   "goals": 0,
+   "goals": 1,
    "owners": {
     "league1": {
      "name": "Kit Lee Smith",
@@ -692,7 +742,7 @@ window.WCDATA = {
    "player": "John McGinn",
    "country": "Scotland",
    "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
-   "goals": 0,
+   "goals": 1,
    "owners": {
     "league1": {
      "name": "Jay Lee",
@@ -836,7 +886,7 @@ window.WCDATA = {
    "player": "Breel Embolo",
    "country": "Switzerland",
    "flag": "🇨🇭",
-   "goals": 0,
+   "goals": 1,
    "owners": {
     "league1": {
      "name": "Ian Birtles",
@@ -1326,10 +1376,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
+   "gf": 1,
    "ga": 0,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -1518,10 +1568,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
-   "ga": 0,
+   "gf": 1,
+   "ga": 1,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -1830,10 +1880,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
-   "ga": 0,
+   "gf": 1,
+   "ga": 1,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -1902,10 +1952,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
+   "gf": 2,
    "ga": 0,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -1950,10 +2000,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
-   "ga": 0,
+   "gf": 1,
+   "ga": 1,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -2070,10 +2120,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
-   "ga": 0,
+   "gf": 1,
+   "ga": 1,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -2094,10 +2144,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
-   "ga": 0,
+   "gf": 1,
+   "ga": 1,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -2119,9 +2169,9 @@ window.WCDATA = {
     }
    ],
    "gf": 0,
-   "ga": 0,
+   "ga": 2,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -2143,9 +2193,9 @@ window.WCDATA = {
     }
    ],
    "gf": 0,
-   "ga": 0,
+   "ga": 1,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -2166,10 +2216,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
-   "ga": 0,
+   "gf": 1,
+   "ga": 1,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {

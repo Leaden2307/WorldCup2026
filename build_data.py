@@ -188,7 +188,7 @@ ELIMINATED = set()        # e.g. {"South Africa","Curacao"}
 THROUGH = set()           # e.g. {"Germany","Mexico"}
 # ------------------------------------------------------------
 REDCARDS = {"South Africa":2}   # team -> total red cards (tournament)
-GOALS = {"Folarin Balogun":2,"Kai Havertz":2,"Jamal Musiala":1,"Alexander Isak":1,"Viktor Gyokeres":1}
+GOALS = {"Folarin Balogun":2,"Kai Havertz":2,"Jamal Musiala":1,"Alexander Isak":1,"Viktor Gyokeres":1,"Vinicius Junior":1,"Breel Embolo":1,"John McGinn":1}
 # Scorers NOT drafted by anyone (shown on the board for context, can't win the office prize):
 OTHER_SCORERS = []   # (per request: only show players someone drafted)
 matches = [
@@ -203,6 +203,11 @@ matches = [
  ("Spain",0,"Cape Verde",0,"Jun 15","Cape Verde grab a historic first WC point"),
  ("Belgium",1,"Egypt",1,"Jun 15","Salah turns provider; honours even"),
  ("Saudi Arabia",1,"Uruguay",1,"Jun 15","Maxi Araujo rescues a point for Uruguay"),
+ ("Canada",1,"Bosnia and Herzegovina",1,"Jun 12","Cyle Larin earns Canada a historic first WC point"),
+ ("Brazil",1,"Morocco",1,"Jun 13","Vinicius Jr stunner; Saibari levels for Morocco"),
+ ("Qatar",1,"Switzerland",1,"Jun 13","Embolo penalty cancelled out by Khoukhi in stoppage time"),
+ ("Haiti",0,"Scotland",1,"Jun 13","McGinn deflected winner ends Scotland's 28-year drought"),
+ ("Australia",2,"Turkey",0,"Jun 13","Irankunda & Metcalfe sink Turkey"),
 ]
 gf={t:0 for t,_,_ in TEAMS}; ga={t:0 for t,_,_ in TEAMS}; played={t:0 for t,_,_ in TEAMS}
 for h,hg,a,ag,d,n in matches:
@@ -259,7 +264,7 @@ for t,o1,o2 in TEAMS:
         "gf":gf.get(t,0),"ga":ga.get(t,0),"reds":REDCARDS.get(t,0),"played":played.get(t,0),
         "status":("out" if t in ELIMINATED else ("through" if t in THROUGH else "alive"))})
 data={
- "meta":{"updated":"16 June 2026","stage":"Group Stage · Matchday 1",
+ "meta":{"updated":UPDATED,"stage":STAGE,
    "note":"Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."},
  "prizes":[
    {"id":"winner","title":"World Cup Winner","emoji":"\U0001F3C6","amount":"\u00a3100","desc":"Holder of the team that lifts the trophy","metric":"team","decided":False},
