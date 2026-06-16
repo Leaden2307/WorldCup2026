@@ -226,36 +226,59 @@ secs.forEach(([id,lbl])=>{ const b=el('button',null,lbl); b.onclick=()=>document
 const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){nav.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.id===e.target.id));}});},{rootMargin:'-45% 0px -50% 0px'});
 secs.forEach(([id])=>obs.observe(document.getElementById(id)));
 
-/* DIRECTOR BUBBLES — floating director faces drift up the banner (replaces confetti) */
+/* BANNER: bouncing-ball staff heads — whole office bounces like footballs, directors are bigger */
 (function(){
   const cv=$('#confetti'); if(!cv) return;
   const ctx=cv.getContext('2d');
-  let W=0,H=0;
-  const srcs=['assets/directors/d1.jpg','assets/directors/d2.jpg','assets/directors/d3.jpg','assets/directors/d4.jpg','assets/directors/d5.jpg'];
-  const imgs=srcs.map(s=>{const i=new Image(); i.src=s; return i;});
-  const bubbles=[];
-  function rs(){ W=cv.width=cv.offsetWidth; H=cv.height=cv.offsetHeight; }
-  rs(); window.addEventListener('resize', rs);
-  for(let i=0;i<16;i++){
-    bubbles.push({ x:Math.random()*W, y:Math.random()*(H+200), r:13+Math.random()*15,
-      vy:-(0.22+Math.random()*0.5), a:Math.random()*6.28, sw:0.25+Math.random()*0.55, img:imgs[i%imgs.length] });
+  const DIRECTORS=new Set(['Andrew Tyley','Ian Birtles','Richard Paul','Stephen Barrett','Tracy Meller']);
+  // collect every unique staff member (with a photo) from the data
+  const seen=new Map();
+  const add=o=>{ if(o && o.avatar && !seen.has(o.name)) seen.set(o.name,o.avatar); };
+  D.players.forEach(p=>{ add(p.owners.league1); add(p.owners.league2); });
+  D.teams.forEach(t=>t.owners.forEach(add));
+  const people=[...seen.entries()].map(([name,av])=>({name,av,big:DIRECTORS.has(name)}));
+  const cache={};
+  people.forEach(p=>{ if(!cache[p.av]){ const i=new Image(); i.src=p.av; cache[p.av]=i; } });
+  let W=0,H=0,balls=[];
+  const G=0.26, REST=0.84;
+  function build(){
+    balls=people.map(p=>{
+      const r=p.big ? (24+Math.random()*9) : (9+Math.random()*6);
+      return { x:r+Math.random()*Math.max(1,W-2*r), y:Math.random()*Math.max(1,H*0.5),
+               vx:(Math.random()*2-1)*1.7, vy:Math.random()*2, r, img:cache[p.av], big:p.big };
+    });
   }
-  function bubble(b){
-    b.y+=b.vy; b.a+=0.01; b.x+=Math.sin(b.a)*b.sw;
-    if(b.y < -b.r-6){ b.y=H+b.r+6; b.x=Math.random()*W; }
+  function rs(){ W=cv.width=cv.offsetWidth; H=cv.height=cv.offsetHeight; build(); }
+  rs(); window.addEventListener('resize', rs);
+  function step(b){
+    b.vy+=G; b.x+=b.vx; b.y+=b.vy;
+    if(b.x<b.r){ b.x=b.r; b.vx=Math.abs(b.vx); }
+    else if(b.x>W-b.r){ b.x=W-b.r; b.vx=-Math.abs(b.vx); }
+    if(b.y>H-b.r){
+      b.y=H-b.r; b.vy=-b.vy*REST;
+      const minUp=b.big?5.5:4.5;                 // keep them bouncing, never settle
+      if(Math.abs(b.vy)<minUp) b.vy=-(minUp+Math.random()*3.5);
+      b.vx+=(Math.random()*2-1)*0.5;
+      if(Math.abs(b.vx)>3.2) b.vx*=0.6;
+    }
+    if(b.y<b.r && b.vy<0){ b.y=b.r; b.vy=Math.abs(b.vy)*REST; }
+    // shadow + white ring
     ctx.save();
     ctx.beginPath(); ctx.arc(b.x,b.y,b.r,0,6.28); ctx.closePath();
-    ctx.shadowColor='rgba(0,0,0,.25)'; ctx.shadowBlur=6; ctx.shadowOffsetY=2;
+    ctx.shadowColor='rgba(0,0,0,.28)'; ctx.shadowBlur=5; ctx.shadowOffsetY=2;
     ctx.fillStyle='#ffffff'; ctx.fill();
     ctx.restore();
+    // face
     ctx.save();
     ctx.beginPath(); ctx.arc(b.x,b.y,b.r-2,0,6.28); ctx.closePath(); ctx.clip();
-    const im=b.img, d=(b.r-2)*2;
-    if(im.complete && im.naturalWidth) ctx.drawImage(im, b.x-(b.r-2), b.y-(b.r-2), d, d);
+    const im=b.img,d=(b.r-2)*2;
+    if(im&&im.complete&&im.naturalWidth) ctx.drawImage(im,b.x-(b.r-2),b.y-(b.r-2),d,d);
     else { ctx.fillStyle='#0d3a8f'; ctx.fillRect(b.x-b.r,b.y-b.r,b.r*2,b.r*2); }
     ctx.restore();
+    // directors get a gold ring so they stand out
+    if(b.big){ ctx.beginPath(); ctx.arc(b.x,b.y,b.r-1,0,6.28); ctx.lineWidth=2.5; ctx.strokeStyle='#FFCD00'; ctx.stroke(); }
   }
-  function loop(){ ctx.clearRect(0,0,W,H); for(const b of bubbles) bubble(b); requestAnimationFrame(loop); }
+  function loop(){ ctx.clearRect(0,0,W,H); for(const b of balls) step(b); requestAnimationFrame(loop); }
   loop();
 })();
 
