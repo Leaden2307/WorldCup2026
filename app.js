@@ -339,5 +339,35 @@ secs.forEach(([id])=>obs.observe(document.getElementById(id)));
   loop();
 })();
 
+
+/* FACT OF THE DAY — side tab */
+function renderFact(){
+  const blue='var(--blue)';
+  const tab=el('div',null,'⚽ Fact of the day');
+  tab.style.cssText='position:fixed;right:0;top:40%;z-index:60;background:'+blue+';color:#fff;writing-mode:vertical-rl;transform:rotate(180deg);padding:16px 9px;border-radius:8px 0 0 8px;font-family:Roboto;font-weight:700;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;box-shadow:-3px 3px 14px rgba(0,0,0,.22);user-select:none';
+  const panel=el('div');
+  panel.style.cssText='position:fixed;right:14px;top:50%;transform:translateY(-50%);z-index:61;width:320px;max-width:calc(100vw - 28px);background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 16px 44px rgba(20,40,80,.28);padding:16px 16px 14px;display:none';
+  // auto stats
+  const gb=topPlayers()[0];
+  const mg=topTeams('gf')[0];
+  const bw=biggestDefeat();
+  let stats='';
+  if(gb) stats+='<div style="margin-bottom:5px">👟 <b>Golden Boot:</b> '+gb.flag+' '+gb.player+' ('+gb.goals+') \u2014 '+gb.owners.league1.name.split(" ")[0]+' / '+gb.owners.league2.name.split(" ")[0]+'</div>';
+  if(mg&&mg.gf>0) stats+='<div style="margin-bottom:5px">🎯 <b>Most goals:</b> '+mg.flag+' '+mg.team+' ('+mg.gf+') \u2014 '+mg.owners.map(function(o){return o.name.split(" ")[0];}).join(" & ")+'</div>';
+  if(bw){ const w=(bw.m.hg>bw.m.ag)?bw.m.home:bw.m.away; stats+='<div>💥 <b>Biggest win:</b> '+bw.m.home+' '+bw.m.hg+'-'+bw.m.ag+' '+bw.m.away+'</div>'; }
+  panel.innerHTML='<div style="display:flex;align-items:center;gap:8px;margin-bottom:9px">'
+    +'<span style="font-family:Roboto;font-weight:700;text-transform:uppercase;font-size:13px;color:'+blue+';letter-spacing:.04em">⚽ Fact of the day</span>'
+    +'<span class="factx" style="margin-left:auto;cursor:pointer;color:var(--mut);font-size:18px;line-height:1">×</span></div>'
+    +'<div style="font-size:14px;line-height:1.45;margin-bottom:12px">'+(D.meta.fact||'Check back after tonight\'s games!')+'</div>'
+    +'<div style="border-top:1px solid var(--line);padding-top:9px"><div style="font-size:10.5px;text-transform:uppercase;color:var(--mut);font-weight:700;margin-bottom:6px">By the numbers</div>'
+    +'<div style="font-size:12.5px;line-height:1.5">'+(stats||'No games played yet.')+'</div></div>'
+    +'<div style="font-size:10.5px;color:var(--mut);margin-top:10px">Updated '+D.meta.updated+'</div>';
+  let open=false;
+  const toggle=function(v){ open=(v!==undefined)?v:!open; panel.style.display=open?'block':'none'; tab.style.display=open?'none':'block'; };
+  tab.onclick=function(){toggle(true);};
+  panel.addEventListener('click',function(e){ if(e.target.classList.contains('factx')) toggle(false); });
+  document.body.append(tab,panel);
+}
+
 /* GO */
-renderPrizes(); renderBoot(); renderFilters(); renderTeams(); renderResults();
+renderPrizes(); renderBoot(); renderFilters(); renderTeams(); renderResults(); renderFact();

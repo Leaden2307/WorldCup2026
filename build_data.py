@@ -186,6 +186,7 @@ FLAG = {c:flag_html(c) for c in ISO}
 # ============================================================
 #  >>>> DAILY UPDATE AREA  (edit these 4 things each day) <<<<
 # ============================================================
+FACT = "Lionel Messi, at 38, scored his first-ever World Cup hat-trick to sink Algeria \u2014 equalling Klose's all-time tournament goal record and firing Lorenz & John-Alexander's pick to the top of the Golden Boot."   # witty fact of the day
 UPDATED = "17 June 2026"                 # date label shown on the site
 STAGE   = "Group Stage \u00b7 Matchday 1"    # e.g. "Group Stage \u00b7 Matchday 2", "Round of 32", "Final"
 # Teams that have been KNOCKED OUT (use exact names from the team list):
@@ -276,7 +277,7 @@ for t,o1,o2 in TEAMS:
         "gf":gf.get(t,0),"ga":ga.get(t,0),"reds":REDCARDS.get(t,0),"played":played.get(t,0),
         "status":("out" if t in ELIMINATED else ("through" if t in THROUGH else "alive"))})
 data={
- "meta":{"updated":UPDATED,"stage":STAGE,
+ "meta":{"updated":UPDATED,"stage":STAGE,"fact":FACT,
    "note":"Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."},
  "prizes":[
    {"id":"winner","title":"World Cup Winner","emoji":"\U0001F3C6","amount":"\u00a3100","desc":"Holder of the team that lifts the trophy","metric":"team","decided":False},

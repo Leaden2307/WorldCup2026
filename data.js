@@ -3,6 +3,7 @@ window.WCDATA = {
  "meta": {
   "updated": "17 June 2026",
   "stage": "Group Stage · Matchday 1",
+  "fact": "Lionel Messi, at 38, scored his first-ever World Cup hat-trick to sink Algeria — equalling Klose's all-time tournament goal record and firing Lorenz & John-Alexander's pick to the top of the Golden Boot.",
   "note": "Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."
  },
  "prizes": [
