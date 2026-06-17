@@ -142,8 +142,50 @@ function renderFilters(){
   f.append(mk('all','🌍 All 48'), mk('alive','✅ Still in'), mk('out','❌ Knocked out'));
   groups.forEach(g=>f.append(mk('G'+g,'Group '+g)));
 }
+function standings(g){
+  const st={};
+  D.teams.filter(t=>t.group===g).forEach(t=>{ st[t.team]={t,P:0,W:0,Dr:0,L:0,GF:0,GA:0,Pts:0}; });
+  D.matches.forEach(m=>{
+    const a=st[m.home], b=st[m.away];
+    if(!a||!b) return;                 // only intra-group (group-stage) matches
+    a.P++; b.P++; a.GF+=m.hg; a.GA+=m.ag; b.GF+=m.ag; b.GA+=m.hg;
+    if(m.hg>m.ag){ a.W++; a.Pts+=3; b.L++; }
+    else if(m.hg<m.ag){ b.W++; b.Pts+=3; a.L++; }
+    else { a.Dr++; b.Dr++; a.Pts++; b.Pts++; }
+  });
+  return Object.values(st).sort((x,y)=> y.Pts-x.Pts || (y.GF-y.GA)-(x.GF-x.GA) || y.GF-x.GF || x.t.team.localeCompare(y.t.team));
+}
+function groupTable(g){
+  const rows=standings(g);
+  const wrap=el('div'); wrap.style.cssText='grid-column:1/-1;overflow-x:auto;background:#fff;border:1px solid var(--line);border-radius:8px;box-shadow:0 6px 18px rgba(20,40,80,.06)';
+  const tbl=el('table'); tbl.style.cssText='width:100%;border-collapse:collapse;font-size:13.5px;min-width:560px';
+  const head=el('tr'); head.style.cssText='background:var(--blue);color:#fff;text-transform:uppercase;font-size:11px;letter-spacing:.03em';
+  ['Team','P','W','D','L','GF','GA','GD','Pts'].forEach((h,i)=>{ const th=el('th',null,h); th.style.cssText='padding:9px 8px;font-weight:700;text-align:'+(i===0?'left':'center'); head.appendChild(th); });
+  tbl.appendChild(head);
+  rows.forEach((s,idx)=>{
+    const out=s.t.status==='out';
+    const tr=el('tr');
+    tr.style.cssText='border-top:1px solid var(--line);'+(idx<2?'background:rgba(0,185,110,.09);':'')+(out?'opacity:.45;':'')+(idx===1?'border-bottom:2px solid var(--green);':'');
+    const td0=el('td'); td0.style.cssText='padding:7px 8px';
+    const cell=el('div'); cell.style.cssText='display:flex;align-items:center;gap:8px';
+    cell.innerHTML='<span style="width:16px;color:var(--mut);font-weight:700;text-align:center">'+(idx+1)+'</span>'+s.t.flag+' <b style="white-space:nowrap">'+s.t.team+'</b>';
+    const ow=el('span'); ow.style.cssText='display:inline-flex;gap:3px;margin-left:4px';
+    s.t.owners.forEach(o=>{ const im=img(o); im.style.cssText='width:20px;height:20px;border-radius:50%;object-fit:cover;border:1.5px solid #fff;box-shadow:0 1px 2px rgba(0,0,0,.25)'; im.title=o.name+(o.league?' ('+o.league+')':''); ow.appendChild(im); });
+    cell.appendChild(ow); td0.appendChild(cell); tr.appendChild(td0);
+    const gd=s.GF-s.GA;
+    [s.P,s.W,s.Dr,s.L,s.GF,s.GA,(gd>0?'+':'')+gd].forEach(v=>{ const td=el('td',null,String(v)); td.style.cssText='padding:7px 8px;text-align:center;color:var(--mut)'; tr.appendChild(td); });
+    const tp=el('td',null,'<b>'+s.Pts+'</b>'); tp.style.cssText='padding:7px 8px;text-align:center;color:var(--blue);font-size:15px'; tr.appendChild(tp);
+    tbl.appendChild(tr);
+  });
+  wrap.appendChild(tbl);
+  const cap=el('div'); cap.style.cssText='padding:8px 10px;font-size:11px;color:var(--mut);border-top:1px solid var(--line)';
+  cap.innerHTML='Group '+g+' · top 2 qualify (green line); the 8 best 3rd-placed teams also advance';
+  wrap.appendChild(cap);
+  return wrap;
+}
 function renderTeams(){
   const grid=$('#teamGrid'); grid.innerHTML='';
+  if(teamFilter.startsWith('G')){ grid.appendChild(groupTable(teamFilter.slice(1))); return; }
   let list=[...D.teams];
   if(teamFilter==='alive') list=list.filter(t=>t.status!=='out');
   else if(teamFilter==='out') list=list.filter(t=>t.status==='out');
