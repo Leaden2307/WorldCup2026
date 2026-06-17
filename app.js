@@ -251,8 +251,8 @@ function renderResults(){
   const g=$('#resultGrid'); g.innerHTML='';
   // link to the official highlights channel
   const ch=el('a'); ch.href='https://www.youtube.com/channel/UCpcTrCXblq78GZrTUTLWeBw'; ch.target='_blank'; ch.rel='noopener';
-  ch.style.cssText='grid-column:1/-1;display:inline-flex;align-items:center;gap:8px;justify-self:start;background:#FF0000;color:#fff;text-decoration:none;font-family:Roboto;font-weight:700;font-size:13px;padding:8px 14px;border-radius:6px;margin-bottom:2px';
-  ch.innerHTML='▶ Official FIFA World Cup highlights channel';
+  ch.style.cssText='grid-column:1/-1;display:inline-flex;align-items:center;gap:7px;justify-self:start;color:var(--mut);text-decoration:none;font-family:Roboto;font-weight:600;font-size:12.5px;margin-bottom:2px';
+  ch.innerHTML='<svg width="20" height="14" viewBox="0 0 28 20" style="flex:0 0 auto"><rect width="28" height="20" rx="5" fill="#FF0000"/><path d="M11 5.5l8.5 4.5-8.5 4.5z" fill="#fff"/></svg>Official FIFA World Cup highlights channel';
   g.append(ch);
   [...D.matches].reverse().forEach(m=>{
     const c=el('div','match');
@@ -270,7 +270,7 @@ function renderResults(){
     if(vid){
       a.innerHTML='<div style="position:relative;border-radius:8px;overflow:hidden"><img src="https://img.youtube.com/vi/'+vid+'/mqdefault.jpg" style="width:100%;display:block" alt="highlights"><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><span style="background:rgba(255,0,0,.9);color:#fff;width:48px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px">▶</span></div></div>';
     } else {
-      a.innerHTML='<span style="display:inline-flex;align-items:center;gap:7px;background:#FF0000;color:#fff;font-family:Roboto;font-weight:700;font-size:12.5px;padding:7px 12px;border-radius:6px">▶ Watch highlights</span>';
+      a.innerHTML='<span style="display:inline-flex;align-items:center;gap:6px;color:var(--mut);font-family:Roboto;font-weight:600;font-size:12.5px"><svg width="20" height="14" viewBox="0 0 28 20" style="flex:0 0 auto"><rect width="28" height="20" rx="5" fill="#FF0000"/><path d="M11 5.5l8.5 4.5-8.5 4.5z" fill="#fff"/></svg>Highlights</span>';
     }
     c.append(a);
     g.append(c);
