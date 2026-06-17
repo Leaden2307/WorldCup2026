@@ -344,7 +344,7 @@ secs.forEach(([id])=>obs.observe(document.getElementById(id)));
 function renderFact(){
   const blue='var(--blue)';
   const tab=el('div',null,'⚽ Fact of the day');
-  tab.style.cssText='position:fixed;right:0;top:40%;z-index:60;background:'+blue+';color:#fff;writing-mode:vertical-rl;transform:rotate(180deg);padding:16px 9px;border-radius:8px 0 0 8px;font-family:Roboto;font-weight:700;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;box-shadow:-3px 3px 14px rgba(0,0,0,.22);user-select:none';
+  tab.style.cssText='position:fixed;right:0;top:34%;z-index:60;background:'+blue+';color:#fff;writing-mode:vertical-rl;transform:rotate(180deg);padding:24px 14px;border-radius:12px 0 0 12px;font-family:Roboto;font-weight:700;font-size:17px;letter-spacing:.09em;text-transform:uppercase;cursor:pointer;box-shadow:-4px 4px 18px rgba(0,0,0,.28);user-select:none;border:3px solid var(--yellow);border-right:0;animation:factpulse 2.2s ease-in-out infinite';
   const panel=el('div');
   panel.style.cssText='position:fixed;right:14px;top:50%;transform:translateY(-50%);z-index:61;width:320px;max-width:calc(100vw - 28px);background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 16px 44px rgba(20,40,80,.28);padding:16px 16px 14px;display:none';
   // auto stats
@@ -366,7 +366,9 @@ function renderFact(){
   const toggle=function(v){ open=(v!==undefined)?v:!open; panel.style.display=open?'block':'none'; tab.style.display=open?'none':'block'; };
   tab.onclick=function(){toggle(true);};
   panel.addEventListener('click',function(e){ if(e.target.classList.contains('factx')) toggle(false); });
+  if(!document.getElementById('factkf')){var st=el('style');st.id='factkf';st.textContent='@keyframes factpulse{0%,100%{box-shadow:-4px 4px 18px rgba(0,0,0,.28)}50%{box-shadow:-5px 5px 28px rgba(28,73,180,.75)}}';document.head.appendChild(st);}
   document.body.append(tab,panel);
+  if(window.innerWidth>760) setTimeout(function(){toggle(true);},600);
 }
 
 /* GO */
