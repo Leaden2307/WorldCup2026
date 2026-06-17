@@ -194,7 +194,7 @@ ELIMINATED = set()        # e.g. {"South Africa","Curacao"}
 THROUGH = set()           # e.g. {"Germany","Mexico"}
 # ------------------------------------------------------------
 REDCARDS = {"South Africa":2}   # team -> total red cards (tournament)
-GOALS = {"Folarin Balogun":2,"Kai Havertz":2,"Lionel Messi":3,"Kylian Mbappe":2,"Erling Haaland":2,"Jamal Musiala":1,"Alexander Isak":1,"Viktor Gyokeres":1}
+GOALS = {"Lionel Messi":3,"Folarin Balogun":2,"Kai Havertz":2,"Kylian Mbappe":2,"Erling Haaland":2,"Jamal Musiala":1,"Alexander Isak":1,"Viktor Gyokeres":1,"Vinicius Junior":1,"Breel Embolo":1,"John McGinn":1}
 # Scorers NOT drafted by anyone (shown on the board for context, can't win the office prize):
 OTHER_SCORERS = []   # (per request: only show players someone drafted)
 matches = [
@@ -213,6 +213,11 @@ matches = [
  ("Norway",4,"Iraq",1,"Jun 16","Haaland brace on his World Cup debut"),
  ("Argentina",3,"Algeria",0,"Jun 16","Messi hat-trick \u2014 his first at a World Cup, ties Klose's all-time record"),
  ("Austria",3,"Jordan",1,"Jun 16","Austria's first World Cup win in 36 years; Jordan WC debut"),
+ ("Canada",1,"Bosnia and Herzegovina",1,"Jun 12",""),
+ ("Switzerland",1,"Qatar",1,"Jun 13","Embolo penalty; Qatar level via an own goal"),
+ ("Brazil",1,"Morocco",1,"Jun 13","Vinicius Jr cancels out Saibari"),
+ ("Scotland",1,"Haiti",0,"Jun 13","John McGinn settles it for Scotland"),
+ ("Australia",2,"Turkey",0,"Jun 13","Irankunda & Metcalfe stun Turkiye"),
 ]
 gf={t:0 for t,_,_ in TEAMS}; ga={t:0 for t,_,_ in TEAMS}; played={t:0 for t,_,_ in TEAMS}
 for h,hg,a,ag,d,n in matches:

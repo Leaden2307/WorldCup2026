@@ -238,6 +238,56 @@ window.WCDATA = {
    "note": "Austria's first World Cup win in 36 years; Jordan WC debut",
    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/at.svg\" alt=\"Austria\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/jo.svg\" alt=\"Jordan\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "Canada",
+   "hg": 1,
+   "away": "Bosnia and Herzegovina",
+   "ag": 1,
+   "date": "Jun 12",
+   "note": "",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ca.svg\" alt=\"Canada\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ba.svg\" alt=\"Bosnia and Herzegovina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "Switzerland",
+   "hg": 1,
+   "away": "Qatar",
+   "ag": 1,
+   "date": "Jun 13",
+   "note": "Embolo penalty; Qatar level via an own goal",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ch.svg\" alt=\"Switzerland\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/qa.svg\" alt=\"Qatar\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "Brazil",
+   "hg": 1,
+   "away": "Morocco",
+   "ag": 1,
+   "date": "Jun 13",
+   "note": "Vinicius Jr cancels out Saibari",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/br.svg\" alt=\"Brazil\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ma.svg\" alt=\"Morocco\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "Scotland",
+   "hg": 1,
+   "away": "Haiti",
+   "ag": 0,
+   "date": "Jun 13",
+   "note": "John McGinn settles it for Scotland",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-sct.svg\" alt=\"Scotland\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ht.svg\" alt=\"Haiti\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "Australia",
+   "hg": 2,
+   "away": "Turkey",
+   "ag": 0,
+   "date": "Jun 13",
+   "note": "Irankunda & Metcalfe stun Turkiye",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/au.svg\" alt=\"Australia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/tr.svg\" alt=\"Turkey\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
   }
  ],
  "otherScorers": [],
@@ -408,7 +458,7 @@ window.WCDATA = {
    "player": "Vinicius Junior",
    "country": "Brazil",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/br.svg\" alt=\"Brazil\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 0,
+   "goals": 1,
    "owners": {
     "league1": {
      "name": "Kit Lee Smith",
@@ -732,7 +782,7 @@ window.WCDATA = {
    "player": "John McGinn",
    "country": "Scotland",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-sct.svg\" alt=\"Scotland\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 0,
+   "goals": 1,
    "owners": {
     "league1": {
      "name": "Jay Lee",
@@ -876,7 +926,7 @@ window.WCDATA = {
    "player": "Breel Embolo",
    "country": "Switzerland",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/ch.svg\" alt=\"Switzerland\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 0,
+   "goals": 1,
    "owners": {
     "league1": {
      "name": "Ian Birtles",
@@ -1366,10 +1416,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
+   "gf": 1,
    "ga": 0,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -1558,10 +1608,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
-   "ga": 0,
+   "gf": 1,
+   "ga": 1,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -1870,10 +1920,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
-   "ga": 0,
+   "gf": 1,
+   "ga": 1,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -1942,10 +1992,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
+   "gf": 2,
    "ga": 0,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -1990,10 +2040,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
-   "ga": 0,
+   "gf": 1,
+   "ga": 1,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -2110,10 +2160,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
-   "ga": 0,
+   "gf": 1,
+   "ga": 1,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -2134,10 +2184,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
-   "ga": 0,
+   "gf": 1,
+   "ga": 1,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -2159,9 +2209,9 @@ window.WCDATA = {
     }
    ],
    "gf": 0,
-   "ga": 0,
+   "ga": 2,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -2183,9 +2233,9 @@ window.WCDATA = {
     }
    ],
    "gf": 0,
-   "ga": 0,
+   "ga": 1,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -2206,10 +2256,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
-   "ga": 0,
+   "gf": 1,
+   "ga": 1,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
