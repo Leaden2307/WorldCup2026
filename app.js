@@ -246,8 +246,14 @@ function renderFinder(q){
 $('#finderInput').addEventListener('input',e=>renderFinder(e.target.value));
 
 /* RESULTS */
+function ytid(u){ if(!u) return null; const m=u.match(/(?:v=|youtu\.be\/|embed\/)([\w-]{11})/); return m?m[1]:null; }
 function renderResults(){
   const g=$('#resultGrid'); g.innerHTML='';
+  // link to the official highlights channel
+  const ch=el('a'); ch.href='https://www.youtube.com/channel/UCpcTrCXblq78GZrTUTLWeBw'; ch.target='_blank'; ch.rel='noopener';
+  ch.style.cssText='grid-column:1/-1;display:inline-flex;align-items:center;gap:8px;justify-self:start;background:#FF0000;color:#fff;text-decoration:none;font-family:Roboto;font-weight:700;font-size:13px;padding:8px 14px;border-radius:6px;margin-bottom:2px';
+  ch.innerHTML='▶ Official FIFA World Cup highlights channel';
+  g.append(ch);
   [...D.matches].reverse().forEach(m=>{
     const c=el('div','match');
     c.append(el('div','mdate',m.date));
@@ -257,6 +263,16 @@ function renderResults(){
     sc.append(el('div','t away',m.away+' <span class="fl">'+m.awayFlag+'</span>'));
     c.append(sc);
     if(m.note) c.append(el('div','note',m.note));
+    const q=encodeURIComponent(m.home+' vs '+m.away+' FIFA World Cup 2026 highlights');
+    const url=m.video || ('https://www.youtube.com/results?search_query='+q);
+    const vid=ytid(m.video);
+    const a=el('a'); a.href=url; a.target='_blank'; a.rel='noopener'; a.style.cssText='display:block;margin-top:10px;text-decoration:none';
+    if(vid){
+      a.innerHTML='<div style="position:relative;border-radius:8px;overflow:hidden"><img src="https://img.youtube.com/vi/'+vid+'/mqdefault.jpg" style="width:100%;display:block" alt="highlights"><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><span style="background:rgba(255,0,0,.9);color:#fff;width:48px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px">▶</span></div></div>';
+    } else {
+      a.innerHTML='<span style="display:inline-flex;align-items:center;gap:7px;background:#FF0000;color:#fff;font-family:Roboto;font-weight:700;font-size:12.5px;padding:7px 12px;border-radius:6px">▶ Watch highlights</span>';
+    }
+    c.append(a);
     g.append(c);
   });
 }
