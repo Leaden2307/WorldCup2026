@@ -186,7 +186,7 @@ FLAG = {c:flag_html(c) for c in ISO}
 # ============================================================
 #  >>>> DAILY UPDATE AREA  (edit these 4 things each day) <<<<
 # ============================================================
-UPDATED = "16 June 2026"                 # date label shown on the site
+UPDATED = "17 June 2026"                 # date label shown on the site
 STAGE   = "Group Stage \u00b7 Matchday 1"    # e.g. "Group Stage \u00b7 Matchday 2", "Round of 32", "Final"
 # Teams that have been KNOCKED OUT (use exact names from the team list):
 ELIMINATED = set()        # e.g. {"South Africa","Curacao"}
@@ -194,7 +194,7 @@ ELIMINATED = set()        # e.g. {"South Africa","Curacao"}
 THROUGH = set()           # e.g. {"Germany","Mexico"}
 # ------------------------------------------------------------
 REDCARDS = {"South Africa":2}   # team -> total red cards (tournament)
-GOALS = {"Folarin Balogun":2,"Kai Havertz":2,"Jamal Musiala":1,"Alexander Isak":1,"Viktor Gyokeres":1}
+GOALS = {"Folarin Balogun":2,"Kai Havertz":2,"Lionel Messi":3,"Kylian Mbappe":2,"Erling Haaland":2,"Jamal Musiala":1,"Alexander Isak":1,"Viktor Gyokeres":1}
 # Scorers NOT drafted by anyone (shown on the board for context, can't win the office prize):
 OTHER_SCORERS = []   # (per request: only show players someone drafted)
 matches = [
@@ -209,6 +209,10 @@ matches = [
  ("Spain",0,"Cape Verde",0,"Jun 15","Cape Verde grab a historic first WC point"),
  ("Belgium",1,"Egypt",1,"Jun 15","Salah turns provider; honours even"),
  ("Saudi Arabia",1,"Uruguay",1,"Jun 15","Maxi Araujo rescues a point for Uruguay"),
+ ("France",3,"Senegal",1,"Jun 16","Mbappe brace, Barcola; he's now France's all-time top scorer"),
+ ("Norway",4,"Iraq",1,"Jun 16","Haaland brace on his World Cup debut"),
+ ("Argentina",3,"Algeria",0,"Jun 16","Messi hat-trick \u2014 his first at a World Cup, ties Klose's all-time record"),
+ ("Austria",3,"Jordan",1,"Jun 16","Austria's first World Cup win in 36 years; Jordan WC debut"),
 ]
 gf={t:0 for t,_,_ in TEAMS}; ga={t:0 for t,_,_ in TEAMS}; played={t:0 for t,_,_ in TEAMS}
 for h,hg,a,ag,d,n in matches:
@@ -267,7 +271,7 @@ for t,o1,o2 in TEAMS:
         "gf":gf.get(t,0),"ga":ga.get(t,0),"reds":REDCARDS.get(t,0),"played":played.get(t,0),
         "status":("out" if t in ELIMINATED else ("through" if t in THROUGH else "alive"))})
 data={
- "meta":{"updated":"16 June 2026","stage":"Group Stage · Matchday 1",
+ "meta":{"updated":UPDATED,"stage":STAGE,
    "note":"Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."},
  "prizes":[
    {"id":"winner","title":"World Cup Winner","emoji":"\U0001F3C6","amount":"\u00a3100","desc":"Holder of the team that lifts the trophy","metric":"team","decided":False},

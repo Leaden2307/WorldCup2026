@@ -1,7 +1,7 @@
 // World Cup 2026 Office Sweepstake - live data. Auto-updated daily.
 window.WCDATA = {
  "meta": {
-  "updated": "16 June 2026",
+  "updated": "17 June 2026",
   "stage": "Group Stage · Matchday 1",
   "note": "Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."
  },
@@ -198,6 +198,46 @@ window.WCDATA = {
    "note": "Maxi Araujo rescues a point for Uruguay",
    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/sa.svg\" alt=\"Saudi Arabia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/uy.svg\" alt=\"Uruguay\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "France",
+   "hg": 3,
+   "away": "Senegal",
+   "ag": 1,
+   "date": "Jun 16",
+   "note": "Mbappe brace, Barcola; he's now France's all-time top scorer",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/sn.svg\" alt=\"Senegal\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "Norway",
+   "hg": 4,
+   "away": "Iraq",
+   "ag": 1,
+   "date": "Jun 16",
+   "note": "Haaland brace on his World Cup debut",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/no.svg\" alt=\"Norway\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/iq.svg\" alt=\"Iraq\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "Argentina",
+   "hg": 3,
+   "away": "Algeria",
+   "ag": 0,
+   "date": "Jun 16",
+   "note": "Messi hat-trick — his first at a World Cup, ties Klose's all-time record",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ar.svg\" alt=\"Argentina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/dz.svg\" alt=\"Algeria\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "Austria",
+   "hg": 3,
+   "away": "Jordan",
+   "ag": 1,
+   "date": "Jun 16",
+   "note": "Austria's first World Cup win in 36 years; Jordan WC debut",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/at.svg\" alt=\"Austria\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/jo.svg\" alt=\"Jordan\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
   }
  ],
  "otherScorers": [],
@@ -530,7 +570,7 @@ window.WCDATA = {
    "player": "Erling Haaland",
    "country": "Norway",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/no.svg\" alt=\"Norway\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 0,
+   "goals": 2,
    "owners": {
     "league1": {
      "name": "Matthew Radwan",
@@ -908,7 +948,7 @@ window.WCDATA = {
    "player": "Kylian Mbappe",
    "country": "France",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 0,
+   "goals": 2,
    "owners": {
     "league1": {
      "name": "Luca D'Amico",
@@ -944,7 +984,7 @@ window.WCDATA = {
    "player": "Lionel Messi",
    "country": "Argentina",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/ar.svg\" alt=\"Argentina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 0,
+   "goals": 3,
    "owners": {
     "league1": {
      "name": "Lorenz Frenzen",
@@ -1159,9 +1199,9 @@ window.WCDATA = {
     }
    ],
    "gf": 0,
-   "ga": 0,
+   "ga": 3,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -1206,10 +1246,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
-   "ga": 0,
+   "gf": 1,
+   "ga": 3,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -1302,10 +1342,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
-   "ga": 0,
+   "gf": 4,
+   "ga": 1,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -1494,10 +1534,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
-   "ga": 0,
+   "gf": 3,
+   "ga": 1,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -1710,10 +1750,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
-   "ga": 0,
+   "gf": 1,
+   "ga": 4,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -1734,10 +1774,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
+   "gf": 3,
    "ga": 0,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -1878,10 +1918,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
-   "ga": 0,
+   "gf": 1,
+   "ga": 3,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -2190,10 +2230,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
-   "ga": 0,
+   "gf": 3,
+   "ga": 1,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
