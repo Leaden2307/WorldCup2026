@@ -356,35 +356,28 @@ secs.forEach(([id])=>obs.observe(document.getElementById(id)));
 })();
 
 
-/* FACT OF THE DAY — side tab */
+/* FACT OF THE DAY — floating RSHP colour tile, always on */
 function renderFact(){
-  const blue='var(--blue)';
-  const tab=el('div',null,'⚽ Fact of the day');
-  tab.style.cssText='position:fixed;right:0;top:34%;z-index:60;background:'+blue+';color:#fff;writing-mode:vertical-rl;transform:rotate(180deg);padding:24px 14px;border-radius:12px 0 0 12px;font-family:Roboto;font-weight:700;font-size:17px;letter-spacing:.09em;text-transform:uppercase;cursor:pointer;box-shadow:-4px 4px 18px rgba(0,0,0,.28);user-select:none;border:3px solid var(--yellow);border-right:0;animation:factpulse 2.2s ease-in-out infinite';
-  const panel=el('div');
-  panel.style.cssText='position:fixed;right:14px;top:50%;transform:translateY(-50%);z-index:61;width:320px;max-width:calc(100vw - 28px);background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 16px 44px rgba(20,40,80,.28);padding:16px 16px 14px;display:none';
-  // auto stats
-  const gb=topPlayers()[0];
-  const mg=topTeams('gf')[0];
-  const bw=biggestDefeat();
-  let stats='';
-  if(gb) stats+='<div style="margin-bottom:5px">👟 <b>Golden Boot:</b> '+gb.flag+' '+gb.player+' ('+gb.goals+') \u2014 '+gb.owners.league1.name.split(" ")[0]+' / '+gb.owners.league2.name.split(" ")[0]+'</div>';
-  if(mg&&mg.gf>0) stats+='<div style="margin-bottom:5px">🎯 <b>Most goals:</b> '+mg.flag+' '+mg.team+' ('+mg.gf+') \u2014 '+mg.owners.map(function(o){return o.name.split(" ")[0];}).join(" & ")+'</div>';
-  if(bw){ const w=(bw.m.hg>bw.m.ag)?bw.m.home:bw.m.away; stats+='<div>💥 <b>Biggest win:</b> '+bw.m.home+' '+bw.m.hg+'-'+bw.m.ag+' '+bw.m.away+'</div>'; }
-  panel.innerHTML='<div style="display:flex;align-items:center;gap:8px;margin-bottom:9px">'
-    +'<span style="font-family:Roboto;font-weight:700;text-transform:uppercase;font-size:13px;color:'+blue+';letter-spacing:.04em">⚽ Fact of the day</span>'
-    +'<span class="factx" style="margin-left:auto;cursor:pointer;color:var(--mut);font-size:18px;line-height:1">×</span></div>'
-    +'<div style="font-size:14px;line-height:1.45;margin-bottom:12px">'+(D.meta.fact||'Check back after tonight\'s games!')+'</div>'
-    +'<div style="border-top:1px solid var(--line);padding-top:9px"><div style="font-size:10.5px;text-transform:uppercase;color:var(--mut);font-weight:700;margin-bottom:6px">By the numbers</div>'
-    +'<div style="font-size:12.5px;line-height:1.5">'+(stats||'No games played yet.')+'</div></div>'
-    +'<div style="font-size:10.5px;color:var(--mut);margin-top:10px">Updated '+D.meta.updated+'</div>';
-  let open=false;
-  const toggle=function(v){ open=(v!==undefined)?v:!open; panel.style.display=open?'block':'none'; tab.style.display=open?'none':'block'; };
-  tab.onclick=function(){toggle(true);};
-  panel.addEventListener('click',function(e){ if(e.target.classList.contains('factx')) toggle(false); });
-  if(!document.getElementById('factkf')){var st=el('style');st.id='factkf';st.textContent='@keyframes factpulse{0%,100%{box-shadow:-4px 4px 18px rgba(0,0,0,.28)}50%{box-shadow:-5px 5px 28px rgba(28,73,180,.75)}}';document.head.appendChild(st);}
-  document.body.append(tab,panel);
-  if(window.innerWidth>760) setTimeout(function(){toggle(true);},600);
+  if(!document.getElementById('factkf')){ var st=el('style'); st.id='factkf';
+    st.textContent='@keyframes factfloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}'; document.head.appendChild(st); }
+  const box=el('div');
+  box.style.cssText='position:fixed;right:20px;bottom:20px;z-index:60;width:300px;max-width:calc(100vw - 32px);background:#FF5442;color:#fff;padding:15px 16px 14px;box-shadow:0 16px 38px rgba(0,0,0,.28);font-family:Roboto;animation:factfloat 5.5s ease-in-out infinite';
+  const head=el('div'); head.style.cssText='display:flex;align-items:center;gap:8px;margin-bottom:8px';
+  head.innerHTML='<span style="font-weight:700;text-transform:uppercase;letter-spacing:.07em;font-size:13px">\u26bd Fact of the day</span>'
+    +'<span class="factx" title="hide" style="margin-left:auto;cursor:pointer;font-size:18px;line-height:1;opacity:.85">\u00d7</span>';
+  box.appendChild(head);
+  const f=el('div'); f.style.cssText='font-size:14px;line-height:1.42;font-weight:500'; f.textContent=D.meta.fact||'Check back after the next round of games!';
+  box.appendChild(f);
+  const gb=topPlayers()[0]; const mg=topTeams('gf')[0];
+  if(gb||mg){
+    const stat=el('div'); stat.style.cssText='margin-top:11px;padding-top:9px;border-top:1px solid rgba(255,255,255,.4);font-size:12px;font-weight:600;line-height:1.5';
+    let h='';
+    if(gb) h+='\ud83d\udc5f Golden Boot: '+gb.player+' ('+gb.goals+')<br>';
+    if(mg&&mg.gf>0) h+='\ud83c\udfaf Most goals: '+mg.team+' ('+mg.gf+')';
+    stat.innerHTML=h; box.appendChild(stat);
+  }
+  box.addEventListener('click',function(e){ if(e.target.classList.contains('factx')){ box.style.animation='none'; box.style.display='none'; } });
+  document.body.appendChild(box);
 }
 
 /* GO */
