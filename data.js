@@ -329,46 +329,6 @@ window.WCDATA = {
    "note": "Yirenkyi's stoppage-time winner for the Black Stars",
    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gh.svg\" alt=\"Ghana\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/pa.svg\" alt=\"Panama\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
-  },
-  {
-   "home": "Portugal",
-   "hg": 1,
-   "away": "DR Congo",
-   "ag": 1,
-   "date": "Jun 17",
-   "note": "Ronaldo blanks again; DR Congo grab a historic first point",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/pt.svg\" alt=\"Portugal\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/cd.svg\" alt=\"DR Congo\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
-  },
-  {
-   "home": "Colombia",
-   "hg": 3,
-   "away": "Uzbekistan",
-   "ag": 1,
-   "date": "Jun 17",
-   "note": "Luis Diaz on the mark for Colombia",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/co.svg\" alt=\"Colombia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/uz.svg\" alt=\"Uzbekistan\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
-  },
-  {
-   "home": "England",
-   "hg": 4,
-   "away": "Croatia",
-   "ag": 2,
-   "date": "Jun 17",
-   "note": "Kane brace, Bellingham & Rashford",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/hr.svg\" alt=\"Croatia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
-  },
-  {
-   "home": "Ghana",
-   "hg": 1,
-   "away": "Panama",
-   "ag": 0,
-   "date": "Jun 17",
-   "note": "Yirenkyi winner deep in stoppage time",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gh.svg\" alt=\"Ghana\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/pa.svg\" alt=\"Panama\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
   }
  ],
  "otherScorers": [],
@@ -1258,9 +1218,9 @@ window.WCDATA = {
     }
    ],
    "gf": 0,
-   "ga": 2,
+   "ga": 1,
    "reds": 0,
-   "played": 2,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -1425,10 +1385,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 2,
+   "gf": 1,
    "ga": 0,
    "reds": 0,
-   "played": 2,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -1449,10 +1409,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 2,
-   "ga": 2,
+   "gf": 1,
+   "ga": 1,
    "reds": 0,
-   "played": 2,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -1521,10 +1481,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 2,
-   "ga": 6,
+   "gf": 1,
+   "ga": 3,
    "reds": 0,
-   "played": 2,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -1593,10 +1553,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 6,
-   "ga": 2,
+   "gf": 3,
+   "ga": 1,
    "reds": 0,
-   "played": 2,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -1809,10 +1769,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 2,
-   "ga": 2,
+   "gf": 1,
+   "ga": 1,
    "reds": 0,
-   "played": 2,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -1857,10 +1817,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 4,
-   "ga": 8,
+   "gf": 2,
+   "ga": 4,
    "reds": 0,
-   "played": 2,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -2025,10 +1985,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 8,
-   "ga": 4,
+   "gf": 4,
+   "ga": 2,
    "reds": 0,
-   "played": 2,
+   "played": 1,
    "status": "alive"
   },
   {

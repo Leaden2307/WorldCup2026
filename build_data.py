@@ -223,10 +223,6 @@ matches = [
  ("Uzbekistan",1,"Colombia",3,"Jun 17","Luis Diaz on target; Munoz & Campaz seal it"),
  ("England",4,"Croatia",2,"Jun 17","Kane brace, Bellingham & Rashford in a 6-goal thriller"),
  ("Ghana",1,"Panama",0,"Jun 17","Yirenkyi's stoppage-time winner for the Black Stars"),
- ("Portugal",1,"DR Congo",1,"Jun 17","Ronaldo blanks again; DR Congo grab a historic first point"),
- ("Colombia",3,"Uzbekistan",1,"Jun 17","Luis Diaz on the mark for Colombia"),
- ("England",4,"Croatia",2,"Jun 17","Kane brace, Bellingham & Rashford"),
- ("Ghana",1,"Panama",0,"Jun 17","Yirenkyi winner deep in stoppage time"),
 ]
 gf={t:0 for t,_,_ in TEAMS}; ga={t:0 for t,_,_ in TEAMS}; played={t:0 for t,_,_ in TEAMS}
 for h,hg,a,ag,d,n in matches:
