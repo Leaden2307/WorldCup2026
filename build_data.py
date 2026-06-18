@@ -186,7 +186,7 @@ FLAG = {c:flag_html(c) for c in ISO}
 # ============================================================
 #  >>>> DAILY UPDATE AREA  (edit these 4 things each day) <<<<
 # ============================================================
-FACT = "Kylian Mbappe’s double against Senegal made him France’s all-time World Cup top scorer — and it’s Luca & Nicholas who hold him, now joint-second in the Golden Boot race behind Messi."   # witty fact of the day
+FACT = "England opened with a 4-2 win over Croatia and three office picks scored — Harry Kane (Iaia & Sam) with a brace, plus Bellingham (Ben & Georgina) and Rashford (Dzidzor & Andrew). Ronaldo, meanwhile, blanked yet again as DR Congo grabbed a historic first point.""   # witty fact of the day
 UPDATED = "18 June 2026"                 # date label shown on the site
 STAGE   = "Group Stage \u00b7 Matchday 2"    # e.g. "Group Stage \u00b7 Matchday 2", "Round of 32", "Final"
 # Teams that have been KNOCKED OUT (use exact names from the team list):
@@ -223,6 +223,10 @@ matches = [
  ("Uzbekistan",1,"Colombia",3,"Jun 17","Luis Diaz on target; Munoz & Campaz seal it"),
  ("England",4,"Croatia",2,"Jun 17","Kane brace, Bellingham & Rashford in a 6-goal thriller"),
  ("Ghana",1,"Panama",0,"Jun 17","Yirenkyi's stoppage-time winner for the Black Stars"),
+ ("Portugal",1,"DR Congo",1,"Jun 17","Ronaldo blanks again; DR Congo grab a historic first point"),
+ ("Colombia",3,"Uzbekistan",1,"Jun 17","Luis Diaz on the mark for Colombia"),
+ ("England",4,"Croatia",2,"Jun 17","Kane brace, Bellingham & Rashford"),
+ ("Ghana",1,"Panama",0,"Jun 17","Yirenkyi winner deep in stoppage time"),
 ]
 gf={t:0 for t,_,_ in TEAMS}; ga={t:0 for t,_,_ in TEAMS}; played={t:0 for t,_,_ in TEAMS}
 for h,hg,a,ag,d,n in matches:
