@@ -187,6 +187,7 @@ FLAG = {c:flag_html(c) for c in ISO}
 #  >>>> DAILY UPDATE AREA  (edit these 4 things each day) <<<<
 # ============================================================
 FACT = "England opened with a 4-2 win over Croatia and three office picks scored — Harry Kane (Iaia & Sam) with a brace, plus Bellingham (Ben & Georgina) and Rashford (Dzidzor & Andrew). Ronaldo, meanwhile, blanked yet again as DR Congo grabbed a historic first point."   # witty fact of the day
+FIXTURES = [("17:00","Czech Republic","South Africa"),("20:00","Switzerland","Bosnia and Herzegovina"),("23:00","Canada","Qatar")]   # today's kick-offs (UK time)
 UPDATED = "18 June 2026"                 # date label shown on the site
 STAGE   = "Group Stage \u00b7 Matchday 2"    # e.g. "Group Stage \u00b7 Matchday 2", "Round of 32", "Final"
 # Teams that have been KNOCKED OUT (use exact names from the team list):
@@ -296,6 +297,7 @@ data={
  ],
  "matches":[{"home":h,"hg":hg,"away":a,"ag":ag,"date":d,"note":n,"homeFlag":FLAG.get(h,"⚽"),"awayFlag":FLAG.get(a,"⚽")} for h,hg,a,ag,d,n in matches],
  "otherScorers":[{"player":p,"country":c,"flag":FLAG.get(c,"⚽"),"goals":g} for p,c,g in OTHER_SCORERS],
+ "fixtures":[{"time":t,"home":h,"away":a,"homeFlag":FLAG.get(h,"\u26bd"),"awayFlag":FLAG.get(a,"\u26bd"),"group":team_group.get(h,"?")} for t,h,a in FIXTURES],
  "players":players_out,"teams":teams_out,
 }
 with open(os.path.join(OUT,"data.js"),"w",encoding="utf-8") as f:

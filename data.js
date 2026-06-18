@@ -332,6 +332,32 @@ window.WCDATA = {
   }
  ],
  "otherScorers": [],
+ "fixtures": [
+  {
+   "time": "17:00",
+   "home": "Czech Republic",
+   "away": "South Africa",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/cz.svg\" alt=\"Czech Republic\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/za.svg\" alt=\"South Africa\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "A"
+  },
+  {
+   "time": "20:00",
+   "home": "Switzerland",
+   "away": "Bosnia and Herzegovina",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ch.svg\" alt=\"Switzerland\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ba.svg\" alt=\"Bosnia and Herzegovina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "B"
+  },
+  {
+   "time": "23:00",
+   "home": "Canada",
+   "away": "Qatar",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ca.svg\" alt=\"Canada\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/qa.svg\" alt=\"Qatar\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "B"
+  }
+ ],
  "players": [
   {
    "player": "Nicholas Jackson",

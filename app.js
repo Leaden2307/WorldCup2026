@@ -247,6 +247,26 @@ function renderFinder(q){
 }
 $('#finderInput').addEventListener('input',e=>renderFinder(e.target.value));
 
+
+/* TODAY'S FIXTURES */
+function renderFixtures(){
+  const g=$('#fixtureGrid'); if(!g) return; g.innerHTML='';
+  const fx=D.fixtures||[];
+  if(!fx.length){ g.append(el('div','muted-note','No matches today — back tomorrow! \u26bd')); return; }
+  const faces=team=>{ const t=D.teams.find(x=>x.team===team); if(!t||!t.owners.length) return '';
+    return '<span style="display:inline-flex;margin-left:8px">'+t.owners.map(o=>'<img src="'+(o.avatar||ph)+'" title="'+o.name+(o.league?' ('+o.league+')':'')+'" style="width:22px;height:22px;border-radius:50%;object-fit:cover;border:1.5px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.2);margin-left:-5px">').join('')+'</span>'; };
+  fx.forEach(f=>{
+    const c=el('div'); c.style.cssText='background:#fff;border:1px solid var(--line);border-radius:8px;box-shadow:0 5px 14px rgba(20,40,80,.05);padding:12px 14px;display:flex;align-items:center;gap:12px';
+    c.innerHTML='<span style="font-family:Roboto;font-weight:700;background:var(--ink);color:#fff;padding:5px 9px;border-radius:5px;font-size:13px;flex:0 0 auto">'+f.time+'</span>'
+      +'<div style="flex:1;min-width:0">'
+      +'<div style="display:flex;align-items:center;gap:7px;font-weight:700;font-size:14.5px">'+f.homeFlag+' '+f.home+faces(f.home)+'</div>'
+      +'<div style="display:flex;align-items:center;gap:7px;font-weight:700;font-size:14.5px;margin-top:6px">'+f.awayFlag+' '+f.away+faces(f.away)+'</div>'
+      +'</div>'
+      +'<span style="font-family:Roboto;font-weight:700;font-size:11px;color:var(--mut);background:var(--soft);padding:3px 8px;border-radius:5px;flex:0 0 auto">GRP '+f.group+'</span>';
+    g.append(c);
+  });
+}
+
 /* RESULTS */
 function ytid(u){ if(!u) return null; const m=u.match(/(?:v=|youtu\.be\/|embed\/)([\w-]{11})/); return m?m[1]:null; }
 function renderResults(){
@@ -280,7 +300,7 @@ function renderResults(){
 }
 
 /* NAV */
-const secs=[['prizes','🏆 Prizes'],['boot','👟 Golden Boot'],['teams','🌍 Teams'],['finder','🔎 My Picks'],['results','📋 Results']];
+const secs=[['fixtures','📅 Today'],['prizes','🏆 Prizes'],['boot','👟 Golden Boot'],['teams','🌍 Teams'],['finder','🔎 My Picks'],['results','📋 Results']];
 const nav=$('#nav');
 secs.forEach(([id,lbl])=>{ const b=el('button',null,lbl); b.onclick=()=>document.getElementById(id).scrollIntoView({behavior:'smooth'}); b.dataset.id=id; nav.append(b); });
 const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){nav.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.id===e.target.id));}});},{rootMargin:'-45% 0px -50% 0px'});
@@ -397,4 +417,4 @@ function renderHeroPoster(){
 }
 
 /* GO */
-renderPrizes(); renderBoot(); renderFilters(); renderTeams(); renderResults(); renderFact(); renderHeroPoster();
+renderFixtures(); renderPrizes(); renderBoot(); renderFilters(); renderTeams(); renderResults(); renderFact(); renderHeroPoster();

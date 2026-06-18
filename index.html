@@ -50,6 +50,7 @@ section{scroll-margin-top:64px;margin-bottom:46px}
 #teams .sec-head{background:var(--cyan);color:var(--ink)}
 #finder .sec-head{background:var(--pink);color:#fff}
 #results .sec-head{background:var(--orange);color:var(--ink)}
+#fixtures .sec-head{background:var(--yellow);color:var(--ink)}
 @media(max-width:560px){.sec-head{flex-wrap:wrap}}
 
 /* ---------- PRIZE BOARD ---------- */
@@ -159,6 +160,12 @@ footer b{color:var(--ink)}
 <nav><div class="nav-in" id="nav"></div></nav>
 
 <div class="wrap">
+
+  <section id="fixtures">
+    <div class="sec-head"><span class="ic">📅</span><h2>Today's Fixtures</h2>
+      <span class="hint">Kick-off times (UK) and who holds each team.</span></div>
+    <div class="results" id="fixtureGrid"></div>
+  </section>
 
   <section id="prizes">
     <div class="sec-head"><span class="ic">🏆</span><h2>The Prize Board</h2>
