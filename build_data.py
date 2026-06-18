@@ -187,15 +187,15 @@ FLAG = {c:flag_html(c) for c in ISO}
 #  >>>> DAILY UPDATE AREA  (edit these 4 things each day) <<<<
 # ============================================================
 FACT = "Lionel Messi, at 38, scored his first-ever World Cup hat-trick to sink Algeria \u2014 equalling Klose's all-time tournament goal record and firing Lorenz & John-Alexander's pick to the top of the Golden Boot."   # witty fact of the day
-UPDATED = "17 June 2026"                 # date label shown on the site
-STAGE   = "Group Stage \u00b7 Matchday 1"    # e.g. "Group Stage \u00b7 Matchday 2", "Round of 32", "Final"
+UPDATED = "18 June 2026"                 # date label shown on the site
+STAGE   = "Group Stage \u00b7 Matchday 2"    # e.g. "Group Stage \u00b7 Matchday 2", "Round of 32", "Final"
 # Teams that have been KNOCKED OUT (use exact names from the team list):
 ELIMINATED = set()        # e.g. {"South Africa","Curacao"}
 # Teams confirmed THROUGH to the next round (optional, shows a green tick):
 THROUGH = set()           # e.g. {"Germany","Mexico"}
 # ------------------------------------------------------------
 REDCARDS = {"South Africa":2}   # team -> total red cards (tournament)
-GOALS = {"Lionel Messi":3,"Folarin Balogun":2,"Kai Havertz":2,"Kylian Mbappe":2,"Erling Haaland":2,"Jamal Musiala":1,"Alexander Isak":1,"Viktor Gyokeres":1,"Vinicius Junior":1,"Breel Embolo":1,"John McGinn":1}
+GOALS = {"Lionel Messi":3,"Folarin Balogun":2,"Kai Havertz":2,"Kylian Mbappe":2,"Erling Haaland":2,"Harry Kane":2,"Jamal Musiala":1,"Alexander Isak":1,"Viktor Gyokeres":1,"Vinicius Junior":1,"Breel Embolo":1,"John McGinn":1,"Jude Bellingham":1,"Marcus Rashford":1,"Luis Diaz":1}
 # Scorers NOT drafted by anyone (shown on the board for context, can't win the office prize):
 OTHER_SCORERS = []   # (per request: only show players someone drafted)
 matches = [
@@ -219,6 +219,10 @@ matches = [
  ("Brazil",1,"Morocco",1,"Jun 13","Vinicius Jr cancels out Saibari"),
  ("Scotland",1,"Haiti",0,"Jun 13","John McGinn settles it for Scotland"),
  ("Australia",2,"Turkey",0,"Jun 13","Irankunda & Metcalfe stun Turkiye"),
+ ("Portugal",1,"DR Congo",1,"Jun 17","Joao Neves opens; Wissa levels for DR Congo"),
+ ("Uzbekistan",1,"Colombia",3,"Jun 17","Luis Diaz on target; Munoz & Campaz seal it"),
+ ("England",4,"Croatia",2,"Jun 17","Kane brace, Bellingham & Rashford in a 6-goal thriller"),
+ ("Ghana",1,"Panama",0,"Jun 17","Yirenkyi's stoppage-time winner for the Black Stars"),
 ]
 gf={t:0 for t,_,_ in TEAMS}; ga={t:0 for t,_,_ in TEAMS}; played={t:0 for t,_,_ in TEAMS}
 for h,hg,a,ag,d,n in matches:

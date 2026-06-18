@@ -1,8 +1,8 @@
 // World Cup 2026 Office Sweepstake - live data. Auto-updated daily.
 window.WCDATA = {
  "meta": {
-  "updated": "17 June 2026",
-  "stage": "Group Stage · Matchday 1",
+  "updated": "18 June 2026",
+  "stage": "Group Stage · Matchday 2",
   "fact": "Lionel Messi, at 38, scored his first-ever World Cup hat-trick to sink Algeria — equalling Klose's all-time tournament goal record and firing Lorenz & John-Alexander's pick to the top of the Golden Boot.",
   "note": "Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."
  },
@@ -289,6 +289,46 @@ window.WCDATA = {
    "note": "Irankunda & Metcalfe stun Turkiye",
    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/au.svg\" alt=\"Australia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/tr.svg\" alt=\"Turkey\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "Portugal",
+   "hg": 1,
+   "away": "DR Congo",
+   "ag": 1,
+   "date": "Jun 17",
+   "note": "Joao Neves opens; Wissa levels for DR Congo",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/pt.svg\" alt=\"Portugal\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/cd.svg\" alt=\"DR Congo\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "Uzbekistan",
+   "hg": 1,
+   "away": "Colombia",
+   "ag": 3,
+   "date": "Jun 17",
+   "note": "Luis Diaz on target; Munoz & Campaz seal it",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/uz.svg\" alt=\"Uzbekistan\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/co.svg\" alt=\"Colombia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "England",
+   "hg": 4,
+   "away": "Croatia",
+   "ag": 2,
+   "date": "Jun 17",
+   "note": "Kane brace, Bellingham & Rashford in a 6-goal thriller",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/hr.svg\" alt=\"Croatia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "Ghana",
+   "hg": 1,
+   "away": "Panama",
+   "ag": 0,
+   "date": "Jun 17",
+   "note": "Yirenkyi's stoppage-time winner for the Black Stars",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gh.svg\" alt=\"Ghana\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/pa.svg\" alt=\"Panama\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
   }
  ],
  "otherScorers": [],
@@ -693,7 +733,7 @@ window.WCDATA = {
    "player": "Marcus Rashford",
    "country": "England",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 0,
+   "goals": 1,
    "owners": {
     "league1": {
      "name": "Dzidzor Kwaku",
@@ -747,7 +787,7 @@ window.WCDATA = {
    "player": "Jude Bellingham",
    "country": "England",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 0,
+   "goals": 1,
    "owners": {
     "league1": {
      "name": "Ben Black",
@@ -837,7 +877,7 @@ window.WCDATA = {
    "player": "Harry Kane",
    "country": "England",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 0,
+   "goals": 2,
    "owners": {
     "league1": {
      "name": "Iaia Loppi",
@@ -1071,7 +1111,7 @@ window.WCDATA = {
    "player": "Luis Diaz",
    "country": "Colombia",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/co.svg\" alt=\"Colombia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 0,
+   "goals": 1,
    "owners": {
     "league1": {
      "name": "Dominik Mrozinski",
@@ -1178,9 +1218,9 @@ window.WCDATA = {
     }
    ],
    "gf": 0,
-   "ga": 0,
+   "ga": 1,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -1345,10 +1385,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
+   "gf": 1,
    "ga": 0,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -1369,10 +1409,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
-   "ga": 0,
+   "gf": 1,
+   "ga": 1,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -1441,10 +1481,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
-   "ga": 0,
+   "gf": 1,
+   "ga": 3,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -1513,10 +1553,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
-   "ga": 0,
+   "gf": 3,
+   "ga": 1,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -1729,10 +1769,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
-   "ga": 0,
+   "gf": 1,
+   "ga": 1,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -1777,10 +1817,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
-   "ga": 0,
+   "gf": 2,
+   "ga": 4,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
@@ -1945,10 +1985,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
-   "ga": 0,
+   "gf": 4,
+   "ga": 2,
    "reds": 0,
-   "played": 0,
+   "played": 1,
    "status": "alive"
   },
   {
