@@ -186,7 +186,7 @@ FLAG = {c:flag_html(c) for c in ISO}
 # ============================================================
 #  >>>> DAILY UPDATE AREA  (edit these 4 things each day) <<<<
 # ============================================================
-FACT = "Lionel Messi, at 38, scored his first-ever World Cup hat-trick to sink Algeria \u2014 equalling Klose's all-time tournament goal record and firing Lorenz & John-Alexander's pick to the top of the Golden Boot."   # witty fact of the day
+FACT = "Kylian Mbappe’s double against Senegal made him France’s all-time World Cup top scorer — and it’s Luca & Nicholas who hold him, now joint-second in the Golden Boot race behind Messi."   # witty fact of the day
 UPDATED = "18 June 2026"                 # date label shown on the site
 STAGE   = "Group Stage \u00b7 Matchday 2"    # e.g. "Group Stage \u00b7 Matchday 2", "Round of 32", "Final"
 # Teams that have been KNOCKED OUT (use exact names from the team list):

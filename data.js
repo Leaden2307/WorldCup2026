@@ -3,7 +3,7 @@ window.WCDATA = {
  "meta": {
   "updated": "18 June 2026",
   "stage": "Group Stage · Matchday 2",
-  "fact": "Lionel Messi, at 38, scored his first-ever World Cup hat-trick to sink Algeria — equalling Klose's all-time tournament goal record and firing Lorenz & John-Alexander's pick to the top of the Golden Boot.",
+  "fact": "Kylian Mbappe’s double against Senegal made him France’s all-time World Cup top scorer — and it’s Luca & Nicholas who hold him, now joint-second in the Golden Boot race behind Messi.",
   "note": "Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."
  },
  "prizes": [
