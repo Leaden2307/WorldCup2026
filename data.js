@@ -3,7 +3,7 @@ window.WCDATA = {
  "meta": {
   "updated": "18 June 2026",
   "stage": "Group Stage · Matchday 2",
-  "fact": "Kylian Mbappe’s double against Senegal made him France’s all-time World Cup top scorer — and it’s Luca & Nicholas who hold him, now joint-second in the Golden Boot race behind Messi.",
+  "fact": "England opened with a 4-2 win over Croatia and three office picks scored — Harry Kane (Iaia & Sam) with a brace, plus Bellingham (Ben & Georgina) and Rashford (Dzidzor & Andrew). Ronaldo, meanwhile, blanked yet again as DR Congo grabbed a historic first point.",
   "note": "Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."
  },
  "prizes": [
@@ -327,6 +327,46 @@ window.WCDATA = {
    "ag": 0,
    "date": "Jun 17",
    "note": "Yirenkyi's stoppage-time winner for the Black Stars",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gh.svg\" alt=\"Ghana\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/pa.svg\" alt=\"Panama\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "Portugal",
+   "hg": 1,
+   "away": "DR Congo",
+   "ag": 1,
+   "date": "Jun 17",
+   "note": "Ronaldo blanks again; DR Congo grab a historic first point",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/pt.svg\" alt=\"Portugal\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/cd.svg\" alt=\"DR Congo\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "Colombia",
+   "hg": 3,
+   "away": "Uzbekistan",
+   "ag": 1,
+   "date": "Jun 17",
+   "note": "Luis Diaz on the mark for Colombia",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/co.svg\" alt=\"Colombia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/uz.svg\" alt=\"Uzbekistan\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "England",
+   "hg": 4,
+   "away": "Croatia",
+   "ag": 2,
+   "date": "Jun 17",
+   "note": "Kane brace, Bellingham & Rashford",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/hr.svg\" alt=\"Croatia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "Ghana",
+   "hg": 1,
+   "away": "Panama",
+   "ag": 0,
+   "date": "Jun 17",
+   "note": "Yirenkyi winner deep in stoppage time",
    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gh.svg\" alt=\"Ghana\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/pa.svg\" alt=\"Panama\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
   }
@@ -1218,9 +1258,9 @@ window.WCDATA = {
     }
    ],
    "gf": 0,
-   "ga": 1,
+   "ga": 2,
    "reds": 0,
-   "played": 1,
+   "played": 2,
    "status": "alive"
   },
   {
@@ -1385,10 +1425,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 1,
+   "gf": 2,
    "ga": 0,
    "reds": 0,
-   "played": 1,
+   "played": 2,
    "status": "alive"
   },
   {
@@ -1409,10 +1449,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 1,
-   "ga": 1,
+   "gf": 2,
+   "ga": 2,
    "reds": 0,
-   "played": 1,
+   "played": 2,
    "status": "alive"
   },
   {
@@ -1481,10 +1521,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 1,
-   "ga": 3,
+   "gf": 2,
+   "ga": 6,
    "reds": 0,
-   "played": 1,
+   "played": 2,
    "status": "alive"
   },
   {
@@ -1553,10 +1593,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 3,
-   "ga": 1,
+   "gf": 6,
+   "ga": 2,
    "reds": 0,
-   "played": 1,
+   "played": 2,
    "status": "alive"
   },
   {
@@ -1769,10 +1809,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 1,
-   "ga": 1,
+   "gf": 2,
+   "ga": 2,
    "reds": 0,
-   "played": 1,
+   "played": 2,
    "status": "alive"
   },
   {
@@ -1817,10 +1857,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 2,
-   "ga": 4,
+   "gf": 4,
+   "ga": 8,
    "reds": 0,
-   "played": 1,
+   "played": 2,
    "status": "alive"
   },
   {
@@ -1985,10 +2025,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 4,
-   "ga": 2,
+   "gf": 8,
+   "ga": 4,
    "reds": 0,
-   "played": 1,
+   "played": 2,
    "status": "alive"
   },
   {

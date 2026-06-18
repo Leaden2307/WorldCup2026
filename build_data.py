@@ -186,7 +186,7 @@ FLAG = {c:flag_html(c) for c in ISO}
 # ============================================================
 #  >>>> DAILY UPDATE AREA  (edit these 4 things each day) <<<<
 # ============================================================
-FACT = "England opened with a 4-2 win over Croatia and three office picks scored — Harry Kane (Iaia & Sam) with a brace, plus Bellingham (Ben & Georgina) and Rashford (Dzidzor & Andrew). Ronaldo, meanwhile, blanked yet again as DR Congo grabbed a historic first point.""   # witty fact of the day
+FACT = "England opened with a 4-2 win over Croatia and three office picks scored — Harry Kane (Iaia & Sam) with a brace, plus Bellingham (Ben & Georgina) and Rashford (Dzidzor & Andrew). Ronaldo, meanwhile, blanked yet again as DR Congo grabbed a historic first point."   # witty fact of the day
 UPDATED = "18 June 2026"                 # date label shown on the site
 STAGE   = "Group Stage \u00b7 Matchday 2"    # e.g. "Group Stage \u00b7 Matchday 2", "Round of 32", "Final"
 # Teams that have been KNOCKED OUT (use exact names from the team list):
