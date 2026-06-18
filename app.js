@@ -380,5 +380,19 @@ function renderFact(){
   document.body.appendChild(box);
 }
 
+
+/* HERO POSTER — one official 2026 poster faded behind the banner, rotates daily */
+function renderHeroPoster(){
+  const hero=document.querySelector('.hero'); if(!hero) return;
+  const N=10, i=(new Date().getDate()% N)+1;
+  const bg=el('div');
+  bg.style.cssText='position:absolute;inset:0;z-index:0;background:url(assets/posters/p'+i+'.jpg) center/cover no-repeat;opacity:.20;pointer-events:none';
+  const ov=el('div');
+  ov.style.cssText='position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(28,73,180,.55),rgba(28,73,180,.78));pointer-events:none';
+  hero.insertBefore(ov,hero.firstChild);
+  hero.insertBefore(bg,hero.firstChild);
+  const cv=document.getElementById('confetti'); if(cv) cv.style.zIndex='1';
+}
+
 /* GO */
-renderPrizes(); renderBoot(); renderFilters(); renderTeams(); renderResults(); renderFact();
+renderPrizes(); renderBoot(); renderFilters(); renderTeams(); renderResults(); renderFact(); renderHeroPoster();
