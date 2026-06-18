@@ -64,8 +64,10 @@ function teamOwners(t){
 /* PRIZE BOARD */
 function renderPrizes(){
   const g=$('#prizeGrid'); g.innerHTML='';
-  D.prizes.forEach(p=>{
+  const PAL=['#1C49B4','#00B5E2','#00B96E','#96D200','#FF8A40','#FF5442','#F16AB7','#D2DC00','#FFCD00'];
+  D.prizes.forEach((p,i)=>{
     const c=el('div','prize'+(p.id==='winner'?' big':''));
+    c.style.setProperty('--stripe', PAL[i % PAL.length]);
     const h=el('div','ph');
     h.append(el('span','pe',p.emoji), el('span','pt',p.title), el('span','amt',p.amount));
     c.append(h, el('div','pd',p.desc));
