@@ -339,16 +339,25 @@ secs.forEach(([id])=>obs.observe(document.getElementById(id)));
   function rs(){ W=cv.width=cv.offsetWidth; H=cv.height=cv.offsetHeight; build(); }
   rs(); window.addEventListener('resize', rs);
   // --- mini-game: tap a ball or face to kick it up (keepy-uppy) ---
-  let score=0, best=0;
+  let score=0, best=0, combo=0, lastHit=0, mode='idle', endTime=0, overBy=''; const floaters=[];
   try{ best=parseInt(localStorage.getItem('wcKeepy')||'0',10)||0; }catch(e){}
   cv.style.pointerEvents='auto'; cv.style.cursor='pointer';
   const hi=document.querySelector('.hero-inner'); if(hi) hi.style.pointerEvents='none';
   function evpos(e){ const r=cv.getBoundingClientRect(); return [ (e.clientX-r.left)*(cv.width/r.width), (e.clientY-r.top)*(cv.height/r.height) ]; }
   function kickAt(mx,my){
+    const now=Date.now();
+    if(mode==='over'){ mode='idle'; score=0; combo=0; for(const b of balls) b.live=false; return; }   // first tap clears the result card
     let hit=null, hd=1e9;
     for(const b of balls){ const d=Math.hypot(b.x-mx,b.y-my); if(d<b.r+12 && d<hd){ hd=d; hit=b; } }
-    if(hit){ hit.vy=-(9+Math.random()*4); hit.vx+=(hit.x-mx)*0.16+(Math.random()*2-1)*1.4; hit.pop=7;
-      score++; if(score>best){ best=score; try{localStorage.setItem('wcKeepy',String(best));}catch(e){} } }
+    if(!hit) return;
+    if(mode==='idle'){ mode='play'; endTime=now+30000; score=0; combo=0; lastHit=0; }
+    combo = (now-lastHit<1300) ? combo+1 : 1; lastHit=now;
+    const mult=Math.min(combo,5);
+    const pts=(hit.big?5:1)*mult;
+    score+=pts; if(score>best){ best=score; try{localStorage.setItem('wcKeepy',String(best));}catch(e){} }
+    hit.live=true;
+    hit.vy=-(9+Math.random()*4); hit.vx+=(hit.x-mx)*0.16+(Math.random()*2-1)*1.4; hit.pop=7;
+    floaters.push({x:hit.x, y:hit.y-hit.r, txt:'+'+pts, life:30, big:hit.big});
   }
   cv.addEventListener('click', function(e){ const p=evpos(e); kickAt(p[0],p[1]); });
   function step(b){
@@ -357,6 +366,7 @@ secs.forEach(([id])=>obs.observe(document.getElementById(id)));
     if(b.x<b.r){ b.x=b.r; b.vx=Math.abs(b.vx); }
     else if(b.x>W-b.r){ b.x=W-b.r; b.vx=-Math.abs(b.vx); }
     if(b.y>H-b.r){
+      if(b.live && mode==='play'){ mode='over'; overBy='drop'; b.live=false; }   // dropped it — game over!
       b.y=H-b.r; b.vy=-b.vy*REST;
       const minUp=b.big?5.5:4.5;                 // keep them bouncing, never settle
       if(Math.abs(b.vy)<minUp) b.vy=-(minUp+Math.random()*3.5);
@@ -365,6 +375,7 @@ secs.forEach(([id])=>obs.observe(document.getElementById(id)));
     }
     if(b.y<b.r && b.vy<0){ b.y=b.r; b.vy=Math.abs(b.vy)*REST; }
     if(b.pop>0){ ctx.save(); ctx.beginPath(); ctx.arc(b.x,b.y,b.r+8-b.pop,0,6.28); ctx.lineWidth=3; ctx.strokeStyle='rgba(255,205,0,'+(b.pop/7)+')'; ctx.stroke(); ctx.restore(); }
+    if(b.live){ ctx.save(); ctx.beginPath(); ctx.arc(b.x,b.y,b.r+3,0,6.28); ctx.lineWidth=2.5; ctx.strokeStyle='#00B5E2'; ctx.stroke(); ctx.restore(); }
     if(b.ball){
       // a proper football
       ctx.save();
@@ -391,11 +402,28 @@ secs.forEach(([id])=>obs.observe(document.getElementById(id)));
     if(b.big){ ctx.beginPath(); ctx.arc(b.x,b.y,b.r-1,0,6.28); ctx.lineWidth=2.5; ctx.strokeStyle='#FFCD00'; ctx.stroke(); }
   }
   function hud(){
-    ctx.save(); ctx.textAlign='left'; ctx.textBaseline='top';
-    ctx.shadowColor='rgba(0,0,0,.35)'; ctx.shadowBlur=4; ctx.fillStyle='#fff';
+    const now=Date.now();
+    if(mode==='play' && now>=endTime){ mode='over'; overBy='time'; }
+    if(mode==='play' && now-lastHit>1300) combo=0;
+    for(let k=floaters.length-1;k>=0;k--){ const f=floaters[k]; f.y-=0.8; f.life--;
+      if(f.life<=0){ floaters.splice(k,1); continue; }
+      ctx.save(); ctx.globalAlpha=Math.max(0,f.life/30); ctx.fillStyle=f.big?'#FFCD00':'#fff';
+      ctx.font='700 '+(f.big?18:14)+'px Roboto, Arial, sans-serif'; ctx.textAlign='center';
+      ctx.shadowColor='rgba(0,0,0,.4)'; ctx.shadowBlur=3; ctx.fillText(f.txt,f.x,f.y); ctx.restore(); }
+    ctx.save(); ctx.textBaseline='top'; ctx.shadowColor='rgba(0,0,0,.35)'; ctx.shadowBlur=4;
+    ctx.textAlign='left'; ctx.fillStyle='#fff';
     ctx.font='700 22px Roboto, Arial, sans-serif'; ctx.fillText('\u26bd '+score, 16, 12);
-    ctx.globalAlpha=.85; ctx.font='600 11px Roboto, Arial, sans-serif';
-    ctx.fillText('BEST '+best+'  \u00b7  tap the players!', 18, 40);
+    ctx.globalAlpha=.85; ctx.font='600 11px Roboto, Arial, sans-serif'; ctx.fillText('BEST '+best, 18, 40); ctx.globalAlpha=1;
+    if(mode==='play'){
+      const left=Math.max(0,Math.ceil((endTime-now)/1000));
+      ctx.textAlign='right'; ctx.font='700 22px Roboto, Arial, sans-serif';
+      ctx.fillStyle = left<=5 ? '#FF5442' : '#fff'; ctx.fillText('\u23f1 '+left+'s', W-16, 12);
+      if(combo>=2){ ctx.fillStyle='#FFCD00'; ctx.font='700 15px Roboto, Arial, sans-serif'; ctx.fillText('COMBO \u00d7'+Math.min(combo,5), W-16, 42); }
+    } else {
+      ctx.textAlign='center'; ctx.font='700 15px Roboto, Arial, sans-serif'; ctx.fillStyle='#fff';
+      const overMsg=(overBy==='drop'?'DROPPED! ':'TIME! ')+'You scored '+score+' \u00b7 tap to play again';
+      ctx.fillText(mode==='over' ? overMsg : 'Tap to start \u00b7 keep the live ball off the floor \u00b7 30s', W/2, H-26);
+    }
     ctx.restore();
   }
   function loop(){ ctx.clearRect(0,0,W,H); for(const b of balls) step(b); hud(); requestAnimationFrame(loop); }
