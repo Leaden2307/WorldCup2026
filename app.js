@@ -344,23 +344,43 @@ secs.forEach(([id])=>obs.observe(document.getElementById(id)));
   const ui=el('div'); ui.style.cssText='position:absolute;inset:0;z-index:5;display:flex;align-items:flex-end;justify-content:flex-start;padding:16px;pointer-events:none';
   hero.appendChild(ui);
   function btn(label){ const b=el('button',null,label); b.style.cssText='pointer-events:auto;margin-top:12px;background:#FFCD00;color:#16213a;border:0;border-radius:8px;font-family:Roboto;font-weight:700;text-transform:uppercase;font-size:16px;padding:10px 24px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.25)'; return b; }
+  // ---- shared leaderboard (Netlify function + Blobs) ----
+  const LB_URL='/.netlify/functions/leaderboard';
+  let topScores=[]; let pname=''; try{ pname=localStorage.getItem('wcName')||''; }catch(e){}
+  function top3html(){ if(!topScores.length) return ''; const m=['🥇','🥈','🥉'];
+    return '<div style="margin-top:10px;border-top:1px solid rgba(255,255,255,.3);padding-top:8px;font-size:13px;text-align:left;min-width:170px">'
+      +'<div style="font-weight:700;text-transform:uppercase;font-size:11px;opacity:.8;margin-bottom:4px">Office Top 3</div>'
+      +topScores.map((s,i)=>(m[i]||'')+' <b>'+s.name+'</b> — '+s.score).join('<br>')+'</div>'; }
+  async function lbFetch(){ try{ const r=await fetch(LB_URL); if(r.ok) topScores=await r.json(); }catch(e){} if(mode==='idle') showStart(); }
+  async function lbSubmit(name,score){ try{ const r=await fetch(LB_URL,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({name,score})}); if(r.ok) topScores=await r.json(); }catch(e){} }
+
   function showStart(){
     ui.innerHTML=''; const c=el('div'); c.style.cssText=CARD;
     c.innerHTML='<div style="font-weight:700;font-size:19px;text-transform:uppercase">⚽ Keepy-Uppy Challenge</div>'
       +'<div style="font-size:12.5px;opacity:.92;margin:6px 0 2px">Tap as many players as you can in 30 seconds.<br>Directors score <b>5×</b> · quick taps build a <b>combo</b>.</div>'
-      +'<div style="font-size:12px;opacity:.85;margin-top:4px">Best: <b>'+best+'</b></div>';
+      +'<div style="font-size:12px;opacity:.85;margin-top:4px">Your best: <b>'+best+'</b></div>'
+      +top3html();
     const b=btn('▶ Play'); b.onclick=startGame; c.appendChild(b); ui.appendChild(c);
   }
   function showOver(){
     ui.innerHTML=''; const c=el('div'); c.style.cssText=CARD; const nb=score>=best;
     c.innerHTML='<div style="font-weight:700;font-size:20px;text-transform:uppercase;color:#FFCD00">Time!</div>'
       +'<div style="font-size:15px;margin:6px 0">You scored <b style="font-size:22px">'+score+'</b></div>'
-      +'<div style="font-size:12.5px;opacity:.9">'+(nb?'🏆 New best!':'Best: '+best)+'</div>';
-    const b=btn('↺ Play again'); b.onclick=startGame; c.appendChild(b); ui.appendChild(c);
+      +'<div style="font-size:12px;opacity:.9">'+(nb?'🏆 New personal best!':'Your best: '+best)+'</div>';
+    const row=el('div'); row.style.cssText='margin-top:10px;display:flex;gap:6px;justify-content:center';
+    const inp=el('input'); inp.placeholder='Your name'; inp.value=pname; inp.maxLength=20;
+    inp.style.cssText='pointer-events:auto;border:0;border-radius:6px;padding:8px 10px;font-family:Roboto;font-size:14px;width:130px';
+    const sub=el('button',null,'Submit'); sub.style.cssText='pointer-events:auto;background:#FFCD00;color:#16213a;border:0;border-radius:6px;font-family:Roboto;font-weight:700;padding:8px 12px;cursor:pointer';
+    const top=el('div'); function paint(){ top.innerHTML=top3html(); }
+    paint();
+    sub.onclick=async()=>{ const nm=((inp.value||'Anon').trim().slice(0,20))||'Anon'; pname=nm; try{localStorage.setItem('wcName',nm);}catch(e){}
+      sub.disabled=true; sub.textContent='…'; await lbSubmit(nm,score); paint(); sub.textContent='Saved ✓'; };
+    row.append(inp,sub); c.appendChild(row); c.appendChild(top);
+    const again=btn('↺ Play again'); again.onclick=startGame; c.appendChild(again); ui.appendChild(c);
   }
   function startGame(){ score=0; combo=0; lastHit=0; endTime=Date.now()+30000; mode='play'; floaters.length=0; ui.innerHTML=''; }
   function endGame(){ mode='over'; if(score>best){ best=score; try{localStorage.setItem('wcKeepy',String(best));}catch(e){} } showOver(); }
-  showStart();
+  showStart(); lbFetch();
 
   function evpos(e){ const r=cv.getBoundingClientRect(); return [ (e.clientX-r.left)*(cv.width/r.width), (e.clientY-r.top)*(cv.height/r.height) ]; }
   function kickAt(mx,my){
