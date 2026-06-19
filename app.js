@@ -18,16 +18,18 @@ $('#footMeta').textContent = D.meta.stage+' — '+D.meta.note;
 const playersSorted = [...D.players].sort((a,b)=>b.goals-a.goals);
 const maxGoals = playersSorted.length ? playersSorted[0].goals : 0;
 function biggestDefeat(){
-  let best=null;
+  let mx=0;
+  D.matches.forEach(m=>{ const marg=Math.abs(m.hg-m.ag); if(marg>mx) mx=marg; });
+  if(mx<=0) return [];
+  const out=[];
   D.matches.forEach(m=>{
     const marg=Math.abs(m.hg-m.ag);
-    if(marg<=0) return;
-    const loser = m.hg>m.ag ? m.away : m.home;
-    if(!best || marg>best.marg){ best={marg,loser,m}; }
+    if(marg===mx){
+      const loser = m.hg>m.ag ? m.away : m.home;
+      out.push({marg, loser, m, team: D.teams.find(t=>t.team===loser)});
+    }
   });
-  if(!best) return null;
-  best.team = D.teams.find(t=>t.team===best.loser);
-  return best;
+  return out;
 }
 function topTeams(key){
   const mx=Math.max(...D.teams.map(t=>t[key]));
@@ -92,12 +94,12 @@ function renderPrizes(){
         body.append(teamOwners(t));
       });
     } else if(p.metric==='defeat'){
-      const b=biggestDefeat();
-      if(!b){ body=tbd('No thrashings yet'); }
-      else{
+      const list=biggestDefeat();
+      if(!list.length){ body=tbd('No thrashings yet'); }
+      else list.forEach(b=>{
         body.append(sectionLabel(b.team.flag+' '+b.team.team+' — <span style="color:var(--red)">lost by '+b.marg+'</span> &nbsp;<span style="color:var(--mut);font-weight:600">'+b.m.home.slice(0,3).toUpperCase()+' '+b.m.hg+'-'+b.m.ag+' '+b.m.away.slice(0,3).toUpperCase()+'</span>'));
         body.append(teamOwners(b.team));
-      }
+      });
     } else if(p.metric==='team'){
       body=tbd(p.id==='winner'?'To be decided — final is 19 July':'Decided at the final');
     } else if(p.metric==='judged'){
