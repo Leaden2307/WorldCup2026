@@ -357,7 +357,7 @@ secs.forEach(([id])=>obs.observe(document.getElementById(id)));
   function showStart(){
     ui.innerHTML=''; const c=el('div'); c.style.cssText=CARD;
     c.innerHTML='<div style="font-weight:700;font-size:19px;text-transform:uppercase">⚽ Keepy-Uppy Challenge</div>'
-      +'<div style="font-size:12.5px;opacity:.92;margin:6px 0 2px">Tap as many players as you can in 30 seconds.<br>Directors score <b>5×</b> · quick taps build a <b>combo</b>.</div>'
+      +'<div style="font-size:12.5px;opacity:.92;margin:6px 0 2px">Tap as many players as you can in 15 seconds.<br>Directors score <b>5×</b> · quick taps build a <b>combo</b>.</div>'
       +'<div style="font-size:12px;opacity:.85;margin-top:4px">Your best: <b>'+best+'</b></div>'
       +top3html();
     const b=btn('▶ Play'); b.onclick=startGame; c.appendChild(b); ui.appendChild(c);
@@ -378,7 +378,7 @@ secs.forEach(([id])=>obs.observe(document.getElementById(id)));
     row.append(inp,sub); c.appendChild(row); c.appendChild(top);
     const again=btn('↺ Play again'); again.onclick=startGame; c.appendChild(again); ui.appendChild(c);
   }
-  function startGame(){ score=0; combo=0; lastHit=0; endTime=Date.now()+30000; mode='play'; floaters.length=0; ui.innerHTML=''; }
+  function startGame(){ score=0; combo=0; lastHit=0; endTime=Date.now()+15000; mode='play'; floaters.length=0; ui.innerHTML=''; }
   function endGame(){ mode='over'; if(score>best){ best=score; try{localStorage.setItem('wcKeepy',String(best));}catch(e){} } showOver(); }
   showStart(); lbFetch();
 

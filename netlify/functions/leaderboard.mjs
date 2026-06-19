@@ -1,7 +1,7 @@
 import { getStore } from '@netlify/blobs';
 
 export default async (req) => {
-  const store = getStore('keepy-leaderboard');
+  const store = getStore('keepy-leaderboard-v2');
   const KEY = 'scores';
   if (req.method === 'POST') {
     let body = {};
