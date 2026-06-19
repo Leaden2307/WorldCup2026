@@ -186,17 +186,17 @@ FLAG = {c:flag_html(c) for c in ISO}
 # ============================================================
 #  >>>> DAILY UPDATE AREA  (edit these 4 things each day) <<<<
 # ============================================================
-FACT = "England opened with a 4-2 win over Croatia and three office picks scored — Harry Kane (Iaia & Sam) with a brace, plus Bellingham (Ben & Georgina) and Rashford (Dzidzor & Andrew). Ronaldo, meanwhile, blanked yet again as DR Congo grabbed a historic first point."   # witty fact of the day
-FIXTURES = [("17:00","Czech Republic","South Africa"),("20:00","Switzerland","Bosnia and Herzegovina"),("23:00","Canada","Qatar")]   # today's kick-offs (UK time)
-UPDATED = "18 June 2026"                 # date label shown on the site
+FACT = "Canada's Jonathan David helped himself to a hat-trick in a 6-0 demolition of nine-man Qatar — a dream night for Helen Davis, who owns both David and Canada in League 2. Switzerland's Breel Embolo (Ian Birtles & Maurice Brennan) turned provider but didn't score as the Swiss put four past Bosnia."   # witty fact of the day
+FIXTURES = [("20:00","USA","Australia"),("23:00","Scotland","Morocco"),("02:00","Brazil","Haiti"),("05:00","Turkey","Paraguay")]   # today's kick-offs (UK time)
+UPDATED = "19 June 2026"                 # date label shown on the site
 STAGE   = "Group Stage \u00b7 Matchday 2"    # e.g. "Group Stage \u00b7 Matchday 2", "Round of 32", "Final"
 # Teams that have been KNOCKED OUT (use exact names from the team list):
 ELIMINATED = set()        # e.g. {"South Africa","Curacao"}
 # Teams confirmed THROUGH to the next round (optional, shows a green tick):
 THROUGH = set()           # e.g. {"Germany","Mexico"}
 # ------------------------------------------------------------
-REDCARDS = {"South Africa":2}   # team -> total red cards (tournament)
-GOALS = {"Lionel Messi":3,"Folarin Balogun":2,"Kai Havertz":2,"Kylian Mbappe":2,"Erling Haaland":2,"Harry Kane":2,"Jamal Musiala":1,"Alexander Isak":1,"Viktor Gyokeres":1,"Vinicius Junior":1,"Breel Embolo":1,"John McGinn":1,"Jude Bellingham":1,"Marcus Rashford":1,"Luis Diaz":1}
+REDCARDS = {"South Africa":2,"Qatar":2,"Bosnia and Herzegovina":1}   # team -> total red cards (tournament)
+GOALS = {"Lionel Messi":3,"Folarin Balogun":2,"Kai Havertz":2,"Kylian Mbappe":2,"Erling Haaland":2,"Harry Kane":2,"Jamal Musiala":1,"Alexander Isak":1,"Viktor Gyokeres":1,"Vinicius Junior":1,"Breel Embolo":1,"John McGinn":1,"Jude Bellingham":1,"Marcus Rashford":1,"Luis Diaz":1,"Jonathan David":3}
 # Scorers NOT drafted by anyone (shown on the board for context, can't win the office prize):
 OTHER_SCORERS = []   # (per request: only show players someone drafted)
 matches = [
@@ -224,6 +224,10 @@ matches = [
  ("Uzbekistan",1,"Colombia",3,"Jun 17","Luis Diaz on target; Munoz & Campaz seal it"),
  ("England",4,"Croatia",2,"Jun 17","Kane brace, Bellingham & Rashford in a 6-goal thriller"),
  ("Ghana",1,"Panama",0,"Jun 17","Yirenkyi's stoppage-time winner for the Black Stars"),
+ ("Czech Republic",1,"South Africa",1,"Jun 18","Sadilek's early opener cancelled by Mokoena's late penalty"),
+ ("Mexico",1,"South Korea",0,"Jun 18","Luis Romo pounces on a goalkeeping blunder; Mexico top Group A"),
+ ("Switzerland",4,"Bosnia and Herzegovina",1,"Jun 18","Manzambi brace, Vargas & Xhaka pen; Bosnia red card"),
+ ("Canada",6,"Qatar",0,"Jun 18","Jonathan David hat-trick as Qatar finish with nine men"),
 ]
 gf={t:0 for t,_,_ in TEAMS}; ga={t:0 for t,_,_ in TEAMS}; played={t:0 for t,_,_ in TEAMS}
 for h,hg,a,ag,d,n in matches:
