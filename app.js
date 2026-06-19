@@ -341,7 +341,7 @@ secs.forEach(([id])=>obs.observe(document.getElementById(id)));
   const hiInner=document.querySelector('.hero-inner'); if(hiInner) hiInner.style.pointerEvents='none';
 
   const CARD='pointer-events:auto;background:rgba(20,40,90,.92);color:#fff;border:2px solid #FFCD00;border-radius:12px;padding:16px 22px;text-align:center;box-shadow:0 12px 34px rgba(0,0,0,.35);font-family:Roboto;max-width:92%';
-  const ui=el('div'); ui.style.cssText='position:absolute;inset:0;z-index:5;display:flex;align-items:center;justify-content:center;pointer-events:none';
+  const ui=el('div'); ui.style.cssText='position:absolute;inset:0;z-index:5;display:flex;align-items:flex-end;justify-content:flex-start;padding:16px;pointer-events:none';
   hero.appendChild(ui);
   function btn(label){ const b=el('button',null,label); b.style.cssText='pointer-events:auto;margin-top:12px;background:#FFCD00;color:#16213a;border:0;border-radius:8px;font-family:Roboto;font-weight:700;text-transform:uppercase;font-size:16px;padding:10px 24px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.25)'; return b; }
   function showStart(){
