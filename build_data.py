@@ -186,17 +186,17 @@ FLAG = {c:flag_html(c) for c in ISO}
 # ============================================================
 #  >>>> DAILY UPDATE AREA  (edit these 4 things each day) <<<<
 # ============================================================
-FACT = "Two record-quick goals lit up Friday: Morocco's Saibari struck after 72 seconds, then Paraguay's Matias Galarza went one better at 64 — the latter dumping Turkey out and ending the World Cup of Dominik Mrozinski & Austin Wright. Brazil finally clicked too, Matheus Cunha's brace (Holly Clarke & Lorenz Frenzen) and a Vinicius Jr strike (Kit Lee Smith & Luca D'Amico) sinking Haiti."   # witty fact of the day
-FIXTURES = [("18:00","Netherlands","Sweden"),("21:00","Germany","Ivory Coast"),("01:00","Ecuador","Curacao"),("05:00","Tunisia","Japan")]   # today's kick-offs (UK time)
-UPDATED = "20 June 2026"                 # date label shown on the site
+FACT = "Five-star Netherlands tore Sweden apart, Cody Gakpo's brace (Maxine Campbell & Andrew Tyley) the pick of the bunch, while Japan's 4-0 thrashing of Tunisia dumped Jai Watts & Emma Burton's side out. Germany left it latest of all \u2014 Deniz Undav's 94th-minute winner sparing Luca D'Amico & Georgina Robledo Padilla's blushes."   # witty fact of the day
+FIXTURES = [("17:00","Spain","Saudi Arabia"),("20:00","Belgium","Iran"),("23:00","Uruguay","Cape Verde"),("02:00","New Zealand","Egypt")]   # today's kick-offs (UK time)
+UPDATED = "21 June 2026"                 # date label shown on the site
 STAGE   = "Group Stage \u00b7 Matchday 2"    # e.g. "Group Stage \u00b7 Matchday 2", "Round of 32", "Final"
 # Teams that have been KNOCKED OUT (use exact names from the team list):
-ELIMINATED = {"Turkey"}        # e.g. {"South Africa","Curacao"}
+ELIMINATED = {"Turkey","Tunisia"}        # e.g. {"South Africa","Curacao"}
 # Teams confirmed THROUGH to the next round (optional, shows a green tick):
-THROUGH = {"USA","Mexico"}           # e.g. {"Germany","Mexico"}
+THROUGH = {"USA","Mexico","Germany"}           # e.g. {"Germany","Mexico"}
 # ------------------------------------------------------------
 REDCARDS = {"South Africa":2,"Qatar":2,"Bosnia and Herzegovina":1,"Paraguay":1}   # team -> total red cards (tournament)
-GOALS = {"Lionel Messi":3,"Folarin Balogun":2,"Kai Havertz":2,"Kylian Mbappe":2,"Erling Haaland":2,"Harry Kane":2,"Jamal Musiala":1,"Alexander Isak":1,"Viktor Gyokeres":1,"Vinicius Junior":2,"Breel Embolo":1,"John McGinn":1,"Jude Bellingham":1,"Marcus Rashford":1,"Luis Diaz":1,"Jonathan David":3,"Matheus Cunha":2}
+GOALS = {"Lionel Messi":3,"Folarin Balogun":2,"Kai Havertz":2,"Kylian Mbappe":2,"Erling Haaland":2,"Harry Kane":2,"Jamal Musiala":1,"Alexander Isak":1,"Viktor Gyokeres":1,"Vinicius Junior":2,"Breel Embolo":1,"John McGinn":1,"Jude Bellingham":1,"Marcus Rashford":1,"Luis Diaz":1,"Jonathan David":3,"Matheus Cunha":2,"Cody Gakpo":2}
 # Scorers NOT drafted by anyone (shown on the board for context, can't win the office prize):
 OTHER_SCORERS = []   # (per request: only show players someone drafted)
 matches = [
@@ -232,6 +232,10 @@ matches = [
  ("Morocco",1,"Scotland",0,"Jun 19","Saibari after 72 seconds — earliest winner in WC 1-0 history"),
  ("USA",2,"Australia",0,"Jun 19","Burgess OG and Freeman; USA reach the knockouts, Pulisic rested"),
  ("Paraguay",1,"Turkey",0,"Jun 19","Galarza rocket; 10-man Paraguay send Turkiye out"),
+ ("Netherlands",5,"Sweden",1,"Jun 20","Brobbey & Gakpo braces, Summerville; statement Dutch win"),
+ ("Germany",2,"Ivory Coast",1,"Jun 20","Undav brace off the bench, 94th-min winner; Germany reach last 32"),
+ ("Ecuador",0,"Curacao",0,"Jun 20","Goalless in Group E; Curacao take another point"),
+ ("Tunisia",0,"Japan",4,"Jun 20","Ueda brace, Kamada & Ito; Japan through, Tunisia out"),
 ]
 gf={t:0 for t,_,_ in TEAMS}; ga={t:0 for t,_,_ in TEAMS}; played={t:0 for t,_,_ in TEAMS}
 for h,hg,a,ag,d,n in matches:
