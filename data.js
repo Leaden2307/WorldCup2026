@@ -1,9 +1,9 @@
 // World Cup 2026 Office Sweepstake - live data. Auto-updated daily.
 window.WCDATA = {
  "meta": {
-  "updated": "23 June 2026",
-  "stage": "Group Stage · Matchday 2",
-  "fact": "Lionel Messi (Lorenz Frenzen & John-Alexander Rudd) made history under the Texas lights — his brace against Austria made him the World Cup's all-time top scorer on 18 career goals, and five already this tournament keeps him firmly in the Golden Boot hunt. Erling Haaland (Matthew Radwan & Daniel Newman) matched him with a double of his own as Norway edged Senegal 3-2 to reach the last 32.",
+  "updated": "24 June 2026",
+  "stage": "Group Stage · Matchday 3",
+  "fact": "Cristiano Ronaldo (Jack Newton & Anna Au) turned back the clock in Houston, becoming the first player ever to score at SIX different World Cups as his early brace launched Portugal's 5-0 rout of debutants Uzbekistan — two tidy goals straight into the Golden Boot pot. Spare a thought for the owners of England and Ghana (Ayomide Erinle & Simon Davis), who cancelled each other out in a niggly goalless draw.",
   "note": "Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."
  },
  "prizes": [
@@ -529,41 +529,97 @@ window.WCDATA = {
    "note": "Algeria win to keep their hopes alive; Jordan bow out",
    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/jo.svg\" alt=\"Jordan\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/dz.svg\" alt=\"Algeria\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "Portugal",
+   "hg": 5,
+   "away": "Uzbekistan",
+   "ag": 0,
+   "date": "Jun 23",
+   "note": "Ronaldo brace — first man to score at six different World Cups; Mendes, Leao & an OG seal the rout",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/pt.svg\" alt=\"Portugal\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/uz.svg\" alt=\"Uzbekistan\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "Colombia",
+   "hg": 1,
+   "away": "DR Congo",
+   "ag": 0,
+   "date": "Jun 23",
+   "note": "Munoz settles it; Diaz denied twice as Colombia reach the last 32",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/co.svg\" alt=\"Colombia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/cd.svg\" alt=\"DR Congo\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "England",
+   "hg": 0,
+   "away": "Ghana",
+   "ag": 0,
+   "date": "Jun 23",
+   "note": "Niggly goalless draw in Boston; Ghana rearguard frustrates England",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gh.svg\" alt=\"Ghana\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "Panama",
+   "hg": 0,
+   "away": "Croatia",
+   "ag": 1,
+   "date": "Jun 23",
+   "note": "Budimir winner; Panama lose both openers and head out",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/pa.svg\" alt=\"Panama\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/hr.svg\" alt=\"Croatia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
   }
  ],
  "otherScorers": [],
  "fixtures": [
   {
-   "time": "18:00",
-   "home": "Portugal",
-   "away": "Uzbekistan",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/pt.svg\" alt=\"Portugal\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/uz.svg\" alt=\"Uzbekistan\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "K"
+   "time": "20:00",
+   "home": "Switzerland",
+   "away": "Canada",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ch.svg\" alt=\"Switzerland\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ca.svg\" alt=\"Canada\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "B"
   },
   {
-   "time": "21:00",
-   "home": "England",
-   "away": "Ghana",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gh.svg\" alt=\"Ghana\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "L"
+   "time": "20:00",
+   "home": "Bosnia and Herzegovina",
+   "away": "Qatar",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ba.svg\" alt=\"Bosnia and Herzegovina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/qa.svg\" alt=\"Qatar\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "B"
   },
   {
-   "time": "00:00",
-   "home": "Panama",
-   "away": "Croatia",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/pa.svg\" alt=\"Panama\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/hr.svg\" alt=\"Croatia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "L"
+   "time": "23:00",
+   "home": "Morocco",
+   "away": "Haiti",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ma.svg\" alt=\"Morocco\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ht.svg\" alt=\"Haiti\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "C"
   },
   {
-   "time": "03:00",
-   "home": "Colombia",
-   "away": "DR Congo",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/co.svg\" alt=\"Colombia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/cd.svg\" alt=\"DR Congo\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "K"
+   "time": "23:00",
+   "home": "Scotland",
+   "away": "Brazil",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-sct.svg\" alt=\"Scotland\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/br.svg\" alt=\"Brazil\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "C"
+  },
+  {
+   "time": "02:00",
+   "home": "South Africa",
+   "away": "South Korea",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/za.svg\" alt=\"South Africa\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/kr.svg\" alt=\"South Korea\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "A"
+  },
+  {
+   "time": "02:00",
+   "home": "Czech Republic",
+   "away": "Mexico",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/cz.svg\" alt=\"Czech Republic\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/mx.svg\" alt=\"Mexico\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "A"
   }
  ],
  "players": [
@@ -841,7 +897,7 @@ window.WCDATA = {
    "player": "Cristiano Ronaldo",
    "country": "Portugal",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/pt.svg\" alt=\"Portugal\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 0,
+   "goals": 2,
    "owners": {
     "league1": {
      "name": "Jack Newton",
@@ -1452,10 +1508,10 @@ window.WCDATA = {
     }
    ],
    "gf": 0,
-   "ga": 1,
+   "ga": 2,
    "reds": 0,
-   "played": 1,
-   "status": "alive"
+   "played": 2,
+   "status": "out"
   },
   {
    "team": "Cape Verde",
@@ -1622,7 +1678,7 @@ window.WCDATA = {
    "gf": 1,
    "ga": 0,
    "reds": 0,
-   "played": 1,
+   "played": 2,
    "status": "alive"
   },
   {
@@ -1644,9 +1700,9 @@ window.WCDATA = {
     }
    ],
    "gf": 1,
-   "ga": 1,
+   "ga": 2,
    "reds": 0,
-   "played": 1,
+   "played": 2,
    "status": "alive"
   },
   {
@@ -1716,10 +1772,10 @@ window.WCDATA = {
     }
    ],
    "gf": 1,
-   "ga": 3,
+   "ga": 8,
    "reds": 0,
-   "played": 1,
-   "status": "alive"
+   "played": 2,
+   "status": "out"
   },
   {
    "team": "Tunisia",
@@ -1787,11 +1843,11 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 3,
+   "gf": 4,
    "ga": 1,
    "reds": 0,
-   "played": 1,
-   "status": "alive"
+   "played": 2,
+   "status": "through"
   },
   {
    "team": "Spain",
@@ -2003,10 +2059,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 1,
+   "gf": 6,
    "ga": 1,
    "reds": 0,
-   "played": 1,
+   "played": 2,
    "status": "alive"
   },
   {
@@ -2051,10 +2107,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 2,
+   "gf": 3,
    "ga": 4,
    "reds": 0,
-   "played": 1,
+   "played": 2,
    "status": "alive"
   },
   {
@@ -2222,7 +2278,7 @@ window.WCDATA = {
    "gf": 4,
    "ga": 2,
    "reds": 0,
-   "played": 1,
+   "played": 2,
    "status": "alive"
   },
   {

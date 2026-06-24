@@ -186,17 +186,17 @@ FLAG = {c:flag_html(c) for c in ISO}
 # ============================================================
 #  >>>> DAILY UPDATE AREA  (edit these 4 things each day) <<<<
 # ============================================================
-FACT = "Lionel Messi (Lorenz Frenzen & John-Alexander Rudd) made history under the Texas lights — his brace against Austria made him the World Cup's all-time top scorer on 18 career goals, and five already this tournament keeps him firmly in the Golden Boot hunt. Erling Haaland (Matthew Radwan & Daniel Newman) matched him with a double of his own as Norway edged Senegal 3-2 to reach the last 32."   # witty fact of the day
-FIXTURES = [("18:00","Portugal","Uzbekistan"),("21:00","England","Ghana"),("00:00","Panama","Croatia"),("03:00","Colombia","DR Congo")]   # today's kick-offs (UK time)
-UPDATED = "23 June 2026"                 # date label shown on the site
-STAGE   = "Group Stage \u00b7 Matchday 2"    # e.g. "Group Stage \u00b7 Matchday 2", "Round of 32", "Final"
+FACT = "Cristiano Ronaldo (Jack Newton & Anna Au) turned back the clock in Houston, becoming the first player ever to score at SIX different World Cups as his early brace launched Portugal's 5-0 rout of debutants Uzbekistan \u2014 two tidy goals straight into the Golden Boot pot. Spare a thought for the owners of England and Ghana (Ayomide Erinle & Simon Davis), who cancelled each other out in a niggly goalless draw."   # witty fact of the day
+FIXTURES = [("20:00","Switzerland","Canada"),("20:00","Bosnia and Herzegovina","Qatar"),("23:00","Morocco","Haiti"),("23:00","Scotland","Brazil"),("02:00","South Africa","South Korea"),("02:00","Czech Republic","Mexico")]   # today's kick-offs (UK time)
+UPDATED = "24 June 2026"                 # date label shown on the site
+STAGE   = "Group Stage \u00b7 Matchday 3"    # e.g. "Group Stage \u00b7 Matchday 2", "Round of 32", "Final"
 # Teams that have been KNOCKED OUT (use exact names from the team list):
-ELIMINATED = {"Turkey","Tunisia","Haiti"}        # e.g. {"South Africa","Curacao"}
+ELIMINATED = {"Turkey","Tunisia","Haiti","Uzbekistan","Panama"}        # e.g. {"South Africa","Curacao"}
 # Teams confirmed THROUGH to the next round (optional, shows a green tick):
-THROUGH = {"USA","Mexico","Germany","Spain","Argentina","France","Norway"}           # e.g. {"Germany","Mexico"}
+THROUGH = {"USA","Mexico","Germany","Spain","Argentina","France","Norway","Colombia"}           # e.g. {"Germany","Mexico"}
 # ------------------------------------------------------------
 REDCARDS = {"South Africa":2,"Qatar":2,"Bosnia and Herzegovina":1,"Paraguay":1}   # team -> total red cards (tournament)
-GOALS = {"Lionel Messi":5,"Folarin Balogun":2,"Kai Havertz":2,"Kylian Mbappe":4,"Erling Haaland":4,"Harry Kane":2,"Jamal Musiala":1,"Alexander Isak":1,"Viktor Gyokeres":1,"Vinicius Junior":2,"Breel Embolo":1,"John McGinn":1,"Jude Bellingham":1,"Marcus Rashford":1,"Luis Diaz":1,"Jonathan David":3,"Matheus Cunha":2,"Cody Gakpo":2,"Mikel Oyarzabal":2,"Lamine Yamal":1,"Mohamed Salah":1,"Ousmane Dembele":1}
+GOALS = {"Lionel Messi":5,"Cristiano Ronaldo":2,"Folarin Balogun":2,"Kai Havertz":2,"Kylian Mbappe":4,"Erling Haaland":4,"Harry Kane":2,"Jamal Musiala":1,"Alexander Isak":1,"Viktor Gyokeres":1,"Vinicius Junior":2,"Breel Embolo":1,"John McGinn":1,"Jude Bellingham":1,"Marcus Rashford":1,"Luis Diaz":1,"Jonathan David":3,"Matheus Cunha":2,"Cody Gakpo":2,"Mikel Oyarzabal":2,"Lamine Yamal":1,"Mohamed Salah":1,"Ousmane Dembele":1}
 # Scorers NOT drafted by anyone (shown on the board for context, can't win the office prize):
 OTHER_SCORERS = []   # (per request: only show players someone drafted)
 matches = [
@@ -244,6 +244,10 @@ matches = [
  ("France",3,"Iraq",0,"Jun 22","Mbappe brace and Dembele's first; France through to the knockouts"),
  ("Norway",3,"Senegal",2,"Jun 22","Haaland double sends Norway through; Sarr nets twice for Senegal"),
  ("Jordan",1,"Algeria",2,"Jun 22","Algeria win to keep their hopes alive; Jordan bow out"),
+ ("Portugal",5,"Uzbekistan",0,"Jun 23","Ronaldo brace \u2014 first man to score at six different World Cups; Mendes, Leao & an OG seal the rout"),
+ ("Colombia",1,"DR Congo",0,"Jun 23","Munoz settles it; Diaz denied twice as Colombia reach the last 32"),
+ ("England",0,"Ghana",0,"Jun 23","Niggly goalless draw in Boston; Ghana rearguard frustrates England"),
+ ("Panama",0,"Croatia",1,"Jun 23","Budimir winner; Panama lose both openers and head out"),
 ]
 gf={t:0 for t,_,_ in TEAMS}; ga={t:0 for t,_,_ in TEAMS}; played={t:0 for t,_,_ in TEAMS}
 for h,hg,a,ag,d,n in matches:
