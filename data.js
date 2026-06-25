@@ -1,9 +1,9 @@
 // World Cup 2026 Office Sweepstake - live data. Auto-updated daily.
 window.WCDATA = {
  "meta": {
-  "updated": "24 June 2026",
+  "updated": "25 June 2026",
   "stage": "Group Stage · Matchday 3",
-  "fact": "Cristiano Ronaldo (Jack Newton & Anna Au) turned back the clock in Houston, becoming the first player ever to score at SIX different World Cups as his early brace launched Portugal's 5-0 rout of debutants Uzbekistan — two tidy goals straight into the Golden Boot pot. Spare a thought for the owners of England and Ghana (Ayomide Erinle & Simon Davis), who cancelled each other out in a niggly goalless draw.",
+  "fact": "Vinicius Junior (Kit Lee Smith & Luca D'Amico) lit up Miami with a first-half brace as Brazil cruised past Scotland 3-0 to win Group C — two more goals dropped straight into the Golden Boot pot. There was history elsewhere too: Thapelo Maseko's strike sent South Africa (James Fletcher & Tracy Meller) into the World Cup knockouts for the very first time.",
   "note": "Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."
  },
  "prizes": [
@@ -569,57 +569,117 @@ window.WCDATA = {
    "note": "Budimir winner; Panama lose both openers and head out",
    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/pa.svg\" alt=\"Panama\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/hr.svg\" alt=\"Croatia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "South Africa",
+   "hg": 1,
+   "away": "South Korea",
+   "ag": 0,
+   "date": "Jun 24",
+   "note": "Maseko's 63rd-minute strike sends Bafana Bafana into the knockouts for the first time ever",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/za.svg\" alt=\"South Africa\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/kr.svg\" alt=\"South Korea\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "Czech Republic",
+   "hg": 0,
+   "away": "Mexico",
+   "ag": 3,
+   "date": "Jun 24",
+   "note": "Chavez, Quinones & Fidalgo in a second-half blitz; Mexico finish with a perfect nine points, Czechia out",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/cz.svg\" alt=\"Czech Republic\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/mx.svg\" alt=\"Mexico\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "Switzerland",
+   "hg": 2,
+   "away": "Canada",
+   "ag": 1,
+   "date": "Jun 24",
+   "note": "Vargas & Manzambi turn it around; both sides advance, Switzerland top Group B",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ch.svg\" alt=\"Switzerland\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ca.svg\" alt=\"Canada\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "Bosnia and Herzegovina",
+   "hg": 3,
+   "away": "Qatar",
+   "ag": 1,
+   "date": "Jun 24",
+   "note": "Alajbegovic, an own goal & Mahmic see off Qatar, who finish bottom of Group B",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ba.svg\" alt=\"Bosnia and Herzegovina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/qa.svg\" alt=\"Qatar\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "Morocco",
+   "hg": 4,
+   "away": "Haiti",
+   "ag": 2,
+   "date": "Jun 24",
+   "note": "Six-goal thriller in Atlanta; Rahimi & Gessime Yassine seal second place for the Atlas Lions",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ma.svg\" alt=\"Morocco\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ht.svg\" alt=\"Haiti\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "Scotland",
+   "hg": 0,
+   "away": "Brazil",
+   "ag": 3,
+   "date": "Jun 24",
+   "note": "Vinicius Jr brace and Cunha; Brazil win the group, Scotland left sweating on the third-place table",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-sct.svg\" alt=\"Scotland\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/br.svg\" alt=\"Brazil\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
   }
  ],
  "otherScorers": [],
  "fixtures": [
   {
-   "time": "20:00",
-   "home": "Switzerland",
-   "away": "Canada",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ch.svg\" alt=\"Switzerland\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ca.svg\" alt=\"Canada\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "B"
+   "time": "21:00",
+   "home": "Curacao",
+   "away": "Ivory Coast",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/cw.svg\" alt=\"Curacao\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ci.svg\" alt=\"Ivory Coast\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "E"
   },
   {
-   "time": "20:00",
-   "home": "Bosnia and Herzegovina",
-   "away": "Qatar",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ba.svg\" alt=\"Bosnia and Herzegovina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/qa.svg\" alt=\"Qatar\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "B"
+   "time": "21:00",
+   "home": "Ecuador",
+   "away": "Germany",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ec.svg\" alt=\"Ecuador\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/de.svg\" alt=\"Germany\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "E"
   },
   {
-   "time": "23:00",
-   "home": "Morocco",
-   "away": "Haiti",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ma.svg\" alt=\"Morocco\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ht.svg\" alt=\"Haiti\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "C"
+   "time": "00:00",
+   "home": "Tunisia",
+   "away": "Netherlands",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/tn.svg\" alt=\"Tunisia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/nl.svg\" alt=\"Netherlands\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "F"
   },
   {
-   "time": "23:00",
-   "home": "Scotland",
-   "away": "Brazil",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-sct.svg\" alt=\"Scotland\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/br.svg\" alt=\"Brazil\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "C"
+   "time": "00:00",
+   "home": "Japan",
+   "away": "Sweden",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/jp.svg\" alt=\"Japan\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/se.svg\" alt=\"Sweden\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "F"
   },
   {
-   "time": "02:00",
-   "home": "South Africa",
-   "away": "South Korea",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/za.svg\" alt=\"South Africa\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/kr.svg\" alt=\"South Korea\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "A"
+   "time": "03:00",
+   "home": "Turkey",
+   "away": "USA",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/tr.svg\" alt=\"Turkey\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/us.svg\" alt=\"USA\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "D"
   },
   {
-   "time": "02:00",
-   "home": "Czech Republic",
-   "away": "Mexico",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/cz.svg\" alt=\"Czech Republic\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/mx.svg\" alt=\"Mexico\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "A"
+   "time": "03:00",
+   "home": "Paraguay",
+   "away": "Australia",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/py.svg\" alt=\"Paraguay\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/au.svg\" alt=\"Australia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "D"
   }
  ],
  "players": [
@@ -789,7 +849,7 @@ window.WCDATA = {
    "player": "Vinicius Junior",
    "country": "Brazil",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/br.svg\" alt=\"Brazil\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 2,
+   "goals": 4,
    "owners": {
     "league1": {
      "name": "Kit Lee Smith",
@@ -987,7 +1047,7 @@ window.WCDATA = {
    "player": "Matheus Cunha",
    "country": "Brazil",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/br.svg\" alt=\"Brazil\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 2,
+   "goals": 3,
    "owners": {
     "league1": {
      "name": "Holly Clarke",
@@ -1748,9 +1808,9 @@ window.WCDATA = {
     }
    ],
    "gf": 1,
-   "ga": 1,
+   "ga": 4,
    "reds": 0,
-   "played": 2,
+   "played": 3,
    "status": "alive"
   },
   {
@@ -1939,11 +1999,11 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 4,
+   "gf": 7,
    "ga": 1,
    "reds": 0,
-   "played": 2,
-   "status": "alive"
+   "played": 3,
+   "status": "through"
   },
   {
    "team": "Japan",
@@ -2179,11 +2239,11 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 1,
+   "gf": 2,
    "ga": 3,
    "reds": 2,
-   "played": 2,
-   "status": "alive"
+   "played": 3,
+   "status": "through"
   },
   {
    "team": "Iran",
@@ -2228,10 +2288,10 @@ window.WCDATA = {
     }
    ],
    "gf": 2,
-   "ga": 3,
+   "ga": 6,
    "reds": 0,
-   "played": 2,
-   "status": "alive"
+   "played": 3,
+   "status": "out"
   },
   {
    "team": "Canada",
@@ -2251,11 +2311,11 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 7,
-   "ga": 1,
+   "gf": 8,
+   "ga": 3,
    "reds": 0,
-   "played": 2,
-   "status": "alive"
+   "played": 3,
+   "status": "through"
   },
   {
    "team": "England",
@@ -2348,9 +2408,9 @@ window.WCDATA = {
     }
    ],
    "gf": 2,
-   "ga": 2,
+   "ga": 3,
    "reds": 0,
-   "played": 2,
+   "played": 3,
    "status": "alive"
   },
   {
@@ -2371,11 +2431,11 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 2,
-   "ga": 1,
+   "gf": 6,
+   "ga": 3,
    "reds": 0,
-   "played": 2,
-   "status": "alive"
+   "played": 3,
+   "status": "through"
   },
   {
    "team": "Sweden",
@@ -2491,11 +2551,11 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 5,
-   "ga": 2,
+   "gf": 7,
+   "ga": 3,
    "reds": 0,
-   "played": 2,
-   "status": "alive"
+   "played": 3,
+   "status": "through"
   },
   {
    "team": "Qatar",
@@ -2515,11 +2575,11 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 1,
-   "ga": 7,
+   "gf": 2,
+   "ga": 10,
    "reds": 2,
-   "played": 2,
-   "status": "alive"
+   "played": 3,
+   "status": "out"
   },
   {
    "team": "Turkey",
@@ -2563,10 +2623,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
-   "ga": 4,
+   "gf": 2,
+   "ga": 8,
    "reds": 0,
-   "played": 2,
+   "played": 3,
    "status": "out"
   },
   {
@@ -2587,10 +2647,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 2,
-   "ga": 5,
+   "gf": 5,
+   "ga": 6,
    "reds": 1,
-   "played": 2,
+   "played": 3,
    "status": "alive"
   },
   {
@@ -2635,10 +2695,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 3,
+   "gf": 6,
    "ga": 0,
    "reds": 0,
-   "played": 2,
+   "played": 3,
    "status": "through"
   }
  ]
