@@ -1,9 +1,9 @@
 // World Cup 2026 Office Sweepstake - live data. Auto-updated daily.
 window.WCDATA = {
  "meta": {
-  "updated": "25 June 2026",
+  "updated": "26 June 2026",
   "stage": "Group Stage · Matchday 3",
-  "fact": "Vinicius Junior (Kit Lee Smith & Luca D'Amico) lit up Miami with a first-half brace as Brazil cruised past Scotland 3-0 to win Group C — two more goals dropped straight into the Golden Boot pot. There was history elsewhere too: Thapelo Maseko's strike sent South Africa (James Fletcher & Tracy Meller) into the World Cup knockouts for the very first time.",
+  "fact": "Already eliminated, Türkiye (Dominik Mrozinski & Austin Wright) still found a sting in the tail — Kaan Ayhan’s last-kick winner sank hosts USA (Maurice Brennan & Toby Jeavons) 3-2. Over in New Jersey, Ecuador (Dzidzor Kwaku & Richard Paul) stunned group-winners Germany (Luca D’Amico & Georgina Robledo Padilla) 2-1 to gatecrash the last 32.",
   "note": "Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."
  },
  "prizes": [
@@ -629,57 +629,117 @@ window.WCDATA = {
    "note": "Vinicius Jr brace and Cunha; Brazil win the group, Scotland left sweating on the third-place table",
    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-sct.svg\" alt=\"Scotland\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/br.svg\" alt=\"Brazil\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "Curacao",
+   "hg": 0,
+   "away": "Ivory Coast",
+   "ag": 2,
+   "date": "Jun 25",
+   "note": "Ivory Coast win to seal a knockout spot; Curacao finish bottom of Group E",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/cw.svg\" alt=\"Curacao\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ci.svg\" alt=\"Ivory Coast\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "Ecuador",
+   "hg": 2,
+   "away": "Germany",
+   "ag": 1,
+   "date": "Jun 25",
+   "note": "Angulo and Plata complete the comeback; Ecuador gatecrash the last 32, Germany still top the group",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ec.svg\" alt=\"Ecuador\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/de.svg\" alt=\"Germany\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "Tunisia",
+   "hg": 1,
+   "away": "Netherlands",
+   "ag": 3,
+   "date": "Jun 25",
+   "note": "Brobbey strikes again and two own goals send the Dutch through as Group F winners; Tunisia bow out",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/tn.svg\" alt=\"Tunisia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/nl.svg\" alt=\"Netherlands\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "Japan",
+   "hg": 1,
+   "away": "Sweden",
+   "ag": 1,
+   "date": "Jun 25",
+   "note": "Maeda and Elanga trade goals; both sides safely through from Group F",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/jp.svg\" alt=\"Japan\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/se.svg\" alt=\"Sweden\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "Turkey",
+   "hg": 3,
+   "away": "USA",
+   "ag": 2,
+   "date": "Jun 25",
+   "note": "Kaan Ayhan’s last-kick winner; already-out Turkiye stun the hosts, who still top Group D",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/tr.svg\" alt=\"Turkey\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/us.svg\" alt=\"USA\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
+  },
+  {
+   "home": "Paraguay",
+   "hg": 0,
+   "away": "Australia",
+   "ag": 0,
+   "date": "Jun 25",
+   "note": "Goalless in Group D but both sides progress to the last 32",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/py.svg\" alt=\"Paraguay\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/au.svg\" alt=\"Australia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">"
   }
  ],
  "otherScorers": [],
  "fixtures": [
   {
-   "time": "21:00",
-   "home": "Curacao",
-   "away": "Ivory Coast",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/cw.svg\" alt=\"Curacao\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ci.svg\" alt=\"Ivory Coast\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "E"
+   "time": "20:00",
+   "home": "Norway",
+   "away": "France",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/no.svg\" alt=\"Norway\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "I"
   },
   {
-   "time": "21:00",
-   "home": "Ecuador",
-   "away": "Germany",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ec.svg\" alt=\"Ecuador\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/de.svg\" alt=\"Germany\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "E"
+   "time": "20:00",
+   "home": "Senegal",
+   "away": "Iraq",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/sn.svg\" alt=\"Senegal\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/iq.svg\" alt=\"Iraq\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "I"
   },
   {
-   "time": "00:00",
-   "home": "Tunisia",
-   "away": "Netherlands",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/tn.svg\" alt=\"Tunisia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/nl.svg\" alt=\"Netherlands\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "F"
+   "time": "01:00",
+   "home": "Cape Verde",
+   "away": "Saudi Arabia",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/cv.svg\" alt=\"Cape Verde\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/sa.svg\" alt=\"Saudi Arabia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "H"
   },
   {
-   "time": "00:00",
-   "home": "Japan",
-   "away": "Sweden",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/jp.svg\" alt=\"Japan\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/se.svg\" alt=\"Sweden\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "F"
+   "time": "01:00",
+   "home": "Uruguay",
+   "away": "Spain",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/uy.svg\" alt=\"Uruguay\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/es.svg\" alt=\"Spain\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "H"
   },
   {
-   "time": "03:00",
-   "home": "Turkey",
-   "away": "USA",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/tr.svg\" alt=\"Turkey\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/us.svg\" alt=\"USA\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "D"
+   "time": "04:00",
+   "home": "Egypt",
+   "away": "Iran",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/eg.svg\" alt=\"Egypt\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ir.svg\" alt=\"Iran\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "G"
   },
   {
-   "time": "03:00",
-   "home": "Paraguay",
-   "away": "Australia",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/py.svg\" alt=\"Paraguay\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/au.svg\" alt=\"Australia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "D"
+   "time": "04:00",
+   "home": "New Zealand",
+   "away": "Belgium",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/nz.svg\" alt=\"New Zealand\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/be.svg\" alt=\"Belgium\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "G"
   }
  ],
  "players": [
@@ -1663,11 +1723,11 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 7,
-   "ga": 3,
+   "gf": 10,
+   "ga": 4,
    "reds": 0,
-   "played": 2,
-   "status": "alive"
+   "played": 3,
+   "status": "through"
   },
   {
    "team": "Senegal",
@@ -1855,10 +1915,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 1,
-   "ga": 9,
+   "gf": 2,
+   "ga": 12,
    "reds": 0,
-   "played": 2,
+   "played": 3,
    "status": "out"
   },
   {
@@ -1882,8 +1942,8 @@ window.WCDATA = {
    "gf": 2,
    "ga": 4,
    "reds": 1,
-   "played": 2,
-   "status": "alive"
+   "played": 3,
+   "status": "through"
   },
   {
    "team": "Colombia",
@@ -1952,10 +2012,10 @@ window.WCDATA = {
     }
    ],
    "gf": 1,
-   "ga": 7,
+   "ga": 9,
    "reds": 0,
-   "played": 2,
-   "status": "alive"
+   "played": 3,
+   "status": "out"
   },
   {
    "team": "Austria",
@@ -2023,11 +2083,11 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 6,
-   "ga": 2,
+   "gf": 7,
+   "ga": 3,
    "reds": 0,
-   "played": 2,
-   "status": "alive"
+   "played": 3,
+   "status": "through"
   },
   {
    "team": "Ivory Coast",
@@ -2047,11 +2107,11 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 2,
+   "gf": 4,
    "ga": 2,
    "reds": 0,
-   "played": 2,
-   "status": "alive"
+   "played": 3,
+   "status": "through"
   },
   {
    "team": "New Zealand",
@@ -2095,11 +2155,11 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
-   "ga": 1,
+   "gf": 2,
+   "ga": 2,
    "reds": 0,
-   "played": 2,
-   "status": "alive"
+   "played": 3,
+   "status": "through"
   },
   {
    "team": "Portugal",
@@ -2386,8 +2446,8 @@ window.WCDATA = {
    "gf": 2,
    "ga": 2,
    "reds": 0,
-   "played": 2,
-   "status": "alive"
+   "played": 3,
+   "status": "through"
   },
   {
    "team": "South Korea",
@@ -2455,11 +2515,11 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 6,
-   "ga": 6,
+   "gf": 7,
+   "ga": 7,
    "reds": 0,
-   "played": 2,
-   "status": "alive"
+   "played": 3,
+   "status": "through"
   },
   {
    "team": "Egypt",
@@ -2503,10 +2563,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 9,
-   "ga": 2,
+   "gf": 10,
+   "ga": 4,
    "reds": 0,
-   "played": 2,
+   "played": 3,
    "status": "through"
   },
   {
@@ -2527,10 +2587,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 6,
-   "ga": 1,
+   "gf": 8,
+   "ga": 4,
    "reds": 0,
-   "played": 2,
+   "played": 3,
    "status": "through"
   },
   {
@@ -2599,10 +2659,10 @@ window.WCDATA = {
      "league": "L2"
     }
    ],
-   "gf": 0,
-   "ga": 3,
+   "gf": 3,
+   "ga": 5,
    "reds": 0,
-   "played": 2,
+   "played": 3,
    "status": "out"
   },
   {
