@@ -3,7 +3,7 @@ window.WCDATA = {
  "meta": {
   "updated": "27 June 2026",
   "stage": "Group Stage · Matchday 3",
-  "fact": "Ousmane Dembélé (Richard Breen & Tracy Meller) lit up Boston with a first-half hat-trick as France swept Norway aside 4-1 to win Group I with a flawless nine points — a tidy little earner for his sweepstake owners as the Golden Boot race heats up. Spare a thought for Haaland's backers (Matthew Radwan & Daniel Newman): Norway still squeaked through, but their man watched it from the bench.",
+  "fact": "Ousmane Dembélé (Richard Breen & Tracy Meller) needed just 32 minutes to rattle in a hat-trick as France romped past Norway 4-1 to finish Group I with a flawless nine points — the first first-half hat-trick at a World Cup since 1994. It lifts him to four for the tournament, but he is still chasing Lionel Messi (Lorenz Frenzen & John-Alexander Rudd), whose five goals keep the Argentine maestro out in front of the Golden Boot race.",
   "note": "Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."
  },
  "prizes": [
@@ -2771,7 +2771,7 @@ window.WCDATA = {
    "ga": 6,
    "reds": 1,
    "played": 3,
-   "status": "alive"
+   "status": "through"
   },
   {
    "team": "France",

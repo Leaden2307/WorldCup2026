@@ -186,14 +186,14 @@ FLAG = {c:flag_html(c) for c in ISO}
 # ============================================================
 #  >>>> DAILY UPDATE AREA  (edit these 4 things each day) <<<<
 # ============================================================
-FACT = "Ousmane Dembélé (Richard Breen & Tracy Meller) lit up Boston with a first-half hat-trick as France swept Norway aside 4-1 to win Group I with a flawless nine points — a tidy little earner for his sweepstake owners as the Golden Boot race heats up. Spare a thought for Haaland's backers (Matthew Radwan & Daniel Newman): Norway still squeaked through, but their man watched it from the bench."   # witty fact of the day
+FACT = "Ousmane Dembélé (Richard Breen & Tracy Meller) needed just 32 minutes to rattle in a hat-trick as France romped past Norway 4-1 to finish Group I with a flawless nine points — the first first-half hat-trick at a World Cup since 1994. It lifts him to four for the tournament, but he is still chasing Lionel Messi (Lorenz Frenzen & John-Alexander Rudd), whose five goals keep the Argentine maestro out in front of the Golden Boot race."   # witty fact of the day
 FIXTURES = [("22:00","Panama","England"),("22:00","Croatia","Ghana"),("00:30","Colombia","Portugal"),("00:30","DR Congo","Uzbekistan"),("03:00","Algeria","Austria"),("03:00","Jordan","Argentina")]   # today's kick-offs (UK time)
 UPDATED = "27 June 2026"                 # date label shown on the site
 STAGE   = "Group Stage \u00b7 Matchday 3"    # e.g. "Group Stage \u00b7 Matchday 2", "Round of 32", "Final"
 # Teams that have been KNOCKED OUT (use exact names from the team list):
 ELIMINATED = {"Turkey","Tunisia","Haiti","Uzbekistan","Panama","Czech Republic","Qatar","Curacao","New Zealand","Uruguay","Saudi Arabia","Iraq"}        # e.g. {"South Africa","Curacao"}
 # Teams confirmed THROUGH to the next round (optional, shows a green tick):
-THROUGH = {"USA","Mexico","Germany","Spain","Argentina","France","Norway","Colombia","South Africa","Switzerland","Canada","Brazil","Morocco","Australia","Paraguay","Ivory Coast","Ecuador","Netherlands","Japan","Sweden","Belgium","Egypt","Cape Verde"}           # e.g. {"Germany","Mexico"}
+THROUGH = {"USA","Mexico","Germany","Spain","Argentina","France","Norway","Colombia","South Africa","Switzerland","Canada","Brazil","Morocco","Australia","Paraguay","Ivory Coast","Ecuador","Netherlands","Japan","Sweden","Belgium","Egypt","Cape Verde","Bosnia and Herzegovina"}           # e.g. {"Germany","Mexico"}
 # ------------------------------------------------------------
 REDCARDS = {"South Africa":2,"Qatar":2,"Bosnia and Herzegovina":1,"Paraguay":1,"Iraq":1}   # team -> total red cards (tournament)
 GOALS = {"Lionel Messi":5,"Cristiano Ronaldo":2,"Folarin Balogun":2,"Kai Havertz":2,"Kylian Mbappe":4,"Erling Haaland":4,"Harry Kane":2,"Jamal Musiala":1,"Alexander Isak":1,"Viktor Gyokeres":1,"Vinicius Junior":4,"Breel Embolo":1,"John McGinn":1,"Jude Bellingham":1,"Marcus Rashford":1,"Luis Diaz":1,"Jonathan David":3,"Matheus Cunha":3,"Cody Gakpo":2,"Mikel Oyarzabal":2,"Lamine Yamal":1,"Mohamed Salah":1,"Ousmane Dembele":4,"Desire Doue":1,"Kevin De Bruyne":1,"Romelu Lukaku":1}
