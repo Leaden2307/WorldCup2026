@@ -186,17 +186,17 @@ FLAG = {c:flag_html(c) for c in ISO}
 # ============================================================
 #  >>>> DAILY UPDATE AREA  (edit these 4 things each day) <<<<
 # ============================================================
-FACT = "Already eliminated, Türkiye (Dominik Mrozinski & Austin Wright) still found a sting in the tail — Kaan Ayhan’s last-kick winner sank hosts USA (Maurice Brennan & Toby Jeavons) 3-2. Over in New Jersey, Ecuador (Dzidzor Kwaku & Richard Paul) stunned group-winners Germany (Luca D’Amico & Georgina Robledo Padilla) 2-1 to gatecrash the last 32."   # witty fact of the day
-FIXTURES = [("20:00","Norway","France"),("20:00","Senegal","Iraq"),("01:00","Cape Verde","Saudi Arabia"),("01:00","Uruguay","Spain"),("04:00","Egypt","Iran"),("04:00","New Zealand","Belgium")]   # today's kick-offs (UK time)
-UPDATED = "26 June 2026"                 # date label shown on the site
+FACT = "Ousmane Dembélé (Richard Breen & Tracy Meller) lit up Boston with a first-half hat-trick as France swept Norway aside 4-1 to win Group I with a flawless nine points — a tidy little earner for his sweepstake owners as the Golden Boot race heats up. Spare a thought for Haaland's backers (Matthew Radwan & Daniel Newman): Norway still squeaked through, but their man watched it from the bench."   # witty fact of the day
+FIXTURES = [("22:00","Panama","England"),("22:00","Croatia","Ghana"),("00:30","Colombia","Portugal"),("00:30","DR Congo","Uzbekistan"),("03:00","Algeria","Austria"),("03:00","Jordan","Argentina")]   # today's kick-offs (UK time)
+UPDATED = "27 June 2026"                 # date label shown on the site
 STAGE   = "Group Stage \u00b7 Matchday 3"    # e.g. "Group Stage \u00b7 Matchday 2", "Round of 32", "Final"
 # Teams that have been KNOCKED OUT (use exact names from the team list):
-ELIMINATED = {"Turkey","Tunisia","Haiti","Uzbekistan","Panama","Czech Republic","Qatar","Curacao"}        # e.g. {"South Africa","Curacao"}
+ELIMINATED = {"Turkey","Tunisia","Haiti","Uzbekistan","Panama","Czech Republic","Qatar","Curacao","New Zealand","Uruguay","Saudi Arabia","Iraq"}        # e.g. {"South Africa","Curacao"}
 # Teams confirmed THROUGH to the next round (optional, shows a green tick):
-THROUGH = {"USA","Mexico","Germany","Spain","Argentina","France","Norway","Colombia","South Africa","Switzerland","Canada","Brazil","Morocco","Australia","Paraguay","Ivory Coast","Ecuador","Netherlands","Japan","Sweden"}           # e.g. {"Germany","Mexico"}
+THROUGH = {"USA","Mexico","Germany","Spain","Argentina","France","Norway","Colombia","South Africa","Switzerland","Canada","Brazil","Morocco","Australia","Paraguay","Ivory Coast","Ecuador","Netherlands","Japan","Sweden","Belgium","Egypt","Cape Verde"}           # e.g. {"Germany","Mexico"}
 # ------------------------------------------------------------
-REDCARDS = {"South Africa":2,"Qatar":2,"Bosnia and Herzegovina":1,"Paraguay":1}   # team -> total red cards (tournament)
-GOALS = {"Lionel Messi":5,"Cristiano Ronaldo":2,"Folarin Balogun":2,"Kai Havertz":2,"Kylian Mbappe":4,"Erling Haaland":4,"Harry Kane":2,"Jamal Musiala":1,"Alexander Isak":1,"Viktor Gyokeres":1,"Vinicius Junior":4,"Breel Embolo":1,"John McGinn":1,"Jude Bellingham":1,"Marcus Rashford":1,"Luis Diaz":1,"Jonathan David":3,"Matheus Cunha":3,"Cody Gakpo":2,"Mikel Oyarzabal":2,"Lamine Yamal":1,"Mohamed Salah":1,"Ousmane Dembele":1}
+REDCARDS = {"South Africa":2,"Qatar":2,"Bosnia and Herzegovina":1,"Paraguay":1,"Iraq":1}   # team -> total red cards (tournament)
+GOALS = {"Lionel Messi":5,"Cristiano Ronaldo":2,"Folarin Balogun":2,"Kai Havertz":2,"Kylian Mbappe":4,"Erling Haaland":4,"Harry Kane":2,"Jamal Musiala":1,"Alexander Isak":1,"Viktor Gyokeres":1,"Vinicius Junior":4,"Breel Embolo":1,"John McGinn":1,"Jude Bellingham":1,"Marcus Rashford":1,"Luis Diaz":1,"Jonathan David":3,"Matheus Cunha":3,"Cody Gakpo":2,"Mikel Oyarzabal":2,"Lamine Yamal":1,"Mohamed Salah":1,"Ousmane Dembele":4,"Desire Doue":1,"Kevin De Bruyne":1,"Romelu Lukaku":1}
 # Scorers NOT drafted by anyone (shown on the board for context, can't win the office prize):
 OTHER_SCORERS = []   # (per request: only show players someone drafted)
 matches = [
@@ -260,6 +260,12 @@ matches = [
  ("Japan",1,"Sweden",1,"Jun 25","Maeda and Elanga trade goals; both sides safely through from Group F"),
  ("Turkey",3,"USA",2,"Jun 25","Kaan Ayhan’s last-kick winner; already-out Turkiye stun the hosts, who still top Group D"),
  ("Paraguay",0,"Australia",0,"Jun 25","Goalless in Group D but both sides progress to the last 32"),
+ ("Norway",1,"France",4,"Jun 26","Dembele first-half hat-trick and Doue; France finish Group I with a perfect nine points, Norway rest stars but still go through second"),
+ ("Senegal",5,"Iraq",0,"Jun 26","Pape Gueye brace, Diarra, Sarr and Ndiaye thrash 10-man Iraq to keep Senegal's third-place hopes alive"),
+ ("Cape Verde",0,"Saudi Arabia",0,"Jun 26","Cabo Verde hold firm for the point that books a historic first-ever Round of 32 place; Saudi Arabia out"),
+ ("Uruguay",0,"Spain",1,"Jun 26","Muslera's howler gifts Spain the only goal; La Roja top Group H as Uruguay crash out"),
+ ("Egypt",1,"Iran",1,"Jun 26","Saber and Rezaeian trade early goals; a late VAR call denies Iran as Egypt go through second"),
+ ("New Zealand",1,"Belgium",5,"Jun 26","Trossard brace, De Bruyne, Lukaku and Saelemaekers; Belgium win Group G, Elijah Just grabs a Kiwi consolation"),
 ]
 gf={t:0 for t,_,_ in TEAMS}; ga={t:0 for t,_,_ in TEAMS}; played={t:0 for t,_,_ in TEAMS}
 for h,hg,a,ag,d,n in matches:
