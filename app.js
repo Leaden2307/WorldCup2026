@@ -269,40 +269,66 @@ function renderFixtures(){
   });
 }
 
+/* KNOCKOUT BRACKET */
+function koFaces(name){ if(!name) return ''; const t=D.teams.find(x=>x.team===name); if(!t||!t.owners.length) return '';
+  return '<span style="display:inline-flex;margin-left:6px">'+t.owners.map(o=>'<img src="'+(o.avatar||ph)+'" title="'+o.name+(o.league?' ('+o.league+')':'')+'" style="width:18px;height:18px;border-radius:50%;object-fit:cover;border:1.5px solid #fff;box-shadow:0 1px 2px rgba(0,0,0,.25);margin-left:-4px">').join('')+'</span>'; }
+function koRow(name,flag,score,win,played){
+  const r=el('div'); r.style.cssText='display:flex;align-items:center;gap:6px;padding:6px 8px;font-size:13px;'+(win?'font-weight:700;':'')+((played&&!win)?'opacity:.5;':'');
+  r.innerHTML=(name?(flag+' <span style="max-width:115px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+name+'</span>'+koFaces(name)):'<span style="color:var(--mut)">TBD</span>')
+    +'<span style="margin-left:auto;font-weight:700;min-width:14px;text-align:right">'+(score==null?'':score)+'</span>';
+  return r;
+}
+function renderBracket(){
+  const wrap=$('#bracketWrap'); if(!wrap||!D.bracket) return; wrap.innerHTML='';
+  const rounds=[['R32','Round of 32'],['R16','Last 16'],['QF','Quarter-finals'],['SF','Semi-finals'],['F','Final']];
+  const row=el('div'); row.style.cssText='display:flex;gap:14px;min-width:max-content;padding-bottom:8px';
+  rounds.forEach(([key,label])=>{
+    const list=D.bracket[key]||[]; const col=el('div'); col.style.cssText='flex:0 0 auto;width:218px;display:flex;flex-direction:column;gap:10px';
+    const hd=el('div'); hd.style.cssText='font-family:Roboto;font-weight:700;text-transform:uppercase;font-size:12px;color:var(--blue);letter-spacing:.04em;padding:2px 2px 5px;border-bottom:2px solid var(--line)';
+    hd.textContent=label+(list[0]&&list[0].date?(' \u00b7 '+list[0].date):''); col.appendChild(hd);
+    list.forEach(t=>{
+      const card=el('div'); card.style.cssText='background:#fff;border:1px solid var(--line);border-radius:7px;box-shadow:0 3px 10px rgba(20,40,80,.06);overflow:hidden';
+      const played=t.hg!=null;
+      card.appendChild(koRow(t.home,t.homeFlag,t.hg,t.winner&&t.winner===t.home,played));
+      const dv=el('div'); dv.style.cssText='height:1px;background:var(--line)'; card.appendChild(dv);
+      card.appendChild(koRow(t.away,t.awayFlag,t.ag,t.winner&&t.winner===t.away,played));
+      col.appendChild(card);
+    });
+    row.appendChild(col);
+  });
+  wrap.appendChild(row);
+}
+
 /* RESULTS */
 function ytid(u){ if(!u) return null; const m=u.match(/(?:v=|youtu\.be\/|embed\/)([\w-]{11})/); return m?m[1]:null; }
 function renderResults(){
   const g=$('#resultGrid'); g.innerHTML='';
-  // link to the official highlights channel
   const ch=el('a'); ch.href='https://www.youtube.com/channel/UCpcTrCXblq78GZrTUTLWeBw'; ch.target='_blank'; ch.rel='noopener';
   ch.style.cssText='grid-column:1/-1;display:inline-flex;align-items:center;gap:7px;justify-self:start;color:var(--mut);text-decoration:none;font-family:Roboto;font-weight:600;font-size:12.5px;margin-bottom:2px';
   ch.innerHTML='<svg width="20" height="14" viewBox="0 0 28 20" style="flex:0 0 auto"><rect width="28" height="20" rx="5" fill="#FF0000"/><path d="M11 5.5l8.5 4.5-8.5 4.5z" fill="#fff"/></svg>Official FIFA World Cup highlights channel';
   g.append(ch);
-  [...D.matches].reverse().forEach(m=>{
+  const order=[['F','Final'],['SF','Semi-final'],['QF','Quarter-final'],['R16','Last 16'],['R32','Round of 32']];
+  let any=false;
+  order.forEach(([key,label])=>{ ((D.bracket&&D.bracket[key])||[]).forEach(t=>{
+    if(t.hg==null||!t.home||!t.away) return; any=true;
     const c=el('div','match');
-    c.append(el('div','mdate',m.date));
+    c.append(el('div','mdate',label+' · '+t.date));
     const sc=el('div','sc');
-    sc.append(el('div','t','<span class="fl">'+m.homeFlag+'</span> '+m.home));
-    sc.append(el('div','res',m.hg+' – '+m.ag));
-    sc.append(el('div','t away',m.away+' <span class="fl">'+m.awayFlag+'</span>'));
+    sc.append(el('div','t', t.homeFlag+' '+t.home));
+    sc.append(el('div','res', t.hg+' – '+t.ag));
+    sc.append(el('div','t away', t.away+' '+t.awayFlag));
     c.append(sc);
-    if(m.note) c.append(el('div','note',m.note));
-    const q=encodeURIComponent(m.home+' vs '+m.away+' FIFA World Cup 2026 highlights');
-    const url=m.video || ('https://www.youtube.com/results?search_query='+q);
-    const vid=ytid(m.video);
-    const a=el('a'); a.href=url; a.target='_blank'; a.rel='noopener'; a.style.cssText='display:block;margin-top:10px;text-decoration:none';
-    if(vid){
-      a.innerHTML='<div style="position:relative;border-radius:8px;overflow:hidden"><img src="https://img.youtube.com/vi/'+vid+'/mqdefault.jpg" style="width:100%;display:block" alt="highlights"><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><span style="background:rgba(255,0,0,.9);color:#fff;width:48px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px">▶</span></div></div>';
-    } else {
-      a.innerHTML='<span style="display:inline-flex;align-items:center;gap:6px;color:var(--mut);font-family:Roboto;font-weight:600;font-size:12.5px"><svg width="20" height="14" viewBox="0 0 28 20" style="flex:0 0 auto"><rect width="28" height="20" rx="5" fill="#FF0000"/><path d="M11 5.5l8.5 4.5-8.5 4.5z" fill="#fff"/></svg>Highlights</span>';
-    }
-    c.append(a);
-    g.append(c);
-  });
+    if(t.winner) c.append(el('div','note', t.winner+' advance'));
+    const q=encodeURIComponent(t.home+' vs '+t.away+' FIFA World Cup 2026 highlights');
+    const a=el('a'); a.href='https://www.youtube.com/results?search_query='+q; a.target='_blank'; a.rel='noopener'; a.style.cssText='display:block;margin-top:10px;text-decoration:none';
+    a.innerHTML='<span style="display:inline-flex;align-items:center;gap:6px;color:var(--mut);font-family:Roboto;font-weight:600;font-size:12.5px"><svg width="20" height="14" viewBox="0 0 28 20" style="flex:0 0 auto"><rect width="28" height="20" rx="5" fill="#FF0000"/><path d="M11 5.5l8.5 4.5-8.5 4.5z" fill="#fff"/></svg>Highlights</span>';
+    c.append(a); g.append(c);
+  }); });
+  if(!any) g.append(el('div','muted-note','Knockout results will appear here as the games are played ⚽'));
 }
 
 /* NAV */
-const secs=[['fixtures','📅 Today'],['prizes','🏆 Prizes'],['boot','👟 Golden Boot'],['teams','🌍 Teams'],['finder','🔎 My Picks'],['results','📋 Results']];
+const secs=[['fixtures','📅 Today'],['bracket','🥊 Bracket'],['prizes','🏆 Prizes'],['boot','👟 Golden Boot'],['teams','🌍 Teams'],['finder','🔎 My Picks'],['results','📋 Results']];
 const nav=$('#nav');
 secs.forEach(([id,lbl])=>{ const b=el('button',null,lbl); b.onclick=()=>document.getElementById(id).scrollIntoView({behavior:'smooth'}); b.dataset.id=id; nav.append(b); });
 const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){nav.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.id===e.target.id));}});},{rootMargin:'-45% 0px -50% 0px'});
@@ -474,4 +500,4 @@ function renderHeroPoster(){
 }
 
 /* GO */
-renderFixtures(); renderPrizes(); renderBoot(); renderFilters(); renderTeams(); renderResults(); renderFact(); renderHeroPoster();
+renderFixtures(); renderBracket(); renderPrizes(); renderBoot(); renderFilters(); renderTeams(); renderResults(); renderFact(); renderHeroPoster();

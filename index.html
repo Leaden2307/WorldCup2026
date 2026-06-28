@@ -51,6 +51,7 @@ section{scroll-margin-top:64px;margin-bottom:46px}
 #finder .sec-head{background:var(--pink);color:#fff}
 #results .sec-head{background:var(--orange);color:var(--ink)}
 #fixtures .sec-head{background:var(--yellow);color:var(--ink)}
+#bracket .sec-head{background:var(--red);color:#fff}
 @media(max-width:560px){.sec-head{flex-wrap:wrap}}
 
 /* ---------- PRIZE BOARD ---------- */
@@ -167,6 +168,12 @@ footer b{color:var(--ink)}
     <div class="results" id="fixtureGrid"></div>
   </section>
 
+  <section id="bracket">
+    <div class="sec-head"><span class="ic">🥊</span><h2>Knockout Bracket</h2>
+      <span class="hint">Round of 32 onward — winners advance. Scroll across the rounds.</span></div>
+    <div id="bracketWrap" style="overflow-x:auto"></div>
+  </section>
+
   <section id="prizes">
     <div class="sec-head"><span class="ic">🏆</span><h2>The Prize Board</h2>
       <span class="hint">£480 up for grabs. Leaders update daily.</span></div>
@@ -197,7 +204,7 @@ footer b{color:var(--ink)}
 
   <section id="results">
     <div class="sec-head"><span class="ic">📋</span><h2>Latest Results</h2>
-      <span class="hint">Group-stage scores so far.</span></div>
+      <span class="hint">Knockout results — group games live in the group tables.</span></div>
     <div class="results" id="resultGrid"></div>
   </section>
 

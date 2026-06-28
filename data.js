@@ -812,6 +812,359 @@ window.WCDATA = {
   }
  ],
  "otherScorers": [],
+ "bracket": {
+  "R32": [
+   {
+    "id": "R32-1",
+    "home": "South Africa",
+    "away": "Canada",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/za.svg\" alt=\"South Africa\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ca.svg\" alt=\"Canada\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "Jun 28"
+   },
+   {
+    "id": "R32-2",
+    "home": "Netherlands",
+    "away": "Morocco",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/nl.svg\" alt=\"Netherlands\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ma.svg\" alt=\"Morocco\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "Jun 29"
+   },
+   {
+    "id": "R32-3",
+    "home": "Germany",
+    "away": "Paraguay",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/de.svg\" alt=\"Germany\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/py.svg\" alt=\"Paraguay\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "Jun 29"
+   },
+   {
+    "id": "R32-4",
+    "home": "France",
+    "away": "Sweden",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/se.svg\" alt=\"Sweden\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "Jun 30"
+   },
+   {
+    "id": "R32-5",
+    "home": "Brazil",
+    "away": "Japan",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/br.svg\" alt=\"Brazil\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/jp.svg\" alt=\"Japan\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "Jun 29"
+   },
+   {
+    "id": "R32-6",
+    "home": "Ivory Coast",
+    "away": "Norway",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ci.svg\" alt=\"Ivory Coast\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/no.svg\" alt=\"Norway\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "Jun 30"
+   },
+   {
+    "id": "R32-7",
+    "home": "Mexico",
+    "away": "Ecuador",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/mx.svg\" alt=\"Mexico\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ec.svg\" alt=\"Ecuador\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "Jun 30"
+   },
+   {
+    "id": "R32-8",
+    "home": "England",
+    "away": "DR Congo",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/cd.svg\" alt=\"DR Congo\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "Jul 1"
+   },
+   {
+    "id": "R32-9",
+    "home": "Switzerland",
+    "away": "Algeria",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ch.svg\" alt=\"Switzerland\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/dz.svg\" alt=\"Algeria\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "Jul 2"
+   },
+   {
+    "id": "R32-10",
+    "home": "Spain",
+    "away": "Austria",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/es.svg\" alt=\"Spain\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/at.svg\" alt=\"Austria\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "Jul 2"
+   },
+   {
+    "id": "R32-11",
+    "home": "USA",
+    "away": "Bosnia and Herzegovina",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/us.svg\" alt=\"USA\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ba.svg\" alt=\"Bosnia and Herzegovina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "Jul 1"
+   },
+   {
+    "id": "R32-12",
+    "home": "Belgium",
+    "away": "Senegal",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/be.svg\" alt=\"Belgium\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/sn.svg\" alt=\"Senegal\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "Jul 1"
+   },
+   {
+    "id": "R32-13",
+    "home": "Argentina",
+    "away": "Cape Verde",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ar.svg\" alt=\"Argentina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/cv.svg\" alt=\"Cape Verde\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "Jul 3"
+   },
+   {
+    "id": "R32-14",
+    "home": "Australia",
+    "away": "Egypt",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/au.svg\" alt=\"Australia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/eg.svg\" alt=\"Egypt\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "Jul 3"
+   },
+   {
+    "id": "R32-15",
+    "home": "Colombia",
+    "away": "Ghana",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/co.svg\" alt=\"Colombia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gh.svg\" alt=\"Ghana\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "Jul 3"
+   },
+   {
+    "id": "R32-16",
+    "home": "Portugal",
+    "away": "Croatia",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/pt.svg\" alt=\"Portugal\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/hr.svg\" alt=\"Croatia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "Jul 2"
+   }
+  ],
+  "R16": [
+   {
+    "id": "R16-1",
+    "home": null,
+    "away": null,
+    "homeFlag": "",
+    "awayFlag": "",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "4-7 Jul"
+   },
+   {
+    "id": "R16-2",
+    "home": null,
+    "away": null,
+    "homeFlag": "",
+    "awayFlag": "",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "4-7 Jul"
+   },
+   {
+    "id": "R16-3",
+    "home": null,
+    "away": null,
+    "homeFlag": "",
+    "awayFlag": "",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "4-7 Jul"
+   },
+   {
+    "id": "R16-4",
+    "home": null,
+    "away": null,
+    "homeFlag": "",
+    "awayFlag": "",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "4-7 Jul"
+   },
+   {
+    "id": "R16-5",
+    "home": null,
+    "away": null,
+    "homeFlag": "",
+    "awayFlag": "",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "4-7 Jul"
+   },
+   {
+    "id": "R16-6",
+    "home": null,
+    "away": null,
+    "homeFlag": "",
+    "awayFlag": "",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "4-7 Jul"
+   },
+   {
+    "id": "R16-7",
+    "home": null,
+    "away": null,
+    "homeFlag": "",
+    "awayFlag": "",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "4-7 Jul"
+   },
+   {
+    "id": "R16-8",
+    "home": null,
+    "away": null,
+    "homeFlag": "",
+    "awayFlag": "",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "4-7 Jul"
+   }
+  ],
+  "QF": [
+   {
+    "id": "QF-1",
+    "home": null,
+    "away": null,
+    "homeFlag": "",
+    "awayFlag": "",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "9-11 Jul"
+   },
+   {
+    "id": "QF-2",
+    "home": null,
+    "away": null,
+    "homeFlag": "",
+    "awayFlag": "",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "9-11 Jul"
+   },
+   {
+    "id": "QF-3",
+    "home": null,
+    "away": null,
+    "homeFlag": "",
+    "awayFlag": "",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "9-11 Jul"
+   },
+   {
+    "id": "QF-4",
+    "home": null,
+    "away": null,
+    "homeFlag": "",
+    "awayFlag": "",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "9-11 Jul"
+   }
+  ],
+  "SF": [
+   {
+    "id": "SF-1",
+    "home": null,
+    "away": null,
+    "homeFlag": "",
+    "awayFlag": "",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "14-15 Jul"
+   },
+   {
+    "id": "SF-2",
+    "home": null,
+    "away": null,
+    "homeFlag": "",
+    "awayFlag": "",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "14-15 Jul"
+   }
+  ],
+  "F": [
+   {
+    "id": "F-1",
+    "home": null,
+    "away": null,
+    "homeFlag": "",
+    "awayFlag": "",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "19 Jul"
+   }
+  ]
+ },
  "fixtures": [
   {
    "time": "20:00",
@@ -819,22 +1172,6 @@ window.WCDATA = {
    "away": "Canada",
    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/za.svg\" alt=\"South Africa\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ca.svg\" alt=\"Canada\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "A"
-  },
-  {
-   "time": "22:00",
-   "home": "France",
-   "away": "Sweden",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/se.svg\" alt=\"Sweden\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "I"
-  },
-  {
-   "time": "02:00",
-   "home": "Mexico",
-   "away": "Ecuador",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/mx.svg\" alt=\"Mexico\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ec.svg\" alt=\"Ecuador\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
    "group": "A"
   }
  ],

@@ -187,11 +187,27 @@ FLAG = {c:flag_html(c) for c in ISO}
 #  >>>> DAILY UPDATE AREA  (edit these 4 things each day) <<<<
 # ============================================================
 FACT = "Harry Kane (Iaia Loppi & Sam Howells) nodded home against Panama to become England's all-time leading World Cup scorer, with Jude Bellingham (Ben Black & Georgina Robledo Padilla) also on the mark as the Three Lions topped Group L. But the night belonged to a substitute: Lionel Messi (Lorenz Frenzen & John-Alexander Rudd) curled in a late free-kick off the bench against Jordan to become the first player ever to score in seven consecutive World Cup games."   # witty fact of the day
-FIXTURES = [("20:00","South Africa","Canada"),("22:00","France","Sweden"),("02:00","Mexico","Ecuador")]   # today's kick-offs (UK time)
+FIXTURES = [("20:00","South Africa","Canada")]
+
+# ---- KNOCKOUT BRACKET (R32 fixed; later rounds auto-fill from winners) ----
+R32 = [
+ ("South Africa","Canada","Jun 28"),("Netherlands","Morocco","Jun 29"),
+ ("Germany","Paraguay","Jun 29"),("France","Sweden","Jun 30"),
+ ("Brazil","Japan","Jun 29"),("Ivory Coast","Norway","Jun 30"),
+ ("Mexico","Ecuador","Jun 30"),("England","DR Congo","Jul 1"),
+ ("Switzerland","Algeria","Jul 2"),("Spain","Austria","Jul 2"),
+ ("USA","Bosnia and Herzegovina","Jul 1"),("Belgium","Senegal","Jul 1"),
+ ("Argentina","Cape Verde","Jul 3"),("Australia","Egypt","Jul 3"),
+ ("Colombia","Ghana","Jul 3"),("Portugal","Croatia","Jul 2"),
+]
+ROUND_DATES = {"R16":"4-7 Jul","QF":"9-11 Jul","SF":"14-15 Jul","F":"19 Jul"}
+# scores as ties are played. (hg,ag) clear win, or (hg,ag,"Winner Name") if decided on pens.
+KO_SCORES = {}
+   # today's kick-offs (UK time)
 UPDATED = "28 June 2026"                 # date label shown on the site
 STAGE   = "Round of 32"    # e.g. "Group Stage \u00b7 Matchday 2", "Round of 32", "Final"
 # Teams that have been KNOCKED OUT (use exact names from the team list):
-ELIMINATED = {"Turkey","Tunisia","Haiti","Uzbekistan","Panama","Czech Republic","Qatar","Curacao","New Zealand","Uruguay","Saudi Arabia","Iraq","South Korea","Scotland","Iran","Jordan"}        # e.g. {"South Africa","Curacao"}
+ELIMINATED = {"South Korea","Czech Republic","Qatar","Scotland","Haiti","Turkey","Curacao","Tunisia","Iran","New Zealand","Uruguay","Saudi Arabia","Iraq","Jordan","Uzbekistan","Panama"}
 # Teams confirmed THROUGH to the next round (optional, shows a green tick):
 THROUGH = {"USA","Mexico","Germany","Spain","Argentina","France","Norway","Colombia","South Africa","Switzerland","Canada","Brazil","Morocco","Australia","Paraguay","Ivory Coast","Ecuador","Netherlands","Japan","Sweden","Belgium","Egypt","Cape Verde","Bosnia and Herzegovina","Senegal","Austria","Algeria","Portugal","DR Congo","England","Croatia","Ghana"}           # e.g. {"Germany","Mexico"}
 # ------------------------------------------------------------
@@ -329,6 +345,31 @@ for t,o1,o2 in TEAMS:
         "owners":owners,
         "gf":gf.get(t,0),"ga":ga.get(t,0),"reds":REDCARDS.get(t,0),"played":played.get(t,0),
         "status":("out" if t in ELIMINATED else ("through" if t in THROUGH else "alive"))})
+
+
+def _winner(h,a,sc):
+    if not h or not a or not sc: return None
+    if len(sc)>=3 and sc[2]: return sc[2]
+    if sc[0]>sc[1]: return h
+    if sc[1]>sc[0]: return a
+    return None
+def _tie(tid,h,a,date):
+    sc=KO_SCORES.get(tid)
+    return {"id":tid,"home":h,"away":a,"homeFlag":FLAG.get(h,"") if h else "","awayFlag":FLAG.get(a,"") if a else "",
+            "hg":(sc[0] if sc else None),"ag":(sc[1] if sc else None),"winner":_winner(h,a,sc),"date":date}
+_r32=[_tie("R32-%d"%(i+1),h,a,d) for i,(h,a,d) in enumerate(R32)]
+def _round(prefix,feeders,date):
+    out=[]
+    for i,(A,B) in enumerate(feeders,1):
+        out.append(_tie("%s-%d"%(prefix,i),A["winner"],B["winner"],date))
+    return out
+_p=lambda L:[ (L[k],L[k+1]) for k in range(0,len(L),2) ]
+_r16=_round("R16",_p(_r32),ROUND_DATES["R16"])
+_qf =_round("QF",_p(_r16),ROUND_DATES["QF"])
+_sf =_round("SF",_p(_qf),ROUND_DATES["SF"])
+_fin=_round("F",_p(_sf),ROUND_DATES["F"])
+BRACKET={"R32":_r32,"R16":_r16,"QF":_qf,"SF":_sf,"F":_fin}
+
 data={
  "meta":{"updated":UPDATED,"stage":STAGE,"fact":FACT,
    "note":"Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."},
@@ -345,6 +386,7 @@ data={
  ],
  "matches":[{"home":h,"hg":hg,"away":a,"ag":ag,"date":d,"note":n,"homeFlag":FLAG.get(h,"⚽"),"awayFlag":FLAG.get(a,"⚽")} for h,hg,a,ag,d,n in matches],
  "otherScorers":[{"player":p,"country":c,"flag":FLAG.get(c,"⚽"),"goals":g} for p,c,g in OTHER_SCORERS],
+ "bracket":BRACKET,
  "fixtures":[{"time":t,"home":h,"away":a,"homeFlag":FLAG.get(h,"\u26bd"),"awayFlag":FLAG.get(a,"\u26bd"),"group":team_group.get(h,"?")} for t,h,a in FIXTURES],
  "players":players_out,"teams":teams_out,
 }
