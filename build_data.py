@@ -186,17 +186,17 @@ FLAG = {c:flag_html(c) for c in ISO}
 # ============================================================
 #  >>>> DAILY UPDATE AREA  (edit these 4 things each day) <<<<
 # ============================================================
-FACT = "Ousmane Dembélé (Richard Breen & Tracy Meller) needed just 32 minutes to rattle in a hat-trick as France romped past Norway 4-1 to finish Group I with a flawless nine points — the first first-half hat-trick at a World Cup since 1994. It lifts him to four for the tournament, but he is still chasing Lionel Messi (Lorenz Frenzen & John-Alexander Rudd), whose five goals keep the Argentine maestro out in front of the Golden Boot race."   # witty fact of the day
-FIXTURES = [("22:00","Panama","England"),("22:00","Croatia","Ghana"),("00:30","Colombia","Portugal"),("00:30","DR Congo","Uzbekistan"),("03:00","Algeria","Austria"),("03:00","Jordan","Argentina")]   # today's kick-offs (UK time)
-UPDATED = "27 June 2026"                 # date label shown on the site
-STAGE   = "Group Stage \u00b7 Matchday 3"    # e.g. "Group Stage \u00b7 Matchday 2", "Round of 32", "Final"
+FACT = "Harry Kane (Iaia Loppi & Sam Howells) nodded home against Panama to become England's all-time leading World Cup scorer, with Jude Bellingham (Ben Black & Georgina Robledo Padilla) also on the mark as the Three Lions topped Group L. But the night belonged to a substitute: Lionel Messi (Lorenz Frenzen & John-Alexander Rudd) curled in a late free-kick off the bench against Jordan to become the first player ever to score in seven consecutive World Cup games."   # witty fact of the day
+FIXTURES = [("20:00","South Africa","Canada"),("22:00","France","Sweden"),("02:00","Mexico","Ecuador")]   # today's kick-offs (UK time)
+UPDATED = "28 June 2026"                 # date label shown on the site
+STAGE   = "Round of 32"    # e.g. "Group Stage \u00b7 Matchday 2", "Round of 32", "Final"
 # Teams that have been KNOCKED OUT (use exact names from the team list):
-ELIMINATED = {"Turkey","Tunisia","Haiti","Uzbekistan","Panama","Czech Republic","Qatar","Curacao","New Zealand","Uruguay","Saudi Arabia","Iraq"}        # e.g. {"South Africa","Curacao"}
+ELIMINATED = {"Turkey","Tunisia","Haiti","Uzbekistan","Panama","Czech Republic","Qatar","Curacao","New Zealand","Uruguay","Saudi Arabia","Iraq","South Korea","Scotland","Iran","Jordan"}        # e.g. {"South Africa","Curacao"}
 # Teams confirmed THROUGH to the next round (optional, shows a green tick):
-THROUGH = {"USA","Mexico","Germany","Spain","Argentina","France","Norway","Colombia","South Africa","Switzerland","Canada","Brazil","Morocco","Australia","Paraguay","Ivory Coast","Ecuador","Netherlands","Japan","Sweden","Belgium","Egypt","Cape Verde","Bosnia and Herzegovina"}           # e.g. {"Germany","Mexico"}
+THROUGH = {"USA","Mexico","Germany","Spain","Argentina","France","Norway","Colombia","South Africa","Switzerland","Canada","Brazil","Morocco","Australia","Paraguay","Ivory Coast","Ecuador","Netherlands","Japan","Sweden","Belgium","Egypt","Cape Verde","Bosnia and Herzegovina","Senegal","Austria","Algeria","Portugal","DR Congo","England","Croatia","Ghana"}           # e.g. {"Germany","Mexico"}
 # ------------------------------------------------------------
 REDCARDS = {"South Africa":2,"Qatar":2,"Bosnia and Herzegovina":1,"Paraguay":1,"Iraq":1}   # team -> total red cards (tournament)
-GOALS = {"Lionel Messi":5,"Cristiano Ronaldo":2,"Folarin Balogun":2,"Kai Havertz":2,"Kylian Mbappe":4,"Erling Haaland":4,"Harry Kane":2,"Jamal Musiala":1,"Alexander Isak":1,"Viktor Gyokeres":1,"Vinicius Junior":4,"Breel Embolo":1,"John McGinn":1,"Jude Bellingham":1,"Marcus Rashford":1,"Luis Diaz":1,"Jonathan David":3,"Matheus Cunha":3,"Cody Gakpo":2,"Mikel Oyarzabal":2,"Lamine Yamal":1,"Mohamed Salah":1,"Ousmane Dembele":4,"Desire Doue":1,"Kevin De Bruyne":1,"Romelu Lukaku":1}
+GOALS = {"Lionel Messi":6,"Cristiano Ronaldo":2,"Folarin Balogun":2,"Kai Havertz":2,"Kylian Mbappe":4,"Erling Haaland":4,"Harry Kane":3,"Jamal Musiala":1,"Alexander Isak":1,"Viktor Gyokeres":1,"Vinicius Junior":4,"Breel Embolo":1,"John McGinn":1,"Jude Bellingham":2,"Marcus Rashford":1,"Luis Diaz":1,"Jonathan David":3,"Matheus Cunha":3,"Cody Gakpo":2,"Mikel Oyarzabal":2,"Lamine Yamal":1,"Mohamed Salah":1,"Ousmane Dembele":4,"Desire Doue":1,"Kevin De Bruyne":1,"Romelu Lukaku":1,"Lautaro Martinez":1}
 # Scorers NOT drafted by anyone (shown on the board for context, can't win the office prize):
 OTHER_SCORERS = []   # (per request: only show players someone drafted)
 matches = [
@@ -266,6 +266,12 @@ matches = [
  ("Uruguay",0,"Spain",1,"Jun 26","Muslera's howler gifts Spain the only goal; La Roja top Group H as Uruguay crash out"),
  ("Egypt",1,"Iran",1,"Jun 26","Saber and Rezaeian trade early goals; a late VAR call denies Iran as Egypt go through second"),
  ("New Zealand",1,"Belgium",5,"Jun 26","Trossard brace, De Bruyne, Lukaku and Saelemaekers; Belgium win Group G, Elijah Just grabs a Kiwi consolation"),
+ ("Panama",0,"England",2,"Jun 27","Bellingham and Kane on target; Kane becomes England's all-time World Cup top scorer as the Three Lions win Group L"),
+ ("Croatia",2,"Ghana",1,"Jun 27","Sucic strikes and a Vlasic winner send Croatia through second; Ghana finish third but still qualify"),
+ ("Colombia",0,"Portugal",0,"Jun 27","Goalless in Group K; Colombia top the group, Portugal go through second"),
+ ("DR Congo",3,"Uzbekistan",1,"Jun 27","DR Congo sign off with a win to grab a best-third-place spot; Uzbekistan lose all three on debut"),
+ ("Jordan",1,"Argentina",3,"Jun 27","Lo Celso and a Lautaro Martinez penalty before Messi's free-kick off the bench \u2014 a record 7th straight World Cup game scoring; Argentina sweep Group J"),
+ ("Algeria",3,"Austria",3,"Jun 27","Six-goal thriller; Austria pip Algeria to second but both reach the last 32"),
 ]
 gf={t:0 for t,_,_ in TEAMS}; ga={t:0 for t,_,_ in TEAMS}; played={t:0 for t,_,_ in TEAMS}
 for h,hg,a,ag,d,n in matches:
