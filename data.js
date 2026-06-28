@@ -823,7 +823,8 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "Jun 28"
+    "date": "Jun 28",
+    "when": "Sun 28 Jun · 20:00"
    },
    {
     "id": "R32-2",
@@ -834,7 +835,8 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "Jun 29"
+    "date": "Jun 29",
+    "when": "Tue 30 Jun · 02:00"
    },
    {
     "id": "R32-3",
@@ -845,7 +847,8 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "Jun 29"
+    "date": "Jun 29",
+    "when": "Mon 29 Jun · 21:30"
    },
    {
     "id": "R32-4",
@@ -856,7 +859,8 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "Jun 30"
+    "date": "Jun 30",
+    "when": "Tue 30 Jun · 22:00"
    },
    {
     "id": "R32-5",
@@ -867,7 +871,8 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "Jun 29"
+    "date": "Jun 29",
+    "when": "Mon 29 Jun · 18:00"
    },
    {
     "id": "R32-6",
@@ -878,7 +883,8 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "Jun 30"
+    "date": "Jun 30",
+    "when": "Tue 30 Jun · 18:00"
    },
    {
     "id": "R32-7",
@@ -889,7 +895,8 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "Jun 30"
+    "date": "Jun 30",
+    "when": "Wed 1 Jul · 02:00"
    },
    {
     "id": "R32-8",
@@ -900,7 +907,8 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "Jul 1"
+    "date": "Jul 1",
+    "when": "Wed 1 Jul · 17:00"
    },
    {
     "id": "R32-9",
@@ -911,7 +919,8 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "Jul 2"
+    "date": "Jul 2",
+    "when": "Fri 3 Jul · 04:00"
    },
    {
     "id": "R32-10",
@@ -922,7 +931,8 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "Jul 2"
+    "date": "Jul 2",
+    "when": "Thu 2 Jul · 20:00"
    },
    {
     "id": "R32-11",
@@ -933,7 +943,8 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "Jul 1"
+    "date": "Jul 1",
+    "when": "Thu 2 Jul · 01:00"
    },
    {
     "id": "R32-12",
@@ -944,7 +955,8 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "Jul 1"
+    "date": "Jul 1",
+    "when": "Wed 1 Jul · 21:00"
    },
    {
     "id": "R32-13",
@@ -955,7 +967,8 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "Jul 3"
+    "date": "Jul 3",
+    "when": "Fri 3 Jul · 23:00"
    },
    {
     "id": "R32-14",
@@ -966,7 +979,8 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "Jul 3"
+    "date": "Jul 3",
+    "when": "Fri 3 Jul · 19:00"
    },
    {
     "id": "R32-15",
@@ -977,7 +991,8 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "Jul 3"
+    "date": "Jul 3",
+    "when": "Sat 4 Jul · 02:30"
    },
    {
     "id": "R32-16",
@@ -988,7 +1003,8 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "Jul 2"
+    "date": "Jul 2",
+    "when": "Fri 3 Jul · 00:00"
    }
   ],
   "R16": [
@@ -1001,7 +1017,8 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "4-7 Jul"
+    "date": "4-7 Jul",
+    "when": "Sat 4 Jul · 18:00"
    },
    {
     "id": "R16-2",
@@ -1012,7 +1029,8 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "4-7 Jul"
+    "date": "4-7 Jul",
+    "when": "Sat 4 Jul · 22:00"
    },
    {
     "id": "R16-3",
@@ -1023,7 +1041,8 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "4-7 Jul"
+    "date": "4-7 Jul",
+    "when": "Sun 5 Jul · 21:00"
    },
    {
     "id": "R16-4",
@@ -1034,7 +1053,8 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "4-7 Jul"
+    "date": "4-7 Jul",
+    "when": "Mon 6 Jul · 01:00"
    },
    {
     "id": "R16-5",
@@ -1045,7 +1065,8 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "4-7 Jul"
+    "date": "4-7 Jul",
+    "when": "Mon 6 Jul · 20:00"
    },
    {
     "id": "R16-6",
@@ -1056,7 +1077,8 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "4-7 Jul"
+    "date": "4-7 Jul",
+    "when": "Tue 7 Jul · 01:00"
    },
    {
     "id": "R16-7",
@@ -1067,7 +1089,8 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "4-7 Jul"
+    "date": "4-7 Jul",
+    "when": "Tue 7 Jul · 17:00"
    },
    {
     "id": "R16-8",
@@ -1078,7 +1101,8 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "4-7 Jul"
+    "date": "4-7 Jul",
+    "when": "Tue 7 Jul · 21:00"
    }
   ],
   "QF": [
@@ -1091,7 +1115,8 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "9-11 Jul"
+    "date": "9-11 Jul",
+    "when": "Thu 9 Jul · 21:00"
    },
    {
     "id": "QF-2",
@@ -1102,7 +1127,8 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "9-11 Jul"
+    "date": "9-11 Jul",
+    "when": "Sat 11 Jul · 22:00"
    },
    {
     "id": "QF-3",
@@ -1113,7 +1139,8 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "9-11 Jul"
+    "date": "9-11 Jul",
+    "when": "Fri 10 Jul · 20:00"
    },
    {
     "id": "QF-4",
@@ -1124,7 +1151,8 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "9-11 Jul"
+    "date": "9-11 Jul",
+    "when": "Sun 12 Jul · 02:00"
    }
   ],
   "SF": [
@@ -1137,7 +1165,8 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "14-15 Jul"
+    "date": "14-15 Jul",
+    "when": "Tue 14 Jul · 21:00"
    },
    {
     "id": "SF-2",
@@ -1148,7 +1177,8 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "14-15 Jul"
+    "date": "14-15 Jul",
+    "when": "Wed 15 Jul · 21:00"
    }
   ],
   "F": [
@@ -1161,7 +1191,8 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "19 Jul"
+    "date": "19 Jul",
+    "when": "Sun 19 Jul · 20:00"
    }
   ]
  },

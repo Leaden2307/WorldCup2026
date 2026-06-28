@@ -201,6 +201,17 @@ R32 = [
  ("Colombia","Ghana","Jul 3"),("Portugal","Croatia","Jul 2"),
 ]
 ROUND_DATES = {"R16":"4-7 Jul","QF":"9-11 Jul","SF":"14-15 Jul","F":"19 Jul"}
+SCHEDULE = {
+ "R32-1":"Sun 28 Jun \u00b7 20:00","R32-2":"Tue 30 Jun \u00b7 02:00","R32-3":"Mon 29 Jun \u00b7 21:30","R32-4":"Tue 30 Jun \u00b7 22:00",
+ "R32-5":"Mon 29 Jun \u00b7 18:00","R32-6":"Tue 30 Jun \u00b7 18:00","R32-7":"Wed 1 Jul \u00b7 02:00","R32-8":"Wed 1 Jul \u00b7 17:00",
+ "R32-9":"Fri 3 Jul \u00b7 04:00","R32-10":"Thu 2 Jul \u00b7 20:00","R32-11":"Thu 2 Jul \u00b7 01:00","R32-12":"Wed 1 Jul \u00b7 21:00",
+ "R32-13":"Fri 3 Jul \u00b7 23:00","R32-14":"Fri 3 Jul \u00b7 19:00","R32-15":"Sat 4 Jul \u00b7 02:30","R32-16":"Fri 3 Jul \u00b7 00:00",
+ "R16-1":"Sat 4 Jul \u00b7 18:00","R16-2":"Sat 4 Jul \u00b7 22:00","R16-3":"Sun 5 Jul \u00b7 21:00","R16-4":"Mon 6 Jul \u00b7 01:00",
+ "R16-5":"Mon 6 Jul \u00b7 20:00","R16-6":"Tue 7 Jul \u00b7 01:00","R16-7":"Tue 7 Jul \u00b7 17:00","R16-8":"Tue 7 Jul \u00b7 21:00",
+ "QF-1":"Thu 9 Jul \u00b7 21:00","QF-2":"Sat 11 Jul \u00b7 22:00","QF-3":"Fri 10 Jul \u00b7 20:00","QF-4":"Sun 12 Jul \u00b7 02:00",
+ "SF-1":"Tue 14 Jul \u00b7 21:00","SF-2":"Wed 15 Jul \u00b7 21:00",
+ "F-1":"Sun 19 Jul \u00b7 20:00",
+}
 # scores as ties are played. (hg,ag) clear win, or (hg,ag,"Winner Name") if decided on pens.
 KO_SCORES = {}
    # today's kick-offs (UK time)
@@ -356,7 +367,7 @@ def _winner(h,a,sc):
 def _tie(tid,h,a,date):
     sc=KO_SCORES.get(tid)
     return {"id":tid,"home":h,"away":a,"homeFlag":FLAG.get(h,"") if h else "","awayFlag":FLAG.get(a,"") if a else "",
-            "hg":(sc[0] if sc else None),"ag":(sc[1] if sc else None),"winner":_winner(h,a,sc),"date":date}
+            "hg":(sc[0] if sc else None),"ag":(sc[1] if sc else None),"winner":_winner(h,a,sc),"date":date,"when":SCHEDULE.get(tid,date)}
 _r32=[_tie("R32-%d"%(i+1),h,a,d) for i,(h,a,d) in enumerate(R32)]
 def _round(prefix,feeders,date):
     out=[]

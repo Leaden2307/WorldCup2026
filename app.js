@@ -280,23 +280,42 @@ function koRow(name,flag,score,win,played){
 }
 function renderBracket(){
   const wrap=$('#bracketWrap'); if(!wrap||!D.bracket) return; wrap.innerHTML='';
-  const rounds=[['R32','Round of 32'],['R16','Last 16'],['QF','Quarter-finals'],['SF','Semi-finals'],['F','Final']];
-  const row=el('div'); row.style.cssText='display:flex;gap:14px;min-width:max-content;padding-bottom:8px';
-  rounds.forEach(([key,label])=>{
-    const list=D.bracket[key]||[]; const col=el('div'); col.style.cssText='flex:0 0 auto;width:218px;display:flex;flex-direction:column;gap:10px';
-    const hd=el('div'); hd.style.cssText='font-family:Roboto;font-weight:700;text-transform:uppercase;font-size:12px;color:var(--blue);letter-spacing:.04em;padding:2px 2px 5px;border-bottom:2px solid var(--line)';
-    hd.textContent=label+(list[0]&&list[0].date?(' \u00b7 '+list[0].date):''); col.appendChild(hd);
-    list.forEach(t=>{
-      const card=el('div'); card.style.cssText='background:#fff;border:1px solid var(--line);border-radius:7px;box-shadow:0 3px 10px rgba(20,40,80,.06);overflow:hidden';
+  const ROUNDS=[['R32','Round of 32'],['R16','Last 16'],['QF','Quarter-finals'],['SF','Semi-finals'],['F','Final']];
+  const COLW=206, GAP=46, TIEH=72, STEP=94, PADT=6;
+  const n32=D.bracket.R32.length;
+  const totalW=ROUNDS.length*COLW+(ROUNDS.length-1)*GAP;
+  const totalH=PADT*2+n32*STEP;
+  const centers={};
+  centers['R32']=D.bracket.R32.map((_,i)=>PADT+i*STEP+STEP/2);
+  ['R16','QF','SF','F'].forEach((k,ri)=>{ const prev=ROUNDS[ri][0]; centers[k]=(D.bracket[k]||[]).map((_,j)=>(centers[prev][2*j]+centers[prev][2*j+1])/2); });
+  // header labels
+  const head=el('div'); head.style.cssText='position:relative;width:'+totalW+'px;height:20px;margin-bottom:8px';
+  ROUNDS.forEach(([k,label],r)=>{ const x=r*(COLW+GAP); const lab=el('div');
+    lab.style.cssText='position:absolute;left:'+x+'px;width:'+COLW+'px;font-family:Roboto;font-weight:700;text-transform:uppercase;font-size:11.5px;color:var(--blue);letter-spacing:.04em'; lab.textContent=label; head.appendChild(lab); });
+  // stage + svg connectors
+  const stage=el('div'); stage.style.cssText='position:relative;width:'+totalW+'px;height:'+totalH+'px';
+  const NS='http://www.w3.org/2000/svg';
+  const svg=document.createElementNS(NS,'svg'); svg.setAttribute('width',totalW); svg.setAttribute('height',totalH); svg.style.cssText='position:absolute;left:0;top:0;pointer-events:none';
+  ROUNDS.forEach(([k],r)=>{ if(r===0) return; const prev=ROUNDS[r-1][0];
+    const xPrevR=(r-1)*(COLW+GAP)+COLW, xCur=r*(COLW+GAP), midX=xPrevR+GAP/2;
+    (D.bracket[k]||[]).forEach((_,j)=>{ const ay=centers[prev][2*j], by=centers[prev][2*j+1], cy=centers[k][j];
+      const d='M'+xPrevR+' '+ay+' H'+midX+' M'+xPrevR+' '+by+' H'+midX+' M'+midX+' '+ay+' V'+by+' M'+midX+' '+cy+' H'+xCur;
+      const p=document.createElementNS(NS,'path'); p.setAttribute('d',d); p.setAttribute('stroke','#00B96E'); p.setAttribute('stroke-width','2'); p.setAttribute('fill','none'); svg.appendChild(p); });
+  });
+  stage.appendChild(svg);
+  // cards
+  ROUNDS.forEach(([k],r)=>{ const x=r*(COLW+GAP);
+    (D.bracket[k]||[]).forEach((t,j)=>{ const cy=centers[k][j];
+      const card=el('div'); card.style.cssText='position:absolute;left:'+x+'px;top:'+(cy-TIEH/2)+'px;width:'+COLW+'px;background:#fff;border:1px solid var(--line);border-radius:7px;box-shadow:0 3px 10px rgba(20,40,80,.07);overflow:hidden;z-index:1';
+      if(t.when){ const wn=el('div'); wn.style.cssText='font-family:Roboto;font-size:10px;font-weight:700;color:var(--mut);background:var(--soft);padding:3px 8px;text-transform:uppercase;letter-spacing:.02em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis'; wn.textContent=t.when; card.appendChild(wn); }
       const played=t.hg!=null;
       card.appendChild(koRow(t.home,t.homeFlag,t.hg,t.winner&&t.winner===t.home,played));
       const dv=el('div'); dv.style.cssText='height:1px;background:var(--line)'; card.appendChild(dv);
       card.appendChild(koRow(t.away,t.awayFlag,t.ag,t.winner&&t.winner===t.away,played));
-      col.appendChild(card);
-    });
-    row.appendChild(col);
+      stage.appendChild(card); });
   });
-  wrap.appendChild(row);
+  wrap.appendChild(head); wrap.appendChild(stage);
+  wrap.style.maxHeight='80vh'; wrap.style.overflow='auto';
 }
 
 /* RESULTS */
