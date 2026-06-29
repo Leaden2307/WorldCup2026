@@ -186,8 +186,8 @@ FLAG = {c:flag_html(c) for c in ISO}
 # ============================================================
 #  >>>> DAILY UPDATE AREA  (edit these 4 things each day) <<<<
 # ============================================================
-FACT = "Harry Kane (Iaia Loppi & Sam Howells) nodded home against Panama to become England's all-time leading World Cup scorer, with Jude Bellingham (Ben Black & Georgina Robledo Padilla) also on the mark as the Three Lions topped Group L. But the night belonged to a substitute: Lionel Messi (Lorenz Frenzen & John-Alexander Rudd) curled in a late free-kick off the bench against Jordan to become the first player ever to score in seven consecutive World Cup games."   # witty fact of the day
-FIXTURES = [("20:00","South Africa","Canada")]
+FACT = "The knockout stage opened with heartbreak and history: Stephen Eustaquio's stoppage-time strike won it 1-0 for Canada, sending John Pope & Helen Davis’s Canucks into the World Cup Round of 16 for the very first time — with returning skipper Alphonso Davies off the bench. James Fletcher & Tracy Meller’s South Africa, knockout debutants themselves, are the first team out of the bracket."   # witty fact of the day
+FIXTURES = [("18:00","Brazil","Japan"),("21:30","Germany","Paraguay")]
 
 # ---- KNOCKOUT BRACKET (R32 fixed; later rounds auto-fill from winners) ----
 R32 = [
@@ -214,11 +214,12 @@ SCHEDULE = {
 }
 # scores as ties are played. (hg,ag) clear win, or (hg,ag,"Winner Name") if decided on pens.
 KO_SCORES = {}
+KO_SCORES["R32-1"] = (0,1)   # Canada beat South Africa 1-0 (Eustaquio 90+)
    # today's kick-offs (UK time)
-UPDATED = "28 June 2026"                 # date label shown on the site
+UPDATED = "29 June 2026"                 # date label shown on the site
 STAGE   = "Round of 32"    # e.g. "Group Stage \u00b7 Matchday 2", "Round of 32", "Final"
 # Teams that have been KNOCKED OUT (use exact names from the team list):
-ELIMINATED = {"South Korea","Czech Republic","Qatar","Scotland","Haiti","Turkey","Curacao","Tunisia","Iran","New Zealand","Uruguay","Saudi Arabia","Iraq","Jordan","Uzbekistan","Panama"}
+ELIMINATED = {"South Korea","Czech Republic","Qatar","Scotland","Haiti","Turkey","Curacao","Tunisia","Iran","New Zealand","Uruguay","Saudi Arabia","Iraq","Jordan","Uzbekistan","Panama","South Africa"}
 # Teams confirmed THROUGH to the next round (optional, shows a green tick):
 THROUGH = {"USA","Mexico","Germany","Spain","Argentina","France","Norway","Colombia","South Africa","Switzerland","Canada","Brazil","Morocco","Australia","Paraguay","Ivory Coast","Ecuador","Netherlands","Japan","Sweden","Belgium","Egypt","Cape Verde","Bosnia and Herzegovina","Senegal","Austria","Algeria","Portugal","DR Congo","England","Croatia","Ghana"}           # e.g. {"Germany","Mexico"}
 # ------------------------------------------------------------

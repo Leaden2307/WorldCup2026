@@ -1,9 +1,9 @@
 // World Cup 2026 Office Sweepstake - live data. Auto-updated daily.
 window.WCDATA = {
  "meta": {
-  "updated": "28 June 2026",
+  "updated": "29 June 2026",
   "stage": "Round of 32",
-  "fact": "Harry Kane (Iaia Loppi & Sam Howells) nodded home against Panama to become England's all-time leading World Cup scorer, with Jude Bellingham (Ben Black & Georgina Robledo Padilla) also on the mark as the Three Lions topped Group L. But the night belonged to a substitute: Lionel Messi (Lorenz Frenzen & John-Alexander Rudd) curled in a late free-kick off the bench against Jordan to become the first player ever to score in seven consecutive World Cup games.",
+  "fact": "The knockout stage opened with heartbreak and history: Stephen Eustaquio's stoppage-time strike won it 1-0 for Canada, sending John Pope & Helen Davis’s Canucks into the World Cup Round of 16 for the very first time — with returning skipper Alphonso Davies off the bench. James Fletcher & Tracy Meller’s South Africa, knockout debutants themselves, are the first team out of the bracket.",
   "note": "Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."
  },
  "prizes": [
@@ -820,9 +820,9 @@ window.WCDATA = {
     "away": "Canada",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/za.svg\" alt=\"South Africa\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ca.svg\" alt=\"Canada\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": null,
-    "ag": null,
-    "winner": null,
+    "hg": 0,
+    "ag": 1,
+    "winner": "Canada",
     "date": "Jun 28",
     "when": "Sun 28 Jun · 20:00"
    },
@@ -1010,9 +1010,9 @@ window.WCDATA = {
   "R16": [
    {
     "id": "R16-1",
-    "home": null,
+    "home": "Canada",
     "away": null,
-    "homeFlag": "",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ca.svg\" alt=\"Canada\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "awayFlag": "",
     "hg": null,
     "ag": null,
@@ -1198,12 +1198,20 @@ window.WCDATA = {
  },
  "fixtures": [
   {
-   "time": "20:00",
-   "home": "South Africa",
-   "away": "Canada",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/za.svg\" alt=\"South Africa\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ca.svg\" alt=\"Canada\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "A"
+   "time": "18:00",
+   "home": "Brazil",
+   "away": "Japan",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/br.svg\" alt=\"Brazil\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/jp.svg\" alt=\"Japan\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "C"
+  },
+  {
+   "time": "21:30",
+   "home": "Germany",
+   "away": "Paraguay",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/de.svg\" alt=\"Germany\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/py.svg\" alt=\"Paraguay\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "E"
   }
  ],
  "players": [
@@ -2767,7 +2775,7 @@ window.WCDATA = {
    "ga": 3,
    "reds": 2,
    "played": 3,
-   "status": "through"
+   "status": "out"
   },
   {
    "team": "Iran",
