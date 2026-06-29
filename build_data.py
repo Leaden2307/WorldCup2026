@@ -237,7 +237,6 @@ SCHEDULE = {
 }
 # scores as ties are played. (hg,ag) clear win, or (hg,ag,"Winner Name") if decided on pens.
 KO_SCORES = {"R32-3":(0,1)}
-KO_SCORES["R32-1"] = (0,1)   # Canada beat South Africa 1-0 (Eustaquio 90+)
    # today's kick-offs (UK time)
 UPDATED = "29 June 2026"                 # date label shown on the site
 STAGE   = "Round of 32"    # e.g. "Group Stage \u00b7 Matchday 2", "Round of 32", "Final"

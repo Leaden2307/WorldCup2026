@@ -820,9 +820,9 @@ window.WCDATA = {
     "away": "Paraguay",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/de.svg\" alt=\"Germany\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/py.svg\" alt=\"Paraguay\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": 0,
-    "ag": 1,
-    "winner": "Paraguay",
+    "hg": null,
+    "ag": null,
+    "winner": null,
     "date": "Jun 29",
     "when": "Mon 29 Jun · 21:30"
    },
@@ -1010,9 +1010,9 @@ window.WCDATA = {
   "R16": [
    {
     "id": "R16-1",
-    "home": "Paraguay",
+    "home": null,
     "away": null,
-    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/py.svg\" alt=\"Paraguay\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "homeFlag": "",
     "awayFlag": "",
     "hg": null,
     "ag": null,
