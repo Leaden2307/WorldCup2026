@@ -186,40 +186,63 @@ FLAG = {c:flag_html(c) for c in ISO}
 # ============================================================
 #  >>>> DAILY UPDATE AREA  (edit these 4 things each day) <<<<
 # ============================================================
-FACT = "The knockout stage opened with heartbreak and history: Stephen Eustaquio's stoppage-time strike won it 1-0 for Canada, sending John Pope & Helen Davis’s Canucks into the World Cup Round of 16 for the very first time — with returning skipper Alphonso Davies off the bench. James Fletcher & Tracy Meller’s South Africa, knockout debutants themselves, are the first team out of the bracket."   # witty fact of the day
+FACT = "Knockouts under way! Canada edge South Africa 1-0 in the opener — John & Helen's Canada march on, while Tracy & James's South Africa head home."   # witty fact of the day
 FIXTURES = [("18:00","Brazil","Japan"),("21:30","Germany","Paraguay")]
 
 # ---- KNOCKOUT BRACKET (R32 fixed; later rounds auto-fill from winners) ----
 R32 = [
- ("South Africa","Canada","Jun 28"),("Netherlands","Morocco","Jun 29"),
  ("Germany","Paraguay","Jun 29"),("France","Sweden","Jun 30"),
+ ("South Africa","Canada","Jun 28"),("Netherlands","Morocco","Jun 30"),
+ ("Portugal","Croatia","Jul 3"),("Spain","Austria","Jul 2"),
+ ("USA","Bosnia and Herzegovina","Jul 2"),("Belgium","Senegal","Jul 1"),
  ("Brazil","Japan","Jun 29"),("Ivory Coast","Norway","Jun 30"),
- ("Mexico","Ecuador","Jun 30"),("England","DR Congo","Jul 1"),
- ("Switzerland","Algeria","Jul 2"),("Spain","Austria","Jul 2"),
- ("USA","Bosnia and Herzegovina","Jul 1"),("Belgium","Senegal","Jul 1"),
+ ("Mexico","Ecuador","Jul 1"),("England","DR Congo","Jul 1"),
  ("Argentina","Cape Verde","Jul 3"),("Australia","Egypt","Jul 3"),
- ("Colombia","Ghana","Jul 3"),("Portugal","Croatia","Jul 2"),
+ ("Switzerland","Algeria","Jul 3"),("Colombia","Ghana","Jul 4"),
 ]
 ROUND_DATES = {"R16":"4-7 Jul","QF":"9-11 Jul","SF":"14-15 Jul","F":"19 Jul"}
 SCHEDULE = {
- "R32-1":"Sun 28 Jun \u00b7 20:00","R32-2":"Tue 30 Jun \u00b7 02:00","R32-3":"Mon 29 Jun \u00b7 21:30","R32-4":"Tue 30 Jun \u00b7 22:00",
- "R32-5":"Mon 29 Jun \u00b7 18:00","R32-6":"Tue 30 Jun \u00b7 18:00","R32-7":"Wed 1 Jul \u00b7 02:00","R32-8":"Wed 1 Jul \u00b7 17:00",
- "R32-9":"Fri 3 Jul \u00b7 04:00","R32-10":"Thu 2 Jul \u00b7 20:00","R32-11":"Thu 2 Jul \u00b7 01:00","R32-12":"Wed 1 Jul \u00b7 21:00",
- "R32-13":"Fri 3 Jul \u00b7 23:00","R32-14":"Fri 3 Jul \u00b7 19:00","R32-15":"Sat 4 Jul \u00b7 02:30","R32-16":"Fri 3 Jul \u00b7 00:00",
- "R16-1":"Sat 4 Jul \u00b7 18:00","R16-2":"Sat 4 Jul \u00b7 22:00","R16-3":"Sun 5 Jul \u00b7 21:00","R16-4":"Mon 6 Jul \u00b7 01:00",
- "R16-5":"Mon 6 Jul \u00b7 20:00","R16-6":"Tue 7 Jul \u00b7 01:00","R16-7":"Tue 7 Jul \u00b7 17:00","R16-8":"Tue 7 Jul \u00b7 21:00",
- "QF-1":"Thu 9 Jul \u00b7 21:00","QF-2":"Sat 11 Jul \u00b7 22:00","QF-3":"Fri 10 Jul \u00b7 20:00","QF-4":"Sun 12 Jul \u00b7 02:00",
- "SF-1":"Tue 14 Jul \u00b7 21:00","SF-2":"Wed 15 Jul \u00b7 21:00",
- "F-1":"Sun 19 Jul \u00b7 20:00",
+ "R32-1":"Mon 29 Jun · 21:30",
+ "R32-2":"Tue 30 Jun · 22:00",
+ "R32-3":"Sun 28 Jun · 20:00",
+ "R32-4":"Tue 30 Jun · 02:00",
+ "R32-5":"Fri 3 Jul · 00:00",
+ "R32-6":"Thu 2 Jul · 20:00",
+ "R32-7":"Thu 2 Jul · 01:00",
+ "R32-8":"Wed 1 Jul · 21:00",
+ "R32-9":"Mon 29 Jun · 18:00",
+ "R32-10":"Tue 30 Jun · 18:00",
+ "R32-11":"Wed 1 Jul · 02:00",
+ "R32-12":"Wed 1 Jul · 17:00",
+ "R32-13":"Fri 3 Jul · 23:00",
+ "R32-14":"Fri 3 Jul · 19:00",
+ "R32-15":"Fri 3 Jul · 04:00",
+ "R32-16":"Sat 4 Jul · 02:30",
+ "R16-1":"Sat 4 Jul · 22:00",
+ "R16-2":"Sat 4 Jul · 18:00",
+ "R16-3":"Mon 6 Jul · 20:00",
+ "R16-4":"Tue 7 Jul · 01:00",
+ "R16-5":"Sun 5 Jul · 21:00",
+ "R16-6":"Mon 6 Jul · 01:00",
+ "R16-7":"Tue 7 Jul · 17:00",
+ "R16-8":"Tue 7 Jul · 21:00",
+ "QF-1":"Thu 9 Jul · 21:00",
+ "QF-2":"Fri 10 Jul · 20:00",
+ "QF-3":"Sat 11 Jul · 22:00",
+ "QF-4":"Sun 12 Jul · 02:00",
+ "SF-1":"Tue 14 Jul · 20:00",
+ "SF-2":"Wed 15 Jul · 20:00",
+ "F-1":"Sun 19 Jul · 20:00",
+ "3P-1":"Sat 18 Jul · 22:00",
 }
 # scores as ties are played. (hg,ag) clear win, or (hg,ag,"Winner Name") if decided on pens.
-KO_SCORES = {}
+KO_SCORES = {"R32-3":(0,1)}
 KO_SCORES["R32-1"] = (0,1)   # Canada beat South Africa 1-0 (Eustaquio 90+)
    # today's kick-offs (UK time)
 UPDATED = "29 June 2026"                 # date label shown on the site
 STAGE   = "Round of 32"    # e.g. "Group Stage \u00b7 Matchday 2", "Round of 32", "Final"
 # Teams that have been KNOCKED OUT (use exact names from the team list):
-ELIMINATED = {"South Korea","Czech Republic","Qatar","Scotland","Haiti","Turkey","Curacao","Tunisia","Iran","New Zealand","Uruguay","Saudi Arabia","Iraq","Jordan","Uzbekistan","Panama","South Africa"}
+ELIMINATED = {"South Africa","South Korea","Czech Republic","Qatar","Scotland","Haiti","Turkey","Curacao","Tunisia","Iran","New Zealand","Uruguay","Saudi Arabia","Iraq","Jordan","Uzbekistan","Panama","South Africa"}
 # Teams confirmed THROUGH to the next round (optional, shows a green tick):
 THROUGH = {"USA","Mexico","Germany","Spain","Argentina","France","Norway","Colombia","South Africa","Switzerland","Canada","Brazil","Morocco","Australia","Paraguay","Ivory Coast","Ecuador","Netherlands","Japan","Sweden","Belgium","Egypt","Cape Verde","Bosnia and Herzegovina","Senegal","Austria","Algeria","Portugal","DR Congo","England","Croatia","Ghana"}           # e.g. {"Germany","Mexico"}
 # ------------------------------------------------------------
@@ -380,7 +403,11 @@ _r16=_round("R16",_p(_r32),ROUND_DATES["R16"])
 _qf =_round("QF",_p(_r16),ROUND_DATES["QF"])
 _sf =_round("SF",_p(_qf),ROUND_DATES["SF"])
 _fin=_round("F",_p(_sf),ROUND_DATES["F"])
-BRACKET={"R32":_r32,"R16":_r16,"QF":_qf,"SF":_sf,"F":_fin}
+def _loser(t):
+    if not t["winner"] or not t["home"] or not t["away"]: return None
+    return t["away"] if t["winner"]==t["home"] else t["home"]
+_3p=[_tie("3P-1", _loser(_sf[0]) if len(_sf)>0 else None, _loser(_sf[1]) if len(_sf)>1 else None, "")]
+BRACKET={"R32":_r32,"R16":_r16,"QF":_qf,"SF":_sf,"F":_fin,"3P":_3p}
 
 data={
  "meta":{"updated":UPDATED,"stage":STAGE,"fact":FACT,

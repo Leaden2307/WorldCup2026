@@ -3,7 +3,7 @@ window.WCDATA = {
  "meta": {
   "updated": "29 June 2026",
   "stage": "Round of 32",
-  "fact": "The knockout stage opened with heartbreak and history: Stephen Eustaquio's stoppage-time strike won it 1-0 for Canada, sending John Pope & Helen Davis’s Canucks into the World Cup Round of 16 for the very first time — with returning skipper Alphonso Davies off the bench. James Fletcher & Tracy Meller’s South Africa, knockout debutants themselves, are the first team out of the bracket.",
+  "fact": "Knockouts under way! Canada edge South Africa 1-0 in the opener — John & Helen's Canada march on, while Tracy & James's South Africa head home.",
   "note": "Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."
  },
  "prizes": [
@@ -816,42 +816,18 @@ window.WCDATA = {
   "R32": [
    {
     "id": "R32-1",
-    "home": "South Africa",
-    "away": "Canada",
-    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/za.svg\" alt=\"South Africa\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ca.svg\" alt=\"Canada\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": 0,
-    "ag": 1,
-    "winner": "Canada",
-    "date": "Jun 28",
-    "when": "Sun 28 Jun · 20:00"
-   },
-   {
-    "id": "R32-2",
-    "home": "Netherlands",
-    "away": "Morocco",
-    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/nl.svg\" alt=\"Netherlands\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ma.svg\" alt=\"Morocco\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": null,
-    "ag": null,
-    "winner": null,
-    "date": "Jun 29",
-    "when": "Tue 30 Jun · 02:00"
-   },
-   {
-    "id": "R32-3",
     "home": "Germany",
     "away": "Paraguay",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/de.svg\" alt=\"Germany\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/py.svg\" alt=\"Paraguay\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": null,
-    "ag": null,
-    "winner": null,
+    "hg": 0,
+    "ag": 1,
+    "winner": "Paraguay",
     "date": "Jun 29",
     "when": "Mon 29 Jun · 21:30"
    },
    {
-    "id": "R32-4",
+    "id": "R32-2",
     "home": "France",
     "away": "Sweden",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
@@ -863,67 +839,43 @@ window.WCDATA = {
     "when": "Tue 30 Jun · 22:00"
    },
    {
-    "id": "R32-5",
-    "home": "Brazil",
-    "away": "Japan",
-    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/br.svg\" alt=\"Brazil\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/jp.svg\" alt=\"Japan\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "id": "R32-3",
+    "home": "South Africa",
+    "away": "Canada",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/za.svg\" alt=\"South Africa\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ca.svg\" alt=\"Canada\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "hg": 0,
+    "ag": 1,
+    "winner": "Canada",
+    "date": "Jun 28",
+    "when": "Sun 28 Jun · 20:00"
+   },
+   {
+    "id": "R32-4",
+    "home": "Netherlands",
+    "away": "Morocco",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/nl.svg\" alt=\"Netherlands\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ma.svg\" alt=\"Morocco\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "Jun 29",
-    "when": "Mon 29 Jun · 18:00"
+    "date": "Jun 30",
+    "when": "Tue 30 Jun · 02:00"
+   },
+   {
+    "id": "R32-5",
+    "home": "Portugal",
+    "away": "Croatia",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/pt.svg\" alt=\"Portugal\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/hr.svg\" alt=\"Croatia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "Jul 3",
+    "when": "Fri 3 Jul · 00:00"
    },
    {
     "id": "R32-6",
-    "home": "Ivory Coast",
-    "away": "Norway",
-    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ci.svg\" alt=\"Ivory Coast\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/no.svg\" alt=\"Norway\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": null,
-    "ag": null,
-    "winner": null,
-    "date": "Jun 30",
-    "when": "Tue 30 Jun · 18:00"
-   },
-   {
-    "id": "R32-7",
-    "home": "Mexico",
-    "away": "Ecuador",
-    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/mx.svg\" alt=\"Mexico\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ec.svg\" alt=\"Ecuador\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": null,
-    "ag": null,
-    "winner": null,
-    "date": "Jun 30",
-    "when": "Wed 1 Jul · 02:00"
-   },
-   {
-    "id": "R32-8",
-    "home": "England",
-    "away": "DR Congo",
-    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/cd.svg\" alt=\"DR Congo\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": null,
-    "ag": null,
-    "winner": null,
-    "date": "Jul 1",
-    "when": "Wed 1 Jul · 17:00"
-   },
-   {
-    "id": "R32-9",
-    "home": "Switzerland",
-    "away": "Algeria",
-    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ch.svg\" alt=\"Switzerland\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/dz.svg\" alt=\"Algeria\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": null,
-    "ag": null,
-    "winner": null,
-    "date": "Jul 2",
-    "when": "Fri 3 Jul · 04:00"
-   },
-   {
-    "id": "R32-10",
     "home": "Spain",
     "away": "Austria",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/es.svg\" alt=\"Spain\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
@@ -935,7 +887,7 @@ window.WCDATA = {
     "when": "Thu 2 Jul · 20:00"
    },
    {
-    "id": "R32-11",
+    "id": "R32-7",
     "home": "USA",
     "away": "Bosnia and Herzegovina",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/us.svg\" alt=\"USA\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
@@ -943,11 +895,11 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "Jul 1",
+    "date": "Jul 2",
     "when": "Thu 2 Jul · 01:00"
    },
    {
-    "id": "R32-12",
+    "id": "R32-8",
     "home": "Belgium",
     "away": "Senegal",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/be.svg\" alt=\"Belgium\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
@@ -957,6 +909,54 @@ window.WCDATA = {
     "winner": null,
     "date": "Jul 1",
     "when": "Wed 1 Jul · 21:00"
+   },
+   {
+    "id": "R32-9",
+    "home": "Brazil",
+    "away": "Japan",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/br.svg\" alt=\"Brazil\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/jp.svg\" alt=\"Japan\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "Jun 29",
+    "when": "Mon 29 Jun · 18:00"
+   },
+   {
+    "id": "R32-10",
+    "home": "Ivory Coast",
+    "away": "Norway",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ci.svg\" alt=\"Ivory Coast\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/no.svg\" alt=\"Norway\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "Jun 30",
+    "when": "Tue 30 Jun · 18:00"
+   },
+   {
+    "id": "R32-11",
+    "home": "Mexico",
+    "away": "Ecuador",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/mx.svg\" alt=\"Mexico\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ec.svg\" alt=\"Ecuador\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "Jul 1",
+    "when": "Wed 1 Jul · 02:00"
+   },
+   {
+    "id": "R32-12",
+    "home": "England",
+    "away": "DR Congo",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/cd.svg\" alt=\"DR Congo\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "Jul 1",
+    "when": "Wed 1 Jul · 17:00"
    },
    {
     "id": "R32-13",
@@ -984,6 +984,18 @@ window.WCDATA = {
    },
    {
     "id": "R32-15",
+    "home": "Switzerland",
+    "away": "Algeria",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ch.svg\" alt=\"Switzerland\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/dz.svg\" alt=\"Algeria\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "Jul 3",
+    "when": "Fri 3 Jul · 04:00"
+   },
+   {
+    "id": "R32-16",
     "home": "Colombia",
     "away": "Ghana",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/co.svg\" alt=\"Colombia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
@@ -991,25 +1003,25 @@ window.WCDATA = {
     "hg": null,
     "ag": null,
     "winner": null,
-    "date": "Jul 3",
+    "date": "Jul 4",
     "when": "Sat 4 Jul · 02:30"
-   },
-   {
-    "id": "R32-16",
-    "home": "Portugal",
-    "away": "Croatia",
-    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/pt.svg\" alt=\"Portugal\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/hr.svg\" alt=\"Croatia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": null,
-    "ag": null,
-    "winner": null,
-    "date": "Jul 2",
-    "when": "Fri 3 Jul · 00:00"
    }
   ],
   "R16": [
    {
     "id": "R16-1",
+    "home": "Paraguay",
+    "away": null,
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/py.svg\" alt=\"Paraguay\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "awayFlag": "",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "4-7 Jul",
+    "when": "Sat 4 Jul · 22:00"
+   },
+   {
+    "id": "R16-2",
     "home": "Canada",
     "away": null,
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ca.svg\" alt=\"Canada\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
@@ -1021,43 +1033,7 @@ window.WCDATA = {
     "when": "Sat 4 Jul · 18:00"
    },
    {
-    "id": "R16-2",
-    "home": null,
-    "away": null,
-    "homeFlag": "",
-    "awayFlag": "",
-    "hg": null,
-    "ag": null,
-    "winner": null,
-    "date": "4-7 Jul",
-    "when": "Sat 4 Jul · 22:00"
-   },
-   {
     "id": "R16-3",
-    "home": null,
-    "away": null,
-    "homeFlag": "",
-    "awayFlag": "",
-    "hg": null,
-    "ag": null,
-    "winner": null,
-    "date": "4-7 Jul",
-    "when": "Sun 5 Jul · 21:00"
-   },
-   {
-    "id": "R16-4",
-    "home": null,
-    "away": null,
-    "homeFlag": "",
-    "awayFlag": "",
-    "hg": null,
-    "ag": null,
-    "winner": null,
-    "date": "4-7 Jul",
-    "when": "Mon 6 Jul · 01:00"
-   },
-   {
-    "id": "R16-5",
     "home": null,
     "away": null,
     "homeFlag": "",
@@ -1069,7 +1045,7 @@ window.WCDATA = {
     "when": "Mon 6 Jul · 20:00"
    },
    {
-    "id": "R16-6",
+    "id": "R16-4",
     "home": null,
     "away": null,
     "homeFlag": "",
@@ -1079,6 +1055,30 @@ window.WCDATA = {
     "winner": null,
     "date": "4-7 Jul",
     "when": "Tue 7 Jul · 01:00"
+   },
+   {
+    "id": "R16-5",
+    "home": null,
+    "away": null,
+    "homeFlag": "",
+    "awayFlag": "",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "4-7 Jul",
+    "when": "Sun 5 Jul · 21:00"
+   },
+   {
+    "id": "R16-6",
+    "home": null,
+    "away": null,
+    "homeFlag": "",
+    "awayFlag": "",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "4-7 Jul",
+    "when": "Mon 6 Jul · 01:00"
    },
    {
     "id": "R16-7",
@@ -1128,7 +1128,7 @@ window.WCDATA = {
     "ag": null,
     "winner": null,
     "date": "9-11 Jul",
-    "when": "Sat 11 Jul · 22:00"
+    "when": "Fri 10 Jul · 20:00"
    },
    {
     "id": "QF-3",
@@ -1140,7 +1140,7 @@ window.WCDATA = {
     "ag": null,
     "winner": null,
     "date": "9-11 Jul",
-    "when": "Fri 10 Jul · 20:00"
+    "when": "Sat 11 Jul · 22:00"
    },
    {
     "id": "QF-4",
@@ -1166,7 +1166,7 @@ window.WCDATA = {
     "ag": null,
     "winner": null,
     "date": "14-15 Jul",
-    "when": "Tue 14 Jul · 21:00"
+    "when": "Tue 14 Jul · 20:00"
    },
    {
     "id": "SF-2",
@@ -1178,7 +1178,7 @@ window.WCDATA = {
     "ag": null,
     "winner": null,
     "date": "14-15 Jul",
-    "when": "Wed 15 Jul · 21:00"
+    "when": "Wed 15 Jul · 20:00"
    }
   ],
   "F": [
@@ -1193,6 +1193,20 @@ window.WCDATA = {
     "winner": null,
     "date": "19 Jul",
     "when": "Sun 19 Jul · 20:00"
+   }
+  ],
+  "3P": [
+   {
+    "id": "3P-1",
+    "home": null,
+    "away": null,
+    "homeFlag": "",
+    "awayFlag": "",
+    "hg": null,
+    "ag": null,
+    "winner": null,
+    "date": "",
+    "when": "Sat 18 Jul · 22:00"
    }
   ]
  },
