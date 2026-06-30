@@ -3,7 +3,7 @@ window.WCDATA = {
  "meta": {
   "updated": "30 June 2026",
   "stage": "Round of 32",
-  "fact": "Spot-kick carnage! Germany — Luca D'Amico's team — crash out on penalties to Paraguay, the first shootout the four-time winners have EVER lost. Mark Rintoul & Ivy Yan's Paraguay sneak into the last 16, Morocco dump out the Dutch on pens too, and Brazil edge Japan 2-1.",
+  "fact": "Spot-kick carnage! Germany (Luca & Georgina's team) crash out on penalties to Paraguay — the first shootout the four-time winners have ever lost. Richard Breen & Sam Howells's Paraguay sneak into the last 16, Morocco (Ayomide & Simon) knock out the Dutch on pens too, and Brazil edge Japan 2-1.",
   "note": "Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."
  },
  "prizes": [

@@ -186,7 +186,7 @@ FLAG = {c:flag_html(c) for c in ISO}
 # ============================================================
 #  >>>> DAILY UPDATE AREA  (edit these 4 things each day) <<<<
 # ============================================================
-FACT = "Spot-kick carnage! Germany — Luca D'Amico's team — crash out on penalties to Paraguay, the first shootout the four-time winners have EVER lost. Mark Rintoul & Ivy Yan's Paraguay sneak into the last 16, Morocco dump out the Dutch on pens too, and Brazil edge Japan 2-1."   # witty fact of the day
+FACT = "Spot-kick carnage! Germany (Luca & Georgina's team) crash out on penalties to Paraguay — the first shootout the four-time winners have ever lost. Richard Breen & Sam Howells's Paraguay sneak into the last 16, Morocco (Ayomide & Simon) knock out the Dutch on pens too, and Brazil edge Japan 2-1."   # witty fact of the day
 FIXTURES = [("18:00","Ivory Coast","Norway"),("22:00","France","Sweden")]
 
 # ---- KNOCKOUT BRACKET (R32 fixed; later rounds auto-fill from winners) ----
