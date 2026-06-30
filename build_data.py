@@ -186,8 +186,8 @@ FLAG = {c:flag_html(c) for c in ISO}
 # ============================================================
 #  >>>> DAILY UPDATE AREA  (edit these 4 things each day) <<<<
 # ============================================================
-FACT = "Knockouts under way! Canada edge South Africa 1-0 in the opener — John & Helen's Canada march on, while Tracy & James's South Africa head home."   # witty fact of the day
-FIXTURES = [("18:00","Brazil","Japan"),("21:30","Germany","Paraguay")]
+FACT = "Spot-kick carnage! Germany — Luca D'Amico's team — crash out on penalties to Paraguay, the first shootout the four-time winners have EVER lost. Mark Rintoul & Ivy Yan's Paraguay sneak into the last 16, Morocco dump out the Dutch on pens too, and Brazil edge Japan 2-1."   # witty fact of the day
+FIXTURES = [("18:00","Ivory Coast","Norway"),("22:00","France","Sweden")]
 
 # ---- KNOCKOUT BRACKET (R32 fixed; later rounds auto-fill from winners) ----
 R32 = [
@@ -236,17 +236,17 @@ SCHEDULE = {
  "3P-1":"Sat 18 Jul · 22:00",
 }
 # scores as ties are played. (hg,ag) clear win, or (hg,ag,"Winner Name") if decided on pens.
-KO_SCORES = {"R32-3":(0,1)}
+KO_SCORES = {"R32-1":(1,1,"Paraguay"),"R32-3":(0,1),"R32-4":(1,1,"Morocco"),"R32-9":(2,1)}
    # today's kick-offs (UK time)
-UPDATED = "29 June 2026"                 # date label shown on the site
+UPDATED = "30 June 2026"                 # date label shown on the site
 STAGE   = "Round of 32"    # e.g. "Group Stage \u00b7 Matchday 2", "Round of 32", "Final"
 # Teams that have been KNOCKED OUT (use exact names from the team list):
-ELIMINATED = {"South Africa","South Korea","Czech Republic","Qatar","Scotland","Haiti","Turkey","Curacao","Tunisia","Iran","New Zealand","Uruguay","Saudi Arabia","Iraq","Jordan","Uzbekistan","Panama","South Africa"}
+ELIMINATED = {"South Africa","South Korea","Czech Republic","Qatar","Scotland","Haiti","Turkey","Curacao","Tunisia","Iran","New Zealand","Uruguay","Saudi Arabia","Iraq","Jordan","Uzbekistan","Panama","Germany","Netherlands","Japan"}
 # Teams confirmed THROUGH to the next round (optional, shows a green tick):
-THROUGH = {"USA","Mexico","Germany","Spain","Argentina","France","Norway","Colombia","South Africa","Switzerland","Canada","Brazil","Morocco","Australia","Paraguay","Ivory Coast","Ecuador","Netherlands","Japan","Sweden","Belgium","Egypt","Cape Verde","Bosnia and Herzegovina","Senegal","Austria","Algeria","Portugal","DR Congo","England","Croatia","Ghana"}           # e.g. {"Germany","Mexico"}
+THROUGH = {"Paraguay","Canada","Morocco","Brazil"}           # e.g. {"Germany","Mexico"}
 # ------------------------------------------------------------
 REDCARDS = {"South Africa":2,"Qatar":2,"Bosnia and Herzegovina":1,"Paraguay":1,"Iraq":1}   # team -> total red cards (tournament)
-GOALS = {"Lionel Messi":6,"Cristiano Ronaldo":2,"Folarin Balogun":2,"Kai Havertz":2,"Kylian Mbappe":4,"Erling Haaland":4,"Harry Kane":3,"Jamal Musiala":1,"Alexander Isak":1,"Viktor Gyokeres":1,"Vinicius Junior":4,"Breel Embolo":1,"John McGinn":1,"Jude Bellingham":2,"Marcus Rashford":1,"Luis Diaz":1,"Jonathan David":3,"Matheus Cunha":3,"Cody Gakpo":2,"Mikel Oyarzabal":2,"Lamine Yamal":1,"Mohamed Salah":1,"Ousmane Dembele":4,"Desire Doue":1,"Kevin De Bruyne":1,"Romelu Lukaku":1,"Lautaro Martinez":1}
+GOALS = {"Lionel Messi":6,"Cristiano Ronaldo":2,"Folarin Balogun":2,"Kai Havertz":3,"Kylian Mbappe":4,"Erling Haaland":4,"Harry Kane":3,"Jamal Musiala":1,"Alexander Isak":1,"Viktor Gyokeres":1,"Vinicius Junior":4,"Breel Embolo":1,"John McGinn":1,"Jude Bellingham":2,"Marcus Rashford":1,"Luis Diaz":1,"Jonathan David":3,"Matheus Cunha":3,"Cody Gakpo":3,"Mikel Oyarzabal":2,"Lamine Yamal":1,"Mohamed Salah":1,"Ousmane Dembele":4,"Desire Doue":1,"Kevin De Bruyne":1,"Romelu Lukaku":1,"Lautaro Martinez":1}
 # Scorers NOT drafted by anyone (shown on the board for context, can't win the office prize):
 OTHER_SCORERS = []   # (per request: only show players someone drafted)
 matches = [
