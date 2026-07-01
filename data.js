@@ -1,9 +1,9 @@
 // World Cup 2026 Office Sweepstake - live data. Auto-updated daily.
 window.WCDATA = {
  "meta": {
-  "updated": "30 June 2026",
+  "updated": "1 July 2026",
   "stage": "Round of 32",
-  "fact": "Spot-kick carnage! Germany (Luca & Georgina's team) crash out on penalties to Paraguay — the first shootout the four-time winners have ever lost. Richard Breen & Sam Howells's Paraguay sneak into the last 16, Morocco (Ayomide & Simon) knock out the Dutch on pens too, and Brazil edge Japan 2-1.",
+  "fact": "Mbappe mania! Kylian Mbappe (Luca D'Amico's Golden Boot pick) rifles a brace to sink Sweden 3-0 and draw level with Messi on six goals, while Matthew Radwan's Haaland pops up in the 86th minute to break Ivory Coast hearts and send Norway through to face Brazil. Mark Rintoul's Mexico cruise past Ecuador 2-0 for their first knockout win since 1986.",
   "note": "Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."
  },
  "prizes": [
@@ -832,9 +832,9 @@ window.WCDATA = {
     "away": "Sweden",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/se.svg\" alt=\"Sweden\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": null,
-    "ag": null,
-    "winner": null,
+    "hg": 3,
+    "ag": 0,
+    "winner": "France",
     "date": "Jun 30",
     "when": "Tue 30 Jun · 22:00"
    },
@@ -928,9 +928,9 @@ window.WCDATA = {
     "away": "Norway",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ci.svg\" alt=\"Ivory Coast\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/no.svg\" alt=\"Norway\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": null,
-    "ag": null,
-    "winner": null,
+    "hg": 1,
+    "ag": 2,
+    "winner": "Norway",
     "date": "Jun 30",
     "when": "Tue 30 Jun · 18:00"
    },
@@ -940,9 +940,9 @@ window.WCDATA = {
     "away": "Ecuador",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/mx.svg\" alt=\"Mexico\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ec.svg\" alt=\"Ecuador\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": null,
-    "ag": null,
-    "winner": null,
+    "hg": 2,
+    "ag": 0,
+    "winner": "Mexico",
     "date": "Jul 1",
     "when": "Wed 1 Jul · 02:00"
    },
@@ -1011,9 +1011,9 @@ window.WCDATA = {
    {
     "id": "R16-1",
     "home": "Paraguay",
-    "away": null,
+    "away": "France",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/py.svg\" alt=\"Paraguay\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "awayFlag": "",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "hg": null,
     "ag": null,
     "winner": null,
@@ -1059,9 +1059,9 @@ window.WCDATA = {
    {
     "id": "R16-5",
     "home": "Brazil",
-    "away": null,
+    "away": "Norway",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/br.svg\" alt=\"Brazil\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "awayFlag": "",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/no.svg\" alt=\"Norway\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "hg": null,
     "ag": null,
     "winner": null,
@@ -1070,9 +1070,9 @@ window.WCDATA = {
    },
    {
     "id": "R16-6",
-    "home": null,
+    "home": "Mexico",
     "away": null,
-    "homeFlag": "",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/mx.svg\" alt=\"Mexico\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "awayFlag": "",
     "hg": null,
     "ag": null,
@@ -1212,20 +1212,20 @@ window.WCDATA = {
  },
  "fixtures": [
   {
-   "time": "18:00",
-   "home": "Ivory Coast",
-   "away": "Norway",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ci.svg\" alt=\"Ivory Coast\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/no.svg\" alt=\"Norway\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "E"
+   "time": "17:00",
+   "home": "England",
+   "away": "DR Congo",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/cd.svg\" alt=\"DR Congo\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "L"
   },
   {
-   "time": "22:00",
-   "home": "France",
-   "away": "Sweden",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/se.svg\" alt=\"Sweden\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "I"
+   "time": "21:00",
+   "home": "Belgium",
+   "away": "Senegal",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/be.svg\" alt=\"Belgium\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/sn.svg\" alt=\"Senegal\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "G"
   }
  ],
  "players": [
@@ -1557,7 +1557,7 @@ window.WCDATA = {
    "player": "Erling Haaland",
    "country": "Norway",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/no.svg\" alt=\"Norway\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 4,
+   "goals": 5,
    "owners": {
     "league1": {
      "name": "Matthew Radwan",
@@ -1935,7 +1935,7 @@ window.WCDATA = {
    "player": "Kylian Mbappe",
    "country": "France",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 4,
+   "goals": 6,
    "owners": {
     "league1": {
      "name": "Luca D'Amico",
@@ -2333,7 +2333,7 @@ window.WCDATA = {
    "ga": 7,
    "reds": 0,
    "played": 3,
-   "status": "alive"
+   "status": "through"
   },
   {
    "team": "Scotland",
@@ -2597,7 +2597,7 @@ window.WCDATA = {
    "ga": 2,
    "reds": 0,
    "played": 3,
-   "status": "alive"
+   "status": "out"
   },
   {
    "team": "New Zealand",
@@ -2645,7 +2645,7 @@ window.WCDATA = {
    "ga": 2,
    "reds": 0,
    "played": 3,
-   "status": "alive"
+   "status": "out"
   },
   {
    "team": "Portugal",
@@ -3005,7 +3005,7 @@ window.WCDATA = {
    "ga": 7,
    "reds": 0,
    "played": 3,
-   "status": "alive"
+   "status": "out"
   },
   {
    "team": "Egypt",
@@ -3221,7 +3221,7 @@ window.WCDATA = {
    "ga": 2,
    "reds": 0,
    "played": 3,
-   "status": "alive"
+   "status": "through"
   },
   {
    "team": "Mexico",
@@ -3245,7 +3245,7 @@ window.WCDATA = {
    "ga": 0,
    "reds": 0,
    "played": 3,
-   "status": "alive"
+   "status": "through"
   }
  ]
 };
