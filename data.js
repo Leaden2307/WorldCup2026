@@ -3,7 +3,7 @@ window.WCDATA = {
  "meta": {
   "updated": "1 July 2026",
   "stage": "Round of 32",
-  "fact": "Mbappe mania! Kylian Mbappe (Luca D'Amico's Golden Boot pick) rifles a brace to sink Sweden 3-0 and draw level with Messi on six goals, while Matthew Radwan's Haaland pops up in the 86th minute to break Ivory Coast hearts and send Norway through to face Brazil. Mark Rintoul's Mexico cruise past Ecuador 2-0 for their first knockout win since 1986.",
+  "fact": "Last 32 rolls on! Seven ties down, and tonight Grace Chung & Riccardo Pellizzon's England take on Alex Cammack & Ian Birtles' DR Congo in Atlanta, while Erica Reeve & Kit Lee Smith's Belgium meet Ozan Ibrahim & Bonnie Han's Senegal in Seattle. Fresh in the memory: Luca D'Amico's Kylian Mbappe rifled a brace to sink Sweden 3-0 (level with Messi on six), and Matthew Radwan's Erling Haaland struck late to send Norway past Ivory Coast.",
   "note": "Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."
  },
  "prizes": [
