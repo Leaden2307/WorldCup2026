@@ -186,8 +186,8 @@ FLAG = {c:flag_html(c) for c in ISO}
 # ============================================================
 #  >>>> DAILY UPDATE AREA  (edit these 4 things each day) <<<<
 # ============================================================
-FACT = "Last 32 rolls on! Seven ties down, and tonight Grace Chung & Riccardo Pellizzon's England take on Alex Cammack & Ian Birtles' DR Congo in Atlanta, while Erica Reeve & Kit Lee Smith's Belgium meet Ozan Ibrahim & Bonnie Han's Senegal in Seattle. Fresh in the memory: Luca D'Amico's Kylian Mbappe rifled a brace to sink Sweden 3-0 (level with Messi on six), and Matthew Radwan's Erling Haaland struck late to send Norway past Ivory Coast."   # witty fact of the day
-FIXTURES = [("17:00","England","DR Congo"),("21:00","Belgium","Senegal")]
+FACT = "Drama across the last-32! Iaia Loppi & Sam Howells' Harry Kane bagged a late brace (75th & 86th) to turn it round and beat DR Congo 2-1. Heather Puttock & Ozan Ibrahim's Romelu Lukaku lit the fuse on a wild Belgium comeback from 2-0 down, Tielemans forcing extra time before burying a 125th-minute penalty — the latest winning goal in World Cup history — to sink Senegal 3-2. And spare a thought for Ben Irish & Sally Crimmins: their Folarin Balogun scored USA's opener, then saw red on the hour, yet ten-man USA held on 2-0 over Bosnia. Belgium now meet USA in the last 16."   # witty fact of the day
+FIXTURES = [("20:00","Spain","Austria")]
 
 # ---- KNOCKOUT BRACKET (R32 fixed; later rounds auto-fill from winners) ----
 R32 = [
@@ -236,17 +236,17 @@ SCHEDULE = {
  "3P-1":"Sat 18 Jul · 22:00",
 }
 # scores as ties are played. (hg,ag) clear win, or (hg,ag,"Winner Name") if decided on pens.
-KO_SCORES = {"R32-1":(1,1,"Paraguay"),"R32-2":(3,0),"R32-3":(0,1),"R32-4":(1,1,"Morocco"),"R32-9":(2,1),"R32-10":(1,2),"R32-11":(2,0)}
+KO_SCORES = {"R32-1":(1,1,"Paraguay"),"R32-2":(3,0),"R32-3":(0,1),"R32-4":(1,1,"Morocco"),"R32-7":(2,0),"R32-8":(3,2),"R32-9":(2,1),"R32-10":(1,2),"R32-11":(2,0),"R32-12":(2,1)}
    # today's kick-offs (UK time)
-UPDATED = "1 July 2026"                 # date label shown on the site
+UPDATED = "2 July 2026"                 # date label shown on the site
 STAGE   = "Round of 32"    # e.g. "Group Stage \u00b7 Matchday 2", "Round of 32", "Final"
 # Teams that have been KNOCKED OUT (use exact names from the team list):
-ELIMINATED = {"South Africa","South Korea","Czech Republic","Qatar","Scotland","Haiti","Turkey","Curacao","Tunisia","Iran","New Zealand","Uruguay","Saudi Arabia","Iraq","Jordan","Uzbekistan","Panama","Germany","Netherlands","Japan","Sweden","Ivory Coast","Ecuador"}
+ELIMINATED = {"South Africa","South Korea","Czech Republic","Qatar","Scotland","Haiti","Turkey","Curacao","Tunisia","Iran","New Zealand","Uruguay","Saudi Arabia","Iraq","Jordan","Uzbekistan","Panama","Germany","Netherlands","Japan","Sweden","Ivory Coast","Ecuador","Senegal","DR Congo","Bosnia and Herzegovina"}
 # Teams confirmed THROUGH to the next round (optional, shows a green tick):
-THROUGH = {"Paraguay","Canada","Morocco","Brazil","France","Norway","Mexico"}           # e.g. {"Germany","Mexico"}
+THROUGH = {"Paraguay","Canada","Morocco","Brazil","France","Norway","Mexico","England","Belgium","USA"}           # e.g. {"Germany","Mexico"}
 # ------------------------------------------------------------
-REDCARDS = {"South Africa":2,"Qatar":2,"Bosnia and Herzegovina":1,"Paraguay":1,"Iraq":1}   # team -> total red cards (tournament)
-GOALS = {"Lionel Messi":6,"Cristiano Ronaldo":2,"Folarin Balogun":2,"Kai Havertz":3,"Kylian Mbappe":6,"Erling Haaland":5,"Harry Kane":3,"Jamal Musiala":1,"Alexander Isak":1,"Viktor Gyokeres":1,"Vinicius Junior":4,"Breel Embolo":1,"John McGinn":1,"Jude Bellingham":2,"Marcus Rashford":1,"Luis Diaz":1,"Jonathan David":3,"Matheus Cunha":3,"Cody Gakpo":3,"Mikel Oyarzabal":2,"Lamine Yamal":1,"Mohamed Salah":1,"Ousmane Dembele":4,"Desire Doue":1,"Kevin De Bruyne":1,"Romelu Lukaku":1,"Lautaro Martinez":1}
+REDCARDS = {"South Africa":2,"Qatar":2,"Bosnia and Herzegovina":1,"Paraguay":1,"Iraq":1,"USA":1}   # team -> total red cards (tournament)
+GOALS = {"Lionel Messi":6,"Cristiano Ronaldo":2,"Folarin Balogun":3,"Kai Havertz":3,"Kylian Mbappe":6,"Erling Haaland":5,"Harry Kane":5,"Jamal Musiala":1,"Alexander Isak":1,"Viktor Gyokeres":1,"Vinicius Junior":4,"Breel Embolo":1,"John McGinn":1,"Jude Bellingham":2,"Marcus Rashford":1,"Luis Diaz":1,"Jonathan David":3,"Matheus Cunha":3,"Cody Gakpo":3,"Mikel Oyarzabal":2,"Lamine Yamal":1,"Mohamed Salah":1,"Ousmane Dembele":4,"Desire Doue":1,"Kevin De Bruyne":1,"Romelu Lukaku":2,"Lautaro Martinez":1}
 # Scorers NOT drafted by anyone (shown on the board for context, can't win the office prize):
 OTHER_SCORERS = []   # (per request: only show players someone drafted)
 matches = [

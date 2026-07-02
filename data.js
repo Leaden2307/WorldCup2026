@@ -1,9 +1,9 @@
 // World Cup 2026 Office Sweepstake - live data. Auto-updated daily.
 window.WCDATA = {
  "meta": {
-  "updated": "1 July 2026",
+  "updated": "2 July 2026",
   "stage": "Round of 32",
-  "fact": "Last 32 rolls on! Seven ties down, and tonight Grace Chung & Riccardo Pellizzon's England take on Alex Cammack & Ian Birtles' DR Congo in Atlanta, while Erica Reeve & Kit Lee Smith's Belgium meet Ozan Ibrahim & Bonnie Han's Senegal in Seattle. Fresh in the memory: Luca D'Amico's Kylian Mbappe rifled a brace to sink Sweden 3-0 (level with Messi on six), and Matthew Radwan's Erling Haaland struck late to send Norway past Ivory Coast.",
+  "fact": "Drama across the last-32! Iaia Loppi & Sam Howells' Harry Kane bagged a late brace (75th & 86th) to turn it round and beat DR Congo 2-1. Heather Puttock & Ozan Ibrahim's Romelu Lukaku lit the fuse on a wild Belgium comeback from 2-0 down, Tielemans forcing extra time before burying a 125th-minute penalty — the latest winning goal in World Cup history — to sink Senegal 3-2. And spare a thought for Ben Irish & Sally Crimmins: their Folarin Balogun scored USA's opener, then saw red on the hour, yet ten-man USA held on 2-0 over Bosnia. Belgium now meet USA in the last 16.",
   "note": "Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."
  },
  "prizes": [
@@ -892,9 +892,9 @@ window.WCDATA = {
     "away": "Bosnia and Herzegovina",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/us.svg\" alt=\"USA\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ba.svg\" alt=\"Bosnia and Herzegovina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": null,
-    "ag": null,
-    "winner": null,
+    "hg": 2,
+    "ag": 0,
+    "winner": "USA",
     "date": "Jul 2",
     "when": "Thu 2 Jul · 01:00"
    },
@@ -904,9 +904,9 @@ window.WCDATA = {
     "away": "Senegal",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/be.svg\" alt=\"Belgium\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/sn.svg\" alt=\"Senegal\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": null,
-    "ag": null,
-    "winner": null,
+    "hg": 3,
+    "ag": 2,
+    "winner": "Belgium",
     "date": "Jul 1",
     "when": "Wed 1 Jul · 21:00"
    },
@@ -952,9 +952,9 @@ window.WCDATA = {
     "away": "DR Congo",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/cd.svg\" alt=\"DR Congo\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": null,
-    "ag": null,
-    "winner": null,
+    "hg": 2,
+    "ag": 1,
+    "winner": "England",
     "date": "Jul 1",
     "when": "Wed 1 Jul · 17:00"
    },
@@ -1046,10 +1046,10 @@ window.WCDATA = {
    },
    {
     "id": "R16-4",
-    "home": null,
-    "away": null,
-    "homeFlag": "",
-    "awayFlag": "",
+    "home": "USA",
+    "away": "Belgium",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/us.svg\" alt=\"USA\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/be.svg\" alt=\"Belgium\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "hg": null,
     "ag": null,
     "winner": null,
@@ -1071,9 +1071,9 @@ window.WCDATA = {
    {
     "id": "R16-6",
     "home": "Mexico",
-    "away": null,
+    "away": "England",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/mx.svg\" alt=\"Mexico\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "awayFlag": "",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "hg": null,
     "ag": null,
     "winner": null,
@@ -1212,20 +1212,12 @@ window.WCDATA = {
  },
  "fixtures": [
   {
-   "time": "17:00",
-   "home": "England",
-   "away": "DR Congo",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/cd.svg\" alt=\"DR Congo\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "L"
-  },
-  {
-   "time": "21:00",
-   "home": "Belgium",
-   "away": "Senegal",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/be.svg\" alt=\"Belgium\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/sn.svg\" alt=\"Senegal\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "G"
+   "time": "20:00",
+   "home": "Spain",
+   "away": "Austria",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/es.svg\" alt=\"Spain\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/at.svg\" alt=\"Austria\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "H"
   }
  ],
  "players": [
@@ -1485,7 +1477,7 @@ window.WCDATA = {
    "player": "Romelu Lukaku",
    "country": "Belgium",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/be.svg\" alt=\"Belgium\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 1,
+   "goals": 2,
    "owners": {
     "league1": {
      "name": "Heather Puttock",
@@ -1701,7 +1693,7 @@ window.WCDATA = {
    "player": "Folarin Balogun",
    "country": "USA",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/us.svg\" alt=\"USA\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 2,
+   "goals": 3,
    "owners": {
     "league1": {
      "name": "Ben Irish",
@@ -1773,7 +1765,7 @@ window.WCDATA = {
    "player": "Harry Kane",
    "country": "England",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 3,
+   "goals": 5,
    "owners": {
     "league1": {
      "name": "Iaia Loppi",
@@ -2165,7 +2157,7 @@ window.WCDATA = {
    "ga": 2,
    "reds": 0,
    "played": 3,
-   "status": "alive"
+   "status": "through"
   },
   {
    "team": "Algeria",
@@ -2237,7 +2229,7 @@ window.WCDATA = {
    "ga": 6,
    "reds": 0,
    "played": 3,
-   "status": "alive"
+   "status": "out"
   },
   {
    "team": "Uruguay",
@@ -2309,7 +2301,7 @@ window.WCDATA = {
    "ga": 3,
    "reds": 0,
    "played": 3,
-   "status": "alive"
+   "status": "out"
   },
   {
    "team": "Norway",
@@ -2885,7 +2877,7 @@ window.WCDATA = {
    "ga": 2,
    "reds": 0,
    "played": 3,
-   "status": "alive"
+   "status": "through"
   },
   {
    "team": "Jordan",
@@ -3075,9 +3067,9 @@ window.WCDATA = {
    ],
    "gf": 8,
    "ga": 4,
-   "reds": 0,
+   "reds": 1,
    "played": 3,
-   "status": "alive"
+   "status": "through"
   },
   {
    "team": "Switzerland",
@@ -3197,7 +3189,7 @@ window.WCDATA = {
    "ga": 6,
    "reds": 1,
    "played": 3,
-   "status": "alive"
+   "status": "out"
   },
   {
    "team": "France",
