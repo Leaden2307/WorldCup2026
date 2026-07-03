@@ -377,11 +377,10 @@ secs.forEach(([id,lbl])=>{ const b=el('button',null,lbl); b.onclick=()=>document
 const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){nav.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.id===e.target.id));}});},{rootMargin:'-45% 0px -50% 0px'});
 secs.forEach(([id])=>obs.observe(document.getElementById(id)));
 
-/* BANNER GAME: keepy-uppy — tap the bouncing players, 30s, directors 5x, combos */
+/* BANNER: bouncing staff heads + a few footballs (ambient, no game) */
 (function(){
   const cv=$('#confetti'); if(!cv) return;
   const ctx=cv.getContext('2d');
-  const hero=cv.parentElement;
   const DIRECTORS=new Set(['Andrew Tyley','Ian Birtles','Richard Paul','Stephen Barrett','Tracy Meller']);
   const seen=new Map();
   const add=o=>{ if(o && o.avatar && !seen.has(o.name)) seen.set(o.name,o.avatar); };
@@ -393,113 +392,26 @@ secs.forEach(([id])=>obs.observe(document.getElementById(id)));
   let W=0,H=0,balls=[];
   const G=0.26, REST=0.84;
   function build(){
-    balls=people.map(p=>{
-      const r=p.big ? (25+Math.random()*9) : (11+Math.random()*6);
-      return { x:r+Math.random()*Math.max(1,W-2*r), y:Math.random()*Math.max(1,H*0.5),
-               vx:(Math.random()*2-1)*1.7, vy:Math.random()*2, r, img:cache[p.av], big:p.big };
-    });
-    for(let i=0;i<3;i++){ const r=16+Math.random()*7;
-      balls.push({ x:r+Math.random()*Math.max(1,W-2*r), y:Math.random()*Math.max(1,H*0.5), vx:(Math.random()*2-1)*2.2, vy:Math.random()*2, r, ball:true }); }
+    balls=people.map(p=>{ const r=p.big?(24+Math.random()*9):(10+Math.random()*6);
+      return { x:r+Math.random()*Math.max(1,W-2*r), y:Math.random()*Math.max(1,H*0.5), vx:(Math.random()*2-1)*1.7, vy:Math.random()*2, r, img:cache[p.av], big:p.big }; });
+    for(let i=0;i<3;i++){ const r=16+Math.random()*7; balls.push({ x:r+Math.random()*Math.max(1,W-2*r), y:Math.random()*Math.max(1,H*0.5), vx:(Math.random()*2-1)*2.2, vy:Math.random()*2, r, ball:true }); }
   }
   function rs(){ W=cv.width=cv.offsetWidth; H=cv.height=cv.offsetHeight; build(); }
   rs(); window.addEventListener('resize', rs);
-
-  let score=0, best=0, combo=0, lastHit=0, mode='idle', endTime=0; const floaters=[];
-  try{ best=parseInt(localStorage.getItem('wcKeepy')||'0',10)||0; }catch(e){}
-  cv.style.pointerEvents='auto'; cv.style.cursor='pointer';
-  const hiInner=document.querySelector('.hero-inner'); if(hiInner) hiInner.style.pointerEvents='none';
-
-  const CARD='pointer-events:auto;background:rgba(20,40,90,.92);color:#fff;border:2px solid #FFCD00;border-radius:12px;padding:16px 22px;text-align:center;box-shadow:0 12px 34px rgba(0,0,0,.35);font-family:Roboto;max-width:92%';
-  const ui=el('div'); ui.style.cssText='position:absolute;inset:0;z-index:5;display:flex;align-items:flex-end;justify-content:flex-start;padding:16px;pointer-events:none';
-  hero.appendChild(ui);
-  function btn(label){ const b=el('button',null,label); b.style.cssText='pointer-events:auto;margin-top:12px;background:#FFCD00;color:#16213a;border:0;border-radius:8px;font-family:Roboto;font-weight:700;text-transform:uppercase;font-size:16px;padding:10px 24px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.25)'; return b; }
-  // ---- shared leaderboard (Netlify function + Blobs) ----
-  const LB_URL='/.netlify/functions/leaderboard';
-  let topScores=[]; let pname=''; try{ pname=localStorage.getItem('wcName')||''; }catch(e){}
-  function top3html(){ if(!topScores.length) return ''; const m=['🥇','🥈','🥉'];
-    return '<div style="margin-top:10px;border-top:1px solid rgba(255,255,255,.3);padding-top:8px;font-size:13px;text-align:left;min-width:170px">'
-      +'<div style="font-weight:700;text-transform:uppercase;font-size:11px;opacity:.8;margin-bottom:4px">Office Top 3</div>'
-      +topScores.map((s,i)=>(m[i]||'')+' <b>'+s.name+'</b> — '+s.score).join('<br>')+'</div>'; }
-  async function lbFetch(){ try{ const r=await fetch(LB_URL); if(r.ok) topScores=await r.json(); }catch(e){} if(mode==='idle') showStart(); }
-  async function lbSubmit(name,score){ try{ const r=await fetch(LB_URL,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({name,score})}); if(r.ok) topScores=await r.json(); }catch(e){} }
-
-  function showStart(){
-    ui.innerHTML=''; const c=el('div'); c.style.cssText=CARD;
-    c.innerHTML='<div style="font-weight:700;font-size:19px;text-transform:uppercase">⚽ Keepy-Uppy Challenge</div>'
-      +'<div style="font-size:12.5px;opacity:.92;margin:6px 0 2px">Tap as many players as you can in 15 seconds.<br>Directors score <b>5×</b> · quick taps build a <b>combo</b>.</div>'
-      +'<div style="font-size:12px;opacity:.85;margin-top:4px">Your best: <b>'+best+'</b></div>'
-      +top3html();
-    const b=btn('▶ Play'); b.onclick=startGame; c.appendChild(b); ui.appendChild(c);
-  }
-  function showOver(){
-    ui.innerHTML=''; const c=el('div'); c.style.cssText=CARD; const nb=score>=best;
-    c.innerHTML='<div style="font-weight:700;font-size:20px;text-transform:uppercase;color:#FFCD00">Time!</div>'
-      +'<div style="font-size:15px;margin:6px 0">You scored <b style="font-size:22px">'+score+'</b></div>'
-      +'<div style="font-size:12px;opacity:.9">'+(nb?'🏆 New personal best!':'Your best: '+best)+'</div>';
-    const row=el('div'); row.style.cssText='margin-top:10px;display:flex;gap:6px;justify-content:center';
-    const inp=el('input'); inp.placeholder='Your name'; inp.value=pname; inp.maxLength=20;
-    inp.style.cssText='pointer-events:auto;border:0;border-radius:6px;padding:8px 10px;font-family:Roboto;font-size:14px;width:130px';
-    const sub=el('button',null,'Submit'); sub.style.cssText='pointer-events:auto;background:#FFCD00;color:#16213a;border:0;border-radius:6px;font-family:Roboto;font-weight:700;padding:8px 12px;cursor:pointer';
-    const top=el('div'); function paint(){ top.innerHTML=top3html(); }
-    paint();
-    sub.onclick=async()=>{ const nm=((inp.value||'Anon').trim().slice(0,20))||'Anon'; pname=nm; try{localStorage.setItem('wcName',nm);}catch(e){}
-      sub.disabled=true; sub.textContent='…'; await lbSubmit(nm,score); paint(); sub.textContent='Saved ✓'; };
-    row.append(inp,sub); c.appendChild(row); c.appendChild(top);
-    const again=btn('↺ Play again'); again.onclick=startGame; c.appendChild(again); ui.appendChild(c);
-  }
-  function startGame(){ score=0; combo=0; lastHit=0; endTime=Date.now()+15000; mode='play'; floaters.length=0; ui.innerHTML=''; }
-  function endGame(){ mode='over'; if(score>best){ best=score; try{localStorage.setItem('wcKeepy',String(best));}catch(e){} } showOver(); }
-  showStart(); lbFetch();
-
-  function evpos(e){ const r=cv.getBoundingClientRect(); return [ (e.clientX-r.left)*(cv.width/r.width), (e.clientY-r.top)*(cv.height/r.height) ]; }
-  function kickAt(mx,my){
-    if(mode!=='play') return;
-    let hit=null, hd=1e9;
-    for(const b of balls){ const d=Math.hypot(b.x-mx,b.y-my); if(d<b.r+22 && d<hd){ hd=d; hit=b; } }
-    if(!hit) return;
-    const now=Date.now();
-    combo = (now-lastHit<1300) ? combo+1 : 1; lastHit=now;
-    const pts=(hit.big?5:1)*Math.min(combo,5);
-    score+=pts;
-    hit.vy=-(9+Math.random()*4); hit.vx+=(hit.x-mx)*0.16+(Math.random()*2-1)*1.4; hit.pop=8;
-    floaters.push({x:hit.x, y:hit.y-hit.r, txt:'+'+pts, life:34, big:hit.big});
-  }
-  cv.addEventListener('click', function(e){ const p=evpos(e); kickAt(p[0],p[1]); });
-
   function step(b){
-    if(b.pop>0) b.pop--;
     b.vy+=G; b.x+=b.vx; b.y+=b.vy;
     if(b.x<b.r){ b.x=b.r; b.vx=Math.abs(b.vx); } else if(b.x>W-b.r){ b.x=W-b.r; b.vx=-Math.abs(b.vx); }
-    if(b.y>H-b.r){ b.y=H-b.r; b.vy=-b.vy*REST; const minUp=b.big?5.5:4.5;
-      if(Math.abs(b.vy)<minUp) b.vy=-(minUp+Math.random()*3.5);
-      b.vx+=(Math.random()*2-1)*0.5; if(Math.abs(b.vx)>3.2) b.vx*=0.6; }
+    if(b.y>H-b.r){ b.y=H-b.r; b.vy=-b.vy*REST; const minUp=b.big?5.5:4.5; if(Math.abs(b.vy)<minUp) b.vy=-(minUp+Math.random()*3.5); b.vx+=(Math.random()*2-1)*0.5; if(Math.abs(b.vx)>3.2) b.vx*=0.6; }
     if(b.y<b.r && b.vy<0){ b.y=b.r; b.vy=Math.abs(b.vy)*REST; }
-    const rr=b.r+(b.pop>0?b.pop*0.5:0);
-    if(b.ball){ ctx.font=(rr*2.2)+'px serif'; ctx.textAlign='center'; ctx.textBaseline='middle'; ctx.fillText('⚽', b.x, b.y); return; }
-    ctx.beginPath(); ctx.arc(b.x,b.y,rr,0,6.28); ctx.closePath(); ctx.fillStyle='#fff'; ctx.fill();
-    ctx.save(); ctx.beginPath(); ctx.arc(b.x,b.y,rr-2,0,6.28); ctx.closePath(); ctx.clip();
-    const im=b.img,d=(rr-2)*2;
-    if(im&&im.complete&&im.naturalWidth) ctx.drawImage(im,b.x-(rr-2),b.y-(rr-2),d,d);
-    else { ctx.fillStyle='#0d3a8f'; ctx.fillRect(b.x-rr,b.y-rr,rr*2,rr*2); }
+    if(b.ball){ ctx.font=(b.r*2.2)+'px serif'; ctx.textAlign='center'; ctx.textBaseline='middle'; ctx.fillText('⚽', b.x, b.y); return; }
+    ctx.beginPath(); ctx.arc(b.x,b.y,b.r,0,6.28); ctx.closePath(); ctx.fillStyle='#fff'; ctx.fill();
+    ctx.save(); ctx.beginPath(); ctx.arc(b.x,b.y,b.r-2,0,6.28); ctx.closePath(); ctx.clip();
+    const im=b.img,d=(b.r-2)*2;
+    if(im&&im.complete&&im.naturalWidth) ctx.drawImage(im,b.x-(b.r-2),b.y-(b.r-2),d,d); else { ctx.fillStyle='#0d3a8f'; ctx.fillRect(b.x-b.r,b.y-b.r,b.r*2,b.r*2); }
     ctx.restore();
-    if(b.big){ ctx.beginPath(); ctx.arc(b.x,b.y,rr-1,0,6.28); ctx.lineWidth=2.5; ctx.strokeStyle='#FFCD00'; ctx.stroke(); }
+    if(b.big){ ctx.beginPath(); ctx.arc(b.x,b.y,b.r-1,0,6.28); ctx.lineWidth=2.5; ctx.strokeStyle='#FFCD00'; ctx.stroke(); }
   }
-  function hud(){
-    const now=Date.now();
-    if(mode==='play' && now>=endTime) endGame();
-    if(mode==='play' && now-lastHit>1300) combo=0;
-    for(let k=floaters.length-1;k>=0;k--){ const f=floaters[k]; f.y-=0.9; f.life--; if(f.life<=0){floaters.splice(k,1);continue;}
-      ctx.globalAlpha=Math.max(0,f.life/34); ctx.fillStyle=f.big?'#FFCD00':'#fff';
-      ctx.font='700 '+(f.big?20:15)+'px Roboto, Arial, sans-serif'; ctx.textAlign='center'; ctx.fillText(f.txt,f.x,f.y); ctx.globalAlpha=1; }
-    if(mode==='play'){
-      ctx.textBaseline='top'; ctx.textAlign='left'; ctx.fillStyle='#fff';
-      ctx.font='700 24px Roboto, Arial, sans-serif'; ctx.fillText('⚽ '+score, 16, 12);
-      const left=Math.max(0,Math.ceil((endTime-now)/1000));
-      ctx.textAlign='right'; ctx.fillStyle=left<=5?'#FF5442':'#fff'; ctx.fillText('⏱ '+left+'s', W-16, 12);
-      if(combo>=2){ ctx.fillStyle='#FFCD00'; ctx.font='700 16px Roboto, Arial, sans-serif'; ctx.fillText('COMBO ×'+Math.min(combo,5), W-16, 44); }
-    }
-  }
-  function loop(){ ctx.clearRect(0,0,W,H); for(const b of balls) step(b); hud(); requestAnimationFrame(loop); }
+  function loop(){ ctx.clearRect(0,0,W,H); for(const b of balls) step(b); requestAnimationFrame(loop); }
   loop();
 })();
 
