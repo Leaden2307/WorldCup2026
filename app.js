@@ -17,18 +17,16 @@ $('#footMeta').textContent = D.meta.stage+' — '+D.meta.note;
 /* derived */
 const playersSorted = [...D.players].sort((a,b)=>b.goals-a.goals);
 const maxGoals = playersSorted.length ? playersSorted[0].goals : 0;
+function koPlayed(){ const out=[]; ['R32','R16','QF','SF','F','3P'].forEach(k=>((D.bracket&&D.bracket[k])||[]).forEach(t=>{ if(t.hg!=null && t.home && t.away) out.push(t); })); return out; }
+function concededAll(){ const m={}; D.teams.forEach(t=>m[t.team]=t.ga); koPlayed().forEach(t=>{ if(t.home in m) m[t.home]+=t.ag; if(t.away in m) m[t.away]+=t.hg; }); return m; }
 function biggestDefeat(){
-  let mx=0;
-  D.matches.forEach(m=>{ const marg=Math.abs(m.hg-m.ag); if(marg>mx) mx=marg; });
+  const games=[];
+  D.matches.forEach(m=>games.push({home:m.home,away:m.away,hg:m.hg,ag:m.ag}));
+  koPlayed().forEach(t=>games.push({home:t.home,away:t.away,hg:t.hg,ag:t.ag}));
+  let mx=0; games.forEach(g=>{ const d=Math.abs(g.hg-g.ag); if(d>mx) mx=d; });
   if(mx<=0) return [];
   const out=[];
-  D.matches.forEach(m=>{
-    const marg=Math.abs(m.hg-m.ag);
-    if(marg===mx){
-      const loser = m.hg>m.ag ? m.away : m.home;
-      out.push({marg, loser, m, team: D.teams.find(t=>t.team===loser)});
-    }
-  });
+  games.forEach(g=>{ const d=Math.abs(g.hg-g.ag); if(d===mx){ const loser=g.hg>g.ag?g.away:g.home; out.push({marg:d, loser, m:g, team:D.teams.find(t=>t.team===loser)}); } });
   return out;
 }
 function topTeams(key){
@@ -82,14 +80,17 @@ function renderPrizes(){
         body.append(dualOwners(lead));
       });
     } else if(p.metric==='team_gf' || p.metric==='team_ga' || p.metric==='team_reds'){
-      const key = p.metric==='team_gf'?'gf' : p.metric==='team_ga'?'ga':'reds';
-      const tt=topTeams(key);
+      const conc = p.metric==='team_ga' ? concededAll() : null;
+      const valOf = t => p.metric==='team_gf' ? t.gf : (p.metric==='team_ga' ? conc[t.team] : t.reds);
       const empty = {team_gf:'No goals yet',team_ga:'Nobody shipping goals yet',team_reds:'No red cards yet — behave yourselves'}[p.metric];
-      const word  = {gf:'scored',ga:'conceded',reds:'red cards'}[key];
-      const colour= key==='gf' ? 'var(--green)' : 'var(--red)';
+      const word  = p.metric==='team_gf' ? 'scored' : 'conceded';
+      const colour= p.metric==='team_gf' ? 'var(--green)' : 'var(--red)';
+      const mx=Math.max(...D.teams.map(valOf));
+      const tt = mx>0 ? D.teams.filter(t=>valOf(t)===mx) : [];
       if(!tt.length){ body=tbd(empty); }
       else tt.forEach(t=>{
-        const val = key==='reds' ? (t.reds+' red card'+(t.reds>1?'s':'')) : (t[key]+' '+word);
+        const v=valOf(t);
+        const val = p.metric==='team_reds' ? (v+' red card'+(v>1?'s':'')) : (v+' '+word);
         body.append(sectionLabel(t.flag+' '+t.team+' — <span style="color:'+colour+'">'+val+'</span>'));
         body.append(teamOwners(t));
       });
