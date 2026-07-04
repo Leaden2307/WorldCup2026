@@ -1,9 +1,9 @@
 // World Cup 2026 Office Sweepstake - live data. Auto-updated daily.
 window.WCDATA = {
  "meta": {
-  "updated": "3 July 2026",
-  "stage": "Round of 32",
-  "fact": "Iberian derby loading! Steve & Erica Reeve's Mikel Oyarzabal hit a double as Spain swatted Austria 3-0 without allowing a single shot on target. Then Jack Newton & Anna Au's Cristiano Ronaldo finally broke his curse — his first World Cup knockout-round goal ever, a 68th-minute penalty — before Goncalo Ramos headed a 94th-minute winner to sink Croatia 2-1. Reward: Spain v Portugal in the last 16. Switzerland's Breel Embolo also struck early in a 2-0 win over Algeria.",
+  "updated": "4 July 2026",
+  "stage": "Round of 16",
+  "fact": "Own-goal chaos closed out the last 32! Jay Lee & Andrew Tyley's Argentina needed a 110th-minute Cape Verde own goal to survive 3-2 in extra time, after Lorenz Frenzen & John-Alexander Rudd's Lionel Messi had opened the scoring (7 for the tournament). Earlier, Egypt's Mohamed Hany became the first man with TWO own goals in one World Cup - yet Grace Chung & Steven Barrett's Mohamed Salah still panenka'd Paul Thompson & Ekin Yavuz's Egypt past Australia 4-2 on pens for their first-ever knockout win. The reward: Salah v Messi in the last 16.",
   "note": "Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."
  },
  "prizes": [
@@ -964,9 +964,9 @@ window.WCDATA = {
     "away": "Cape Verde",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ar.svg\" alt=\"Argentina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/cv.svg\" alt=\"Cape Verde\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": null,
-    "ag": null,
-    "winner": null,
+    "hg": 3,
+    "ag": 2,
+    "winner": "Argentina",
     "date": "Jul 3",
     "when": "Fri 3 Jul · 23:00"
    },
@@ -976,9 +976,9 @@ window.WCDATA = {
     "away": "Egypt",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/au.svg\" alt=\"Australia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/eg.svg\" alt=\"Egypt\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": null,
-    "ag": null,
-    "winner": null,
+    "hg": 1,
+    "ag": 1,
+    "winner": "Egypt",
     "date": "Jul 3",
     "when": "Fri 3 Jul · 19:00"
    },
@@ -1000,9 +1000,9 @@ window.WCDATA = {
     "away": "Ghana",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/co.svg\" alt=\"Colombia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gh.svg\" alt=\"Ghana\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": null,
-    "ag": null,
-    "winner": null,
+    "hg": 1,
+    "ag": 0,
+    "winner": "Colombia",
     "date": "Jul 4",
     "when": "Sat 4 Jul · 02:30"
    }
@@ -1082,10 +1082,10 @@ window.WCDATA = {
    },
    {
     "id": "R16-7",
-    "home": null,
-    "away": null,
-    "homeFlag": "",
-    "awayFlag": "",
+    "home": "Argentina",
+    "away": "Egypt",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ar.svg\" alt=\"Argentina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/eg.svg\" alt=\"Egypt\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "hg": null,
     "ag": null,
     "winner": null,
@@ -1095,9 +1095,9 @@ window.WCDATA = {
    {
     "id": "R16-8",
     "home": "Switzerland",
-    "away": null,
+    "away": "Colombia",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ch.svg\" alt=\"Switzerland\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "awayFlag": "",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/co.svg\" alt=\"Colombia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "hg": null,
     "ag": null,
     "winner": null,
@@ -1212,20 +1212,20 @@ window.WCDATA = {
  },
  "fixtures": [
   {
-   "time": "19:00",
-   "home": "Australia",
-   "away": "Egypt",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/au.svg\" alt=\"Australia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/eg.svg\" alt=\"Egypt\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "D"
+   "time": "18:00",
+   "home": "Canada",
+   "away": "Morocco",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ca.svg\" alt=\"Canada\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ma.svg\" alt=\"Morocco\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "B"
   },
   {
-   "time": "23:00",
-   "home": "Argentina",
-   "away": "Cape Verde",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ar.svg\" alt=\"Argentina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/cv.svg\" alt=\"Cape Verde\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "J"
+   "time": "22:00",
+   "home": "Paraguay",
+   "away": "France",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/py.svg\" alt=\"Paraguay\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "D"
   }
  ],
  "players": [
@@ -1971,7 +1971,7 @@ window.WCDATA = {
    "player": "Lionel Messi",
    "country": "Argentina",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/ar.svg\" alt=\"Argentina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 6,
+   "goals": 7,
    "owners": {
     "league1": {
      "name": "Lorenz Frenzen",
@@ -2141,7 +2141,7 @@ window.WCDATA = {
    "ga": 2,
    "reds": 0,
    "played": 3,
-   "status": "alive"
+   "status": "out"
   },
   {
    "team": "Belgium",
@@ -2285,7 +2285,7 @@ window.WCDATA = {
    "ga": 2,
    "reds": 0,
    "played": 3,
-   "status": "alive"
+   "status": "out"
   },
   {
    "team": "DR Congo",
@@ -2453,7 +2453,7 @@ window.WCDATA = {
    "ga": 1,
    "reds": 0,
    "played": 3,
-   "status": "alive"
+   "status": "through"
   },
   {
    "team": "Spain",
@@ -2765,7 +2765,7 @@ window.WCDATA = {
    "ga": 1,
    "reds": 0,
    "played": 3,
-   "status": "alive"
+   "status": "through"
   },
   {
    "team": "South Africa",
@@ -2933,7 +2933,7 @@ window.WCDATA = {
    "ga": 2,
    "reds": 0,
    "played": 3,
-   "status": "alive"
+   "status": "out"
   },
   {
    "team": "South Korea",
@@ -3029,7 +3029,7 @@ window.WCDATA = {
    "ga": 3,
    "reds": 0,
    "played": 3,
-   "status": "alive"
+   "status": "through"
   },
   {
    "team": "Germany",
