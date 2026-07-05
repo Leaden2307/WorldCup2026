@@ -1,9 +1,9 @@
 // World Cup 2026 Office Sweepstake - live data. Auto-updated daily.
 window.WCDATA = {
  "meta": {
-  "updated": "4 July 2026",
+  "updated": "5 July 2026",
   "stage": "Round of 16",
-  "fact": "Own-goal chaos closed out the last 32! Jay Lee & Andrew Tyley's Argentina needed a 110th-minute Cape Verde own goal to survive 3-2 in extra time, after Lorenz Frenzen & John-Alexander Rudd's Lionel Messi had opened the scoring (7 for the tournament). Earlier, Egypt's Mohamed Hany became the first man with TWO own goals in one World Cup - yet Grace Chung & Steven Barrett's Mohamed Salah still panenka'd Paul Thompson & Ekin Yavuz's Egypt past Australia 4-2 on pens for their first-ever knockout win. The reward: Salah v Messi in the last 16.",
+  "fact": "Independence Day, but no fireworks for the co-hosts: Azzedine Ounahi's brace sent Ayomide Erinle & Simon Davis's Morocco crashing through John Pope & Helen Davis's Canada 3-0 in Houston. Later, Noura Nassar & Austin Wright's Desire Doue was tripped for the penalty that Luca D'Amico & Nicholas Mitchell's Kylian Mbappe buried to beat Paraguay 1-0 - his 7th of the tournament, level with Messi in the Golden Boot race. Next up: a France v Morocco quarter-final.",
   "note": "Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."
  },
  "prizes": [
@@ -1014,9 +1014,9 @@ window.WCDATA = {
     "away": "France",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/py.svg\" alt=\"Paraguay\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": null,
-    "ag": null,
-    "winner": null,
+    "hg": 0,
+    "ag": 1,
+    "winner": "France",
     "date": "4-7 Jul",
     "when": "Sat 4 Jul · 22:00"
    },
@@ -1026,9 +1026,9 @@ window.WCDATA = {
     "away": "Morocco",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ca.svg\" alt=\"Canada\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ma.svg\" alt=\"Morocco\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": null,
-    "ag": null,
-    "winner": null,
+    "hg": 0,
+    "ag": 3,
+    "winner": "Morocco",
     "date": "4-7 Jul",
     "when": "Sat 4 Jul · 18:00"
    },
@@ -1108,10 +1108,10 @@ window.WCDATA = {
   "QF": [
    {
     "id": "QF-1",
-    "home": null,
-    "away": null,
-    "homeFlag": "",
-    "awayFlag": "",
+    "home": "France",
+    "away": "Morocco",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ma.svg\" alt=\"Morocco\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "hg": null,
     "ag": null,
     "winner": null,
@@ -1212,20 +1212,12 @@ window.WCDATA = {
  },
  "fixtures": [
   {
-   "time": "18:00",
-   "home": "Canada",
-   "away": "Morocco",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ca.svg\" alt=\"Canada\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ma.svg\" alt=\"Morocco\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "B"
-  },
-  {
-   "time": "22:00",
-   "home": "Paraguay",
-   "away": "France",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/py.svg\" alt=\"Paraguay\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "D"
+   "time": "21:00",
+   "home": "Brazil",
+   "away": "Norway",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/br.svg\" alt=\"Brazil\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/no.svg\" alt=\"Norway\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "C"
   }
  ],
  "players": [
@@ -1935,7 +1927,7 @@ window.WCDATA = {
    "player": "Kylian Mbappe",
    "country": "France",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 6,
+   "goals": 7,
    "owners": {
     "league1": {
      "name": "Luca D'Amico",
@@ -2165,7 +2157,7 @@ window.WCDATA = {
    "ga": 2,
    "reds": 0,
    "played": 3,
-   "status": "through"
+   "status": "alive"
   },
   {
    "team": "Algeria",
@@ -2333,7 +2325,7 @@ window.WCDATA = {
    "ga": 7,
    "reds": 0,
    "played": 3,
-   "status": "through"
+   "status": "alive"
   },
   {
    "team": "Scotland",
@@ -2429,7 +2421,7 @@ window.WCDATA = {
    "ga": 4,
    "reds": 1,
    "played": 3,
-   "status": "through"
+   "status": "out"
   },
   {
    "team": "Colombia",
@@ -2453,7 +2445,7 @@ window.WCDATA = {
    "ga": 1,
    "reds": 0,
    "played": 3,
-   "status": "through"
+   "status": "alive"
   },
   {
    "team": "Spain",
@@ -2477,7 +2469,7 @@ window.WCDATA = {
    "ga": 0,
    "reds": 0,
    "played": 3,
-   "status": "through"
+   "status": "alive"
   },
   {
    "team": "Curacao",
@@ -2549,7 +2541,7 @@ window.WCDATA = {
    "ga": 1,
    "reds": 0,
    "played": 3,
-   "status": "through"
+   "status": "alive"
   },
   {
    "team": "Japan",
@@ -2669,7 +2661,7 @@ window.WCDATA = {
    "ga": 1,
    "reds": 0,
    "played": 3,
-   "status": "through"
+   "status": "alive"
   },
   {
    "team": "Saudi Arabia",
@@ -2765,7 +2757,7 @@ window.WCDATA = {
    "ga": 1,
    "reds": 0,
    "played": 3,
-   "status": "through"
+   "status": "alive"
   },
   {
    "team": "South Africa",
@@ -2861,7 +2853,7 @@ window.WCDATA = {
    "ga": 3,
    "reds": 0,
    "played": 3,
-   "status": "through"
+   "status": "out"
   },
   {
    "team": "England",
@@ -2885,7 +2877,7 @@ window.WCDATA = {
    "ga": 2,
    "reds": 0,
    "played": 3,
-   "status": "through"
+   "status": "alive"
   },
   {
    "team": "Jordan",
@@ -3029,7 +3021,7 @@ window.WCDATA = {
    "ga": 3,
    "reds": 0,
    "played": 3,
-   "status": "through"
+   "status": "alive"
   },
   {
    "team": "Germany",
@@ -3077,7 +3069,7 @@ window.WCDATA = {
    "ga": 4,
    "reds": 1,
    "played": 3,
-   "status": "through"
+   "status": "alive"
   },
   {
    "team": "Switzerland",
@@ -3101,7 +3093,7 @@ window.WCDATA = {
    "ga": 3,
    "reds": 0,
    "played": 3,
-   "status": "through"
+   "status": "alive"
   },
   {
    "team": "Qatar",
@@ -3245,7 +3237,7 @@ window.WCDATA = {
    "ga": 0,
    "reds": 0,
    "played": 3,
-   "status": "through"
+   "status": "alive"
   }
  ]
 };
