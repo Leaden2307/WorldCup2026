@@ -1,9 +1,9 @@
 // World Cup 2026 Office Sweepstake - live data. Auto-updated daily.
 window.WCDATA = {
  "meta": {
-  "updated": "5 July 2026",
+  "updated": "6 July 2026",
   "stage": "Round of 16",
-  "fact": "Independence Day, but no fireworks for the co-hosts: Azzedine Ounahi's brace sent Ayomide Erinle & Simon Davis's Morocco crashing through John Pope & Helen Davis's Canada 3-0 in Houston. Later, Noura Nassar & Austin Wright's Desire Doue was tripped for the penalty that Luca D'Amico & Nicholas Mitchell's Kylian Mbappe buried to beat Paraguay 1-0 - his 7th of the tournament, level with Messi in the Golden Boot race. Next up: a France v Morocco quarter-final.",
+  "fact": "Erling Haaland struck twice in the final 11 minutes to dump Matthew Radwan & Kelly Darlington's Brazil out 2-1 - bittersweet for Radwan, who also drafted Haaland, now level with Messi and Mbappe on 7 in the Golden Boot race. Grace Chung & Riccardo Pellizzon's England survived a thunderstorm delay, Jarell Quansah's red card and a Mexico fightback to win 3-2, Jude Bellingham scoring twice in 98 seconds. England v Norway quarter-final incoming.",
   "note": "Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."
  },
  "prizes": [
@@ -1062,9 +1062,9 @@ window.WCDATA = {
     "away": "Norway",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/br.svg\" alt=\"Brazil\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/no.svg\" alt=\"Norway\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": null,
-    "ag": null,
-    "winner": null,
+    "hg": 1,
+    "ag": 2,
+    "winner": "Norway",
     "date": "4-7 Jul",
     "when": "Sun 5 Jul · 21:00"
    },
@@ -1074,9 +1074,9 @@ window.WCDATA = {
     "away": "England",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/mx.svg\" alt=\"Mexico\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": null,
-    "ag": null,
-    "winner": null,
+    "hg": 2,
+    "ag": 3,
+    "winner": "England",
     "date": "4-7 Jul",
     "when": "Mon 6 Jul · 01:00"
    },
@@ -1132,10 +1132,10 @@ window.WCDATA = {
    },
    {
     "id": "QF-3",
-    "home": null,
-    "away": null,
-    "homeFlag": "",
-    "awayFlag": "",
+    "home": "Norway",
+    "away": "England",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/no.svg\" alt=\"Norway\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "hg": null,
     "ag": null,
     "winner": null,
@@ -1212,12 +1212,20 @@ window.WCDATA = {
  },
  "fixtures": [
   {
-   "time": "21:00",
-   "home": "Brazil",
-   "away": "Norway",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/br.svg\" alt=\"Brazil\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/no.svg\" alt=\"Norway\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "C"
+   "time": "20:00",
+   "home": "Portugal",
+   "away": "Spain",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/pt.svg\" alt=\"Portugal\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/es.svg\" alt=\"Spain\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "K"
+  },
+  {
+   "time": "01:00",
+   "home": "USA",
+   "away": "Belgium",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/us.svg\" alt=\"USA\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/be.svg\" alt=\"Belgium\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "D"
   }
  ],
  "players": [
@@ -1549,7 +1557,7 @@ window.WCDATA = {
    "player": "Erling Haaland",
    "country": "Norway",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/no.svg\" alt=\"Norway\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 5,
+   "goals": 7,
    "owners": {
     "league1": {
      "name": "Matthew Radwan",
@@ -1675,7 +1683,7 @@ window.WCDATA = {
    "player": "Jude Bellingham",
    "country": "England",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 2,
+   "goals": 4,
    "owners": {
     "league1": {
      "name": "Ben Black",
@@ -1765,7 +1773,7 @@ window.WCDATA = {
    "player": "Harry Kane",
    "country": "England",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 5,
+   "goals": 6,
    "owners": {
     "league1": {
      "name": "Iaia Loppi",
@@ -1873,7 +1881,7 @@ window.WCDATA = {
    "player": "Raul Jimenez",
    "country": "Mexico",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/mx.svg\" alt=\"Mexico\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 0,
+   "goals": 1,
    "owners": {
     "league1": {
      "name": "Ayomide Erinle",
@@ -2071,7 +2079,7 @@ window.WCDATA = {
    "player": "Neymar",
    "country": "Brazil",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/br.svg\" alt=\"Brazil\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 0,
+   "goals": 1,
    "owners": {
     "league1": {
      "name": "Mark Rintoul",
@@ -2325,7 +2333,7 @@ window.WCDATA = {
    "ga": 7,
    "reds": 0,
    "played": 3,
-   "status": "alive"
+   "status": "through"
   },
   {
    "team": "Scotland",
@@ -2541,7 +2549,7 @@ window.WCDATA = {
    "ga": 1,
    "reds": 0,
    "played": 3,
-   "status": "alive"
+   "status": "out"
   },
   {
    "team": "Japan",
@@ -2875,9 +2883,9 @@ window.WCDATA = {
    ],
    "gf": 6,
    "ga": 2,
-   "reds": 0,
+   "reds": 1,
    "played": 3,
-   "status": "alive"
+   "status": "through"
   },
   {
    "team": "Jordan",
@@ -3237,7 +3245,7 @@ window.WCDATA = {
    "ga": 0,
    "reds": 0,
    "played": 3,
-   "status": "alive"
+   "status": "out"
   }
  ]
 };
