@@ -1,9 +1,9 @@
 // World Cup 2026 Office Sweepstake - live data. Auto-updated daily.
 window.WCDATA = {
  "meta": {
-  "updated": "7 July 2026",
-  "stage": "Round of 16",
-  "fact": "A 91st-minute Mikel Merino winner - teed up by Mark Read & Emma Burton's draft pick Ferran Torres - put Jack Newton & Ann Miller's Spain into the quarter-finals, and ended Cristiano Ronaldo's last-ever World Cup game at 41 (sorry Jack Newton & Anna Au, that pick retires on 3 goals). Belgium then dismantled the host USA 4-1, Heather Puttock & Ozan Ibrahim's Romelu Lukaku adding the stoppage-time dagger. Spain v Belgium quarter-final awaits.",
+  "updated": "8 July 2026",
+  "stage": "Quarter-finals",
+  "fact": "Lorenz Frenzen & John-Alexander Rudd's Lionel Messi missed a first-half penalty, then dragged Argentina from 2-0 down past Paul Thompson & Ekin Yavuz's Egypt with a goal (his 8th - Golden Boot leader) and two assists in a 3-2 heist. Switzerland then beat Heather Puttock & Chris Day's Colombia on penalties - setting up Argentina v Switzerland, where Lorenz Frenzen owns BOTH Messi and the Swiss. Rest day today; quarter-finals start tomorrow.",
   "note": "Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."
  },
  "prizes": [
@@ -1086,9 +1086,9 @@ window.WCDATA = {
     "away": "Egypt",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ar.svg\" alt=\"Argentina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/eg.svg\" alt=\"Egypt\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": null,
-    "ag": null,
-    "winner": null,
+    "hg": 3,
+    "ag": 2,
+    "winner": "Argentina",
     "date": "4-7 Jul",
     "when": "Tue 7 Jul · 17:00"
    },
@@ -1098,9 +1098,9 @@ window.WCDATA = {
     "away": "Colombia",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ch.svg\" alt=\"Switzerland\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/co.svg\" alt=\"Colombia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": null,
-    "ag": null,
-    "winner": null,
+    "hg": 0,
+    "ag": 0,
+    "winner": "Switzerland",
     "date": "4-7 Jul",
     "when": "Tue 7 Jul · 21:00"
    }
@@ -1144,10 +1144,10 @@ window.WCDATA = {
    },
    {
     "id": "QF-4",
-    "home": null,
-    "away": null,
-    "homeFlag": "",
-    "awayFlag": "",
+    "home": "Argentina",
+    "away": "Switzerland",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ar.svg\" alt=\"Argentina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ch.svg\" alt=\"Switzerland\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "hg": null,
     "ag": null,
     "winner": null,
@@ -1210,24 +1210,7 @@ window.WCDATA = {
    }
   ]
  },
- "fixtures": [
-  {
-   "time": "17:00",
-   "home": "Argentina",
-   "away": "Egypt",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ar.svg\" alt=\"Argentina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/eg.svg\" alt=\"Egypt\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "J"
-  },
-  {
-   "time": "21:00",
-   "home": "Switzerland",
-   "away": "Colombia",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ch.svg\" alt=\"Switzerland\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/co.svg\" alt=\"Colombia\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "B"
-  }
- ],
+ "fixtures": [],
  "players": [
   {
    "player": "Nicholas Jackson",
@@ -1971,7 +1954,7 @@ window.WCDATA = {
    "player": "Lionel Messi",
    "country": "Argentina",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/ar.svg\" alt=\"Argentina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 7,
+   "goals": 8,
    "owners": {
     "league1": {
      "name": "Lorenz Frenzen",
@@ -2453,7 +2436,7 @@ window.WCDATA = {
    "ga": 1,
    "reds": 0,
    "played": 3,
-   "status": "alive"
+   "status": "out"
   },
   {
    "team": "Spain",
@@ -2765,7 +2748,7 @@ window.WCDATA = {
    "ga": 1,
    "reds": 0,
    "played": 3,
-   "status": "alive"
+   "status": "through"
   },
   {
    "team": "South Africa",
@@ -3029,7 +3012,7 @@ window.WCDATA = {
    "ga": 3,
    "reds": 0,
    "played": 3,
-   "status": "alive"
+   "status": "out"
   },
   {
    "team": "Germany",
@@ -3101,7 +3084,7 @@ window.WCDATA = {
    "ga": 3,
    "reds": 0,
    "played": 3,
-   "status": "alive"
+   "status": "through"
   },
   {
    "team": "Qatar",
