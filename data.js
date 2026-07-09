@@ -1,9 +1,9 @@
 // World Cup 2026 Office Sweepstake - live data. Auto-updated daily.
 window.WCDATA = {
  "meta": {
-  "updated": "8 July 2026",
+  "updated": "9 July 2026",
   "stage": "Quarter-finals",
-  "fact": "Lorenz Frenzen & John-Alexander Rudd's Lionel Messi missed a first-half penalty, then dragged Argentina from 2-0 down past Paul Thompson & Ekin Yavuz's Egypt with a goal (his 8th - Golden Boot leader) and two assists in a 3-2 heist. Switzerland then beat Heather Puttock & Chris Day's Colombia on penalties - setting up Argentina v Switzerland, where Lorenz Frenzen owns BOTH Messi and the Swiss. Rest day today; quarter-finals start tomorrow.",
+  "fact": "Rest day over - the quarter-finals kick off tonight with a 2022 semi-final rematch: Richard Paul & Sally Crimmins' France v Ayomide Erinle & Simon Davis' Morocco. Awkwardly, Richard Paul also drafted Morocco's Youssef El Kaabi, so he wins either way - while Luca D'Amico & Nicholas Mitchell's Kylian Mbappe (7 goals) chases Lionel Messi's 8 in the Golden Boot race.",
   "note": "Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."
  },
  "prizes": [
@@ -1210,7 +1210,16 @@ window.WCDATA = {
    }
   ]
  },
- "fixtures": [],
+ "fixtures": [
+  {
+   "time": "21:00",
+   "home": "France",
+   "away": "Morocco",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ma.svg\" alt=\"Morocco\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "I"
+  }
+ ],
  "players": [
   {
    "player": "Nicholas Jackson",
