@@ -1,9 +1,9 @@
 // World Cup 2026 Office Sweepstake - live data. Auto-updated daily.
 window.WCDATA = {
  "meta": {
-  "updated": "9 July 2026",
+  "updated": "10 July 2026",
   "stage": "Quarter-finals",
-  "fact": "Rest day over - the quarter-finals kick off tonight with a 2022 semi-final rematch: Richard Paul & Sally Crimmins' France v Ayomide Erinle & Simon Davis' Morocco. Awkwardly, Richard Paul also drafted Morocco's Youssef El Kaabi, so he wins either way - while Luca D'Amico & Nicholas Mitchell's Kylian Mbappe (7 goals) chases Lionel Messi's 8 in the Golden Boot race.",
+  "fact": "Richard Paul & Sally Crimmins' France are the first semi-finalists after a 2-0 win over Morocco - and Luca D'Amico & Nicholas Mitchell's Kylian Mbappe had a night to remember: penalty saved by Bounou, then a curler for his 8th goal to join Lionel Messi at the top of the Golden Boot, before Richard Breen & Tracy Meller's Ousmane Dembele made it two. Tonight: Jack Newton & Ann Miller's Spain v Erica Reeve & Kit Lee Smith's Belgium for the right to face them.",
   "note": "Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."
  },
  "prizes": [
@@ -1112,9 +1112,9 @@ window.WCDATA = {
     "away": "Morocco",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ma.svg\" alt=\"Morocco\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": null,
-    "ag": null,
-    "winner": null,
+    "hg": 2,
+    "ag": 0,
+    "winner": "France",
     "date": "9-11 Jul",
     "when": "Thu 9 Jul · 21:00"
    },
@@ -1158,9 +1158,9 @@ window.WCDATA = {
   "SF": [
    {
     "id": "SF-1",
-    "home": null,
+    "home": "France",
     "away": null,
-    "homeFlag": "",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "awayFlag": "",
     "hg": null,
     "ag": null,
@@ -1212,12 +1212,12 @@ window.WCDATA = {
  },
  "fixtures": [
   {
-   "time": "21:00",
-   "home": "France",
-   "away": "Morocco",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ma.svg\" alt=\"Morocco\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "I"
+   "time": "20:00",
+   "home": "Spain",
+   "away": "Belgium",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/es.svg\" alt=\"Spain\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/be.svg\" alt=\"Belgium\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "H"
   }
  ],
  "players": [
@@ -1459,7 +1459,7 @@ window.WCDATA = {
    "player": "Ousmane Dembele",
    "country": "France",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 4,
+   "goals": 5,
    "owners": {
     "league1": {
      "name": "Richard Breen",
@@ -1927,7 +1927,7 @@ window.WCDATA = {
    "player": "Kylian Mbappe",
    "country": "France",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 7,
+   "goals": 8,
    "owners": {
     "league1": {
      "name": "Luca D'Amico",
@@ -2157,7 +2157,7 @@ window.WCDATA = {
    "ga": 2,
    "reds": 0,
    "played": 3,
-   "status": "through"
+   "status": "alive"
   },
   {
    "team": "Algeria",
@@ -2325,7 +2325,7 @@ window.WCDATA = {
    "ga": 7,
    "reds": 0,
    "played": 3,
-   "status": "through"
+   "status": "alive"
   },
   {
    "team": "Scotland",
@@ -2469,7 +2469,7 @@ window.WCDATA = {
    "ga": 0,
    "reds": 0,
    "played": 3,
-   "status": "through"
+   "status": "alive"
   },
   {
    "team": "Curacao",
@@ -2757,7 +2757,7 @@ window.WCDATA = {
    "ga": 1,
    "reds": 0,
    "played": 3,
-   "status": "through"
+   "status": "alive"
   },
   {
    "team": "South Africa",
@@ -2877,7 +2877,7 @@ window.WCDATA = {
    "ga": 2,
    "reds": 1,
    "played": 3,
-   "status": "through"
+   "status": "alive"
   },
   {
    "team": "Jordan",
@@ -2973,7 +2973,7 @@ window.WCDATA = {
    "ga": 3,
    "reds": 0,
    "played": 3,
-   "status": "through"
+   "status": "out"
   },
   {
    "team": "Sweden",
@@ -3093,7 +3093,7 @@ window.WCDATA = {
    "ga": 3,
    "reds": 0,
    "played": 3,
-   "status": "through"
+   "status": "alive"
   },
   {
    "team": "Qatar",

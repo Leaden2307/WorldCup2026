@@ -186,8 +186,8 @@ FLAG = {c:flag_html(c) for c in ISO}
 # ============================================================
 #  >>>> DAILY UPDATE AREA  (edit these 4 things each day) <<<<
 # ============================================================
-FACT = "Rest day over - the quarter-finals kick off tonight with a 2022 semi-final rematch: Richard Paul & Sally Crimmins' France v Ayomide Erinle & Simon Davis' Morocco. Awkwardly, Richard Paul also drafted Morocco's Youssef El Kaabi, so he wins either way - while Luca D'Amico & Nicholas Mitchell's Kylian Mbappe (7 goals) chases Lionel Messi's 8 in the Golden Boot race."
-FIXTURES = [("21:00","France","Morocco")]
+FACT = "Richard Paul & Sally Crimmins' France are the first semi-finalists after a 2-0 win over Morocco - and Luca D'Amico & Nicholas Mitchell's Kylian Mbappe had a night to remember: penalty saved by Bounou, then a curler for his 8th goal to join Lionel Messi at the top of the Golden Boot, before Richard Breen & Tracy Meller's Ousmane Dembele made it two. Tonight: Jack Newton & Ann Miller's Spain v Erica Reeve & Kit Lee Smith's Belgium for the right to face them."
+FIXTURES = [("20:00","Spain","Belgium")]
 
 # ---- KNOCKOUT BRACKET (R32 fixed; later rounds auto-fill from winners) ----
 R32 = [
@@ -236,17 +236,17 @@ SCHEDULE = {
  "3P-1":"Sat 18 Jul · 22:00",
 }
 # scores as ties are played. (hg,ag) clear win, or (hg,ag,"Winner Name") if decided on pens.
-KO_SCORES = {"R32-1":(1,1,"Paraguay"),"R32-2":(3,0),"R32-3":(0,1),"R32-4":(1,1,"Morocco"),"R32-5":(2,1),"R32-6":(3,0),"R32-7":(2,0),"R32-8":(3,2),"R32-9":(2,1),"R32-10":(1,2),"R32-11":(2,0),"R32-12":(2,1),"R32-13":(3,2),"R32-14":(1,1,"Egypt"),"R32-15":(2,0),"R32-16":(1,0),"R16-1":(0,1),"R16-2":(0,3),"R16-3":(0,1),"R16-4":(1,4),"R16-5":(1,2),"R16-6":(2,3),"R16-7":(3,2),"R16-8":(0,0,"Switzerland")}
+KO_SCORES = {"R32-1":(1,1,"Paraguay"),"R32-2":(3,0),"R32-3":(0,1),"R32-4":(1,1,"Morocco"),"R32-5":(2,1),"R32-6":(3,0),"R32-7":(2,0),"R32-8":(3,2),"R32-9":(2,1),"R32-10":(1,2),"R32-11":(2,0),"R32-12":(2,1),"R32-13":(3,2),"R32-14":(1,1,"Egypt"),"R32-15":(2,0),"R32-16":(1,0),"R16-1":(0,1),"R16-2":(0,3),"R16-3":(0,1),"R16-4":(1,4),"R16-5":(1,2),"R16-6":(2,3),"R16-7":(3,2),"R16-8":(0,0,"Switzerland"),"QF-1":(2,0)}
    # today's kick-offs (UK time)
-UPDATED = "9 July 2026"                 # date label shown on the site
+UPDATED = "10 July 2026"                 # date label shown on the site
 STAGE   = "Quarter-finals"    # e.g. "Group Stage \u00b7 Matchday 2", "Round of 32", "Final"
 # Teams that have been KNOCKED OUT (use exact names from the team list):
-ELIMINATED = {"South Africa","South Korea","Czech Republic","Qatar","Scotland","Haiti","Turkey","Curacao","Tunisia","Iran","New Zealand","Uruguay","Saudi Arabia","Iraq","Jordan","Uzbekistan","Panama","Germany","Netherlands","Japan","Sweden","Ivory Coast","Ecuador","Senegal","DR Congo","Bosnia and Herzegovina","Austria","Croatia","Algeria","Cape Verde","Australia","Ghana","Canada","Paraguay","Brazil","Mexico","Portugal","USA","Egypt","Colombia"}
+ELIMINATED = {"South Africa","South Korea","Czech Republic","Qatar","Scotland","Haiti","Turkey","Curacao","Tunisia","Iran","New Zealand","Uruguay","Saudi Arabia","Iraq","Jordan","Uzbekistan","Panama","Germany","Netherlands","Japan","Sweden","Ivory Coast","Ecuador","Senegal","DR Congo","Bosnia and Herzegovina","Austria","Croatia","Algeria","Cape Verde","Australia","Ghana","Canada","Paraguay","Brazil","Mexico","Portugal","USA","Egypt","Colombia","Morocco"}
 # Teams confirmed THROUGH to the next round (optional, shows a green tick):
-THROUGH = {"France","Morocco","Norway","England","Spain","Belgium","Argentina","Switzerland"}           # e.g. {"Germany","Mexico"}
+THROUGH = {"France"}           # e.g. {"Germany","Mexico"}
 # ------------------------------------------------------------
 REDCARDS = {"South Africa":2,"Qatar":2,"Bosnia and Herzegovina":1,"Paraguay":1,"Iraq":1,"USA":1,"England":1}   # team -> total red cards (tournament)
-GOALS = {"Lionel Messi":8,"Cristiano Ronaldo":3,"Folarin Balogun":3,"Kai Havertz":3,"Kylian Mbappe":7,"Erling Haaland":7,"Harry Kane":6,"Jamal Musiala":1,"Alexander Isak":1,"Viktor Gyokeres":1,"Vinicius Junior":4,"Breel Embolo":2,"John McGinn":1,"Jude Bellingham":4,"Marcus Rashford":1,"Luis Diaz":1,"Jonathan David":3,"Matheus Cunha":3,"Cody Gakpo":3,"Mikel Oyarzabal":4,"Lamine Yamal":1,"Mohamed Salah":1,"Ousmane Dembele":4,"Desire Doue":1,"Kevin De Bruyne":1,"Romelu Lukaku":3,"Lautaro Martinez":1,"Neymar":1,"Raul Jimenez":1}
+GOALS = {"Lionel Messi":8,"Cristiano Ronaldo":3,"Folarin Balogun":3,"Kai Havertz":3,"Kylian Mbappe":8,"Erling Haaland":7,"Harry Kane":6,"Jamal Musiala":1,"Alexander Isak":1,"Viktor Gyokeres":1,"Vinicius Junior":4,"Breel Embolo":2,"John McGinn":1,"Jude Bellingham":4,"Marcus Rashford":1,"Luis Diaz":1,"Jonathan David":3,"Matheus Cunha":3,"Cody Gakpo":3,"Mikel Oyarzabal":4,"Lamine Yamal":1,"Mohamed Salah":1,"Ousmane Dembele":5,"Desire Doue":1,"Kevin De Bruyne":1,"Romelu Lukaku":3,"Lautaro Martinez":1,"Neymar":1,"Raul Jimenez":1}
 # Scorers NOT drafted by anyone (shown on the board for context, can't win the office prize):
 OTHER_SCORERS = []   # (per request: only show players someone drafted)
 matches = [
