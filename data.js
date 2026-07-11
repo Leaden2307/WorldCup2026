@@ -1,9 +1,9 @@
 // World Cup 2026 Office Sweepstake - live data. Auto-updated daily.
 window.WCDATA = {
  "meta": {
-  "updated": "10 July 2026",
+  "updated": "11 July 2026",
   "stage": "Quarter-finals",
-  "fact": "Richard Paul & Sally Crimmins' France are the first semi-finalists after a 2-0 win over Morocco - and Luca D'Amico & Nicholas Mitchell's Kylian Mbappe had a night to remember: penalty saved by Bounou, then a curler for his 8th goal to join Lionel Messi at the top of the Golden Boot, before Richard Breen & Tracy Meller's Ousmane Dembele made it two. Tonight: Jack Newton & Ann Miller's Spain v Erica Reeve & Kit Lee Smith's Belgium for the right to face them.",
+  "fact": "Jack Newton & Ann Miller's Spain join France in the semi-finals - super-sub Mikel Merino struck just 117 seconds after coming on to sink Erica Reeve & Kit Lee Smith's Belgium 2-1, Charles De Ketelaere having scored the FIRST goal Spain had conceded all tournament. Kit can console himself tonight: his Norway and Matthew Radwan & Daniel Newman's Erling Haaland (7 goals) meet Grace Chung & Riccardo Pellizzon's England and Iaia Loppi & Sam Howells' Harry Kane (6) in a Golden Boot shootout, before Jay Lee & Andrew Tyley's Argentina face Lorenz Frenzen & Daniel Newman's Switzerland overnight.",
   "note": "Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."
  },
  "prizes": [
@@ -1124,9 +1124,9 @@ window.WCDATA = {
     "away": "Belgium",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/es.svg\" alt=\"Spain\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/be.svg\" alt=\"Belgium\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": null,
-    "ag": null,
-    "winner": null,
+    "hg": 2,
+    "ag": 1,
+    "winner": "Spain",
     "date": "9-11 Jul",
     "when": "Fri 10 Jul · 20:00"
    },
@@ -1159,9 +1159,9 @@ window.WCDATA = {
    {
     "id": "SF-1",
     "home": "France",
-    "away": null,
+    "away": "Spain",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "awayFlag": "",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/es.svg\" alt=\"Spain\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "hg": null,
     "ag": null,
     "winner": null,
@@ -1212,12 +1212,20 @@ window.WCDATA = {
  },
  "fixtures": [
   {
-   "time": "20:00",
-   "home": "Spain",
-   "away": "Belgium",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/es.svg\" alt=\"Spain\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/be.svg\" alt=\"Belgium\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "H"
+   "time": "22:00",
+   "home": "Norway",
+   "away": "England",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/no.svg\" alt=\"Norway\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "I"
+  },
+  {
+   "time": "02:00 Sun",
+   "home": "Argentina",
+   "away": "Switzerland",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ar.svg\" alt=\"Argentina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ch.svg\" alt=\"Switzerland\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "J"
   }
  ],
  "players": [
@@ -2157,7 +2165,7 @@ window.WCDATA = {
    "ga": 2,
    "reds": 0,
    "played": 3,
-   "status": "alive"
+   "status": "out"
   },
   {
    "team": "Algeria",
@@ -2469,7 +2477,7 @@ window.WCDATA = {
    "ga": 0,
    "reds": 0,
    "played": 3,
-   "status": "alive"
+   "status": "through"
   },
   {
    "team": "Curacao",
