@@ -1,9 +1,9 @@
 // World Cup 2026 Office Sweepstake - live data. Auto-updated daily.
 window.WCDATA = {
  "meta": {
-  "updated": "11 July 2026",
-  "stage": "Quarter-finals",
-  "fact": "Jack Newton & Ann Miller's Spain join France in the semi-finals - super-sub Mikel Merino struck just 117 seconds after coming on to sink Erica Reeve & Kit Lee Smith's Belgium 2-1, Charles De Ketelaere having scored the FIRST goal Spain had conceded all tournament. Kit can console himself tonight: his Norway and Matthew Radwan & Daniel Newman's Erling Haaland (7 goals) meet Grace Chung & Riccardo Pellizzon's England and Iaia Loppi & Sam Howells' Harry Kane (6) in a Golden Boot shootout, before Jay Lee & Andrew Tyley's Argentina face Lorenz Frenzen & Daniel Newman's Switzerland overnight.",
+  "updated": "13 July 2026",
+  "stage": "Semi-finals",
+  "fact": "Both semi-final spots were settled in extra time on Saturday: Ben Black & Georgina Robledo Padilla's Jude Bellingham struck twice (6 goals now) to see off Kit Lee Smith & Lorenz Frenzen's Norway 2-1, then it got worse for Lorenz — his Switzerland (shared with Daniel Newman) lost 3-1 aet to Jay Lee & Andrew Tyley's Argentina after Ian Birtles & Maurice Brennan's Breel Embolo was sent off by VAR for a theatrical dive. Messi didn't score, ending his record 9-game World Cup scoring streak. Semis: France v Spain (Tue), England v Argentina (Wed).",
   "note": "Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."
  },
  "prizes": [
@@ -1136,9 +1136,9 @@ window.WCDATA = {
     "away": "England",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/no.svg\" alt=\"Norway\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": null,
-    "ag": null,
-    "winner": null,
+    "hg": 1,
+    "ag": 2,
+    "winner": "England",
     "date": "9-11 Jul",
     "when": "Sat 11 Jul · 22:00"
    },
@@ -1148,9 +1148,9 @@ window.WCDATA = {
     "away": "Switzerland",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ar.svg\" alt=\"Argentina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ch.svg\" alt=\"Switzerland\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": null,
-    "ag": null,
-    "winner": null,
+    "hg": 3,
+    "ag": 1,
+    "winner": "Argentina",
     "date": "9-11 Jul",
     "when": "Sun 12 Jul · 02:00"
    }
@@ -1170,10 +1170,10 @@ window.WCDATA = {
    },
    {
     "id": "SF-2",
-    "home": null,
-    "away": null,
-    "homeFlag": "",
-    "awayFlag": "",
+    "home": "England",
+    "away": "Argentina",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ar.svg\" alt=\"Argentina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "hg": null,
     "ag": null,
     "winner": null,
@@ -1210,24 +1210,7 @@ window.WCDATA = {
    }
   ]
  },
- "fixtures": [
-  {
-   "time": "22:00",
-   "home": "Norway",
-   "away": "England",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/no.svg\" alt=\"Norway\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "I"
-  },
-  {
-   "time": "02:00 Sun",
-   "home": "Argentina",
-   "away": "Switzerland",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ar.svg\" alt=\"Argentina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ch.svg\" alt=\"Switzerland\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "J"
-  }
- ],
+ "fixtures": [],
  "players": [
   {
    "player": "Nicholas Jackson",
@@ -1323,7 +1306,7 @@ window.WCDATA = {
    "player": "Julian Alvarez",
    "country": "Argentina",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/ar.svg\" alt=\"Argentina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 0,
+   "goals": 1,
    "owners": {
     "league1": {
      "name": "Ozan Ibrahim",
@@ -1665,7 +1648,7 @@ window.WCDATA = {
    "player": "Lautaro Martinez",
    "country": "Argentina",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/ar.svg\" alt=\"Argentina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 1,
+   "goals": 2,
    "owners": {
     "league1": {
      "name": "Stephen Barrett",
@@ -1683,7 +1666,7 @@ window.WCDATA = {
    "player": "Jude Bellingham",
    "country": "England",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 4,
+   "goals": 6,
    "owners": {
     "league1": {
      "name": "Ben Black",
@@ -2333,7 +2316,7 @@ window.WCDATA = {
    "ga": 7,
    "reds": 0,
    "played": 3,
-   "status": "alive"
+   "status": "out"
   },
   {
    "team": "Scotland",
@@ -2765,7 +2748,7 @@ window.WCDATA = {
    "ga": 1,
    "reds": 0,
    "played": 3,
-   "status": "alive"
+   "status": "through"
   },
   {
    "team": "South Africa",
@@ -2885,7 +2868,7 @@ window.WCDATA = {
    "ga": 2,
    "reds": 1,
    "played": 3,
-   "status": "alive"
+   "status": "through"
   },
   {
    "team": "Jordan",
@@ -3099,9 +3082,9 @@ window.WCDATA = {
    ],
    "gf": 7,
    "ga": 3,
-   "reds": 0,
+   "reds": 1,
    "played": 3,
-   "status": "alive"
+   "status": "out"
   },
   {
    "team": "Qatar",
