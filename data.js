@@ -1,9 +1,9 @@
 // World Cup 2026 Office Sweepstake - live data. Auto-updated daily.
 window.WCDATA = {
  "meta": {
-  "updated": "13 July 2026",
+  "updated": "14 July 2026",
   "stage": "Semi-finals",
-  "fact": "Both semi-final spots were settled in extra time on Saturday: Ben Black & Georgina Robledo Padilla's Jude Bellingham struck twice (6 goals now) to see off Kit Lee Smith & Lorenz Frenzen's Norway 2-1, then it got worse for Lorenz — his Switzerland (shared with Daniel Newman) lost 3-1 aet to Jay Lee & Andrew Tyley's Argentina after Ian Birtles & Maurice Brennan's Breel Embolo was sent off by VAR for a theatrical dive. Messi didn't score, ending his record 9-game World Cup scoring streak. Semis: France v Spain (Tue), England v Argentina (Wed).",
+  "fact": "Monday was a rest day, so all eyes turn to tonight's Dallas semi: Richard Paul & Sally Crimmins' France v Jack Newton & Ann Miller's Spain. Spain arrive unbeaten in 36 matches and have conceded just once all tournament — bad news for Luca D'Amico & Nicholas Mitchell's Kylian Mbappe, who is level with Messi on 8 goals and can grab the Golden Boot lead outright. The winner faces England or Argentina in Sunday's final.",
   "note": "Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."
  },
  "prizes": [
@@ -1210,7 +1210,16 @@ window.WCDATA = {
    }
   ]
  },
- "fixtures": [],
+ "fixtures": [
+  {
+   "time": "20:00",
+   "home": "France",
+   "away": "Spain",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/es.svg\" alt=\"Spain\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "I"
+  }
+ ],
  "players": [
   {
    "player": "Nicholas Jackson",

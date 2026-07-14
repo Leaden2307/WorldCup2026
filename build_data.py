@@ -186,8 +186,8 @@ FLAG = {c:flag_html(c) for c in ISO}
 # ============================================================
 #  >>>> DAILY UPDATE AREA  (edit these 4 things each day) <<<<
 # ============================================================
-FACT = "Both semi-final spots were settled in extra time on Saturday: Ben Black & Georgina Robledo Padilla's Jude Bellingham struck twice (6 goals now) to see off Kit Lee Smith & Lorenz Frenzen's Norway 2-1, then it got worse for Lorenz \u2014 his Switzerland (shared with Daniel Newman) lost 3-1 aet to Jay Lee & Andrew Tyley's Argentina after Ian Birtles & Maurice Brennan's Breel Embolo was sent off by VAR for a theatrical dive. Messi didn't score, ending his record 9-game World Cup scoring streak. Semis: France v Spain (Tue), England v Argentina (Wed)."
-FIXTURES = []
+FACT = "Monday was a rest day, so all eyes turn to tonight's Dallas semi: Richard Paul & Sally Crimmins' France v Jack Newton & Ann Miller's Spain. Spain arrive unbeaten in 36 matches and have conceded just once all tournament \u2014 bad news for Luca D'Amico & Nicholas Mitchell's Kylian Mbappe, who is level with Messi on 8 goals and can grab the Golden Boot lead outright. The winner faces England or Argentina in Sunday's final."
+FIXTURES = [("20:00","France","Spain")]
 
 # ---- KNOCKOUT BRACKET (R32 fixed; later rounds auto-fill from winners) ----
 R32 = [
@@ -238,7 +238,7 @@ SCHEDULE = {
 # scores as ties are played. (hg,ag) clear win, or (hg,ag,"Winner Name") if decided on pens.
 KO_SCORES = {"R32-1":(1,1,"Paraguay"),"R32-2":(3,0),"R32-3":(0,1),"R32-4":(1,1,"Morocco"),"R32-5":(2,1),"R32-6":(3,0),"R32-7":(2,0),"R32-8":(3,2),"R32-9":(2,1),"R32-10":(1,2),"R32-11":(2,0),"R32-12":(2,1),"R32-13":(3,2),"R32-14":(1,1,"Egypt"),"R32-15":(2,0),"R32-16":(1,0),"R16-1":(0,1),"R16-2":(0,3),"R16-3":(0,1),"R16-4":(1,4),"R16-5":(1,2),"R16-6":(2,3),"R16-7":(3,2),"R16-8":(0,0,"Switzerland"),"QF-1":(2,0),"QF-2":(2,1),"QF-3":(1,2),"QF-4":(3,1)}
    # today's kick-offs (UK time)
-UPDATED = "13 July 2026"                 # date label shown on the site
+UPDATED = "14 July 2026"                 # date label shown on the site
 STAGE   = "Semi-finals"    # e.g. "Group Stage \u00b7 Matchday 2", "Round of 32", "Final"
 # Teams that have been KNOCKED OUT (use exact names from the team list):
 ELIMINATED = {"South Africa","South Korea","Czech Republic","Qatar","Scotland","Haiti","Turkey","Curacao","Tunisia","Iran","New Zealand","Uruguay","Saudi Arabia","Iraq","Jordan","Uzbekistan","Panama","Germany","Netherlands","Japan","Sweden","Ivory Coast","Ecuador","Senegal","DR Congo","Bosnia and Herzegovina","Austria","Croatia","Algeria","Cape Verde","Australia","Ghana","Canada","Paraguay","Brazil","Mexico","Portugal","USA","Egypt","Colombia","Morocco","Belgium","Norway","Switzerland"}
