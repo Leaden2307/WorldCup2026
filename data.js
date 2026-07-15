@@ -1,9 +1,9 @@
 // World Cup 2026 Office Sweepstake - live data. Auto-updated daily.
 window.WCDATA = {
  "meta": {
-  "updated": "14 July 2026",
+  "updated": "15 July 2026",
   "stage": "Semi-finals",
-  "fact": "Monday was a rest day, so all eyes turn to tonight's Dallas semi: Richard Paul & Sally Crimmins' France v Jack Newton & Ann Miller's Spain. Spain arrive unbeaten in 36 matches and have conceded just once all tournament — bad news for Luca D'Amico & Nicholas Mitchell's Kylian Mbappe, who is level with Messi on 8 goals and can grab the Golden Boot lead outright. The winner faces England or Argentina in Sunday's final.",
+  "fact": "Spain suffocated France 2-0 in Dallas to reach Sunday's final — Jack Newton & Ann Miller are now one win from the £100. Steve & Erica Reeve's Mikel Oyarzabal opened from the spot (his 5th of the tournament) before Pedro Porro sealed it, while Luca D'Amico & Nicholas Mitchell's Mbappe was blanked and finishes on 8 — level with Lorenz Frenzen & John-Alexander Rudd's Messi, who can take the Golden Boot lead outright in tonight's England v Argentina semi.",
   "note": "Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."
  },
  "prizes": [
@@ -1162,9 +1162,9 @@ window.WCDATA = {
     "away": "Spain",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/es.svg\" alt=\"Spain\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": null,
-    "ag": null,
-    "winner": null,
+    "hg": 0,
+    "ag": 2,
+    "winner": "Spain",
     "date": "14-15 Jul",
     "when": "Tue 14 Jul · 20:00"
    },
@@ -1184,9 +1184,9 @@ window.WCDATA = {
   "F": [
    {
     "id": "F-1",
-    "home": null,
+    "home": "Spain",
     "away": null,
-    "homeFlag": "",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/es.svg\" alt=\"Spain\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "awayFlag": "",
     "hg": null,
     "ag": null,
@@ -1198,9 +1198,9 @@ window.WCDATA = {
   "3P": [
    {
     "id": "3P-1",
-    "home": null,
+    "home": "France",
     "away": null,
-    "homeFlag": "",
+    "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "awayFlag": "",
     "hg": null,
     "ag": null,
@@ -1213,11 +1213,11 @@ window.WCDATA = {
  "fixtures": [
   {
    "time": "20:00",
-   "home": "France",
-   "away": "Spain",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/es.svg\" alt=\"Spain\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "I"
+   "home": "England",
+   "away": "Argentina",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ar.svg\" alt=\"Argentina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "L"
   }
  ],
  "players": [
@@ -1279,7 +1279,7 @@ window.WCDATA = {
    "player": "Mikel Oyarzabal",
    "country": "Spain",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/es.svg\" alt=\"Spain\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 4,
+   "goals": 5,
    "owners": {
     "league1": {
      "name": "Steve Reeve",
@@ -2757,7 +2757,7 @@ window.WCDATA = {
    "ga": 1,
    "reds": 0,
    "played": 3,
-   "status": "through"
+   "status": "alive"
   },
   {
    "team": "South Africa",
@@ -2877,7 +2877,7 @@ window.WCDATA = {
    "ga": 2,
    "reds": 1,
    "played": 3,
-   "status": "through"
+   "status": "alive"
   },
   {
    "team": "Jordan",
@@ -3213,7 +3213,7 @@ window.WCDATA = {
    "ga": 2,
    "reds": 0,
    "played": 3,
-   "status": "through"
+   "status": "out"
   },
   {
    "team": "Mexico",
