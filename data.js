@@ -1,9 +1,9 @@
 // World Cup 2026 Office Sweepstake - live data. Auto-updated daily.
 window.WCDATA = {
  "meta": {
-  "updated": "15 July 2026",
-  "stage": "Semi-finals",
-  "fact": "Spain suffocated France 2-0 in Dallas to reach Sunday's final — Jack Newton & Ann Miller are now one win from the £100. Steve & Erica Reeve's Mikel Oyarzabal opened from the spot (his 5th of the tournament) before Pedro Porro sealed it, while Luca D'Amico & Nicholas Mitchell's Mbappe was blanked and finishes on 8 — level with Lorenz Frenzen & John-Alexander Rudd's Messi, who can take the Golden Boot lead outright in tonight's England v Argentina semi.",
+  "updated": "16 July 2026",
+  "stage": "Final",
+  "fact": "Messi didn't score but won it anyway — two assists in the last five minutes dragged Jay Lee & Andrew Tyley's Argentina past England 2-1 in Atlanta, Stephen Barrett & Chris Day's Lautaro Martinez heading the 92nd-minute winner. Grace Chung & Riccardo Pellizzon's England are out, so Sunday's final is Spain v Argentina: Jack Newton & Ann Miller against Jay Lee & Andrew Tyley for the £100 — and with Mbappe eliminated on 8 goals, Messi (Lorenz Frenzen & John-Alexander Rudd, also 8) can claim the Golden Boot outright.",
   "note": "Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."
  },
  "prizes": [
@@ -1174,9 +1174,9 @@ window.WCDATA = {
     "away": "Argentina",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ar.svg\" alt=\"Argentina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": null,
-    "ag": null,
-    "winner": null,
+    "hg": 1,
+    "ag": 2,
+    "winner": "Argentina",
     "date": "14-15 Jul",
     "when": "Wed 15 Jul · 20:00"
    }
@@ -1185,9 +1185,9 @@ window.WCDATA = {
    {
     "id": "F-1",
     "home": "Spain",
-    "away": null,
+    "away": "Argentina",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/es.svg\" alt=\"Spain\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "awayFlag": "",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ar.svg\" alt=\"Argentina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "hg": null,
     "ag": null,
     "winner": null,
@@ -1199,9 +1199,9 @@ window.WCDATA = {
    {
     "id": "3P-1",
     "home": "France",
-    "away": null,
+    "away": "England",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "awayFlag": "",
+    "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "hg": null,
     "ag": null,
     "winner": null,
@@ -1210,16 +1210,7 @@ window.WCDATA = {
    }
   ]
  },
- "fixtures": [
-  {
-   "time": "20:00",
-   "home": "England",
-   "away": "Argentina",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ar.svg\" alt=\"Argentina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "L"
-  }
- ],
+ "fixtures": [],
  "players": [
   {
    "player": "Nicholas Jackson",
@@ -1657,7 +1648,7 @@ window.WCDATA = {
    "player": "Lautaro Martinez",
    "country": "Argentina",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/ar.svg\" alt=\"Argentina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 2,
+   "goals": 3,
    "owners": {
     "league1": {
      "name": "Stephen Barrett",
@@ -2757,7 +2748,7 @@ window.WCDATA = {
    "ga": 1,
    "reds": 0,
    "played": 3,
-   "status": "alive"
+   "status": "through"
   },
   {
    "team": "South Africa",
@@ -2877,7 +2868,7 @@ window.WCDATA = {
    "ga": 2,
    "reds": 1,
    "played": 3,
-   "status": "alive"
+   "status": "out"
   },
   {
    "team": "Jordan",

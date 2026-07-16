@@ -186,8 +186,8 @@ FLAG = {c:flag_html(c) for c in ISO}
 # ============================================================
 #  >>>> DAILY UPDATE AREA  (edit these 4 things each day) <<<<
 # ============================================================
-FACT = "Spain suffocated France 2-0 in Dallas to reach Sunday's final \u2014 Jack Newton & Ann Miller are now one win from the \u00a3100. Steve & Erica Reeve's Mikel Oyarzabal opened from the spot (his 5th of the tournament) before Pedro Porro sealed it, while Luca D'Amico & Nicholas Mitchell's Mbappe was blanked and finishes on 8 \u2014 level with Lorenz Frenzen & John-Alexander Rudd's Messi, who can take the Golden Boot lead outright in tonight's England v Argentina semi."
-FIXTURES = [("20:00","England","Argentina")]
+FACT = "Messi didn't score but won it anyway \u2014 two assists in the last five minutes dragged Jay Lee & Andrew Tyley's Argentina past England 2-1 in Atlanta, Stephen Barrett & Chris Day's Lautaro Martinez heading the 92nd-minute winner. Grace Chung & Riccardo Pellizzon's England are out, so Sunday's final is Spain v Argentina: Jack Newton & Ann Miller against Jay Lee & Andrew Tyley for the \u00a3100 \u2014 and with Mbappe eliminated on 8 goals, Messi (Lorenz Frenzen & John-Alexander Rudd, also 8) can claim the Golden Boot outright."
+FIXTURES = []
 
 # ---- KNOCKOUT BRACKET (R32 fixed; later rounds auto-fill from winners) ----
 R32 = [
@@ -236,17 +236,17 @@ SCHEDULE = {
  "3P-1":"Sat 18 Jul · 22:00",
 }
 # scores as ties are played. (hg,ag) clear win, or (hg,ag,"Winner Name") if decided on pens.
-KO_SCORES = {"R32-1":(1,1,"Paraguay"),"R32-2":(3,0),"R32-3":(0,1),"R32-4":(1,1,"Morocco"),"R32-5":(2,1),"R32-6":(3,0),"R32-7":(2,0),"R32-8":(3,2),"R32-9":(2,1),"R32-10":(1,2),"R32-11":(2,0),"R32-12":(2,1),"R32-13":(3,2),"R32-14":(1,1,"Egypt"),"R32-15":(2,0),"R32-16":(1,0),"R16-1":(0,1),"R16-2":(0,3),"R16-3":(0,1),"R16-4":(1,4),"R16-5":(1,2),"R16-6":(2,3),"R16-7":(3,2),"R16-8":(0,0,"Switzerland"),"QF-1":(2,0),"QF-2":(2,1),"QF-3":(1,2),"QF-4":(3,1),"SF-1":(0,2)}
+KO_SCORES = {"R32-1":(1,1,"Paraguay"),"R32-2":(3,0),"R32-3":(0,1),"R32-4":(1,1,"Morocco"),"R32-5":(2,1),"R32-6":(3,0),"R32-7":(2,0),"R32-8":(3,2),"R32-9":(2,1),"R32-10":(1,2),"R32-11":(2,0),"R32-12":(2,1),"R32-13":(3,2),"R32-14":(1,1,"Egypt"),"R32-15":(2,0),"R32-16":(1,0),"R16-1":(0,1),"R16-2":(0,3),"R16-3":(0,1),"R16-4":(1,4),"R16-5":(1,2),"R16-6":(2,3),"R16-7":(3,2),"R16-8":(0,0,"Switzerland"),"QF-1":(2,0),"QF-2":(2,1),"QF-3":(1,2),"QF-4":(3,1),"SF-1":(0,2),"SF-2":(1,2)}
    # today's kick-offs (UK time)
-UPDATED = "15 July 2026"                 # date label shown on the site
-STAGE   = "Semi-finals"    # e.g. "Group Stage \u00b7 Matchday 2", "Round of 32", "Final"
+UPDATED = "16 July 2026"                 # date label shown on the site
+STAGE   = "Final"    # e.g. "Group Stage \u00b7 Matchday 2", "Round of 32", "Final"
 # Teams that have been KNOCKED OUT (use exact names from the team list):
-ELIMINATED = {"South Africa","South Korea","Czech Republic","Qatar","Scotland","Haiti","Turkey","Curacao","Tunisia","Iran","New Zealand","Uruguay","Saudi Arabia","Iraq","Jordan","Uzbekistan","Panama","Germany","Netherlands","Japan","Sweden","Ivory Coast","Ecuador","Senegal","DR Congo","Bosnia and Herzegovina","Austria","Croatia","Algeria","Cape Verde","Australia","Ghana","Canada","Paraguay","Brazil","Mexico","Portugal","USA","Egypt","Colombia","Morocco","Belgium","Norway","Switzerland","France"}
+ELIMINATED = {"South Africa","South Korea","Czech Republic","Qatar","Scotland","Haiti","Turkey","Curacao","Tunisia","Iran","New Zealand","Uruguay","Saudi Arabia","Iraq","Jordan","Uzbekistan","Panama","Germany","Netherlands","Japan","Sweden","Ivory Coast","Ecuador","Senegal","DR Congo","Bosnia and Herzegovina","Austria","Croatia","Algeria","Cape Verde","Australia","Ghana","Canada","Paraguay","Brazil","Mexico","Portugal","USA","Egypt","Colombia","Morocco","Belgium","Norway","Switzerland","France","England"}
 # Teams confirmed THROUGH to the next round (optional, shows a green tick):
-THROUGH = {"Spain"}           # e.g. {"Germany","Mexico"}
+THROUGH = {"Spain","Argentina"}           # e.g. {"Germany","Mexico"}
 # ------------------------------------------------------------
 REDCARDS = {"South Africa":2,"Qatar":2,"Bosnia and Herzegovina":1,"Paraguay":1,"Iraq":1,"USA":1,"England":1,"Switzerland":1}   # team -> total red cards (tournament)
-GOALS = {"Lionel Messi":8,"Cristiano Ronaldo":3,"Folarin Balogun":3,"Kai Havertz":3,"Kylian Mbappe":8,"Erling Haaland":7,"Harry Kane":6,"Jamal Musiala":1,"Alexander Isak":1,"Viktor Gyokeres":1,"Vinicius Junior":4,"Breel Embolo":2,"John McGinn":1,"Jude Bellingham":6,"Marcus Rashford":1,"Luis Diaz":1,"Jonathan David":3,"Matheus Cunha":3,"Cody Gakpo":3,"Mikel Oyarzabal":5,"Lamine Yamal":1,"Mohamed Salah":1,"Ousmane Dembele":5,"Desire Doue":1,"Kevin De Bruyne":1,"Romelu Lukaku":3,"Lautaro Martinez":2,"Julian Alvarez":1,"Neymar":1,"Raul Jimenez":1}
+GOALS = {"Lionel Messi":8,"Cristiano Ronaldo":3,"Folarin Balogun":3,"Kai Havertz":3,"Kylian Mbappe":8,"Erling Haaland":7,"Harry Kane":6,"Jamal Musiala":1,"Alexander Isak":1,"Viktor Gyokeres":1,"Vinicius Junior":4,"Breel Embolo":2,"John McGinn":1,"Jude Bellingham":6,"Marcus Rashford":1,"Luis Diaz":1,"Jonathan David":3,"Matheus Cunha":3,"Cody Gakpo":3,"Mikel Oyarzabal":5,"Lamine Yamal":1,"Mohamed Salah":1,"Ousmane Dembele":5,"Desire Doue":1,"Kevin De Bruyne":1,"Romelu Lukaku":3,"Lautaro Martinez":3,"Julian Alvarez":1,"Neymar":1,"Raul Jimenez":1}
 # Scorers NOT drafted by anyone (shown on the board for context, can't win the office prize):
 OTHER_SCORERS = []   # (per request: only show players someone drafted)
 matches = [
