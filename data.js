@@ -1,9 +1,9 @@
 // World Cup 2026 Office Sweepstake - live data. Auto-updated daily.
 window.WCDATA = {
  "meta": {
-  "updated": "16 July 2026",
+  "updated": "17 July 2026",
   "stage": "Final",
-  "fact": "Messi didn't score but won it anyway — two assists in the last five minutes dragged Jay Lee & Andrew Tyley's Argentina past England 2-1 in Atlanta, Stephen Barrett & Chris Day's Lautaro Martinez heading the 92nd-minute winner. Grace Chung & Riccardo Pellizzon's England are out, so Sunday's final is Spain v Argentina: Jack Newton & Ann Miller against Jay Lee & Andrew Tyley for the £100 — and with Mbappe eliminated on 8 goals, Messi (Lorenz Frenzen & John-Alexander Rudd, also 8) can claim the Golden Boot outright.",
+  "fact": "Rest day — but the maths is done. Sunday's Spain v Argentina final is a straight £100 shoot-out between Jack Newton & Ann Miller and Jay Lee & Andrew Tyley, with £40 for the beaten pair. Before that, Saturday's France v England third-place game hands Mbappe (Luca D'Amico & Nicholas Mitchell) and Kane (Iaia Loppi & Sam Howells) one last crack at the Golden Boot — Messi (Lorenz Frenzen & John-Alexander Rudd) sits level with Mbappe on 8 but ahead on assists, and he gets the final word on Sunday.",
   "note": "Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."
  },
  "prizes": [
