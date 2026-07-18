@@ -1,9 +1,9 @@
 // World Cup 2026 Office Sweepstake - live data. Auto-updated daily.
 window.WCDATA = {
  "meta": {
-  "updated": "17 July 2026",
+  "updated": "18 July 2026",
   "stage": "Final",
-  "fact": "Rest day — but the maths is done. Sunday's Spain v Argentina final is a straight £100 shoot-out between Jack Newton & Ann Miller and Jay Lee & Andrew Tyley, with £40 for the beaten pair. Before that, Saturday's France v England third-place game hands Mbappe (Luca D'Amico & Nicholas Mitchell) and Kane (Iaia Loppi & Sam Howells) one last crack at the Golden Boot — Messi (Lorenz Frenzen & John-Alexander Rudd) sits level with Mbappe on 8 but ahead on assists, and he gets the final word on Sunday.",
+  "fact": "Bronze before gold: tonight's France v England play-off (22:00 UK, Miami) won't earn Richard Paul & Sally Crimmins or Grace Chung & Riccardo Pellizzon a penny — but it's a Golden Boot decider in disguise. Mbappe (Luca D'Amico & Nicholas Mitchell) can break his 8-8 tie with Messi (Lorenz Frenzen & John-Alexander Rudd), and Kane (Iaia Loppi & Sam Howells) needs a hat-trick to gatecrash — then Messi gets last word in Sunday's £100 final between Jack Newton & Ann Miller (Spain) and Jay Lee & Andrew Tyley (Argentina).",
   "note": "Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."
  },
  "prizes": [
@@ -1210,7 +1210,16 @@ window.WCDATA = {
    }
   ]
  },
- "fixtures": [],
+ "fixtures": [
+  {
+   "time": "22:00",
+   "home": "France",
+   "away": "England",
+   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
+   "group": "I"
+  }
+ ],
  "players": [
   {
    "player": "Nicholas Jackson",
