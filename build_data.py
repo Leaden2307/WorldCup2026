@@ -245,7 +245,7 @@ ELIMINATED = {"South Africa","South Korea","Czech Republic","Qatar","Scotland","
 # Teams confirmed THROUGH to the next round (optional, shows a green tick):
 THROUGH = {"Spain","Argentina"}           # e.g. {"Germany","Mexico"}
 # ------------------------------------------------------------
-REDCARDS = {"South Africa":2,"Qatar":2,"Bosnia and Herzegovina":1,"Paraguay":1,"Iraq":1,"USA":1,"England":1,"Switzerland":1,"Argentina":2}   # team -> total red cards (tournament)
+REDCARDS = {"South Africa":2,"Qatar":2,"Bosnia and Herzegovina":1,"Paraguay":1,"Iraq":1,"USA":1,"England":1,"Switzerland":1,"Argentina":1}   # team -> total red cards (tournament)
 GOALS = {"Lionel Messi":8,"Cristiano Ronaldo":3,"Folarin Balogun":3,"Kai Havertz":3,"Kylian Mbappe":10,"Erling Haaland":7,"Harry Kane":6,"Jamal Musiala":1,"Alexander Isak":1,"Viktor Gyokeres":1,"Vinicius Junior":4,"Breel Embolo":2,"John McGinn":1,"Jude Bellingham":7,"Marcus Rashford":1,"Luis Diaz":1,"Jonathan David":3,"Matheus Cunha":3,"Cody Gakpo":3,"Mikel Oyarzabal":5,"Lamine Yamal":1,"Mohamed Salah":1,"Ousmane Dembele":6,"Desire Doue":1,"Kevin De Bruyne":1,"Romelu Lukaku":3,"Lautaro Martinez":3,"Julian Alvarez":1,"Neymar":1,"Raul Jimenez":1}
 # Scorers NOT drafted by anyone (shown on the board for context, can't win the office prize):
 OTHER_SCORERS = []   # (per request: only show players someone drafted)
