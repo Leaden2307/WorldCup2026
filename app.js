@@ -446,7 +446,7 @@ function renderResults(){
 }
 
 /* NAV */
-const secs=[['champions','👑 Winners'],['fixtures','📅 Today'],['bracket','🥊 Bracket'],['prizes','🏆 Prizes'],['boot','👟 Golden Boot'],['teams','🌍 Teams'],['finder','🔎 My Picks'],['results','📋 Results']];
+const secs=[['champions','👑 Winners'],['bracket','🥊 Bracket'],['prizes','🏆 Prizes'],['boot','👟 Golden Boot'],['finder','🔎 My Picks'],['results','📋 Results']];
 const nav=$('#nav');
 secs.forEach(([id,lbl])=>{ const b=el('button',null,lbl); b.onclick=()=>document.getElementById(id).scrollIntoView({behavior:'smooth'}); b.dataset.id=id; nav.append(b); });
 const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){nav.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.id===e.target.id));}});},{rootMargin:'-45% 0px -50% 0px'});
@@ -530,4 +530,4 @@ function renderHeroPoster(){
 }
 
 /* GO */
-renderChampions(); renderFixtures(); renderBracket(); renderPrizes(); renderBoot(); renderFilters(); renderTeams(); renderResults(); renderFact(); renderHeroPoster();
+renderChampions(); renderBracket(); renderPrizes(); renderBoot(); renderResults(); renderFact(); renderHeroPoster();
