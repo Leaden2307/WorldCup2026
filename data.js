@@ -2746,7 +2746,7 @@ window.WCDATA = {
    ],
    "gf": 8,
    "ga": 1,
-   "reds": 1,
+   "reds": 2,
    "played": 3,
    "status": "out"
   },
