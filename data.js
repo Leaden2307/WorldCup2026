@@ -1,9 +1,9 @@
 // World Cup 2026 Office Sweepstake - live data. Auto-updated daily.
 window.WCDATA = {
  "meta": {
-  "updated": "18 July 2026",
-  "stage": "Final",
-  "fact": "Bronze before gold: tonight's France v England play-off (22:00 UK, Miami) won't earn Richard Paul & Sally Crimmins or Grace Chung & Riccardo Pellizzon a penny — but it's a Golden Boot decider in disguise. Mbappe (Luca D'Amico & Nicholas Mitchell) can break his 8-8 tie with Messi (Lorenz Frenzen & John-Alexander Rudd), and Kane (Iaia Loppi & Sam Howells) needs a hat-trick to gatecrash — then Messi gets last word in Sunday's £100 final between Jack Newton & Ann Miller (Spain) and Jay Lee & Andrew Tyley (Argentina).",
+  "updated": "20 July 2026",
+  "stage": "Champions: Spain 🏆",
+  "fact": "IT'S OVER — AND IT'S SPAIN! Ferran Torres (drafted by Mark Read & Emma Burton) struck in the 106th minute to beat 10-man Argentina 1-0 in the final, handing Jack Newton & Ann Miller the £100 top prize and leaving Jay Lee & Andrew Tyley with runner-up money. The night before, England won the maddest bronze final ever (6-4 over France) — but Mbappe's two consolations sealed the Golden Boot on 10 goals for Luca D'Amico & Nicholas Mitchell. Adios, see you in 2030.",
   "note": "Group stage runs to 27 June. Top 2 of each group + 8 best 3rd-placed teams reach the Round of 32."
  },
  "prizes": [
@@ -1188,9 +1188,9 @@ window.WCDATA = {
     "away": "Argentina",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/es.svg\" alt=\"Spain\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/ar.svg\" alt=\"Argentina\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": null,
-    "ag": null,
-    "winner": null,
+    "hg": 1,
+    "ag": 0,
+    "winner": "Spain",
     "date": "19 Jul",
     "when": "Sun 19 Jul · 20:00"
    }
@@ -1202,24 +1202,15 @@ window.WCDATA = {
     "away": "England",
     "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
     "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-    "hg": null,
-    "ag": null,
-    "winner": null,
+    "hg": 4,
+    "ag": 6,
+    "winner": "England",
     "date": "",
     "when": "Sat 18 Jul · 22:00"
    }
   ]
  },
- "fixtures": [
-  {
-   "time": "22:00",
-   "home": "France",
-   "away": "England",
-   "homeFlag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "awayFlag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "group": "I"
-  }
- ],
+ "fixtures": [],
  "players": [
   {
    "player": "Nicholas Jackson",
@@ -1459,7 +1450,7 @@ window.WCDATA = {
    "player": "Ousmane Dembele",
    "country": "France",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 5,
+   "goals": 6,
    "owners": {
     "league1": {
      "name": "Richard Breen",
@@ -1675,7 +1666,7 @@ window.WCDATA = {
    "player": "Jude Bellingham",
    "country": "England",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/gb-eng.svg\" alt=\"England\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 6,
+   "goals": 7,
    "owners": {
     "league1": {
      "name": "Ben Black",
@@ -1927,7 +1918,7 @@ window.WCDATA = {
    "player": "Kylian Mbappe",
    "country": "France",
    "flag": "<img class=\"flag\" src=\"https://flagcdn.com/fr.svg\" alt=\"France\" loading=\"lazy\" style=\"height:1em;width:auto;vertical-align:-0.15em;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,.4)\">",
-   "goals": 8,
+   "goals": 10,
    "owners": {
     "league1": {
      "name": "Luca D'Amico",
@@ -2755,9 +2746,9 @@ window.WCDATA = {
    ],
    "gf": 8,
    "ga": 1,
-   "reds": 0,
+   "reds": 1,
    "played": 3,
-   "status": "through"
+   "status": "out"
   },
   {
    "team": "South Africa",

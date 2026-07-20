@@ -102,15 +102,89 @@ function renderPrizes(){
         body.append(teamOwners(b.team));
       });
     } else if(p.metric==='team'){
-      body=tbd(p.id==='winner'?'To be decided — final is 19 July':'Decided at the final');
+      const F=(D.bracket&&D.bracket.F&&D.bracket.F[0])||null;
+      const champ=F&&F.winner, run=champ?(F.winner===F.home?F.away:F.home):null;
+      const name=p.id==='winner'?champ:run;
+      if(!name){ body=tbd(p.id==='winner'?'To be decided — final is 19 July':'Decided at the final'); }
+      else { const t=D.teams.find(x=>x.team===name);
+        body.append(sectionLabel(t.flag+' '+t.team+' — <span style="color:'+(p.id==='winner'?'var(--green)':'#AA151B')+'">'+(p.id==='winner'?'World Champions \uD83C\uDFC6':'Runners-up')+'</span>'));
+        body.append(teamOwners(t)); }
     } else if(p.metric==='judged'){
-      body=tbd('Awarded at the end — keep an eye on the underdogs');
+      const t=D.teams.find(x=>x.team===HEROIC);
+      if(t){ body.append(sectionLabel(t.flag+' '+t.team+' — <span style="color:var(--green)">Heroic Failure winners</span>')); body.append(teamOwners(t)); }
+      else body=tbd('Awarded at the end — keep an eye on the underdogs');
     } else if(p.metric==='judged_player'){
-      body=tbd("BBC's pick at the tournament's end");
+      body=tbd("Goal of the Tournament — BBC's pick still to be announced. One last £10 on the table!");
     }
     c.append(body);
     g.append(c);
   });
+}
+
+
+/* ROLL OF HONOUR — tournament over */
+const HEROIC='Cape Verde';   // Heroic Failure winners (committee decision, 20 Jul)
+function champWinnersBlock(owners,big){
+  const w=el('div','winners');
+  owners.forEach(o=>{
+    const p=el('div','wp');
+    p.append(img(o));
+    p.append(el('div','wnm',o.name+(o.paid===false?' \u26A0':'')));
+    if(o.league) p.append(el('span','wlg'+(o.league==='L2'?' l2':''),o.league==='L1'?'League 1':'League 2'));
+    w.append(p);
+  });
+  return w;
+}
+function teamO(name){ const t=D.teams.find(x=>x.team===name); return t?t.owners:[]; }
+function teamFlagOf(name){ const t=D.teams.find(x=>x.team===name); return t?t.flag:''; }
+function renderChampions(){
+  const g=$('#champWrap'); if(!g) return; g.innerHTML='';
+  const F=(D.bracket&&D.bracket.F&&D.bracket.F[0])||null;
+  const champ=F&&F.winner, run=champ?(F.winner===F.home?F.away:F.home):null;
+  function card(opts){
+    const c=el('div','champ'+(opts.gold?' gold':''));
+    const h=el('div','ch');
+    h.append(el('span','ce',opts.emoji), el('span','cti',opts.title), el('span','camt',opts.amount));
+    c.append(h);
+    (opts.groups||[]).forEach(grp=>{
+      const blk=el('div','grpblk');
+      blk.append(el('div','csub',grp.sub));
+      blk.append(champWinnersBlock(grp.owners,opts.gold));
+      c.append(blk);
+    });
+    if(opts.tbd) c.append(tbd(opts.tbd));
+    if(opts.note) c.append(el('div','note',opts.note));
+    g.append(c);
+    return c;
+  }
+  if(champ) card({gold:true,emoji:'\uD83C\uDFC6',title:'World Cup Winner',amount:'\u00A3100',
+    groups:[{sub:teamFlagOf(champ)+' '+champ+' \u2014 <span class="det">Champions of the World</span>',owners:teamO(champ)}]});
+  if(run) card({emoji:'\uD83E\uDD48',title:'Runner-Up',amount:'\u00A340',
+    groups:[{sub:teamFlagOf(run)+' '+run+' \u2014 <span class="det">beaten finalists</span>',owners:teamO(run)}]});
+  const boots=topPlayers();
+  if(boots.length) card({emoji:'\uD83D\uDC5F',title:'Golden Boot',amount:'\u00A320',
+    groups:boots.map(p=>({sub:p.flag+' '+p.player+' \u2014 <span class="det">'+p.goals+' goals</span>',owners:[Object.assign({league:'L1'},p.owners.league1),Object.assign({league:'L2'},p.owners.league2)]}))});
+  const gf=topTeams('gf');
+  card({emoji:'\uD83C\uDFAF',title:'Team Most Goals (Groups)'+(gf.length>1?'':''),amount:'\u00A310',
+    groups:gf.map(t=>({sub:t.flag+' '+t.team+' \u2014 <span class="det">'+t.gf+' group goals</span>'+(gf.length>1?'<span class="tie">TIE</span>':''),owners:t.owners})),
+    note:gf.length>1?gf.length+'-way tie \u2014 pot to be split or settled by the committee':null});
+  const reds=topTeams('reds');
+  card({emoji:'\uD83D\uDFE5',title:'Most Red Cards',amount:'\u00A310',
+    groups:reds.map(t=>({sub:t.flag+' '+t.team+' \u2014 <span class="det">'+t.reds+' reds</span>'+(reds.length>1?'<span class="tie">TIE</span>':''),owners:t.owners})),
+    note:reds.length>1?'Tied \u2014 pot to be split or settled by the committee':null});
+  const conc=concededAll(); const cmx=Math.max(...D.teams.map(t=>conc[t.team]));
+  const ct=D.teams.filter(t=>conc[t.team]===cmx);
+  card({emoji:'\uD83E\uDD45',title:'Most Goals Conceded',amount:'\u00A310',
+    groups:ct.map(t=>({sub:t.flag+' '+t.team+' \u2014 <span class="det">'+cmx+' conceded</span>'+(ct.length>1?'<span class="tie">TIE</span>':''),owners:t.owners})),
+    note:ct.length>1?ct.length+'-way tie \u2014 pot to be split or settled by the committee':null});
+  const bd=biggestDefeat();
+  card({emoji:'\uD83D\uDCA5',title:'Biggest Defeat',amount:'\u00A320',
+    groups:bd.map(b=>({sub:b.team.flag+' '+b.team.team+' \u2014 <span class="det">'+b.m.home.slice(0,3).toUpperCase()+' '+b.m.hg+'-'+b.m.ag+' '+b.m.away.slice(0,3).toUpperCase()+'</span>'+(bd.length>1?'<span class="tie">TIE</span>':''),owners:b.team.owners})),
+    note:bd.length>1?'Two thrashings by the same margin \u2014 committee to rule':null});
+  card({emoji:'\uD83E\uDDB8',title:'Heroic Failure',amount:'\u00A320',
+    groups:[{sub:teamFlagOf(HEROIC)+' '+HEROIC+' \u2014 <span class="det">a historic first point, a first win\u2026 and a Round of 32 place</span>',owners:teamO(HEROIC)}]});
+  card({emoji:'\u26A1',title:'Goal of the Tournament',amount:'\u00A310',
+    tbd:"Not decided yet \u2014 waiting on BBC Sport's official pick. The last \u00A310 of the \u00A3480."});
 }
 
 /* GOLDEN BOOT (drafted players only) */
@@ -255,7 +329,7 @@ $('#finderInput').addEventListener('input',e=>renderFinder(e.target.value));
 function renderFixtures(){
   const g=$('#fixtureGrid'); if(!g) return; g.innerHTML='';
   const fx=D.fixtures||[];
-  if(!fx.length){ g.append(el('div','muted-note','No matches today — back tomorrow! \u26bd')); return; }
+  if(!fx.length){ g.append(el('div','muted-note','That\u2019s all, folks \u2014 the World Cup is over. See you in 2030! \uD83C\uDDEA\uD83C\uDDF8')); return; }
   const faces=team=>{ const t=D.teams.find(x=>x.team===team); if(!t||!t.owners.length) return '';
     return '<span style="display:inline-flex;margin-left:8px">'+t.owners.map(o=>'<img src="'+(o.avatar||ph)+'" title="'+o.name+(o.league?' ('+o.league+')':'')+'" style="width:22px;height:22px;border-radius:50%;object-fit:cover;border:1.5px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.2);margin-left:-5px">').join('')+'</span>'; };
   fx.forEach(f=>{
@@ -372,7 +446,7 @@ function renderResults(){
 }
 
 /* NAV */
-const secs=[['fixtures','📅 Today'],['bracket','🥊 Bracket'],['prizes','🏆 Prizes'],['boot','👟 Golden Boot'],['teams','🌍 Teams'],['finder','🔎 My Picks'],['results','📋 Results']];
+const secs=[['champions','👑 Winners'],['fixtures','📅 Today'],['bracket','🥊 Bracket'],['prizes','🏆 Prizes'],['boot','👟 Golden Boot'],['teams','🌍 Teams'],['finder','🔎 My Picks'],['results','📋 Results']];
 const nav=$('#nav');
 secs.forEach(([id,lbl])=>{ const b=el('button',null,lbl); b.onclick=()=>document.getElementById(id).scrollIntoView({behavior:'smooth'}); b.dataset.id=id; nav.append(b); });
 const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){nav.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.id===e.target.id));}});},{rootMargin:'-45% 0px -50% 0px'});
@@ -449,11 +523,11 @@ function renderHeroPoster(){
   const bg=el('div');
   bg.style.cssText='position:absolute;inset:0;z-index:0;background:url(assets/posters/p'+i+'.jpg) center/cover no-repeat;opacity:.20;pointer-events:none';
   const ov=el('div');
-  ov.style.cssText='position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(28,73,180,.55),rgba(28,73,180,.78));pointer-events:none';
+  ov.style.cssText='position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(143,16,22,.6),rgba(95,10,14,.82));pointer-events:none';
   hero.insertBefore(ov,hero.firstChild);
   hero.insertBefore(bg,hero.firstChild);
   const cv=document.getElementById('confetti'); if(cv) cv.style.zIndex='1';
 }
 
 /* GO */
-renderFixtures(); renderBracket(); renderPrizes(); renderBoot(); renderFilters(); renderTeams(); renderResults(); renderFact(); renderHeroPoster();
+renderChampions(); renderFixtures(); renderBracket(); renderPrizes(); renderBoot(); renderFilters(); renderTeams(); renderResults(); renderFact(); renderHeroPoster();

@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RSHP World Cup 2026 Sweepstake</title>
+<title>RSHP World Cup 2026 Sweepstake — Spain are Champions</title>
 <style>
 @font-face{font-family:'Roboto';src:url('fonts/Roboto-Regular.woff2') format('woff2'),url('fonts/Roboto-Regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:'Roboto';src:url('fonts/Roboto-Bold.woff2') format('woff2'),url('fonts/Roboto-Bold.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap}
 :root{
   /* RSHP brand palette */
-  --blue:#1C49B4; --cyan:#00B5E2; --grass:#96D200; --green:#00B96E;
+  --blue:#AA151B; --cyan:#00B5E2; --grass:#96D200; --green:#00B96E;
   --lime:#D2DC00; --orange:#FF8A40; --pink:#F16AB7; --red:#FF5442;
-  --yellow:#FFCD00; --slate:#898B8E; --sand:#C4BDB0; --ink:#16213a;
+  --yellow:#F1BF00; --slate:#898B8E; --sand:#C4BDB0; --ink:#16213a;
   --card:#ffffff; --soft:#f3f5f8; --line:#e4e8ee; --mut:#6c7681;
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -20,7 +20,7 @@ h1,h2,h3,.cond{font-family:'Roboto',sans-serif;text-transform:uppercase;letter-s
 img{display:block}
 
 /* ---------- HERO ---------- */
-.hero{position:relative;overflow:hidden;color:#fff;padding:34px 20px 60px;background:var(--blue)}
+.hero{position:relative;overflow:hidden;color:#fff;padding:34px 20px 60px;background:linear-gradient(165deg,#AA151B 0%,#8f1016 55%,#5f0a0e 100%)}
 #confetti{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;opacity:.9}
 .hero-inner{position:relative;z-index:2;max-width:1080px;margin:0 auto;text-align:center}
 .hero .logo{height:42px;margin:0 auto 22px;display:block}
@@ -46,13 +46,46 @@ section{scroll-margin-top:64px;margin-bottom:46px}
 .sec-head .ic{font-size:28px;filter:drop-shadow(0 1px 1px rgba(0,0,0,.15))}
 .sec-head h2{font-size:clamp(21px,3vw,30px);font-weight:700;color:inherit}
 .sec-head .hint{margin-left:auto;color:inherit;opacity:.85;font-size:13.5px;max-width:40ch;text-align:right;text-transform:none;font-family:'Roboto'}
-#boot .sec-head{background:var(--green);color:var(--ink)}
-#teams .sec-head{background:var(--cyan);color:var(--ink)}
-#finder .sec-head{background:var(--pink);color:#fff}
-#results .sec-head{background:var(--orange);color:var(--ink)}
+#champions .sec-head{background:linear-gradient(90deg,#AA151B,#d4351f);color:#fff}
+#boot .sec-head{background:var(--yellow);color:var(--ink)}
+#teams .sec-head{background:#c81a22;color:#fff}
+#finder .sec-head{background:#7d0f14;color:#fff}
+#results .sec-head{background:var(--yellow);color:var(--ink)}
 #fixtures .sec-head{background:var(--yellow);color:var(--ink)}
-#bracket .sec-head{background:var(--red);color:#fff}
+#bracket .sec-head{background:#c81a22;color:#fff}
 @media(max-width:560px){.sec-head{flex-wrap:wrap}}
+
+
+/* ---------- CHAMPIONS / ROLL OF HONOUR ---------- */
+.champ-flag img{height:92px;width:auto;border-radius:8px;box-shadow:0 12px 34px rgba(0,0,0,.4);margin:0 auto 18px;border:3px solid var(--yellow)}
+.hero .trophy{font-size:44px;display:block;margin:8px auto 2px;filter:drop-shadow(0 4px 10px rgba(0,0,0,.35))}
+.champ-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:18px}
+.champ{background:#fff;border-radius:10px;border:1px solid var(--line);box-shadow:0 8px 22px rgba(120,10,15,.10);padding:20px 20px 22px;position:relative;overflow:hidden}
+.champ::before{content:"";position:absolute;top:0;left:0;right:0;height:8px;background:linear-gradient(90deg,#AA151B 0 25%,#F1BF00 25% 75%,#AA151B 75% 100%)}
+.champ.gold{grid-column:1/-1;background:linear-gradient(150deg,#fff7dd,#ffffff 60%);border:2px solid var(--yellow);text-align:center}
+.champ .ch{display:flex;align-items:center;gap:10px}
+.champ.gold .ch{justify-content:center}
+.champ .ce{font-size:30px}
+.champ .cti{font-family:'Roboto';font-weight:700;text-transform:uppercase;font-size:16px;line-height:1.05}
+.champ .camt{margin-left:auto;background:#AA151B;color:#fff;font-weight:700;padding:4px 12px;border-radius:4px;font-size:15px;font-family:'Roboto'}
+.champ.gold .camt{margin-left:0;background:var(--yellow);color:var(--ink);font-size:18px}
+.champ .csub{margin-top:9px;font-size:14px;font-weight:700}
+.champ .csub .det{color:#AA151B}
+.champ.gold .csub{font-size:clamp(20px,3vw,30px);font-family:'Roboto';text-transform:uppercase;margin-top:14px}
+.champ .tie{display:inline-block;background:#AA151B;color:#fff;font-size:10px;font-weight:700;padding:2px 7px;border-radius:3px;font-family:'Roboto';margin-left:6px;vertical-align:middle}
+.champ .winners{display:flex;gap:20px;flex-wrap:wrap;margin-top:14px}
+.champ.gold .winners{justify-content:center;gap:38px;margin-top:20px}
+.champ .wp{text-align:center;width:104px}
+.champ .wp img{width:92px;height:92px;border-radius:50%;object-fit:cover;border:4px solid var(--yellow);box-shadow:0 8px 18px rgba(0,0,0,.25);margin:0 auto 8px}
+.champ.gold .wp{width:150px}
+.champ.gold .wp img{width:136px;height:136px;border-width:5px}
+.champ .wp .wnm{font-weight:700;font-size:13px;line-height:1.15}
+.champ.gold .wp .wnm{font-size:16px}
+.champ .wp .wlg{font-size:10px;font-weight:700;color:#fff;background:#AA151B;display:inline-block;padding:2px 8px;border-radius:3px;margin-top:4px;font-family:'Roboto'}
+.champ .wp .wlg.l2{background:#F1BF00;color:var(--ink)}
+.champ .grpblk{margin-top:12px;padding-top:10px;border-top:1px dashed var(--line)}
+.champ .grpblk:first-of-type{margin-top:0;padding-top:0;border-top:0}
+.champ .note{margin-top:10px;font-size:11.5px;color:var(--mut);font-style:italic}
 
 /* ---------- PRIZE BOARD ---------- */
 .prizes{display:grid;grid-template-columns:repeat(auto-fill,minmax(265px,1fr));gap:16px}
@@ -152,8 +185,10 @@ footer b{color:var(--ink)}
   <canvas id="confetti"></canvas>
   <div class="hero-inner">
     <img class="logo" src="assets/rshp-white.svg" alt="RSHP">
-    <h1>World Cup 2026 <span class="em">Sweepstake</span></h1>
-    <p class="sub">96 entries · 2 leagues · 9 prizes · the only office tournament that matters</p>
+    <span class="trophy">🏆</span>
+    <div class="champ-flag"><img src="https://flagcdn.com/es.svg" alt="Spain"></div>
+    <h1>Spain are <span class="em">World Champions</span></h1>
+    <p class="sub">Spain 1–0 Argentina (aet) · Ferran Torres 106′ · New York, 19 July — the sweepstake is settled. Scroll for the roll of honour 👇</p>
     <div class="chips" id="heroChips"></div>
   </div>
 </header>
@@ -161,6 +196,12 @@ footer b{color:var(--ink)}
 <nav><div class="nav-in" id="nav"></div></nav>
 
 <div class="wrap">
+
+  <section id="champions">
+    <div class="sec-head"><span class="ic">👑</span><h2>The Roll of Honour</h2>
+      <span class="hint">Every prize, every winner — who takes home the £480.</span></div>
+    <div class="champ-grid" id="champWrap"></div>
+  </section>
 
   <section id="fixtures">
     <div class="sec-head"><span class="ic">📅</span><h2>Today's Fixtures</h2>
